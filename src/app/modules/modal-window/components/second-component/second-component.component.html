@@ -1,0 +1,18 @@
+    <div class="xOTB-modal-header">
+ {{title}}
+  <span class="xOTB-close" [innerHTML]="close" (click)="modal.hide()"></span>
+</div>
+    <div class="xOTB-modal-body">
+        {{content}}
+    </div>
+  <div class="xOTB-modal-footer">
+    <div>
+    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" (click)="modal.hide()">Close</button>
+    <button type="button" *ngIf="isNextModalRequired" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" (click)="modal3.show()">Show next modal</button>
+    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-primary" (click)="save()">Save</button>
+    </div>
+  </div>
+<app-modal-xOTB  [buttonGroup]="buttonGrp" [current]="'modal3'" [previous]="'modal2'" #modal3>
+    <!-- Third Modal Component-->
+    <app-third-component [modal]="modal3" [modalOptions]="modalWindowOptions"></app-third-component>
+</app-modal-xOTB>

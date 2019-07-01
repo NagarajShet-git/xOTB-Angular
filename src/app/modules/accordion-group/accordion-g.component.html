@@ -1,0 +1,86 @@
+<!-- <div class="xOTB-instruction">
+    <label> In the First type of accordion group, first accordion is closed by default.
+        All the accordions are opened/closed upon click on the +/- icon.
+    </label>
+    <br/>
+    <app-accordion [openFirst]="openFirst1" [toggle]="toggle1">
+        <app-group [title]="title1" [description]="description1" [icon]="icon1" [open]="open1" [close]="close1">
+            <div class="xOTB-form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="xOTB-form-control" id="email" placeholder="Enter email" name="email">
+                </div>
+                <div class="xOTB-form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="xOTB-form-control" id="pwd" placeholder="Enter password" name="pwd">
+                </div>
+                <div class="xOTB-checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+                </div>
+                <button type="submit" class="xOTB-btn xOTB-btn-default">Submit</button>            
+        </app-group>
+        <app-group [title]="title2" [description]="description1" [icon]="icon2" [open]="open2" [close]="close2">
+                <div class="xOTB-btn-group" role="group" aria-label="Button group with nested dropdown">
+                        <button type="button" class="xOTB-btn xOTB-btn-secondary">1</button>
+                        <button type="button" class="xOTB-btn xOTB-btn-secondary">2</button>
+                        
+                        <div class="xOTB-btn-group" role="group">
+                            <button id="btnGroupDrop1" type="button" class="xOTB-btn xOTB-btn-secondary xOTB-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                            </button>
+                            <div class="xOTB-dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="xOTB-dropdown-item" href="#">Dropdown link</a>
+                            <a class="xOTB-dropdown-item" href="#">Dropdown link</a>
+                            </div>
+                        </div>
+                        </div>                 
+        </app-group>
+    </app-accordion>
+    <br/>
+    <label> In the second type of accordion group, first accordion is opened by default.
+        All the accordions are toggled when one clicks other accordion.
+    </label>
+    <br/>
+    <app-accordion [openFirst]="openFirst2" [toggle]="toggle2">
+        <app-group [title]="title3" [description]="description2" [icon]="icon3" [open]="open3" [close]="close3">
+                <form class="xOTB-form-horizontal">
+                        <div class="xOTB-form-group">
+                          <label class="xOTB-control-label xOTB-col-sm-2" for="email">Email:</label>
+                          <div class="xOTB-col-sm-10">
+                            <p class="xOTB-form-control-static">someone@example.com</p>
+                          </div>
+                        </div>
+                      </form>  
+        </app-group>
+        <app-group [title]="title4" [description]="description2" [icon]="icon4" [open]="open4" [close]="close4">
+           <form>
+  <div class="xOTB-form-group">
+    <label for="inputsm">Small input</label>
+    <input class="xOTB-form-control xOTB-input-sm" id="inputsm" type="text">
+  </div>
+   <div class="xOTB-form-group">
+    <label for="inputdefault">Default input</label>
+    <input class="xOTB-form-control" id="inputdefault" type="text">
+  </div>
+  <div class="xOTB-form-group">
+    <label for="inputlg">Large input</label>
+    <input class="xOTB-form-control input-lg" id="inputlg" type="text">
+  </div>
+</form>      
+        </app-group>
+    </app-accordion>     
+</div> -->
+
+<div fxLayout="column" fxLayoutGap="20px">
+  <accordion-group [title]="'first accordion'">
+    <h4>content</h4>
+  </accordion-group>
+  <accordion-group [title]="'second accordion'">
+    <h4>content</h4>
+  </accordion-group>
+  <accordion-group [title]="'third accordion'">
+    <h4>content</h4>
+  </accordion-group>
+  <accordion-group [title]="'four accordion'">
+    <h4>content</h4>
+  </accordion-group>
+</div>

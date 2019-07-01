@@ -1,0 +1,45 @@
+You can add global styles to this file, and also import other style files
+
+.xOTB-modal-body {
+  max-height:50vh !important;
+  overflow: auto !important;
+  padding:2%;
+}
+
+.xOTB-modal-header {
+  max-height: 10vh !important;
+  background-color: #5cb85c;
+  color: white;
+  padding:2%;
+}
+
+.xOTB-modal-footer {
+  height: 100% !important;
+  max-height:10vh !important; 
+  padding: 2px 16px;
+background-color: #5cb85c;
+color: white;
+}
+/* The Close Button */
+.xOTB-close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.xOTB-close:hover,
+.xOTB-close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.xOTB-instruction {
+    margin:10px;
+    top:10px;
+  }
+
+  .xOTB-btn {
+    white-space: normal !important
+  }
