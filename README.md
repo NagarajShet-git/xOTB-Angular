@@ -1,26 +1,46 @@
-# xOTB-Angular
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
+xOTB-Angular application is published as "edge-xotb-ng" library.
 
-## Development server
+##Components available under "edge-xotb-ng" are:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+MultiSelect :
+--------------
+Dropdown which helps to display second drop down based on the option selected in                    first drop down. Example: This dropdown can be used in cases like selecting category                and sub-category 
 
-## Code scaffolding
+AccordionGroup:
+---------------
+Display accordion. This is based on material design.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ModalWindow:
+--------------
+Helps display pop-up window, till three levels
 
-## Build
+Pagination:
+------------
+A generic pagination component, which can be appended with any other components like tables, grid, or simple text input.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Speedometer:
+-------------
+Renders speedometer based on the value provided, user can set the maximum value. 
 
-## Running unit tests
+DynamicFormCreation:
+--------------------
+Helps increating form elements at multiple levels
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+DynamicFormCreationFromJSON:
+----------------------------
+Creates a form, based on json data. Supports different elements like text input, radio button, buttons, etc.
 
-## Running end-to-end tests
+ImageSlider:
+--------------
+Image carousal which picks the images/image url from json data.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+IndeterminateTreeStructure:
+--------------------------
+Helps in displaying the data in tree structure. It has option to customise the tree icon and display check box.
 
-## Further help
+ContextMenu:
+-------------
+Generates and displays a context menu based on the options provided in json file.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+###Documentation
+Documentation and demo for the above components are available "https://edge-xotb.herokuapp.com/"
