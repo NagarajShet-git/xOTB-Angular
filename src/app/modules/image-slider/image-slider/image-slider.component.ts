@@ -18,7 +18,7 @@ export class ImageSliderComponent implements OnInit, AfterViewChecked {
   @Input() arrowBgColor: string = "white";
   @Input() texColor: string = "#f2f2f2";
   @Input() bottomButtonColor: string = "#bbb";
-  @Input() bottomButtonSelectedColor: string = "#717171";
+  @Input() bottomButtonSelectedColor: string = "#4e7990";
 
   @ViewChildren('spanDot') spanDot :QueryList<any>;
 
