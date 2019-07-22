@@ -20,16 +20,16 @@ export class MenuComponent implements OnInit {
 
   data = [
     {
-      name: 'option1', disabled: true
+      name: 'Subscribe', disabled: true
     },
     {
-      name: 'option2'
+      name: 'Edit'
     },
     {
-      name: 'option3'
+      name: 'Delete'
     },
     {
-      name: 'option4'
+      name: 'Properties'
     }
   ];
 
