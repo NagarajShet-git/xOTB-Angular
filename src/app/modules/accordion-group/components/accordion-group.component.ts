@@ -5,8 +5,7 @@ import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
   templateUrl: 'accordion-group.component.html',
   styleUrls: ['accordion.component.css']
 })
-export class AccordionGroupComponent implements OnInit{
-
+export class AccordionGroupComponent implements OnInit {
   /**
    * If the panel is opened or closed
    */
@@ -15,9 +14,9 @@ export class AccordionGroupComponent implements OnInit{
   /**
    * Text to display in the group title bar
    */
-  @Input() title: string='accordion';
+  @Input() title: string;
 
-  @Input() description; string;
+  @Input() description: string;
 
   @Input() icon: string;
 

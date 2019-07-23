@@ -1,26 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AccordionGroupComponent } from './components/accordion/accordion-group.component';
-import { AccordionComponent } from './components/accordion/accordion.component';
-import { AccordionGComponent } from './accordion-g.component';
-import { DemoMaterialModule } from '../../demo.material.module';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AccordionGroupComponent } from './components/accordion-group.component';
+import { AccordionComponent } from './components/accordion.component';
 
 @NgModule({
-  declarations: [
-    AccordionGComponent,
-    AccordionGroupComponent,
-    AccordionComponent
-  ],
-  imports: [
-    CommonModule,
-    DemoMaterialModule,
-    FlexLayoutModule
-  ],
-  exports:[
-    AccordionGComponent,
-    AccordionGroupComponent,
-    AccordionComponent
-  ]
+  declarations: [AccordionGroupComponent, AccordionComponent],
+  imports: [CommonModule, FlexLayoutModule],
+  exports: [AccordionGroupComponent, AccordionComponent]
 })
-export class AccordionGroup { }
+export class AccordionGroup {}

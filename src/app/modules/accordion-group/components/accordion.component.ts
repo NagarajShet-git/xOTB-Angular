@@ -1,4 +1,13 @@
-import { Component, ContentChildren, QueryList, AfterContentInit, Input, OnInit } from '@angular/core';
+import {
+  Component,
+  ContentChildren,
+  QueryList,
+  AfterContentInit,
+  Input,
+  OnInit,
+  Output,
+  EventEmitter
+} from '@angular/core';
 import { AccordionGroupComponent } from './accordion-group.component';
 
 @Component({
@@ -6,8 +15,7 @@ import { AccordionGroupComponent } from './accordion-group.component';
   templateUrl: 'accordion.component.html',
   styleUrls: ['./accordion.component.css']
 })
-
-export class AccordionComponent  implements OnInit, AfterContentInit {
+export class AccordionComponent implements AfterContentInit {
   @ContentChildren(AccordionGroupComponent)
   groups: QueryList<AccordionGroupComponent>;
 
@@ -19,8 +27,8 @@ export class AccordionComponent  implements OnInit, AfterContentInit {
 
   @Input() toggle: boolean;
 
-  ngOnInit() {
-  }
+  @Output() onToggleChange = new EventEmitter<any>(true);
+
   /**
    * Invoked when all children (groups) are ready
    */
@@ -30,7 +38,7 @@ export class AccordionComponent  implements OnInit, AfterContentInit {
       this.groups.toArray()[0].opened = true;
     }
     // Loop through all Groups
-    this.groups.toArray().forEach((t) => {
+    this.groups.toArray().forEach(t => {
       // when title bar is clicked
       // (toggle is an @output event of Group)
       t.toggle.subscribe(() => {
@@ -47,13 +55,14 @@ export class AccordionComponent  implements OnInit, AfterContentInit {
   openGroup(group) {
     if (this.toggle) {
       // close other groups
-      this.groups.toArray().forEach((t) => {
+      this.groups.toArray().forEach(t => {
         if (t !== group) {
-        t.opened = false;
+          t.opened = false;
         }
       });
     }
     // open current group
     group.opened = !group.opened;
+    this.onToggleChange.emit();
   }
 }
