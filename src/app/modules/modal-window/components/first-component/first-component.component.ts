@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewChild, TemplateRef, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { HTML_CODES} from '../../constants/constants';
 import {IModalOptions} from '../../i-modal-window-options';
+import { ModalAppService } from '../../modal-app.service';
 
 @Component({
   selector: 'app-first-component',
@@ -29,7 +30,7 @@ export class FirstComponentComponent implements OnInit {
   @Input() modalOptions:IModalOptions;
   @Input() buttonGroup:any;
   
-  constructor() { }
+  constructor(public modalService: ModalAppService ) { }
 
   ngOnInit() {
     console.log("first modal",this.modalOptions);

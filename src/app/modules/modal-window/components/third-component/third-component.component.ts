@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewEncapsulation} from '@angular/core';
 import { HTML_CODES} from '../../constants/constants';
 import {IModalOptions} from '../../i-modal-window-options';
+import { ModalAppService } from '../../modal-app.service';
 
 @Component({
   selector: 'app-third-component',
@@ -23,7 +24,7 @@ export class ThirdComponentComponent implements OnInit {
 
   public buttonGroup = 'modal-footer';
 
-  constructor() { }
+  constructor(public modalService: ModalAppService) { }
 
   ngOnInit() {
     this.modalWindowOptions = this.modalOptions.nextModalOptions;

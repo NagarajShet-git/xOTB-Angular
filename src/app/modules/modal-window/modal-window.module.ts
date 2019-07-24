@@ -6,6 +6,7 @@ import { SecondComponentComponent } from './components/second-component/second-c
 import { ThirdComponentComponent } from './components/third-component/third-component.component';
 import { ModalComponent } from './modal-window.component';
 import { DemoMaterialModule } from '../../demo.material.module';
+import { ModalAppService } from './modal-app.service';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { DemoMaterialModule } from '../../demo.material.module';
     FirstComponentComponent,
     SecondComponentComponent,
     ThirdComponentComponent
-  ]
+  ],
+  providers:[ModalAppService]
 })
 export class ModalWindow { }

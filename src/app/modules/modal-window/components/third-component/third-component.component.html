@@ -7,7 +7,9 @@
 </div>
 <div class="xOTB-modal-footer">
   <div [ngClass]="buttonGroup">
-    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" (click)="modal.hide()">Close</button>
-    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-primary" (click)="save()">Save</button>
+    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" 
+    (click)="modal.hide();modalService.setModalButtonAction({'modelLevel':3,'label':'Close'})">Close</button>
+    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-primary" 
+    (click)="save();modalService.setModalButtonAction({'modelLevel':3,'label':'Save'})">Save</button>
   </div>
 </div>

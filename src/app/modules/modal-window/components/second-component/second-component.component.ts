@@ -1,6 +1,7 @@
 import { Component, OnInit, Input, ViewChild, ViewEncapsulation} from '@angular/core';
 import { HTML_CODES} from '../../constants/constants';
 import {IModalOptions} from '../../i-modal-window-options';
+import { ModalAppService } from '../../modal-app.service';
 
 @Component({
   selector: 'app-second-component',
@@ -27,7 +28,7 @@ export class SecondComponentComponent implements OnInit {
 
   public close = HTML_CODES.close;
 
-  constructor() { }
+  constructor(public modalService: ModalAppService) { }
 
   ngOnInit() {
     this.modalWindowOptions = this.modalOptions.nextModalOptions;

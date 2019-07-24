@@ -7,9 +7,12 @@
     </div>
   <div class="xOTB-modal-footer">
     <div>
-    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" (click)="modal.hide()">Close</button>
-    <button type="button" *ngIf="isNextModalRequired" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" (click)="modal3.show()">Show next modal</button>
-    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-primary" (click)="save()">Save</button>
+    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" 
+    (click)="modal.hide();modalService.setModalButtonAction({'modelLevel':2,'label':'Close'})">Close</button>
+    <button type="button" *ngIf="isNextModalRequired" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default" 
+    (click)="modal3.show();modalService.setModalButtonAction({'modelLevel':2,'label':'Show next modal'})">Show next modal</button>
+    <button type="button" class="xOTB-btn  xOTB-btn-autosize xOTB-btn-primary" 
+    (click)="save();modalService.setModalButtonAction({'modelLevel':2,'label':'Save'})">Save</button>
     </div>
   </div>
 <app-modal-xOTB  [buttonGroup]="buttonGrp" [current]="'modal3'" [previous]="'modal2'" #modal3>
