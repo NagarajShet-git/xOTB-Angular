@@ -7,6 +7,7 @@ import { ThirdComponentComponent } from './components/third-component/third-comp
 import { ModalComponent } from './modal-window.component';
 import { DemoMaterialModule } from '../../demo.material.module';
 import { ModalAppService } from './modal-app.service';
+import { ComponentInjectService } from './service/ComponentInject.service';
 
 @NgModule({
   declarations: [
@@ -14,18 +15,16 @@ import { ModalAppService } from './modal-app.service';
     ModalComponentxOTB,
     FirstComponentComponent,
     SecondComponentComponent,
-    ThirdComponentComponent],
-  imports: [
-    CommonModule,
-    DemoMaterialModule
+    ThirdComponentComponent
   ],
-  exports:[
+  imports: [CommonModule, DemoMaterialModule],
+  exports: [
     ModalComponent,
     ModalComponentxOTB,
     FirstComponentComponent,
     SecondComponentComponent,
     ThirdComponentComponent
   ],
-  providers:[ModalAppService]
+  providers: [ModalAppService, ComponentInjectService]
 })
-export class ModalWindow { }
+export class ModalWindow {}
