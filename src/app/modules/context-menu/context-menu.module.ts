@@ -1,25 +1,19 @@
-import { NgModule } from '@angular/core';
-import { CommonModule, DatePipe } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
-import { QuickDatePickerModule } from './quick-date-picker/quick-date-picker.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ContextMenuModule } from './context-menu/context-menu.module';
-import { MenuComponent } from './c-menu.component';
+import { NgModule } from '@angular/core';
+
+import { MatMenuModule } from '@angular/material';
+import { ContextMenuComponent } from './context-menu.component';
 
 @NgModule({
   declarations: [
-    MenuComponent
+    ContextMenuComponent
   ],
-  providers: [DatePipe],
-
   imports: [
-    CommonModule,
-    BrowserModule, QuickDatePickerModule,
-    ContextMenuModule,
-    BrowserAnimationsModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatMenuModule
   ],
-  exports:[
-    MenuComponent
-  ]
+  exports: [ContextMenuComponent]
 })
 export class ContextMenu { }

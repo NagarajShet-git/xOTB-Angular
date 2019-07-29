@@ -11,6 +11,7 @@ export class ContextMenuComponent implements OnInit {
 
   @Input() data;
   @Input() klass: any;
+  @Input() styleClass:any;
   @ViewChild(MatMenuTrigger)
   menu: MatMenuTrigger;
   isOpenClick: boolean;
@@ -27,12 +28,17 @@ export class ContextMenuComponent implements OnInit {
     document.addEventListener('contextmenu', function (e) {
       if (self.isInsideBoundary(e)) {
         self.changePosition(e);
+      }else{
+        self.menu.closeMenu();
       }
     });
+    console.log('className ',this.styleClass);
   }
 
   getClass(): string {
-    return 'context-menu-overlap-class ' + this.klass;
+    const classes = 'context-menu-overlap-class ' + this.klass;
+    console.log('getClass ',classes);
+    return classes;
   }
 
   changePosition(e) {
