@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ModalWindow } from './modules/modal-window/modal-window.module';
 import { ImageSlider } from './modules/image-slider/image-slider.module';
 import { AccordionGroup } from './modules/accordion-group/accordion-group.module';
 import { Speedometer } from './modules/speedometer/speedometer.module';
@@ -15,6 +16,7 @@ import { AppComponent, TempComp } from './app.component';
   declarations: [AppComponent, TempComp],
   imports: [
     BrowserModule,
+    ModalWindow,
     ImageSlider,
     AccordionGroup,
     Speedometer,
