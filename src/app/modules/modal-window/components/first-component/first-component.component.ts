@@ -1,18 +1,26 @@
-import { Component, OnInit, Input, ViewChild, TemplateRef, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
-import { HTML_CODES} from '../../constants/constants';
-import {IModalOptions} from '../../i-modal-window-options';
+import {
+  Component,
+  OnInit,
+  Input,
+  ViewChild,
+  ViewEncapsulation,
+  Inject,
+  ViewContainerRef
+} from '@angular/core';
+import { HTML_CODES } from '../../constants/constants';
+import { IModalOptions } from '../../i-modal-window-options';
 import { ModalAppService } from '../../modal-app.service';
+import { ComponentInjectService } from '../../service/ComponentInject.service';
 
 @Component({
   selector: 'app-first-component',
   templateUrl: './first-component.component.html',
   styleUrls: ['./first-component.component.css'],
-  encapsulation:ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 export class FirstComponentComponent implements OnInit {
-
   @Input() modal;
-  
+
   @Input() current;
 
   @Input() previous;
@@ -22,24 +30,45 @@ export class FirstComponentComponent implements OnInit {
   public buttonGrp = 'modal-footer';
 
   public close = HTML_CODES.close;
-  title:String="Title";
-  content:Object="Content";
-  isNextModalRequired:boolean=false;
-  modalWindowOptions:IModalOptions;
+  title: String = 'Title';
+  content: Object = 'Content';
+  isNextModalRequired: boolean = false;
+  modalWindowOptions: IModalOptions;
 
-  @Input() modalOptions:IModalOptions;
-  @Input() buttonGroup:any;
-  
-  constructor(public modalService: ModalAppService ) { }
+  @Input() modalOptions: IModalOptions;
+  @Input() buttonGroup: any;
+
+  componentInjectService: ComponentInjectService;
+
+  @ViewChild('dynamic', {
+    read: ViewContainerRef
+  })
+  viewContainerRef: ViewContainerRef;
+
+  constructor(
+    @Inject(ComponentInjectService) componentInjectService,
+    public modalService: ModalAppService
+  ) {
+    this.componentInjectService = componentInjectService;
+  }
 
   ngOnInit() {
-    console.log("first modal",this.modalOptions);
+    console.log('first modal', this.modalOptions);
     this.modalWindowOptions = this.modalOptions.nextModalOptions;
-    this.title=this.modalOptions.title;
+    this.title = this.modalOptions.title;
     this.isNextModalRequired = this.modalOptions.isNextModalRequired;
     this.content = this.modalOptions.content;
     this.buttonGrp = this.buttonGroup || this.buttonGrp;
 
+    if (this.modalOptions.customComponent) {
+      this.componentInjectService.setRootViewContainerRef(
+        this.viewContainerRef
+      );
+
+      this.componentInjectService.addDynamicComponent(
+        this.modalOptions.customComponent
+      );
+    }
   }
 
   save() {
