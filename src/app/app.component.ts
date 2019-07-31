@@ -33,6 +33,21 @@ export class AppComponent {
   selectorOptions: ISelectorOptions;
   selectorOptions1: ISelectorOptions;
   modalOptions: IModalOptions;
+  data = [
+    {
+      name: 'Subscribe', disabled: true
+    },
+    {
+      name: 'Edit'
+    },
+    {
+      name: 'Delete'
+    },
+    {
+      name: 'Properties'
+    }
+  ];
+
 
   constructor(private _http: HttpClient) {}
 
@@ -122,7 +137,9 @@ export class AppComponent {
   onSpeedMeter(value) {
     console.log('speed meter value ' + value);
   }
-
+  contextMenuclick(val) {
+    console.log(val);
+  }
   getFormInfo() {
     this._http.get('/assets/formdata.json').subscribe(
       (res: any) => {
