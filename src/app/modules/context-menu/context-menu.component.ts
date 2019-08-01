@@ -21,18 +21,17 @@ export class ContextMenuComponent implements OnInit {
   constructor(private elem: ElementRef) {}
 
   ngOnInit() {
-    const self = this;
-    self.elem.nativeElement.parentElement.addEventListener('click', function (e) {
-      self.menu.closeMenu();
-    });
-    document.addEventListener('contextmenu', function (e) {
-      if (self.isInsideBoundary(e)) {
-        self.changePosition(e);
-      }else{
-        self.menu.closeMenu();
-      }
-    });
+    this.eventHandler = this.eventHandler.bind(this);
+    document.addEventListener('contextmenu', this.eventHandler);
     console.log('className ',this.styleClass);
+  }
+
+  eventHandler(e){
+    if (this.isInsideBoundary(e)) {
+      this.changePosition(e);
+    }else{
+      this.menu.closeMenu();
+    }
   }
 
   getClass(): string {
@@ -46,30 +45,21 @@ export class ContextMenuComponent implements OnInit {
     this.menu.openMenu();
     const elem = (<HTMLElement>document.getElementsByClassName('context-menu-overlap-class')[0]);
     elem.style.position = 'fixed';
-    let y = e.clientY, x = e.clientX;
+    const y = e.clientY + 'px';
+    let x = e.clientX + 'px';
 
     //adjust contextmenu to be visible
-    if((e.pageY+elem.offsetHeight)>(window.pageYOffset+window.innerHeight)){
-      y = (e.clientY - elem.offsetHeight) + 'px';
-    }else{
-      y = e.clientY + 'px';
-    }
     if((e.pageX+elem.offsetWidth)>(window.pageXOffset+window.innerWidth)){
       x = (e.clientX - elem.offsetWidth) + 'px';
-    }else{
-      x = e.clientX + 'px';
     }
-    console.log("offset Top ",y,x);
     elem.style.top = y;
     elem.style.left = x
   }
 
   isInsideBoundary(event) {
-    const parent = this.elem.nativeElement.parentElement;
-    console.log("event.clientY >= parent.offsetTop ",(event.clientY >= parent.offsetTop), event.clientY, parent.offsetTop);
-    console.log("event.clientY < (parent.offsetTop + parent.offsetHeight))",(event.clientY < (parent.offsetTop + parent.offsetHeight)), event.clientY,  (parent.offsetTop + parent.offsetHeight), parent.offsetTop , parent.offsetHeight);
-    const heightInBound = ((event.pageY >= parent.offsetTop) && (event.pageY < (parent.offsetTop + parent.offsetHeight)));
-    const widthInBound = ((event.pageX >= parent.offsetLeft) && (event.pageX <= (parent.offsetLeft + parent.offsetWidth)));
+    const parent = this.elem.nativeElement.parentElement.getBoundingClientRect();
+    const heightInBound = ((event.clientY >= parent.y) && (event.clientY < (parent.y + parent.height)));
+    const widthInBound = ((event.clientX >= parent.x) && (event.clientX <= (parent.x + parent.width)));
     console.log("heightInBound",heightInBound);
     console.log("widthInBound",widthInBound);
     if (heightInBound && widthInBound) {
@@ -85,6 +75,9 @@ export class ContextMenuComponent implements OnInit {
 
   closedMenu(event) {
     this.closed.emit(event);
+  }
+  ngOnDestroy(){
+    document.removeEventListener("contextmenu",this.eventHandler);
   }
 
 }
