@@ -6,23 +6,25 @@ import { Component, Input, Output, EventEmitter, OnInit, OnChanges, SimpleChange
   styleUrls: ['../styles.css','./pagination.component.css']
 })
 export class PaginationComponent implements OnInit, OnChanges {
-  @Input() items: Array<any>;
-  @Output() changePage = new EventEmitter<any>(true);
+  // @Input() items: Array<any>;
+  @Output() onPageChange = new EventEmitter<any>(true);
   @Input() setFontColor :string;
   @Input() initialPage = 1;
-  @Input() pageSize = 10;
-  @Input() maxPages = 5;
+  @Input() pageSize;
+  @Input() maxPages;
+  @Input() pagingData: Array<any>;
+
   pager: any = {};
   ngOnInit() {
-    if (this.items && this.items.length) {
+    if (this.pagingData && this.pagingData.length) {
       this.setPage(this.initialPage);
     }
   }
  paginate(
   totalItems: number,
   currentPage: number = 1,
-  pageSize: number = 10,
-  maxPages: number = 5
+  pageSize: number ,
+  maxPages: number
 ) {
   let totalPages = Math.ceil(totalItems / pageSize);
 
@@ -68,15 +70,15 @@ export class PaginationComponent implements OnInit, OnChanges {
   };
 }
   ngOnChanges(changes: SimpleChanges) {
-    if (changes.items.currentValue !== changes.items.previousValue) {
+    if (changes.pagingData.currentValue !== changes.pagingData.previousValue) {
       this.setPage(this.initialPage);
     }
   }
   public setPage(page: number) {
-    this.pager = this.paginate(this.items.length, page, this.pageSize, this.maxPages);
+    this.pager = this.paginate(this.pagingData.length, page, this.pageSize, this.maxPages);
 
-    var pagingItems = this.items.slice(this.pager.startIndex, this.pager.endIndex + 1);
+    var pagingItems = this.pagingData.slice(this.pager.startIndex, this.pager.endIndex + 1);
 
-    this.changePage.emit(pagingItems);
+    this.onPageChange.emit(pagingItems);
   }
 }

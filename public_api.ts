@@ -10,3 +10,4 @@ export * from './src/app/modules/indeterminate-tree-structure/indeterminate-tree
 export * from './src/app/modules/multi-select-value-exclusion/multi-select-value-exclusion.module';
 export {IModalOptions} from './src/app/modules/modal-window/i-modal-window-options';
 export {IDropDownOptions,ISelectorOptions} from './src/app/modules/multi-select-value-exclusion/i-drop-down-options';
+export {TreeNode} from './src/app/modules/indeterminate-tree-structure/tree-node.component';

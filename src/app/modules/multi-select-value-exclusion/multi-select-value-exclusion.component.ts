@@ -3,11 +3,11 @@ import { FormBuilder, FormGroup, FormArray, AbstractControl } from '@angular/for
 import { IDropDownOptions, ISelectorOptions } from './i-drop-down-options';
 
 @Component({
-  selector: 'app-multi-select-value',
+  selector: 'app-multi-select',
   templateUrl: './multi-select-value-exclusion.component.html',
   styleUrls: ['./multi-select-value-exclusion.component.css']
 })
-export class MultiSelectValueExclusionComponent implements OnInit {
+export class MultiSelectValueExclusion implements OnInit {
   public dynamicControlsForm: FormGroup;
   selectorValues:Array<IDropDownOptions>;
   containerStyle:String;
@@ -42,12 +42,12 @@ export class MultiSelectValueExclusionComponent implements OnInit {
   ngOnInit() {
     console.log(this.selectorOptions);
     this.selectorValues = this.selectorOptions.dropdownValues;
-    this.containerStyle = this.selectorOptions.styles.containerStyle;
-    this.headerStyle = this.selectorOptions.styles.headerStyle;
-    this.mainSelectorStyle = this.selectorOptions.styles.mainSelectorStyle;
-    this.mainOptionStyle = this.selectorOptions.styles.mainOptionStyle;
-    this.subSelectorStyle = this.selectorOptions.styles.subSelectorStyle;
-    this.subOptionStyle = this.selectorOptions.styles.subOptionStyle;
+    this.containerStyle = this.selectorOptions.styles.containerStyle || "containerStyle";
+    this.headerStyle = this.selectorOptions.styles.headerStyle || "headerStyle";
+    this.mainSelectorStyle = this.selectorOptions.styles.mainSelectorStyle || "mainSelectorStyle";
+    this.mainOptionStyle = this.selectorOptions.styles.mainOptionStyle || "mainOptionStyle";
+    this.subSelectorStyle = this.selectorOptions.styles.subSelectorStyle || "subSelectorStyle";
+    this.subOptionStyle = this.selectorOptions.styles.subOptionStyle || "subOptionStyle";
     this.title = this.selectorOptions.title;
     this.extraSelectorsRequired = this.selectorOptions.extraSelectorsRequired;
     console.log(this.selectorValues);

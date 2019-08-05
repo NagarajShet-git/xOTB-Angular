@@ -20,7 +20,7 @@
 
 
 <div class="xOTB-speedometerWrap">
-  <h1>Speedometer</h1>
+  <h1>{{title}}</h1>
   <div class="xOTB-speedometer">
     <div class="xOTB-speedometerReading"
       [style.transform]="'rotate(' + readingSpeed  + 'deg)'"
@@ -35,7 +35,7 @@
     <div class="xOTB-speedometerBase"></div>
   </div>
   <div class="xOTB-meterRead">
-    <div class="xOTB-meterValue">{{ speedScore }}</div>
+    <span> {{labelText}}</span>
     <input type="number" min='0' [max]='max' [(ngModel)]='speedScore'
     class="xOTB-form-control" (keyup)="getSpeed(speedScore);onTextInputChaange(speedScore);"
     (click)="getSpeed(speedScore);onTextInputChaange(speedScore);">

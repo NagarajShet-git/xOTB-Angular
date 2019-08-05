@@ -11,9 +11,12 @@ import {
   Renderer2,
   ViewEncapsulation
 } from '@angular/core';
-import {
-  TreeNode
-} from './../indeterminate-tree-structure.component';
+
+export interface TreeNode {
+    label: string;
+    checked: boolean;
+    children: TreeNode[];
+}
 
 @Component({
   selector: 'app-tree-node',
@@ -26,10 +29,11 @@ export class TreeNodeComponent implements AfterContentChecked, OnInit {
   isVisible:boolean;  
   @Input() getColorCode: string;
   @Input() image1: string;
+  @Input() title: string;
   @Input() image2: string; 
   @Input() node: TreeNode;
   @Input() selectedNode: TreeNode | null;
-  @Output() selectEvents = new EventEmitter();
+  @Output() onNodeSelected = new EventEmitter();
   @ViewChild('checkbox') checkbox: ElementRef;
   constructor(private el: ElementRef, private renderer: Renderer2) {}
 

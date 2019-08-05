@@ -118,17 +118,29 @@ export class AppComponent {
       isNextModalRequired: true,
       content: 'Your Content Here',
       customComponent: TempComp,
+      headerStyle:"",
+      footerStyle:"",
+      bodyStyle:"",
+      btnStyle:"",
       nextModalOptions: {
         title: 'Second Modal Window',
         isNextModalRequired: true,
         content: 'Your Content Here',
         customComponent: null,
+        headerStyle:"",
+        footerStyle:"",
+        bodyStyle:"",
+        btnStyle:"",
         nextModalOptions: {
           customComponent: TempComp,
           title: 'Third Modal Window',
           isNextModalRequired: false,
           content: 'Your Content Here',
-          nextModalOptions: null
+          nextModalOptions: null,
+          headerStyle:"",
+          footerStyle:"",
+          bodyStyle:"",
+          btnStyle:""
         }
       }
     };

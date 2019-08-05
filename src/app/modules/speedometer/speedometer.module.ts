@@ -2,13 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { SpeedoMeterComponent } from './speedo-meter/speedo-meter.component';
-import { SpeedometerMainComponent } from './sppedometer-main.component';
+import { SpeedoMeterComponent } from './speedo-meter.component';
 import { DemoMaterialModule } from '../../demo.material.module';
 
 @NgModule({
   declarations: [
-    SpeedometerMainComponent,
      SpeedoMeterComponent,
     ],
   imports: [
@@ -18,8 +16,7 @@ import { DemoMaterialModule } from '../../demo.material.module';
     DemoMaterialModule,
   ],
   exports:[
-    SpeedometerMainComponent,
-     SpeedoMeterComponent,
+     SpeedoMeterComponent
   ]
 })
 export class Speedometer { }

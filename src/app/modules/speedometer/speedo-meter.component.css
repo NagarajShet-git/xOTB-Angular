@@ -122,3 +122,15 @@ h1 {
   margin-top: 10px;
   display: block;
 }
+.xOTB-meterRead span{
+  font-weight: normal;
+  font-style: normal;
+  margin-right: 0.5em;
+}
+p {
+  font-family: Lato;
+}
+.xOTB-speedometerReading{
+    border: 20px solid rgb(200, 217, 226);
+    border-color: transparent transparent rgb(200, 217, 226) rgb(200, 217, 226);
+}

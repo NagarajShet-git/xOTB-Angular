@@ -4,4 +4,8 @@ export interface IModalOptions {
   content: Object;
   nextModalOptions: IModalOptions;
   customComponent: any;
+  headerStyle:String,
+  footerStyle:String,
+  bodyStyle:String,
+  btnStyle:String
 }

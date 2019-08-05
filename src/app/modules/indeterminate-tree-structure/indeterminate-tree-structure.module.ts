@@ -1,13 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TreeNodeComponent } from './tree-node/tree-node.component';
+import { TreeNodeComponent } from './tree-node.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-import { IndetreeComponent } from './indeterminate-tree-structure.component';
 
 @NgModule({
   declarations: [
-    IndetreeComponent,
     TreeNodeComponent
   ],
   imports: [
@@ -16,7 +14,6 @@ import { IndetreeComponent } from './indeterminate-tree-structure.component';
     FormsModule,
   ],
   exports:[
-    IndetreeComponent,
     TreeNodeComponent
   ]
 })

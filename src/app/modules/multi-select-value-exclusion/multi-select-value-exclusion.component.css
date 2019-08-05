@@ -16,7 +16,34 @@
     min-width: 9.5em;
     height: 25px;
 }
-.xOTB-delete-button{
+.xOTB-add-delete-button{
     width: auto;
     height: 25px;
+    margin: 0.5em;
+}
+.mainSelectorStyle{
+  background-color: transparent
+}
+.mainOptionStyle{
+  background-color: transparent
+}
+.subSelectorStyle{
+  background-color: transparent
+}
+.subOptionStyle{
+  background-color:transparent
+}
+.containerStyle{
+  max-width: fit-content;
+  border:1px black solid;
+  border-radius: 5pt;
+  overflow: hidden;
+  margin: 1em;
+}
+.headerStyle{
+  border-bottom:1px black solid;
+  background: rgb(200, 217, 226);
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
 }

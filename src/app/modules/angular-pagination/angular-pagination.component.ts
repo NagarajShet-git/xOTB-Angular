@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { HttpClient, HttpHeaders  } from '@angular/common/http';
 import {ApiService} from './api.service';
 
@@ -11,21 +11,24 @@ import {ApiService} from './api.service';
 export class PagComponent implements OnInit {
     items: Array<any>;
     results:any;
-    pagingItems: Array<any>;
+    pagingItems:Array<any>;
+    @Input() cardHeader:String;
+    @Input() bodyStyle:String;
+    @Input() pageSize;
+    @Input() maxPages;
+    @Input() pagingData:Array<any>;
+    @Input() title:String;
+    @Output() onPageChange = new EventEmitter<any>(true);
 
-    constructor(public GetService : ApiService, private http: HttpClient) {
-    this.GetService.getConfig().subscribe(
-      result => {this.results = result;   console.log(this.results) },
-       err => console.error(err),
-         () => console.log('completed') );
-
-     }
-onChangePage(pagingItems: Array<any>) {
+    pageChangeEvent(pagingItems: Array<any>) {
         this.pagingItems = pagingItems;
+        this.onPageChange.emit(pagingItems);
     }
 
-     ngOnInit() {
-
-
- }
+    ngOnInit() {
+      this.cardHeader = this.cardHeader || "xOTB-card-header";
+      this.bodyStyle = this.bodyStyle|| "xOTB-page-body";
+      this.pageSize = this.pageSize || 5;
+      this.maxPages = this.maxPages || 20;
+    }
 }

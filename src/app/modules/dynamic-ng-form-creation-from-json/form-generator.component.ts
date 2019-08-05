@@ -3,13 +3,12 @@ import { MatCheckbox } from '@angular/material';
 
 @Component({
   selector: "app-form-generator",
-  templateUrl: "./form-generator-tmp.component.html",
+  templateUrl: "./form-generator.component.html",
   styleUrls: ["./form-generator.component.css"]
 })
 export class FormGeneratorComponent implements OnInit {
   @Input() jsonFormData;
   @Input() formGeneratorName;
-  // @Input() rowCount:number = 3;
 
   public fxPercent: number=100;
 

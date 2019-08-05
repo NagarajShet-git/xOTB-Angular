@@ -23,6 +23,10 @@ export class ThirdComponentComponent implements OnInit {
   content: Object = 'Content';
   isNextModalRequired: boolean = false;
   modalWindowOptions: IModalOptions;
+  headerStyle:String;
+  footerStyle:String;
+  bodyStyle:String;
+  btnStyle:String;
 
   @Input() modalOptions: IModalOptions;
 
@@ -51,6 +55,11 @@ export class ThirdComponentComponent implements OnInit {
     this.title = this.modalOptions.title;
     this.isNextModalRequired = this.modalOptions.isNextModalRequired;
     this.content = this.modalOptions.content;
+    this.headerStyle = this.modalOptions.headerStyle || "xOTB-modal-header";
+    this.footerStyle = this.modalOptions.footerStyle || "xOTB-modal-footer";
+    this.bodyStyle = this.modalOptions.bodyStyle || "xOTB-modal-body";
+    this.btnStyle = this.modalOptions.btnStyle || "xOTB-btn";
+    this.btnStyle += " xOTB-btn-autosize xOTB-btn-default";
 
     if (this.modalOptions.customComponent) {
       this.componentInjectService.setRootViewContainerRef(

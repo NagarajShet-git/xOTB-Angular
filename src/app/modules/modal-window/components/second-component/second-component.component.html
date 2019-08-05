@@ -1,17 +1,17 @@
-<div class="xOTB-modal-header">
+<div [class]="headerStyle">
   {{ title }}
   <span class="xOTB-close" [innerHTML]="close" (click)="modal.hide()"></span>
 </div>
-<div class="xOTB-modal-body">
+<div [class]="bodyStyle">
   <div *ngIf="content">{{ content }}</div>
 
   <ng-template #dynamic></ng-template>
 </div>
-<div class="xOTB-modal-footer">
+<div [class]="footerStyle">
   <div>
     <button
       type="button"
-      class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default"
+      [class]="btnStyle"
       (click)="
         modal.hide();
         modalService.setModalButtonAction({ modelLevel: 2, label: 'Close' })
@@ -22,20 +22,20 @@
     <button
       type="button"
       *ngIf="isNextModalRequired"
-      class="xOTB-btn  xOTB-btn-autosize xOTB-btn-default"
+      [class]="btnStyle"
       (click)="
         modal3.show();
         modalService.setModalButtonAction({
           modelLevel: 2,
-          label: 'Show next modal'
+          label: 'Next'
         })
       "
     >
-      Show next modal
+      Next
     </button>
     <button
       type="button"
-      class="xOTB-btn  xOTB-btn-autosize xOTB-btn-primary"
+      [class]="btnStyle"
       (click)="
         save();
         modalService.setModalButtonAction({ modelLevel: 2, label: 'Save' })

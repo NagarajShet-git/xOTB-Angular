@@ -1,10 +1,10 @@
-<div fxLayout="row" fxFlexAlign="center" fxFlex="100">
-  <div fxLayout="column" style="margin:auto;">
-    <!-- <h3 class="xOTB-jumbotron xOTB-text-center">{{ formGeneratorName }}</h3> -->
+<div fxFlexAlign="center" class="parent-div">
+  <div fxLayout="column" class="form-div">
+    <h3 class="xOTB-jumbotron xOTB-text-center">{{ formGeneratorName }}</h3>
     <form #UserLogin="ngForm">
     <div *ngFor="let data of jsonFormData" [ngSwitch]="data.tag" class="form-select"
     fxLayoutGap="10px">
-      <div *ngSwitchCase="'input'"  >
+      <div *ngSwitchCase="'input'">
         <mat-form-field *ngIf="chechType(data)" appearance="outline">
           <mat-label>{{data?.label}}</mat-label>
           <input matInput [placeholder]="data.placeholder"
@@ -44,7 +44,7 @@
         </mat-select>
       </mat-form-field>
       <div *ngSwitchCase="'button'">
-        <div fxLayout="row">
+        <div fxLayout="row" class="button-div">
           <ng-container *ngFor="let btn of data.buttons">
             <button mat-button (click)="onButtonClick(btn)">{{ btn.name }}</button>
           </ng-container>

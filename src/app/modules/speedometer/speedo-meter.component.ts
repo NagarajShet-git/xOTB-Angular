@@ -15,6 +15,9 @@ export class SpeedoMeterComponent implements OnInit {
   styleClass = ".class1{}";
   pseudoStyle = ".xOTB-speedometerCentreCircle:after{background: red;}";
 
+  @Input() title:String;
+  @Input() labelText:String;
+
   @Input() set speedoMeterColor(color: string) {
     this.renderer.setStyle(this.xotbSpeedometer.nativeElement, 'border-top-color', 'transparent');
     this.renderer.setStyle(this.xotbSpeedometer.nativeElement, 'border-right-colorr', 'transparent');
@@ -63,7 +66,8 @@ export class SpeedoMeterComponent implements OnInit {
   }
 
   ngOnInit(){
-
+    this.title = this.title || "Speedometer";
+    this.labelText = this.labelText || "Enter Value"
 
   }
 }

@@ -172,11 +172,11 @@ it('should collapse node children on click', () => {
 
     it('should emit on click', () => {
       // spy on event emitter
-      spyOn(component.selectEvents, 'emit');
+      spyOn(component.onNodeSelected, 'emit');
       // trigger the click
       input.click();
       fixture.detectChanges();
-      expect(component.selectEvents.emit).toHaveBeenCalledWith(component.node);
+      expect(component.onNodeSelected.emit).toHaveBeenCalledWith(component.node);
    });
 
   });

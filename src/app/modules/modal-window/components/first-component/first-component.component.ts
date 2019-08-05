@@ -34,7 +34,10 @@ export class FirstComponentComponent implements OnInit {
   content: Object = 'Content';
   isNextModalRequired: boolean = false;
   modalWindowOptions: IModalOptions;
-
+  headerStyle:String;
+  footerStyle:String;
+  bodyStyle:String;
+  btnStyle:String;
   @Input() modalOptions: IModalOptions;
   @Input() buttonGroup: any;
 
@@ -59,6 +62,13 @@ export class FirstComponentComponent implements OnInit {
     this.isNextModalRequired = this.modalOptions.isNextModalRequired;
     this.content = this.modalOptions.content;
     this.buttonGrp = this.buttonGroup || this.buttonGrp;
+    this.headerStyle = this.modalOptions.headerStyle || "xOTB-modal-header";
+    this.footerStyle = this.modalOptions.footerStyle || "xOTB-modal-footer";
+    this.bodyStyle = this.modalOptions.bodyStyle || "xOTB-modal-body";
+    this.btnStyle = this.modalOptions.btnStyle || "xOTB-btn";
+    this.btnStyle += " xOTB-btn-autosize xOTB-btn-default";
+
+    console.log("  btngroup ",this.buttonGrp);
 
     if (this.modalOptions.customComponent) {
       this.componentInjectService.setRootViewContainerRef(

@@ -4,9 +4,9 @@ import { FormGroup, FormBuilder, FormArray } from '@angular/forms';
 @Component({
   selector: 'app-dynamic-form',
   templateUrl: './dynamic-form-elem.component.html',
-  styleUrls: ['../styles.css','./dynamic-form-elem.component.css']
+  styleUrls: ['./dynamic-form-elem.component.css']
 })
-export class DynamicFormElemComponent implements OnInit {
+export class DynamicFormComponent implements OnInit {
   @Input() btnColor:string = "#00ceff";
   @Output() formValue = new EventEmitter<object>();
 
@@ -15,7 +15,9 @@ export class DynamicFormElemComponent implements OnInit {
 
   }
   ngOnInit() {
+    console.log("formValue ", this.formValue);
     this.creatFormElem()
+    console.log("##################  ngOnInit ",this.form);
   }
 
   creatFormElem(){
@@ -38,7 +40,10 @@ export class DynamicFormElemComponent implements OnInit {
     return this.fb.group({
       'level2_1': ['Level 2 - Item 1'],
       'level2_2': ['Level 2 - Item 2'],
-      'level2_3': ['Level 2 - Item 3']
+      'level2_3': ['Level 2 - Item 3'],
+      'level2_4': ['Level 2 - Item 4'],
+      'level2_5': ['Level 2 - Item 5'],
+      'level2_6': ['Level 2 - Item 6']
     })
   }
 
@@ -52,6 +57,7 @@ export class DynamicFormElemComponent implements OnInit {
     this.formValue.emit(this.form.value);
     const control = (<FormArray>this.form.controls['level1']).at(i).get('level2') as FormArray;
     control.push(this.initLevel2());
+    console.log("##################  addLEvel2Item ",i, control);
   }
 
 }

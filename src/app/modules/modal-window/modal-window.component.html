@@ -1,6 +1,6 @@
 
-<button type="button"  class="xOTB-instruction" (click)="modal1.show()">
-    Click to open modal window
+<button type="button"  [class]="buttonStyle" (click)="modal1.show()">
+    {{buttonTitle}}
 </button>
 <app-modal-xOTB #modal1 [current]="'modal1'" 
     [previous]="null" [buttonGroup]="buttonGrp" [modalOptions]="modalWindowOptions">

@@ -1,7 +1,7 @@
 <div class="accordionPanel">
   <div class="titleBar" (click)="toggle.emit()">
     <span class="headerIcon"><i id="iconclass" [ngClass]="[icon]"></i></span>
-    <span class="title">{{ title }} - {{ description }}</span>
+    <span class="title">{{ description }}</span>
     <span class="expandCollapseIcon"
       ><i id="expandcollpaseclass" [ngClass]="opened ? [close] : [open]"></i
     ></span>

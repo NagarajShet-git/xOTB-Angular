@@ -17,9 +17,9 @@
           </div>
         </div>
       </div>
-      <button class="xOTB-delete-button" *ngIf="extraSelectorsRequired" [hidden]="!(dynamicControlsForm.controls.newFormControlArray.value.length > 1 && dynamicControlsForm.controls.newFormControlArray.value[i].mainKeyChosen!=='')" (click)="deleteFormControl(i,$event.target)">-</button>
+      <button class="xOTB-add-delete-button" *ngIf="extraSelectorsRequired" [hidden]="!(dynamicControlsForm.controls.newFormControlArray.value.length > 1 && dynamicControlsForm.controls.newFormControlArray.value[i].mainKeyChosen!=='')" (click)="deleteFormControl(i,$event.target)">-</button>
   </div>
-  <span><button type="button" *ngIf='dynamicControlsForm.controls.newFormControlArray.value.length<=3 && extraSelectorsRequired' (click)="addAnotherFormControl($event.target)">+</button></span><br>
+  <span><button class="xOTB-add-delete-button" type="button" *ngIf='dynamicControlsForm.controls.newFormControlArray.value.length<=3 && extraSelectorsRequired' (click)="addAnotherFormControl($event.target)">+</button></span><br>
 </div>
 </form>
 
