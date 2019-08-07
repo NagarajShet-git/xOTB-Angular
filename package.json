@@ -1,6 +1,6 @@
 {
-  "name": "edge-xotb-ng",
-  "version": "0.0.13",
+  "name": "ng-xotb",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

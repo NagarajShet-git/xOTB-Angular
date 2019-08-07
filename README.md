@@ -1,6 +1,6 @@
-xOTB-Angular application is published as "edge-xotb-ng" library.
+xOTB-Angular application is published as "ng-xotb" library.
 
-##Components available under "edge-xotb-ng" are:
+##Components available under "ng-xotb" are:
 
 MultiSelect :
 --------------
