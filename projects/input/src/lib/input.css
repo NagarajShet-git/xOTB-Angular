@@ -1,0 +1,23 @@
+:host >>> .xotb-input {
+  border-color: var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  background-color: var(--input-background-color);
+  border: var(--input-border);
+  width: var(--input-width);
+  transition: var(--input-transition);
+  display: var(--input-display);
+  padding: var(--input-padding);
+  line-height: var(--input-line-height);
+  min-height: var(--input-min-height);
+}
+.xotb__form-element__label {
+  color: var(--input-background-color);
+}
+.xotb-form-element__control {
+  clear: left;
+  position: relative;
+}
+:host {
+  position: relative;
+  min-width: 0;
+}

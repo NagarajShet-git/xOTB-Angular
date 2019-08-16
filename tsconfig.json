@@ -5,18 +5,37 @@
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "module": "es2015",
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
+    "downlevelIteration": true,
     "experimentalDecorators": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ]
+    "target": "es2015",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
+    "paths": {
+      "xotb-theme": ["dist/xotb-theme"],
+      "xotb-theme/*": ["dist/xotb-theme/*"],
+      "speedo-meter": ["dist/speedo-meter"],
+      "speedo-meter/*": ["dist/speedo-meter/*"],
+      "input": ["dist/input"],
+      "input/*": ["dist/input/*"],
+      "forms": ["dist/forms"],
+      "forms/*": ["dist/forms/*"],
+      "utility": ["dist/utility"],
+      "utility/*": ["dist/utility/*"],
+      "tooltips": ["dist/tooltips"],
+      "tooltips/*": ["dist/tooltips/*"],
+      "shared-lib": ["dist/shared-lib"],
+      "shared-lib/*": ["dist/shared-lib/*"],
+      "icons": ["dist/icons"],
+      "icons/*": ["dist/icons/*"],
+      "ng-xotb": ["dist/ng-xotb"],
+      "ng-xotb/*": ["dist/ng-xotb/*"]
+    }
+  },
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
   }
 }

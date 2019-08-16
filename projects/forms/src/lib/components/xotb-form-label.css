@@ -1,0 +1,18 @@
+:host {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  display: inline-block;
+  color: #3e3e3c;
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  margin-bottom: 0.125rem;
+}
+
+.xotb-required {
+  color: var(--label-required-color);
+  margin: 0 0.125rem;
+}
