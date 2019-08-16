@@ -1,7 +1,7 @@
 /*
  * Public API Surface of ng-xotb
  */
-export { XotbFormsModule } from 'forms';
-export { XotbTooltipsModule } from 'tooltips';
-export { XotbIconsModule } from 'icons';
-export { XotbInputModule } from 'input';
+export { XotbFormsModule } from 'ng-xotb/forms';
+export { XotbTooltipsModule } from 'ng-xotb/tooltips';
+export { XotbIconsModule } from 'ng-xotb/icons';
+export { XotbInputModule } from 'ng-xotb/input';

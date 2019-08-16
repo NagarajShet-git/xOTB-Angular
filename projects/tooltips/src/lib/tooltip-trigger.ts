@@ -30,7 +30,7 @@ import {
   Placement,
   uniqueId,
   InputBoolean
-} from 'utility';
+} from 'ng-xotb/utility';
 import { XOTB_TOOLTIP_CONFIG, XotbTooltipConfig } from './config';
 
 @Directive({

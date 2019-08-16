@@ -1,5 +1,5 @@
 {
-  "name": "xotb-theme",
+  "name": "ng-xotb/xotb-theme",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.1.2",

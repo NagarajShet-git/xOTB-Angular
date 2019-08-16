@@ -7,7 +7,7 @@ import {
   ElementRef,
   Renderer2
 } from '@angular/core';
-import { InputBoolean } from 'utility';
+import { InputBoolean } from 'ng-xotb/utility';
 
 @Component({
   selector: 'label[xotbFormLabel]',

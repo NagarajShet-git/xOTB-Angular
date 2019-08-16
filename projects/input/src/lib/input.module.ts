@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { XotbFormsModule } from 'forms';
-import { XotbInternalOutletModule } from 'utility';
-import { XotbTooltipsModule } from 'tooltips';
+import { XotbFormsModule } from 'ng-xotb/forms';
+import { XotbInternalOutletModule } from 'ng-xotb/utility';
+import { XotbTooltipsModule } from 'ng-xotb/tooltips';
 import { XotbInputElement } from './element';
 import { XotbInput } from './input';
 
