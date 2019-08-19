@@ -13,7 +13,7 @@ import {
   OnChange,
   ngClassCombine
 } from 'ng-xotb/utility';
-import { HostService } from 'ng-xotb/shared-lib';
+import { HostService } from 'ng-xotb/common';
 import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({

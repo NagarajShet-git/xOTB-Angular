@@ -26,8 +26,6 @@
       "ng-xotb/utility/*": ["dist/utility/*"],
       "ng-xotb/tooltips": ["dist/tooltips"],
       "ng-xotb/tooltips/*": ["dist/tooltips/*"],
-      "ng-xotb/shared-lib": ["dist/shared-lib"],
-      "ng-xotb/shared-lib/*": ["dist/shared-lib/*"],
       "ng-xotb/icons": ["dist/icons"],
       "ng-xotb/icons/*": ["dist/icons/*"],
       "ng-xotb/select": ["dist/select"],

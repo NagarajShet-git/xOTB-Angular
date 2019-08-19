@@ -7,7 +7,7 @@ import {
   ElementRef
 } from '@angular/core';
 import { normalizeIconName } from './util';
-import { HostService } from 'ng-xotb/shared-lib';
+import { HostService } from 'ng-xotb/common';
 import { isRequired, ngClassCombine } from 'ng-xotb/utility';
 
 @Component({
