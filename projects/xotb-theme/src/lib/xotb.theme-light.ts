@@ -51,5 +51,12 @@ export const theme = {
   'form-vertical-label-margin': 0,
   'form-error-input-bg': input_bg,
   'form-field-host-padding': padding,
-  'form-element__label__color': '#3e3e3c'
+  'form-element__label__color': '#3e3e3c',
+
+  // tooltips
+  'xotb-popover__background-color': '#fff',
+  'xotb-popover__box-shadow': '0 2px 3px 0 rgba(0, 0, 0, 0.16)',
+  'xotb-popover__border-color': '#dddbda',
+  'xotb-popover_tooltip__background': '#16325c',
+  'xotb-popover__body__color': '#fff'
 };
