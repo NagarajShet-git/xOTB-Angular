@@ -1,4 +1,4 @@
-:host >>> .xotb-input {
+:host(.xotb-form-element) >>> .xotb-input {
   border-color: var(--input-border-color);
   border-radius: var(--input-border-radius);
   background-color: var(--input-background-color);
@@ -17,7 +17,28 @@
   clear: left;
   position: relative;
 }
-:host {
+:host(.xotb-form-element) {
   position: relative;
   min-width: 0;
+}
+
+:host(.xotb-has-error) {
+  border-color: #c23934;
+}
+
+:host(.xotb-has-error) >>> .xotb-input {
+  background-color: #fff;
+  border-color: #c23934;
+  box-shadow: #c23934 0 0 0 1px inset;
+  background-clip: padding-box;
+}
+
+.xotb-form-element__help {
+  font-size: 0.75rem;
+  margin-top: 0.125rem;
+  display: block;
+}
+
+:host(.xotb-has-error) >>> .xotb-form-element__help {
+  color: #c23934;
 }

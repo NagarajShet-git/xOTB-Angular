@@ -6,7 +6,7 @@ const border_color = '#dddbda';
 
 const highlight_color = '#f5222d';
 
-const heading_color = '#ccc';
+const heading_color = '#1890ff';
 
 const input_bg = 'red';
 
@@ -50,5 +50,6 @@ export const theme = {
   'form-vertical-label-padding': '0 0 8px',
   'form-vertical-label-margin': 0,
   'form-error-input-bg': input_bg,
-  'form-field-host-padding': padding
+  'form-field-host-padding': padding,
+  'form-element__label__color': '#3e3e3c'
 };
