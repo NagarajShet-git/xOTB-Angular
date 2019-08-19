@@ -6,7 +6,7 @@ import {
   Renderer2
 } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { toBoolean, uniqueId } from 'utility';
+import { toBoolean, uniqueId } from 'ng-xotb/utility';
 
 @Directive({
   selector: 'input[xotb]:not([type:checkbox]):not([type:radio])',

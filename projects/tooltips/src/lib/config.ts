@@ -1,5 +1,5 @@
 import { InjectionToken } from '@angular/core';
-import { Placement } from 'utility';
+import { Placement } from 'ng-xotb/utility';
 
 /** Injection token that can be used to specify default options. */
 export const XOTB_TOOLTIP_CONFIG = new InjectionToken<XotbTooltipConfig>(

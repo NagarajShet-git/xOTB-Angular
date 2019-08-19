@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { XotbTooltipsModule } from 'tooltips';
-import { XotbIconsModule } from 'icons';
+import { XotbTooltipsModule } from 'ng-xotb/tooltips';
+import { XotbIconsModule } from 'ng-xotb/icons';
 
 import { XotbFormLabel } from './components/xotb-form-label';
 import { XotbFormHelp } from './components/xotb-help';
-import { XotbInternalOutletModule } from 'utility';
+import { XotbInternalOutletModule } from 'ng-xotb/utility';
 
 const COMPONENTS = [XotbFormLabel, XotbFormHelp];
 

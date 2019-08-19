@@ -11,9 +11,9 @@ import {
   ChangeDetectionStrategy
 } from '@angular/core';
 import { XotbInputElement } from './element';
-import { isRequired, InputBoolean, toBoolean } from 'utility';
+import { isRequired, InputBoolean, toBoolean } from 'ng-xotb/utility';
 import { Subscription } from 'rxjs';
-import { XotbThemeService } from 'xotb-theme';
+import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({
   selector: 'xotb-input,[xotb-input]',

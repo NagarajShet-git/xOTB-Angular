@@ -12,8 +12,8 @@ import {
   getPlacementStyles,
   OnChange,
   ngClassCombine
-} from 'utility';
-import { HostService } from 'shared-lib';
+} from 'ng-xotb/utility';
+import { HostService } from 'ng-xotb/shared-lib';
 
 @Component({
   // tslint:disable-next-line:component-selector

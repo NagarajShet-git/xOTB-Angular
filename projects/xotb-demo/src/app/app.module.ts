@@ -9,8 +9,11 @@ import { AppComponent } from './app.component';
 /**
  * Library modules
  */
-import { XotbInputModule } from 'projects/input/src/public-api';
-import { XotbTooltipsModule } from 'projects/tooltips/src/public-api';
+// import { XotbInputModule } from 'projects/input/src/public-api';
+// import { XotbTooltipsModule } from 'projects/tooltips/src/public-api';
+
+import { XotbInputModule } from 'ng-xotb/input';
+import { XotbTooltipsModule } from 'ng-xotb/tooltips';
 
 /**
  * Examples Component

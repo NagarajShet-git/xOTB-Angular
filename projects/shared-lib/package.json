@@ -1,5 +1,5 @@
 {
-  "name": "xotb-shared-lib",
+  "name": "ng-xotb/shared-lib",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.1.3",
