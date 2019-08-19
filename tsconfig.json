@@ -29,7 +29,11 @@
       "ng-xotb/shared-lib": ["dist/shared-lib"],
       "ng-xotb/shared-lib/*": ["dist/shared-lib/*"],
       "ng-xotb/icons": ["dist/icons"],
-      "ng-xotb/icons/*": ["dist/icons/*"]
+      "ng-xotb/icons/*": ["dist/icons/*"],
+      "ng-xotb/select": ["dist/select"],
+      "ng-xotb/select/*": ["dist/select/*"],
+      "ng-xotb/common": ["dist/common"],
+      "ng-xotb/common/*": ["dist/common/*"]
     }
   },
   "angularCompilerOptions": {

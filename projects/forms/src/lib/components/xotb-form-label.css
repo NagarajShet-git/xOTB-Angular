@@ -5,7 +5,7 @@
   -ms-hyphens: auto;
   hyphens: auto;
   display: inline-block;
-  color: var(--form-element__label__color);
+  color: var(--xotb-form-element__label__color);
   font-size: 0.75rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
@@ -13,7 +13,7 @@
 }
 
 .xotb-required {
-  color: var(--label-required-color);
+  color: var(--xotb-required__color);
   margin: 0 0.125rem;
 }
 

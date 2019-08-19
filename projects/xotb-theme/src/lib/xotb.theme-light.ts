@@ -1,15 +1,3 @@
-const padding = '8px';
-
-const text_color = 'rgba(0, 0, 0, 0.65)';
-
-const border_color = '#dddbda';
-
-const highlight_color = '#f5222d';
-
-const heading_color = '#1890ff';
-
-const input_bg = 'red';
-
 export const theme = {
   // Colors
   'primary-color': '#1890ff', // primary color for all components
@@ -18,45 +6,31 @@ export const theme = {
   'warning-color': '#faad14', // warning state color
   'error-color': '#f5222d', // error state color
 
-  // Fonts
-  'font-size-base': '14px', // major text font size
-  'heading-color': 'rgba(0, 0, 0, 0.85)', // heading text color
-  'text-color': text_color, // major text color
-  'text-color-secondary': 'rgba(0, 0, 0, .45)', // secondary text color
-  'disabled-color': 'rgba(0, 0, 0, .25)', // disable state color
-  'border-radius-base': '4px', // major border radius
-  'border-color-base': '#d9d9d9', // major border color
-  'box-shadow-base': '0 2px 8px rgba(0, 0, 0, 0.15)', // major shadow for layers
-
   // Input
-  'input-border-color': border_color,
-  'input-border-radius': '.25rm',
-  'input-background-color': '#fff',
-  'input-border': '1px solid',
-  'input-width': '100%',
-  'input-transition': 'border .1s linear,background-color .1s linear',
-  'input-display': 'inline-block',
-  'input-padding': '0 1rem 0 .75rem',
-  'input-line-height': '1.875rem',
-  'input-min-height': 'calc(1.875rem + (1px * 2))',
+  'xotb-input__background-color': '#fff',
+  'xotb-input__border-color': '#dddbda',
 
   // Form
-  // ---
-  'label-required-color': highlight_color,
-  'label-color': heading_color,
-  'form-warning-input-bg': input_bg,
-  'form-item-margin-bottom': '24px',
-  'form-item-trailing-colon': true,
-  'form-vertical-label-padding': '0 0 8px',
-  'form-vertical-label-margin': 0,
-  'form-error-input-bg': input_bg,
-  'form-field-host-padding': padding,
-  'form-element__label__color': '#3e3e3c',
+  'xotb-form-element__label__color': '#3e3e3c',
 
   // tooltips
   'xotb-popover__background-color': '#fff',
   'xotb-popover__box-shadow': '0 2px 3px 0 rgba(0, 0, 0, 0.16)',
   'xotb-popover__border-color': '#dddbda',
   'xotb-popover_tooltip__background': '#16325c',
-  'xotb-popover__body__color': '#fff'
+  'xotb-popover__body__color': '#fff',
+
+  // select
+  'xotb-select_container__border-color': '#061c3f',
+  'xotb-select__background-color': '#fff',
+  'xotb-select__border-color': '#dddbda',
+
+  // form field error
+  'xotb-has-error__color': '#c23934',
+  'xotb-has-error__border-color': '#c23934',
+  'xotb-has-error__background-color': '#fff',
+  'xotb-has-error__box-shadow-color': '#c23934',
+
+  // form field required
+  'xotb-required__color': '#c23934'
 };
