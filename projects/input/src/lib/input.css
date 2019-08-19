@@ -1,23 +1,44 @@
-:host >>> .xotb-input {
-  border-color: var(--input-border-color);
-  border-radius: var(--input-border-radius);
-  background-color: var(--input-background-color);
-  border: var(--input-border);
-  width: var(--input-width);
-  transition: var(--input-transition);
-  display: var(--input-display);
-  padding: var(--input-padding);
-  line-height: var(--input-line-height);
-  min-height: var(--input-min-height);
+:host(.xotb-form-element) >>> .xotb-input {
+  border-color: var(--xotb-input__border-color);
+  border-radius: 0.25rem;
+  background-color: var(--xotb-input__background-color);
+  border: 1px solid;
+  width: 100%;
+  transition: border 0.1s linear, background-color 0.1s linear;
+  display: inline-block;
+  padding: 0 1rem 0 0.75rem;
+  line-height: 1.875rem;
+  min-height: calc(1.875rem + (1px * 2));
 }
 .xotb__form-element__label {
-  color: var(--input-background-color);
+  color: var(--xotb-form-element__label__color);
 }
 .xotb-form-element__control {
   clear: left;
   position: relative;
 }
-:host {
+:host(.xotb-form-element) {
   position: relative;
   min-width: 0;
+}
+
+:host(.xotb-has-error) {
+  border-color: var(--xotb-has-error__color);
+}
+
+:host(.xotb-has-error) >>> .xotb-input {
+  background-color: var(--xotb-has-error__background-color);
+  border-color: var(--xotb-has-error__border-color);
+  box-shadow: var(--xotb-has-error__box-shadow-color) 0 0 0 1px inset;
+  background-clip: padding-box;
+}
+
+.xotb-form-element__help {
+  font-size: 0.75rem;
+  margin-top: 0.125rem;
+  display: block;
+}
+
+:host(.xotb-has-error) >>> .xotb-form-element__help {
+  color: var(--xotb-has-error__color);
 }

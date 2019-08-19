@@ -114,7 +114,7 @@
       "projectType": "library",
       "root": "projects/xotb-theme",
       "sourceRoot": "projects/xotb-theme/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -180,7 +180,7 @@
       "projectType": "library",
       "root": "projects/input",
       "sourceRoot": "projects/input/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -213,7 +213,7 @@
       "projectType": "library",
       "root": "projects/forms",
       "sourceRoot": "projects/forms/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -246,7 +246,7 @@
       "projectType": "library",
       "root": "projects/utility",
       "sourceRoot": "projects/utility/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -279,7 +279,7 @@
       "projectType": "library",
       "root": "projects/tooltips",
       "sourceRoot": "projects/tooltips/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -312,7 +312,7 @@
       "projectType": "library",
       "root": "projects/shared-lib",
       "sourceRoot": "projects/shared-lib/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -345,7 +345,7 @@
       "projectType": "library",
       "root": "projects/icons",
       "sourceRoot": "projects/icons/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -378,7 +378,7 @@
       "projectType": "library",
       "root": "projects/ng-xotb",
       "sourceRoot": "projects/ng-xotb/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -401,6 +401,72 @@
             "tsConfig": [
               "projects/ng-xotb/tsconfig.lib.json",
               "projects/ng-xotb/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "select": {
+      "projectType": "library",
+      "root": "projects/select",
+      "sourceRoot": "projects/select/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/select/tsconfig.lib.json",
+            "project": "projects/select/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/select/src/test.ts",
+            "tsConfig": "projects/select/tsconfig.spec.json",
+            "karmaConfig": "projects/select/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/select/tsconfig.lib.json",
+              "projects/select/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "common": {
+      "projectType": "library",
+      "root": "projects/common",
+      "sourceRoot": "projects/common/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/common/tsconfig.lib.json",
+            "project": "projects/common/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/common/src/test.ts",
+            "tsConfig": "projects/common/tsconfig.spec.json",
+            "karmaConfig": "projects/common/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/common/tsconfig.lib.json",
+              "projects/common/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }

@@ -14,6 +14,7 @@ import {
   ngClassCombine
 } from 'ng-xotb/utility';
 import { HostService } from 'ng-xotb/shared-lib';
+import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -38,8 +39,11 @@ export class XotbTooltip {
     private element: ElementRef,
     private renderer: Renderer2,
     private hostService: HostService,
-    private cd: ChangeDetectorRef
+    private cd: ChangeDetectorRef,
+    private theme: XotbThemeService
   ) {
+    this.theme.toggleLight();
+
     this.renderer.addClass(this.element.nativeElement, 'xotb-popover');
     this.renderer.addClass(this.element.nativeElement, 'xotb-popover_tooltip');
     this.renderer.setAttribute(this.element.nativeElement, 'role', 'tooltip');

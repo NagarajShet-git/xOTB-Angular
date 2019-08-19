@@ -7,4 +7,5 @@ export class DemoInputComponent {
   hasError = false;
   required = true;
   error = 'invalid data';
+  disabled = false;
 }

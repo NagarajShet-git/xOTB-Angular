@@ -11,7 +11,8 @@ import {
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '[class.xotb__form-element__icon]': 'true'
-  }
+  },
+  styleUrls: ['./xotb-help.css']
 })
 export class XotbFormHelp {
   isOpen = false;
