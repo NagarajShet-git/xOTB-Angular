@@ -1,46 +1,27 @@
-xOTB-Angular application is published as "edge-xotb-ng" library.
+# XOTBAngularMonorepo
 
-##Components available under "edge-xotb-ng" are:
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
 
-MultiSelect :
---------------
-Dropdown which helps to display second drop down based on the option selected in                    first drop down. Example: This dropdown can be used in cases like selecting category                and sub-category 
+## Development server
 
-AccordionGroup:
----------------
-Display accordion. This is based on material design.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-ModalWindow:
---------------
-Helps display pop-up window, till three levels
+## Code scaffolding
 
-Pagination:
-------------
-A generic pagination component, which can be appended with any other components like tables, grid, or simple text input.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-Speedometer:
--------------
-Renders speedometer based on the value provided, user can set the maximum value. 
+## Build
 
-DynamicFormCreation:
---------------------
-Helps increating form elements at multiple levels
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-DynamicFormCreationFromJSON:
-----------------------------
-Creates a form, based on json data. Supports different elements like text input, radio button, buttons, etc.
+## Running unit tests
 
-ImageSlider:
---------------
-Image carousal which picks the images/image url from json data.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-IndeterminateTreeStructure:
---------------------------
-Helps in displaying the data in tree structure. It has option to customise the tree icon and display check box.
+## Running end-to-end tests
 
-ContextMenu:
--------------
-Generates and displays a context menu based on the options provided in json file.
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-###Documentation
-Documentation and demo for the above components are available "https://edge-xotb.herokuapp.com/"
+## Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
