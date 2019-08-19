@@ -6,7 +6,7 @@ ng build xotb-theme
 
 ng build utility
 
-ng build shared-lib
+ng build common
 
 ng build tooltips
 
@@ -15,5 +15,7 @@ ng build icons
 ng build forms 
 
 ng build input 
+
+ng build select
 
 ng build ng-xotb
