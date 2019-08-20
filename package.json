@@ -9,12 +9,10 @@
     "ng": "ng",
     "prettier": "prettier --write \"**/*.{js,json,css,scss,less,md,ts,html,component.html}\"",
     "start": "ng serve",
-    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:libs": "sh ./scripts/build-libs.sh",
-    "publish:lib": "sh ./scripts/publish.sh",
+    "build": "node scripts/build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
