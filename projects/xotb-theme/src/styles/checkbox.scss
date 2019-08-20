@@ -1,0 +1,22 @@
+.xotb-checkbox {
+  position: relative;
+  .xotb-form-element__label {
+    display: inline;
+    vertical-align: middle;
+    font-size: 0.8125rem;
+  }
+}
+
+.xotb-checkbox {
+  [type='checkbox'] {
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    pointer-events: auto;
+  }
+}

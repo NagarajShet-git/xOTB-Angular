@@ -1,0 +1,50 @@
+.xotb-form-element__label {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  display: inline-block;
+  color: var(--xotb-form-element__label__color);
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  margin-bottom: 0.125rem;
+}
+
+.xotb-form-element {
+  position: relative;
+  min-width: 0;
+  .xotb-form-element__control {
+    clear: left;
+    position: relative;
+    .xotb-checkbox {
+      display: block;
+    }
+  }
+}
+
+.xotb-form-element__help {
+  font-size: 0.75rem;
+  margin-top: 0.125rem;
+  display: block;
+}
+
+.xotb-required {
+  color: var(--xotb-required__color);
+  margin: 0 0.125rem;
+}
+
+.xotb-has-error {
+  border-color: var(--xotb-has-error__color);
+  .xotb-form-element__help {
+    color: var(--xotb-has-error__color);
+  }
+  .xotb-select,
+  .xotb-input {
+    background-color: var(--xotb-has-error__background-color);
+    border-color: var(--xotb-has-error__border-color);
+    box-shadow: var(--xotb-has-error__box-shadow-color) 0 0 0 1px inset;
+    background-clip: padding-box;
+  }
+}

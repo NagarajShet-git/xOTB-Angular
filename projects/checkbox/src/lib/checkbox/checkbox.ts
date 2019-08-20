@@ -1,45 +1,38 @@
 import {
   Component,
-  OnChanges,
-  AfterContentInit,
-  OnDestroy,
-  ContentChild,
   Input,
+  ChangeDetectionStrategy,
+  ContentChild,
   TemplateRef,
   HostBinding,
+  AfterContentInit,
   ChangeDetectorRef,
-  ChangeDetectionStrategy
+  OnChanges,
+  OnDestroy
 } from '@angular/core';
-import { XotbInputElement } from './element';
-import { isRequired, InputBoolean, toBoolean } from 'ng-xotb/utility';
+import { XotbCheckboxInput } from '../input/input';
+import { toBoolean, isRequired, InputBoolean } from 'ng-xotb/utility';
 import { Subscription } from 'rxjs';
 import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({
-  // tslint:disable-next-line: component-selector
-  selector: 'xotb-input,[xotb-input]',
-  templateUrl: './input.html',
+  selector: 'xotb-checkbox,[xotb-checkbox]',
+  templateUrl: './checkbox.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '[class.xotb-form-element]': 'true'
   }
 })
-export class XotbInput implements OnChanges, AfterContentInit, OnDestroy {
-  @ContentChild(XotbInputElement, { static: true }) input: XotbInputElement;
+export class XotbCheckbox implements OnChanges, AfterContentInit, OnDestroy {
+  @ContentChild(XotbCheckboxInput, { static: true }) input: XotbCheckboxInput;
 
   @isRequired
   @Input()
   label: string | TemplateRef<any>;
 
-  @Input()
-  error: string | TemplateRef<any>;
+  @Input() error: string | TemplateRef<any>;
 
-  @Input()
-  @InputBoolean()
-  stacked: boolean;
-
-  @Input()
-  fieldLevelHelpTooltip: string | TemplateRef<any>;
+  @Input() @InputBoolean() stacked: boolean;
 
   @HostBinding('class.xotb-has-error')
   get hasError(): boolean {
@@ -54,7 +47,7 @@ export class XotbInput implements OnChanges, AfterContentInit, OnDestroy {
     return `error_${this._uid}`;
   }
 
-  private eRequiredSubscription: Subscription;
+  private requiredSubscription: Subscription;
 
   constructor(private cd: ChangeDetectorRef) {}
 
@@ -65,13 +58,11 @@ export class XotbInput implements OnChanges, AfterContentInit, OnDestroy {
   ngAfterContentInit() {
     if (!this.input) {
       throw Error(
-        `
-        [xotb-edge] Couldn't find an <input> with [xotb] attribute inside XotbInput
-        `
+        `[ng-xotb] Couldn't find an <input type="checkbox"> with [xotb] attribute inside XotbCheckbox`
       );
     }
 
-    this.eRequiredSubscription = this.input.eRequiredSubject.subscribe(
+    this.requiredSubscription = this.input.requiredSubject.subscribe(
       required => {
         this.required = required;
         this.cd.detectChanges();
@@ -83,9 +74,9 @@ export class XotbInput implements OnChanges, AfterContentInit, OnDestroy {
   }
 
   ngOnDestroy() {
-    if (this.eRequiredSubscription) {
-      this.eRequiredSubscription.unsubscribe();
-      this.eRequiredSubscription = null;
+    if (this.requiredSubscription) {
+      this.requiredSubscription.unsubscribe();
+      this.requiredSubscription = null;
     }
   }
 }

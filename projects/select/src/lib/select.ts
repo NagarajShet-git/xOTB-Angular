@@ -13,12 +13,10 @@ import {
 import { toBoolean, isRequired } from 'ng-xotb/utility';
 import { Subscription } from 'rxjs';
 import { XotbSelectInput } from './select-input';
-import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({
   selector: 'xotb-select,[xotb-select]',
   templateUrl: './select.html',
-  styleUrls: ['./select.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '[class.xotb-form-element]': 'true'
@@ -50,9 +48,7 @@ export class XotbSelect implements OnChanges, AfterContentInit, OnDestroy {
 
   private ɵRequiredSubscription: Subscription;
 
-  constructor(private cd: ChangeDetectorRef, private theme: XotbThemeService) {
-    this.theme.toggleLight();
-  }
+  constructor(private cd: ChangeDetectorRef) {}
 
   ngOnChanges() {
     this.input.describedBy = this.error ? this.errorId : null;

@@ -31,7 +31,9 @@
       "ng-xotb/select": ["dist/select"],
       "ng-xotb/select/*": ["dist/select/*"],
       "ng-xotb/common": ["dist/common"],
-      "ng-xotb/common/*": ["dist/common/*"]
+      "ng-xotb/common/*": ["dist/common/*"],
+      "ng-xotb/checkbox": ["dist/checkbox"],
+      "ng-xotb/checkbox/*": ["dist/checkbox/*"]
     }
   },
   "angularCompilerOptions": {

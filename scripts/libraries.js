@@ -9,6 +9,6 @@ const LIBRARIES = [
   'forms',
   'input',
   'select',
-  'ng-xotb'
+  'checkbox'
 ];
 module.exports = LIBRARIES;

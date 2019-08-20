@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
  */
 import { XotbInputModule } from 'projects/input/src/public-api';
 import { XotbTooltipsModule } from 'projects/tooltips/src/public-api';
-
+import { XotbCheckboxModule } from 'projects/checkbox/src/public-api';
 import { XotbSelectModule } from 'projects/select/src/public-api';
 
 /**
@@ -20,13 +20,15 @@ import { XotbSelectModule } from 'projects/select/src/public-api';
 import { DemoInputComponent } from './examples/input/input.component';
 import { DemoTooltipsBasic } from './examples/tooltips/tooltips.component';
 import { DemoSelectComponent } from './examples/select/select.component';
+import { DemoCheckboxesComponent } from './examples/checkboxes/checkboxes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DemoInputComponent,
     DemoTooltipsBasic,
-    DemoSelectComponent
+    DemoSelectComponent,
+    DemoCheckboxesComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,8 @@ import { DemoSelectComponent } from './examples/select/select.component';
     AppRoutingModule,
     XotbInputModule,
     XotbTooltipsModule,
-    XotbSelectModule
+    XotbSelectModule,
+    XotbCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
