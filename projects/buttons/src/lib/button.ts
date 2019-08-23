@@ -11,21 +11,7 @@ import { HostService } from 'ng-xotb/common';
 
 @Component({
   selector: '[xotbButton]',
-  template: `
-    <xotb-styled-component>
-      <svg
-        class="xotb-button__icon xotb-button__icon_left"
-        *ngIf="hasLeftIcon()"
-        [xotbIconName]="iconName"
-      ></svg>
-      <ng-content></ng-content
-      ><svg
-        class="xotb-button__icon xotb-button__icon_right"
-        *ngIf="hasRightIcon()"
-        [xotbIconName]="iconName"
-      ></svg>
-    </xotb-styled-component>
-  `,
+  templateUrl: './button.html',
   styles: [],
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [HostService]
