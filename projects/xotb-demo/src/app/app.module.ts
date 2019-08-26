@@ -14,6 +14,8 @@ import { XotbTooltipsModule } from 'projects/tooltips/src/public-api';
 import { XotbCheckboxModule } from 'projects/checkbox/src/public-api';
 import { XotbSelectModule } from 'projects/select/src/public-api';
 import { XotbButtonsModule } from 'projects/buttons/src/public-api';
+import { XotbRadioGroupModule } from 'projects/radio-group/src/public-api';
+import { XotbTextareaModule } from 'projects/textarea/src/public-api';
 
 /**
  * Examples Component
@@ -23,6 +25,8 @@ import { DemoTooltipsBasic } from './examples/tooltips/tooltips.component';
 import { DemoSelectComponent } from './examples/select/select.component';
 import { DemoCheckboxesComponent } from './examples/checkboxes/checkboxes.component';
 import { DemoButtonsComponent } from './examples/buttons/buttons.component';
+import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.component';
+import { DemoTextareaComponent } from './examples/textarea/textarea.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ import { DemoButtonsComponent } from './examples/buttons/buttons.component';
     DemoTooltipsBasic,
     DemoSelectComponent,
     DemoCheckboxesComponent,
-    DemoButtonsComponent
+    DemoButtonsComponent,
+    DemoRadioGroupComponent,
+    DemoTextareaComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +47,9 @@ import { DemoButtonsComponent } from './examples/buttons/buttons.component';
     XotbTooltipsModule,
     XotbSelectModule,
     XotbCheckboxModule,
-    XotbButtonsModule
+    XotbButtonsModule,
+    XotbRadioGroupModule,
+    XotbTextareaModule
   ],
   providers: [],
   bootstrap: [AppComponent]
