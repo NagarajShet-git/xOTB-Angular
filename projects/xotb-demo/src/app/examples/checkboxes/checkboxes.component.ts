@@ -6,4 +6,6 @@ import { Component } from '@angular/core';
 export class DemoCheckboxesComponent {
   hasError = false;
   required = true;
+  disabled = false;
+  error = 'error, invalid';
 }
