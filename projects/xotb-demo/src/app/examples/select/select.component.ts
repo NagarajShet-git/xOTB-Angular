@@ -9,5 +9,5 @@ export class DemoSelectComponent {
   hasError = false;
   error = 'The input has an error!';
 
-  disabled = true;
+  disabled = false;
 }

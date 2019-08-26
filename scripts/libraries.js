@@ -8,8 +8,10 @@ const LIBRARIES = [
   'icons',
   'forms',
   'input',
+  'textarea',
   'select',
   'checkbox',
-  'button'
+  'buttons',
+  'radio-group'
 ];
 module.exports = LIBRARIES;

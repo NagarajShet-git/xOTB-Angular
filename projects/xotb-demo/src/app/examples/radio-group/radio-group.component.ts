@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './input.component.html'
+  templateUrl: './radio-group.component.html'
 })
-export class DemoInputComponent {
+export class DemoRadioGroupComponent {
   hasError = false;
   required = true;
-  error = 'invalid data';
+  error = 'error in field';
   disabled = false;
 }
