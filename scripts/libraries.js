@@ -9,6 +9,7 @@ const LIBRARIES = [
   'forms',
   'input',
   'select',
-  'checkbox'
+  'checkbox',
+  'button'
 ];
 module.exports = LIBRARIES;
