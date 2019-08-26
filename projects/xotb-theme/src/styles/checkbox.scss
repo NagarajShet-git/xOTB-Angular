@@ -7,53 +7,21 @@
   }
 }
 
-// prettier-ignore
-.xotb-checkbox input[type=checkbox] {
-  width: 1px;
-  height: 1px;
-  border: 0;
-  clip: rect(0 0 0 0);
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  pointer-events: auto;
-}
-
-.xotb-checkbox_add-button {
-  .xotb-checkbox_faux {
-    width: 2rem;
-    height: 2rem;
-    position: relative;
-    display: inline-block;
-    border: 1px solid #dddbda;
-    border-radius: 0.25rem;
-    background-color: #fff;
-    cursor: pointer;
+.xotb-checkbox {
+  // prettier-ignore
+  [type=checkbox] {
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    pointer-events: auto;
+    
   }
 }
-.xotb-assistive-text {
-  position: absolute !important;
-  margin: -1px !important;
-  border: 0 !important;
-  padding: 0 !important;
-  width: 1px !important;
-  height: 1px !important;
-  overflow: hidden !important;
-  clip: rect(0 0 0 0) !important;
-  text-transform: none !important;
-  white-space: nowrap !important;
-}
-
-// prettier-ignore
-.xotb-form-element
-  .xotb-checkbox
-  [type=checkbox]
-  + .xotb-checkbox__label
-  .xotb-checkbox_faux {
-  margin: 5px;
-}
-
 .xotb-checkbox {
   .xotb-checkbox_faux {
     width: 1rem;
@@ -65,18 +33,82 @@
     border-radius: 0.125rem;
     background: #fff;
     transition: border 0.1s linear, background-color 0.1s linear;
-    :after {
-      display: block;
-      content: '';
-      height: 0.25rem;
-      width: 0.5rem;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-      transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-      border-bottom: 2px solid #0070d2;
-      border-left: 2px solid #0070d2;
-    }
   }
+}
+
+// prettier-ignore
+.xotb-checkbox [type=checkbox]:checked + .xotb-checkbox--faux:after,
+.xotb-checkbox
+  [type=checkbox]:checked
+  + .xotb-checkbox__label
+  .xotb-checkbox--faux:after,
+.xotb-checkbox
+  [type=checkbox]:checked
+  + .xotb-checkbox__label
+  .xotb-checkbox_faux:after,
+.xotb-checkbox [type=checkbox]:checked + .xotb-checkbox_faux:after,
+.xotb-checkbox [type=checkbox]:checked ~ .xotb-checkbox--faux:after,
+.xotb-checkbox [type=checkbox]:checked ~ .xotb-checkbox_faux:after {
+  display: block;
+  content: '';
+  height: 0.25rem;
+  width: 0.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+  transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+  border-bottom: 2px solid #0070d2;
+  border-left: 2px solid #0070d2;
+}
+
+// prettier-ignore
+.xotb-form-element .xotb-checkbox [type=checkbox] + .xotb-checkbox--faux,
+.xotb-form-element
+  .xotb-checkbox
+  [type=checkbox]
+  + .xotb-checkbox__label
+  .xotb-checkbox--faux,
+.xotb-form-element
+  .xotb-checkbox
+  [type=checkbox]
+  + .xotb-checkbox__label
+  .xotb-checkbox_faux,
+.xotb-form-element .xotb-checkbox [type=checkbox] + .xotb-checkbox_faux,
+.xotb-form-element .xotb-checkbox [type=checkbox] ~ .xotb-checkbox--faux,
+.xotb-form-element .xotb-checkbox [type=checkbox] ~ .xotb-checkbox_faux {
+  margin-right: 0.5rem;
+}
+
+// prettier-ignore
+.xotb-checkbox [type=checkbox][disabled] + .xotb-checkbox--faux:after,
+.xotb-checkbox
+  [type=checkbox][disabled]
+  + .xotb-checkbox__label
+  .xotb-checkbox--faux:after,
+.xotb-checkbox
+  [type=checkbox][disabled]
+  + .xotb-checkbox__label
+  .xotb-checkbox_faux:after,
+.xotb-checkbox [type=checkbox][disabled] + .xotb-checkbox_faux:after,
+.xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox--faux:after,
+.xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox_faux:after {
+  border-color: #969492;
+}
+
+// prettier-ignore
+.xotb-checkbox [type=checkbox][disabled] + .xotb-checkbox--faux,
+.xotb-checkbox
+  [type=checkbox][disabled]
+  + .xotb-checkbox__label
+  .xotb-checkbox--faux,
+.xotb-checkbox
+  [type=checkbox][disabled]
+  + .xotb-checkbox__label
+  .xotb-checkbox_faux,
+.xotb-checkbox [type=checkbox][disabled] + .xotb-checkbox_faux,
+.xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox--faux,
+.xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox_faux {
+  background-color: #ecebea;
+  border-color: #c9c7c5;
 }
