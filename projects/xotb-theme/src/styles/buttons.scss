@@ -1,0 +1,93 @@
+.xotb-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  line-height: 1.875rem;
+  text-decoration: none;
+  color: #0070d2;
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.xotb-button_inverse {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dddbda;
+  transition: border 0.15s linear;
+  background-color: transparent;
+}
+.xotb-button_neutral {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dddbda;
+  transition: border 0.15s linear;
+  background-color: #fff;
+}
+
+.xotb-button_brand {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #0070d2;
+  transition: border 0.15s linear;
+  background-color: #0070d2;
+  color: #fff;
+}
+
+.xotb-button_outline-brand {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dddbda;
+  transition: border 0.15s linear;
+  background-color: #fff;
+}
+
+.xotb-button_destructive {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #c23934;
+  transition: border 0.15s linear;
+  background-color: #c23934;
+  color: #fff;
+}
+
+.xotb-button_text-destructive {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #dddbda;
+  transition: border 0.15s linear;
+  background-color: #fff;
+  color: #c23934;
+}
+.xotb-button_success {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid #4bca81;
+  transition: border 0.15s linear;
+  background-color: #4bca81;
+  color: #080707;
+}
+.xotb-button + .xotb-button,
+.xotb-button + .xotb-button-group,
+.xotb-button + .xotb-button-group-list {
+  margin-left: 0.25rem;
+}
