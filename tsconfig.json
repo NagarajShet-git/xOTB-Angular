@@ -33,7 +33,9 @@
       "ng-xotb/common": ["dist/common"],
       "ng-xotb/common/*": ["dist/common/*"],
       "ng-xotb/checkbox": ["dist/checkbox"],
-      "ng-xotb/checkbox/*": ["dist/checkbox/*"]
+      "ng-xotb/checkbox/*": ["dist/checkbox/*"],
+      "ng-xotb/accordion": ["dist/accordion"],
+      "ng-xotb/accordion/*": ["dist/accordion/*"]
     }
   },
   "angularCompilerOptions": {
