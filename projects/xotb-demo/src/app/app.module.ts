@@ -17,6 +17,7 @@ import { XotbAccordionModule } from 'projects/accordion/src/public-api';
 import { XotbButtonsModule } from 'projects/buttons/src/public-api';
 import { XotbRadioGroupModule } from 'projects/radio-group/src/public-api';
 import { XotbTextareaModule } from 'projects/textarea/src/public-api';
+import { XotbFileUploadModule } from 'projects/file-upload/src/public-api';
 
 /**
  * Examples Component
@@ -29,6 +30,7 @@ import { DemoAccordinComponent } from './examples/accordion/accordion.component'
 import { DemoButtonsComponent } from './examples/buttons/buttons.component';
 import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.component';
 import { DemoTextareaComponent } from './examples/textarea/textarea.component';
+import { DemoFileUploadComponent } from './examples/file-upload/file-upload.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { DemoTextareaComponent } from './examples/textarea/textarea.component';
     DemoAccordinComponent,
     DemoButtonsComponent,
     DemoRadioGroupComponent,
-    DemoTextareaComponent
+    DemoTextareaComponent,
+    DemoFileUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +56,8 @@ import { DemoTextareaComponent } from './examples/textarea/textarea.component';
     XotbAccordionModule,
     XotbButtonsModule,
     XotbRadioGroupModule,
-    XotbTextareaModule
+    XotbTextareaModule,
+    XotbFileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]
