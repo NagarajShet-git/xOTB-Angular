@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   templateUrl: './select.component.html'
 })
 export class DemoSelectComponent {
-  required = false;
+  required = true;
 
   hasError = false;
   error = 'The input has an error!';

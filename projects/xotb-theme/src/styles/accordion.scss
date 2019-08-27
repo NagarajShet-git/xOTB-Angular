@@ -1,0 +1,45 @@
+.xotb-accordion {
+  position: relative;
+}
+
+.xotb-accordion__list-item {
+  border-top: 1px solid #dddbda;
+  &:first-child {
+    border-top: 0;
+  }
+}
+
+.xotb-accordion__section {
+  padding: 0.75rem;
+}
+.xotb-accordion__summary {
+  display: flex;
+}
+.xotb-accordion__summary-heading {
+  display: flex;
+  flex-grow: 1;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+.xotb-accordion__summary-action {
+  display: inline-flex;
+  flex-grow: 1;
+  align-items: center;
+  min-width: 0;
+}
+
+.xotb-accordion__content {
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}
+
+.xotb-is-open {
+  > .xotb-accordion__content {
+    overflow: visible;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+  }
+}

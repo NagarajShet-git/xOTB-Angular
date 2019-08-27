@@ -54,3 +54,49 @@ export function ngClassCombine(
 
   return { ...ngClasses, ...customClasses };
 }
+
+export function addOptionToSelection(
+  value: string | number | any,
+  selection: any | any[],
+  multiple: boolean
+) {
+  let next: any;
+  if (multiple) {
+    if (!selection) {
+      selection = [];
+    }
+    if (Array.isArray(selection)) {
+      // Remove if already there or add to selection
+      const index = selection.indexOf(value);
+      next =
+        index > -1
+          ? [...selection.slice(0, index), ...selection.slice(index + 1)]
+          : [...selection, value];
+    } else {
+      next = Object.assign({}, selection, { [value]: !selection[value] });
+    }
+  } else {
+    next = selection === value ? null : value;
+  }
+
+  return next;
+}
+
+export function isOptionSelected(
+  value: string | number | any,
+  selection: any | any[],
+  multiple: boolean
+): boolean {
+  // Multiple
+  if (multiple) {
+    if (!selection) {
+      return false;
+    }
+    return Array.isArray(selection)
+      ? selection.indexOf(value) > -1
+      : !!selection[value];
+  }
+
+  // Single
+  return value === selection;
+}

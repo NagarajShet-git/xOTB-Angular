@@ -9,11 +9,13 @@ import { BehaviorSubject } from 'rxjs';
 import { toBoolean, uniqueId } from 'ng-xotb/utility';
 
 @Directive({
-  selector: 'input[xotb]:not([type:checkbox]):not([type:radio])',
+  // tslint:disable-next-line: directive-selector
+  selector: 'input[xotb]:not([type=checkbox]):not([type=radio])',
   host: {
     '[class.xotb-input]': 'true'
   }
 })
+// tslint:disable-next-line: directive-class-suffix
 export class XotbInputElement {
   eRequiredSubject = new BehaviorSubject<boolean>(false);
 

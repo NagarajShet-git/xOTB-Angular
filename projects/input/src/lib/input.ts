@@ -13,16 +13,15 @@ import {
 import { XotbInputElement } from './element';
 import { isRequired, InputBoolean, toBoolean } from 'ng-xotb/utility';
 import { Subscription } from 'rxjs';
-import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({
+  // tslint:disable-next-line: component-selector
   selector: 'xotb-input,[xotb-input]',
   templateUrl: './input.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '[class.xotb-form-element]': 'true'
-  },
-  styleUrls: ['./input.css']
+  }
 })
 export class XotbInput implements OnChanges, AfterContentInit, OnDestroy {
   @ContentChild(XotbInputElement, { static: true }) input: XotbInputElement;
@@ -56,9 +55,7 @@ export class XotbInput implements OnChanges, AfterContentInit, OnDestroy {
 
   private eRequiredSubscription: Subscription;
 
-  constructor(private cd: ChangeDetectorRef, private theme: XotbThemeService) {
-    this.theme.toggleLight();
-  }
+  constructor(private cd: ChangeDetectorRef) {}
 
   ngOnChanges() {
     this.input.describedBy = this.error ? this.errorId : null;

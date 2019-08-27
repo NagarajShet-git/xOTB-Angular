@@ -6,6 +6,7 @@ import { XotbIconsModule } from 'ng-xotb/icons';
 import { XotbFormLabel } from './components/xotb-form-label';
 import { XotbFormHelp } from './components/xotb-help';
 import { XotbInternalOutletModule } from 'ng-xotb/utility';
+import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 
 const COMPONENTS = [XotbFormLabel, XotbFormHelp];
 
@@ -15,7 +16,8 @@ const COMPONENTS = [XotbFormLabel, XotbFormHelp];
     CommonModule,
     XotbInternalOutletModule,
     XotbTooltipsModule,
-    XotbIconsModule
+    XotbIconsModule,
+    XotbThemeModule
   ],
   exports: [COMPONENTS]
 })

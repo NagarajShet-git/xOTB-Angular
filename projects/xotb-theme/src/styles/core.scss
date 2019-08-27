@@ -1,0 +1,54 @@
+abbr[title] {
+  border: 0;
+  text-decoration: none;
+  cursor: help;
+}
+select {
+  margin: 0;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+dl,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}

@@ -1,8 +1,10 @@
-<button
-  class="xotb-button xotb-button_icon"
-  [xotbTooltip]="content"
-  [(xotbTooltipOpen)]="isOpen"
+<xotb-styled-component>
+  <button
+    class="xotb-button xotb-button_icon"
+    [xotbTooltip]="content"
+    [(xotbTooltipOpen)]="isOpen"
+  >
+    <svg class="xotb-button__icon" xotbIconName="utility:info"></svg
+    ><span class="xotb-assistive-text">Help</span>
+  </button></xotb-styled-component
 >
-  <svg class="xotb-button__icon" xotbIconName="utility:info"></svg
-  ><span class="xotb-assistive-text">Help</span>
-</button>
