@@ -1,27 +1,26 @@
 import {
   Component,
-  OnInit,
   Input,
   Output,
   EventEmitter,
-  ContentChildren,
+  ChangeDetectionStrategy,
   ElementRef,
   Renderer2,
-  QueryList,
-  ChangeDetectionStrategy
+  ContentChildren,
+  QueryList
 } from '@angular/core';
+import { XotbAccordionSection } from './accordion-section';
+
 import {
   InputBoolean,
-  addOptionToSelection,
-  isOptionSelected
+  isOptionSelected,
+  addOptionToSelection
 } from 'ng-xotb/utility';
-import { XotbAccordionSection } from './accordion-section';
 
 @Component({
   selector: 'xotb-accordion,[xotb-accordion]',
-  templateUrl: './accordion.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  styles: []
+  templateUrl: './accordion.html'
 })
 export class XotbAccordion {
   /**

@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
   templateUrl: './accordion.component.html'
 })
 export class DemoAccordinComponent {
-  active: string = 'A';
+  active = 'A';
 }

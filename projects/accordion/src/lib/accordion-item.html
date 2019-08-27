@@ -1,32 +1,30 @@
-<xotb-styled-component>
-  <section class="xotb-accordion__section" [class.xotb-is-open]="isActive">
-    <div class="xotb-accordion__summary">
-      <h3 class="xotb-accordion__summary-heading" (click)="onToggle()">
-        <button
-          class="xotb-button xotb-button_reset xotb-accordion__summary-action"
-          [attr.aria-controls]="uid"
-          [attr.aria-expanded]="isActive"
-        >
-          <svg
-            class="xotb-accordion__summary-action-icon xotb-button__icon xotb-button__icon_left"
-          >
-            (xotbIconName="utility:switch")</svg
-          ><span
-            class="xotb-truncate"
-            [xotbInternalOutlet]="section.label"
-            [xotbInternalOutletContext]="{$implicit: section.labelContext}"
-          ></span>
-        </button>
-      </h3>
-    </div>
-    <div
-      class="xotb-accordion__content"
-      [attr.aria-hidden]="!isActive"
-      [id]="uid"
-    >
-      <ng-container *ngIf="isActive">
-        <ng-template [ngTemplateOutlet]="section.templateRef"></ng-template>
-      </ng-container>
-    </div>
-  </section>
-</xotb-styled-component>
+<section class="xotb-accordion__section" [class.xotb-is-open]="isActive">
+  <div class="xotb-accordion__summary">
+    <h3 class="xotb-accordion__summary-heading" (click)="onToggle()">
+      <button
+        class="xotb-button xotb-button_reset xotb-accordion__summary-action"
+        [attr.aria-controls]="uid"
+        [attr.aria-expanded]="isActive"
+      >
+        <!-- <svg
+          class="xotb-accordion__summary-action-icon xotb-button__icon xotb-button__icon_left"
+          xotbIconName="utility:switch"
+        ></svg> -->
+        <span
+          class="xotb-truncate"
+          [xotbInternalOutlet]="section.label"
+          [xotbInternalOutletContext]="{ $implicit: section.labelContext }"
+        ></span>
+      </button>
+    </h3>
+  </div>
+  <div
+    class="xotb-accordion__content"
+    [attr.aria-hidden]="!isActive"
+    [id]="uid"
+  >
+    <ng-container *ngIf="isActive">
+      <ng-template [ngTemplateOutlet]="section.templateRef"></ng-template>
+    </ng-container>
+  </div>
+</section>

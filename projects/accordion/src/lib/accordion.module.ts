@@ -15,6 +15,6 @@ import { XotbAccordionSection } from './accordion-section';
     XotbInternalOutletModule,
     XotbThemeModule
   ],
-  exports: [XotbAccordion, XotbAccordionItem, XotbAccordionSection]
+  exports: [XotbAccordion, XotbAccordionSection]
 })
 export class XotbAccordionModule {}
