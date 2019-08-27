@@ -85,7 +85,14 @@
       "ng-xotb/radio-group": [
         "dist/radio-group"
       ],
-     }
+      "file-upload": [
+        "dist/file-upload"
+      ],
+      "file-upload/*": [
+        "dist/file-upload/*",
+        
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

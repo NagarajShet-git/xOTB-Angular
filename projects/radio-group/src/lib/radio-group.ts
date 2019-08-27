@@ -4,20 +4,7 @@ import { BehaviorSubject } from 'rxjs';
 
 @Component({
     selector: 'xotb-radio-group,[xotb-radio-group]',
-    template: `
-  <xotb-styled-component>
-  <legend class="xotb-form-element__legend xotb-form-element__label"><abbr class="xotb-required" *ngIf="required" title="required">*</abbr><span [xotbInternalOutlet]="label"></span></legend>
-  <div class="xotb-form-element__control">
-      <div class="xotb-radio_button-group" *ngIf="type === 'button'; else contentTpl">
-          <ng-container *ngTemplateOutlet="contentTpl"></ng-container>
-      </div>
-  </div>
-  <div class="xotb-form-element__help" *ngIf="error" [id]="errorId">{{error}}</div>
-  <ng-template #contentTpl="#contentTpl">
-      <ng-content></ng-content>
-  </ng-template>
-  </xotb-styled-component>
-  `,
+    templateUrl: 'radio-group.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host:{
     '[class.xotb-form-element]': 'true',

@@ -9,11 +9,13 @@ import { AppComponent } from './app.component';
 /**
  * Library modules
  */
-import { XotbInputModule } from 'projects/input/src/public-api';
-import { XotbTooltipsModule } from 'projects/tooltips/src/public-api';
-import { XotbCheckboxModule } from 'projects/checkbox/src/public-api';
-import { XotbSelectModule } from 'projects/select/src/public-api';
-import { XotbRadioGroupModule } from 'projects/radio-group/src/public-api';
+import { XotbInputModule } from '../../../input/src/public-api';
+import { XotbTooltipsModule } from '../../../tooltips/src/public-api';
+import { XotbCheckboxModule } from '../../../checkbox/src/public-api';
+import { XotbSelectModule } from '../../../select/src/public-api';
+import { XotbRadioGroupModule } from '../../../radio-group/src/public-api';
+import { XotbFileUploadModule } from '../../../file-upload/src/public-api';
+
 
 /**
  * Examples Component
@@ -23,6 +25,8 @@ import { DemoTooltipsBasic } from './examples/tooltips/tooltips.component';
 import { DemoSelectComponent } from './examples/select/select.component';
 import { DemoCheckboxesComponent } from './examples/checkboxes/checkboxes.component';
 import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.component';
+import { DemoFileUploadComponent } from  './examples/file-upload/file-upload.component';
+
 
 
 
@@ -33,7 +37,8 @@ import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.comp
     DemoTooltipsBasic,
     DemoSelectComponent,
     DemoCheckboxesComponent,
-    DemoRadioGroupComponent
+    DemoRadioGroupComponent,
+    DemoFileUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +48,9 @@ import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.comp
     XotbTooltipsModule,
     XotbSelectModule,
     XotbCheckboxModule,
-    XotbRadioGroupModule
+    XotbRadioGroupModule,
+    XotbFileUploadModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
