@@ -1,28 +1,26 @@
 import {
   Directive,
   HostBinding,
-  Input,
   ElementRef,
+  Input,
   Renderer2
 } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { toBoolean, uniqueId } from 'ng-xotb/utility';
 
 @Directive({
-  // tslint:disable-next-line: directive-selector
-  selector: 'input[xotb]:not([type=checkbox]):not([type=radio])',
+  selector: 'textarea[xotb]',
   host: {
-    '[class.xotb-input]': 'true'
+    '[class.xotb-textarea]': 'true'
   }
 })
-// tslint:disable-next-line: directive-class-suffix
-export class XotbInputElement {
-  eRequiredSubject = new BehaviorSubject<boolean>(false);
+export class XotbTextareaInput {
+  requiredSubject = new BehaviorSubject<boolean>(false);
 
-  @HostBinding('attr.area-describedby') describedBy: string;
+  @HostBinding('attr.aria-describedby') describedBy: string;
 
   @Input() set required(required: any) {
-    this.eRequiredSubject.next(toBoolean(required));
+    this.requiredSubject.next(toBoolean(required));
   }
 
   constructor(private el: ElementRef, private renderer: Renderer2) {
@@ -30,7 +28,7 @@ export class XotbInputElement {
       this.renderer.setAttribute(
         this.el.nativeElement,
         'id',
-        uniqueId('input')
+        uniqueId('textarea')
       );
     }
   }

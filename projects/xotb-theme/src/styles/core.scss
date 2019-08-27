@@ -6,3 +6,13 @@ abbr[title] {
 select {
   margin: 0;
 }
+
+a,
+button {
+  cursor: pointer;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}

@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
   templateUrl: './input.component.html'
 })
 export class DemoInputComponent {
-  hasError = true;
+  hasError = false;
   required = true;
   error = 'invalid data';
   disabled = false;

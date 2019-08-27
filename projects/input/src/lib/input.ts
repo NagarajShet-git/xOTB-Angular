@@ -13,7 +13,6 @@ import {
 import { XotbInputElement } from './element';
 import { isRequired, InputBoolean, toBoolean } from 'ng-xotb/utility';
 import { Subscription } from 'rxjs';
-import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({
   // tslint:disable-next-line: component-selector

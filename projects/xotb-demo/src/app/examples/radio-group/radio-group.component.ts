@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './checkboxes.component.html'
+  templateUrl: './radio-group.component.html'
 })
-export class DemoCheckboxesComponent {
+export class DemoRadioGroupComponent {
   hasError = false;
   required = true;
+  error = 'error in field';
   disabled = false;
-  error = 'error, invalid';
 }
