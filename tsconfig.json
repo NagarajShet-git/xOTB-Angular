@@ -34,6 +34,8 @@
       "ng-xotb/common/*": ["dist/common/*"],
       "ng-xotb/checkbox": ["dist/checkbox"],
       "ng-xotb/checkbox/*": ["dist/checkbox/*"],
+      "ng-xotb/accordion": ["dist/accordion"],
+      "ng-xotb/accordion/*": ["dist/accordion/*"],
       "ng-xotb/buttons": ["dist/buttons"],
       "ng-xotb/buttons/*": ["dist/buttons/*"],
       "ng-xotb/radio-group/*": ["dist/radio-group/*"],
