@@ -23,7 +23,9 @@
               "projects/xotb-demo/src/favicon.ico",
               "projects/xotb-demo/src/assets"
             ],
-            "styles": ["projects/xotb-demo/src/styles.css"],
+            "styles": [
+              "projects/xotb-demo/src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -81,7 +83,9 @@
               "projects/xotb-demo/src/favicon.ico",
               "projects/xotb-demo/src/assets"
             ],
-            "styles": ["projects/xotb-demo/src/styles.css"],
+            "styles": [
+              "projects/xotb-demo/src/styles.css"
+            ],
             "scripts": []
           }
         },
@@ -93,7 +97,9 @@
               "projects/xotb-demo/tsconfig.spec.json",
               "projects/xotb-demo/e2e/tsconfig.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         },
         "e2e": {
@@ -138,7 +144,9 @@
               "projects/xotb-theme/tsconfig.lib.json",
               "projects/xotb-theme/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -171,7 +179,9 @@
               "projects/speedo-meter/tsconfig.lib.json",
               "projects/speedo-meter/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -204,7 +214,9 @@
               "projects/input/tsconfig.lib.json",
               "projects/input/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -237,7 +249,9 @@
               "projects/forms/tsconfig.lib.json",
               "projects/forms/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -270,7 +284,9 @@
               "projects/utility/tsconfig.lib.json",
               "projects/utility/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -303,7 +319,9 @@
               "projects/tooltips/tsconfig.lib.json",
               "projects/tooltips/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -336,7 +354,9 @@
               "projects/icons/tsconfig.lib.json",
               "projects/icons/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -369,7 +389,9 @@
               "projects/ng-xotb/tsconfig.lib.json",
               "projects/ng-xotb/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -402,7 +424,9 @@
               "projects/select/tsconfig.lib.json",
               "projects/select/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -435,7 +459,9 @@
               "projects/common/tsconfig.lib.json",
               "projects/common/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -468,7 +494,9 @@
               "projects/checkbox/tsconfig.lib.json",
               "projects/checkbox/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -501,7 +529,9 @@
               "projects/buttons/tsconfig.lib.json",
               "projects/buttons/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -534,7 +564,9 @@
               "projects/textarea/tsconfig.lib.json",
               "projects/textarea/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -567,7 +599,9 @@
               "projects/radio-group/tsconfig.lib.json",
               "projects/radio-group/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -600,7 +634,9 @@
               "projects/accordion/tsconfig.lib.json",
               "projects/accordion/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
@@ -633,7 +669,44 @@
               "projects/file-upload/tsconfig.lib.json",
               "projects/file-upload/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**"]
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "slider": {
+      "projectType": "library",
+      "root": "projects/slider",
+      "sourceRoot": "projects/slider/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/slider/tsconfig.lib.json",
+            "project": "projects/slider/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/slider/src/test.ts",
+            "tsConfig": "projects/slider/tsconfig.spec.json",
+            "karmaConfig": "projects/slider/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/slider/tsconfig.lib.json",
+              "projects/slider/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
