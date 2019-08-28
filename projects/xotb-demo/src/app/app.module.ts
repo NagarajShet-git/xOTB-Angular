@@ -18,6 +18,7 @@ import { XotbButtonsModule } from 'projects/buttons/src/public-api';
 import { XotbRadioGroupModule } from 'projects/radio-group/src/public-api';
 import { XotbTextareaModule } from 'projects/textarea/src/public-api';
 import { XotbFileUploadModule } from 'projects/file-upload/src/public-api';
+import { XotbSliderModule } from 'projects/slider/src/public-api';
 
 /**
  * Examples Component
@@ -31,6 +32,8 @@ import { DemoButtonsComponent } from './examples/buttons/buttons.component';
 import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.component';
 import { DemoTextareaComponent } from './examples/textarea/textarea.component';
 import { DemoFileUploadComponent } from './examples/file-upload/file-upload.component';
+import { DemoSliderComponent } from './examples/slider/slider.component';
+
 
 @NgModule({
   declarations: [
@@ -43,7 +46,8 @@ import { DemoFileUploadComponent } from './examples/file-upload/file-upload.comp
     DemoButtonsComponent,
     DemoRadioGroupComponent,
     DemoTextareaComponent,
-    DemoFileUploadComponent
+    DemoFileUploadComponent,
+    DemoSliderComponent
   ],
   imports: [
     BrowserModule,
@@ -57,9 +61,10 @@ import { DemoFileUploadComponent } from './examples/file-upload/file-upload.comp
     XotbButtonsModule,
     XotbRadioGroupModule,
     XotbTextareaModule,
-    XotbFileUploadModule
+    XotbFileUploadModule,
+    XotbSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

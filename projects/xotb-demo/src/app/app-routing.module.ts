@@ -9,6 +9,7 @@ import { DemoButtonsComponent } from './examples/buttons/buttons.component';
 import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.component';
 import { DemoTextareaComponent } from './examples/textarea/textarea.component';
 import { DemoFileUploadComponent } from './examples/file-upload/file-upload.component';
+import { DemoSliderComponent } from './examples/slider/slider.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -19,11 +20,13 @@ const routes: Routes = [
   { path: 'button', component: DemoButtonsComponent },
   { path: 'radiogroup', component: DemoRadioGroupComponent },
   { path: 'textarea', component: DemoTextareaComponent },
-  { path: 'file-upload', component: DemoFileUploadComponent }
+  { path: 'file-upload', component: DemoFileUploadComponent },
+  { path: 'slider', component: DemoSliderComponent }
+
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
