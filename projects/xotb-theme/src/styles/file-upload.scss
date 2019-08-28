@@ -1,0 +1,43 @@
+.xotb-file-selector {
+  display: inline-flex;
+}
+.xotb-file-selector__dropzone {
+  padding: 0.125rem;
+  border: 1px dashed #dddbda;
+  border-radius: 0.25rem;
+}
+
+.xotb-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}
+
+.xotb-file-selector_files {
+  .xotb-file-selector__body {
+    display: flex;
+    align-items: center;
+  }
+  .xotb-file-selector__button {
+    max-height: 1.625rem;
+    line-height: 1.625rem;
+  }
+  .xotb-file-selector__text {
+    margin-left: 0.5rem;
+    margin-right: 0.75rem;
+  }
+}
+.xotb-file-selector__button {
+  display: inline-flex;
+  align-items: center;
+}
+.xotb-medium-show {
+  display: none;
+}

@@ -52,3 +52,17 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+input {
+  line-height: normal;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}

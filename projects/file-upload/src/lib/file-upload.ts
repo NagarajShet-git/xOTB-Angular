@@ -1,30 +1,34 @@
 import {
-  Validator,
+  Component,
+  Input,
+  ChangeDetectionStrategy,
+  ElementRef,
+  Renderer2,
+  TemplateRef,
+  HostBinding,
+  OnChanges,
+  SimpleChanges
+} from '@angular/core';
+import {
+  NG_VALUE_ACCESSOR,
   ControlValueAccessor,
   NG_VALIDATORS,
-  NG_VALUE_ACCESSOR,
+  Validator,
   AbstractControl,
   ValidationErrors
 } from '@angular/forms';
 import {
-  Component,
-  ChangeDetectionStrategy,
-  OnChanges,
-  Input,
-  TemplateRef,
-  HostBinding,
-  ElementRef,
-  Renderer2,
-  SimpleChanges
-} from '@angular/core';
-import { InputBoolean, InputNumber } from 'ng-xotb/utility';
-import { uniqueId } from 'ng-xotb/utility';
+  InputBoolean,
+  InputNumber,
+  trapEvent,
+  uniqueId
+} from 'ng-xotb/utility';
 import { isFileTypeAccepted } from './file-upload.util';
 
 @Component({
   selector: 'xotb-file-upload',
-  templateUrl: './file-upload.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  templateUrl: './file-upload.html',
   providers: [
     {
       provide: NG_VALUE_ACCESSOR,
@@ -36,19 +40,33 @@ import { isFileTypeAccepted } from './file-upload.util';
       useExisting: XotbFileUpload,
       multi: true
     }
-  ],
-  styles: []
+  ]
 })
 export class XotbFileUpload
   implements ControlValueAccessor, Validator, OnChanges {
+  /**
+   * Label that appears above the upload area.
+   */
   @Input() label: string | TemplateRef<any>;
 
+  /**
+   * File types that can be accepted.
+   */
   @Input() accept: string | string[] = null;
 
+  /**
+   * Whether file selection is disabled.
+   */
   @Input() @InputBoolean() disabled = false;
 
+  /**
+   * How many files can be selected simultaneously. `0` means unlimited.
+   */
   @Input() @InputNumber() maxFiles = 1;
 
+  /**
+   * File size limit in bytes. `0` means unlimited.
+   */
   @Input() @InputNumber() maxFilesize = 0;
 
   /**
@@ -135,10 +153,10 @@ export class XotbFileUpload
   }
 
   onDropZone(evt: DragEvent) {
-    // trapEvent(evt);
-    // if (this.disabled) {
-    //   return;
-    // }
+    trapEvent(evt);
+    if (this.disabled) {
+      return;
+    }
 
     this.isDragOver = evt.type === 'dragover';
 

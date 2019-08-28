@@ -100,3 +100,11 @@ export function isOptionSelected(
   // Single
   return value === selection;
 }
+
+export function trapEvent(event: Event) {
+  if (!event) {
+    return;
+  }
+  event.preventDefault();
+  event.stopPropagation();
+}
