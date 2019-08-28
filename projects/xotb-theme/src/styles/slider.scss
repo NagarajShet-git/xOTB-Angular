@@ -1,0 +1,15 @@
+.xotb-slider {
+  display: flex;
+  position: relative;
+}
+.xotb-slider__range {
+  width: 100%;
+  background: 0 0;
+  border-radius: 0.125rem;
+}
+.xotb-slider__value {
+  padding: 0 0.5rem;
+}
+.xotb-slider-label__label {
+  display: block;
+}
