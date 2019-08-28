@@ -1,0 +1,46 @@
+<xotb-tabset [(selected)]="selectedTab" [variant]="variant">
+  <ng-template xotb-tab label="Overview"
+    >You have {{ details.length }} details.</ng-template
+  >
+  <xotb-tab
+    *ngFor="let detail of details"
+    (activate)="tabChange(detail, 'active')"
+    (deactivate)="tabChange(detail, 'inactive')"
+  >
+    <ng-template xotb-tab-label
+      >Detail <i>{{ detail }}</i></ng-template
+    >
+    <ng-template xotb-tab-content>
+      <p>
+        Some detail text for <b>{{ detail }}</b
+        >.
+      </p>
+      <button
+        type="button"
+        xotbButton
+        variant="destructive"
+        (click)="removeDetail(detail)"
+      >
+        Remove
+      </button>
+    </ng-template>
+  </xotb-tab>
+  <ng-template #heading>Summary</ng-template>
+  <ng-template id="sum" xotb-tab #summaryTab="xotbTab" [label]="heading"
+    >Next last ID is {{ id }}.</ng-template
+  >
+</xotb-tabset>
+<div class="xotb-m-top_large">
+  <button type="button" xotbButton variant="brand" (click)="addDetail()">
+    Add Detail
+  </button>
+  <button type="button" xotbButton (click)="change()">Toggle scope</button>
+  <button
+    type="button"
+    xotbButton
+    (click)="selectedTab = summaryTab"
+    [disabled]="isDisabled()"
+  >
+    Show Summary
+  </button>
+</div>

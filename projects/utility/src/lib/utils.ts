@@ -108,3 +108,13 @@ export function trapEvent(event: Event) {
   event.preventDefault();
   event.stopPropagation();
 }
+
+// Check if given value is integer. Cast strings as potential integers as well.
+export function isInt(value: any): boolean {
+  if (isNaN(value)) {
+    return false;
+  }
+  const x = parseFloat(value);
+  // tslint:disable-next-line:no-bitwise
+  return (x | 0) === x;
+}

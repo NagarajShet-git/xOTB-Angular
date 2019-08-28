@@ -11,110 +11,43 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2015",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2018",
-      "dom"
-    ],
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2018", "dom"],
     "paths": {
-      "ng-xotb/xotb-theme": [
-        "dist/xotb-theme"
-      ],
-      "ng-xotb/xotb-theme/*": [
-        "dist/xotb-theme/*"
-      ],
-      "ng-xotb/speedo-meter": [
-        "dist/speedo-meter"
-      ],
-      "ng-xotb/speedo-meter/*": [
-        "dist/speedo-meter/*"
-      ],
-      "ng-xotb/input": [
-        "dist/input"
-      ],
-      "ng-xotb/input/*": [
-        "dist/input/*"
-      ],
-      "ng-xotb/forms": [
-        "dist/forms"
-      ],
-      "ng-xotb/forms/*": [
-        "dist/forms/*"
-      ],
-      "ng-xotb/utility": [
-        "dist/utility"
-      ],
-      "ng-xotb/utility/*": [
-        "dist/utility/*"
-      ],
-      "ng-xotb/tooltips": [
-        "dist/tooltips"
-      ],
-      "ng-xotb/tooltips/*": [
-        "dist/tooltips/*"
-      ],
-      "ng-xotb/icons": [
-        "dist/icons"
-      ],
-      "ng-xotb/icons/*": [
-        "dist/icons/*"
-      ],
-      "ng-xotb/select": [
-        "dist/select"
-      ],
-      "ng-xotb/select/*": [
-        "dist/select/*"
-      ],
-      "ng-xotb/common": [
-        "dist/common"
-      ],
-      "ng-xotb/common/*": [
-        "dist/common/*"
-      ],
-      "ng-xotb/checkbox": [
-        "dist/checkbox"
-      ],
-      "ng-xotb/checkbox/*": [
-        "dist/checkbox/*"
-      ],
-      "ng-xotb/accordion": [
-        "dist/accordion"
-      ],
-      "ng-xotb/accordion/*": [
-        "dist/accordion/*"
-      ],
-      "ng-xotb/buttons": [
-        "dist/buttons"
-      ],
-      "ng-xotb/buttons/*": [
-        "dist/buttons/*"
-      ],
-      "ng-xotb/radio-group/*": [
-        "dist/radio-group/*"
-      ],
-      "ng-xotb/radio-group": [
-        "dist/radio-group"
-      ],
-      "ng-xotb/textarea": [
-        "dist/textarea"
-      ],
-      "ng-xotb/textarea/*": [
-        "dist/textarea/*"
-      ],
-      "ng-xotb/file-upload": [
-        "dist/file-upload"
-      ],
-      "ng-xotb/file-upload/*": [
-        "dist/file-upload/*"
-      ],
-      "ng-xotb/slider": [
-        "dist/slider"
-      ],
-      "ng-xotb/slider/*": [
-        "dist/slider/*"
-      ]
+      "ng-xotb/xotb-theme": ["dist/xotb-theme"],
+      "ng-xotb/xotb-theme/*": ["dist/xotb-theme/*"],
+      "ng-xotb/speedo-meter": ["dist/speedo-meter"],
+      "ng-xotb/speedo-meter/*": ["dist/speedo-meter/*"],
+      "ng-xotb/input": ["dist/input"],
+      "ng-xotb/input/*": ["dist/input/*"],
+      "ng-xotb/forms": ["dist/forms"],
+      "ng-xotb/forms/*": ["dist/forms/*"],
+      "ng-xotb/utility": ["dist/utility"],
+      "ng-xotb/utility/*": ["dist/utility/*"],
+      "ng-xotb/tooltips": ["dist/tooltips"],
+      "ng-xotb/tooltips/*": ["dist/tooltips/*"],
+      "ng-xotb/icons": ["dist/icons"],
+      "ng-xotb/icons/*": ["dist/icons/*"],
+      "ng-xotb/select": ["dist/select"],
+      "ng-xotb/select/*": ["dist/select/*"],
+      "ng-xotb/common": ["dist/common"],
+      "ng-xotb/common/*": ["dist/common/*"],
+      "ng-xotb/checkbox": ["dist/checkbox"],
+      "ng-xotb/checkbox/*": ["dist/checkbox/*"],
+      "ng-xotb/accordion": ["dist/accordion"],
+      "ng-xotb/accordion/*": ["dist/accordion/*"],
+      "ng-xotb/buttons": ["dist/buttons"],
+      "ng-xotb/buttons/*": ["dist/buttons/*"],
+      "ng-xotb/radio-group/*": ["dist/radio-group/*"],
+      "ng-xotb/radio-group": ["dist/radio-group"],
+      "ng-xotb/textarea": ["dist/textarea"],
+      "ng-xotb/textarea/*": ["dist/textarea/*"],
+      "ng-xotb/file-upload": ["dist/file-upload"],
+      "ng-xotb/file-upload/*": ["dist/file-upload/*"],
+      "ng-xotb/slider": ["dist/slider"],
+      "ng-xotb/slider/*": ["dist/slider/*"],
+      "ng-xotb/tabs": ["dist/tab"],
+      "ng-xotb/tabs/*": ["dist/tab/*"]
     }
   },
   "angularCompilerOptions": {
