@@ -34,6 +34,8 @@ import { DemoTextareaComponent } from './examples/textarea/textarea.component';
 import { DemoFileUploadComponent } from './examples/file-upload/file-upload.component';
 import { DemoSliderComponent } from './examples/slider/slider.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { XotbTabsModule } from 'projects/tabs/src/public-api';
+import { DemoTabsComponent } from './examples/tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +49,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     DemoRadioGroupComponent,
     DemoTextareaComponent,
     DemoFileUploadComponent,
-    DemoSliderComponent
+    DemoSliderComponent,
+    DemoTabsComponent
   ],
   imports: [
     BrowserModule,
@@ -64,7 +67,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     XotbRadioGroupModule,
     XotbTextareaModule,
     XotbFileUploadModule,
-    XotbSliderModule
+    XotbSliderModule,
+    XotbTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -13,6 +13,7 @@ const LIBRARIES = [
   'checkbox',
   'buttons',
   'radio-group',
-  'file-upload'
+  'file-upload',
+  'tabs'
 ];
 module.exports = LIBRARIES;
