@@ -33,7 +33,7 @@ import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.comp
 import { DemoTextareaComponent } from './examples/textarea/textarea.component';
 import { DemoFileUploadComponent } from './examples/file-upload/file-upload.component';
 import { DemoSliderComponent } from './examples/slider/slider.component';
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,6 +52,8 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
+    FormsModule,
     AppRoutingModule,
     XotbInputModule,
     XotbTooltipsModule,
@@ -67,4 +69,4 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
