@@ -7,7 +7,7 @@
   border-radius: 0.25rem;
   line-height: 1.875rem;
   text-decoration: none;
-  color: #0070d2;
+  color: var(--xotb_button__color);
   -webkit-appearance: none;
   white-space: normal;
   -webkit-user-select: none;
@@ -20,7 +20,7 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #dddbda;
+  border: 1px solid var(--xotb-button_inverse__border-color);
   transition: border 0.15s linear;
   background-color: transparent;
 }
@@ -29,9 +29,9 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #dddbda;
+  border: 1px solid var(--xotb-button_neutral__border-color);
   transition: border 0.15s linear;
-  background-color: #fff;
+  background-color: var(--xotb-button_neutral__background-color);
 }
 
 .xotb-button_brand {
@@ -39,10 +39,10 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #0070d2;
+  border: 1px solid var(--xotb-button_brand__border-color);
   transition: border 0.15s linear;
-  background-color: #0070d2;
-  color: #fff;
+  background-color: var(--xotb-button_brand__background-color);
+  color: var(--xotb-button_brand__color);
 }
 
 .xotb-button_outline-brand {
@@ -50,9 +50,9 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #dddbda;
+  border: 1px solid var(--xotb-button_outline-brand__border-color);
   transition: border 0.15s linear;
-  background-color: #fff;
+  background-color: var(--xotb-button_outline-brand__background-color);
 }
 
 .xotb-button_destructive {
@@ -60,10 +60,10 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #c23934;
+  border: 1px solid var(--xotb-button_destructive__border-color);
   transition: border 0.15s linear;
-  background-color: #c23934;
-  color: #fff;
+  background-color: var(--xotb-button_destructive__background-color);
+  color: var(--xotb-button_destructive__color);
 }
 
 .xotb-button_text-destructive {
@@ -71,20 +71,20 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #dddbda;
+  border: 1px solid var(--xotb-button_text-destructive__border-color);
   transition: border 0.15s linear;
-  background-color: #fff;
-  color: #c23934;
+  background-color: var(--xotb-button_text-destructive__background-color);
+  color: var(--xotb-button_text-destructive__color);
 }
 .xotb-button_success {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid #4bca81;
+  border: 1px solid var(--xotb-button_success__border-color);
   transition: border 0.15s linear;
-  background-color: #4bca81;
-  color: #080707;
+  background-color: var(--xotb-button_success__background-color);
+  color: var(--xotb-button_success__color);
 }
 .xotb-button + .xotb-button,
 .xotb-button + .xotb-button-group,
