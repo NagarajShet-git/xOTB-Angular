@@ -17,8 +17,8 @@
 }
 
 .xotb-select[disabled] {
-  background-color: #ecebea;
-  border-color: #c9c7c5;
+  background-color: var(--xotb_common__disabled__background-color);
+  border-color: var(--xotb_common__disabled__border-color);
   cursor: not-allowed;
   -webkit-user-select: none;
   -moz-user-select: none;

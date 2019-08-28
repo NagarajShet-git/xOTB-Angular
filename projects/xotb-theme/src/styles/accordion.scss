@@ -3,7 +3,8 @@
 }
 
 .xotb-accordion__list-item {
-  border-top: 1px solid #dddbda;
+  border-top: 1px solid;
+  border-top-color: var(--xotb-accordion__list-item__border-top-color);
   &:first-child {
     border-top: 0;
   }

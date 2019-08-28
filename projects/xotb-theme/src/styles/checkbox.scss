@@ -29,9 +29,9 @@
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    border: 1px solid #dddbda;
+    border: 1px solid var(--xotb-common__border-color);
     border-radius: 0.125rem;
-    background: #fff;
+    background: var(--xotb-common__background-color);
     transition: border 0.1s linear, background-color 0.1s linear;
   }
 }
@@ -58,8 +58,8 @@
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
   transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-  border-bottom: 2px solid #0070d2;
-  border-left: 2px solid #0070d2;
+  border-bottom: 2px solid var(--xotb-checkbox__checked__border-bottom-color);
+  border-left: 2px solid var(--xotb-checkbox__checked__border-left-color);
 }
 
 // prettier-ignore
@@ -93,7 +93,7 @@
 .xotb-checkbox [type=checkbox][disabled] + .xotb-checkbox_faux:after,
 .xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox--faux:after,
 .xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox_faux:after {
-  border-color: #969492;
+  border-color: var(--xotb-checkbox__disabled__after__border-color);
 }
 
 // prettier-ignore
@@ -109,6 +109,6 @@
 .xotb-checkbox [type=checkbox][disabled] + .xotb-checkbox_faux,
 .xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox--faux,
 .xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox_faux {
-  background-color: #ecebea;
-  border-color: #c9c7c5;
+  background-color: var(--xotb-checkbox__disabled__border-color);
+  border-color: var(--xotb-checkbox__disabled__border-color);
 }

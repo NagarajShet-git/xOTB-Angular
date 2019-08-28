@@ -1,10 +1,11 @@
 export const theme = {
-  // Colors
-  'primary-color': '#1890ff', // primary color for all components
-  'link-color': '#1890ff', // link color
-  'success-color': '#52c41a', // success state color
-  'warning-color': '#faad14', // warning state color
-  'error-color': '#f5222d', // error state color
+  // xotb common styles
+  'xotb_common__primary-color': '#0070d2',
+  'xotb_common__rejection-color': '#c23934',
+  'xotb_common__border-color': '#dddbda',
+  'xotb_common__background-color': '#ffffff',
+  'xotb_common__disabled__border-color': '#c9c7c5',
+  'xotb_common__disabled__background-color': '#ecebea',
 
   // Input
   'xotb-input__background-color': '#fff',
@@ -32,5 +33,35 @@ export const theme = {
   'xotb-has-error__box-shadow-color': '#c23934',
 
   // form field required
-  'xotb-required__color': '#c23934'
+  'xotb-required__color': '#c23934',
+
+  // accordion
+  'xotb-accordion__list-item__border-top-color': '#dddbda',
+
+  // buttons
+  'xotb-button__color': '#0070d2',
+  'xotb-button_inverse__border-color': '#dddbda',
+  'xotb-button_neutral__border-color': '#dddbda',
+  'xotb-button_neutral__background-color': '#ffffff',
+  'xotb-button_brand__border-color': '#0070d2',
+  'xotb-button_brand__background-color': '#0070d2',
+  'xotb-button_brand__color': '#ffffff',
+  'xotb-button_outline-brand__border-color': '#dddbda',
+  'xotb-button_outline-brand__background-color': '#ffffff',
+  'xotb-button_destructive__border-color': '#c23934',
+  'xotb-button_destructive__background-color': '#c23934',
+  'xotb-button_destructive__color': '#ffffff',
+  'xotb-button_text-destructive__border-color': '#dddbda',
+  'xotb-button_text-destructive__background-color': '#ffffff',
+  'xotb-button_text-destructive__color': '#c23934',
+  'xotb-button_success__border-color': '#4bca81',
+  'xotb-button_success__background-color': '#4bca81',
+  'xotb-button_success__color': '#080707',
+
+  // checkbox
+  'xotb-checkbox__disabled__after__border-color': '#969492',
+  'xotb-checkbox__disabled__background-color': '#ecebea',
+  'xotb-checkbox__disabled__border-color': '#c9c7c5',
+  'xotb-checkbox__checked__border-bottom-color': '#0070d2',
+  'xotb-checkbox__checked__border-left-color': '#0070d2'
 };
