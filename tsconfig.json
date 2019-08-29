@@ -114,6 +114,12 @@
       ],
       "ng-xotb/slider/*": [
         "dist/slider/*"
+      ],
+      "ng-xotb/popovers": [
+        "dist/popovers"
+      ],
+      "ng-xotb/popovers/*": [
+        "dist/popovers/*"
       ]
     }
   },

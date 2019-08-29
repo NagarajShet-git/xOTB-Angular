@@ -19,6 +19,7 @@ import { XotbRadioGroupModule } from 'projects/radio-group/src/public-api';
 import { XotbTextareaModule } from 'projects/textarea/src/public-api';
 import { XotbFileUploadModule } from 'projects/file-upload/src/public-api';
 import { XotbSliderModule } from 'projects/slider/src/public-api';
+import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 
 /**
  * Examples Component
@@ -33,6 +34,8 @@ import { DemoRadioGroupComponent } from './examples/radio-group/radio-group.comp
 import { DemoTextareaComponent } from './examples/textarea/textarea.component';
 import { DemoFileUploadComponent } from './examples/file-upload/file-upload.component';
 import { DemoSliderComponent } from './examples/slider/slider.component';
+import { XotbPopoversModule } from 'projects/popovers/src/public-api';
+
 
 
 @NgModule({
@@ -47,7 +50,8 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
     DemoRadioGroupComponent,
     DemoTextareaComponent,
     DemoFileUploadComponent,
-    DemoSliderComponent
+    DemoSliderComponent,
+    DemoPopoverComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +66,8 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
     XotbRadioGroupModule,
     XotbTextareaModule,
     XotbFileUploadModule,
-    XotbSliderModule
+    XotbSliderModule,
+    XotbPopoversModule
   ],
   providers: [],
   bootstrap: [AppComponent]
