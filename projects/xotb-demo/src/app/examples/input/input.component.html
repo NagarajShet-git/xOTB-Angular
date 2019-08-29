@@ -1,5 +1,9 @@
 <div style="width: 200px;">
-  <xotb-input label="Input Label" [error]="hasError ? error : null">
+  <xotb-input
+    label="Input Label"
+    fieldLevelHelpTooltip="Some helpful information"
+    [error]="hasError ? error : null"
+  >
     <input
       xotb
       type="input"

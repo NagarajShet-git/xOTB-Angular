@@ -6,13 +6,13 @@ import {
 } from '@angular/core';
 
 @Component({
+  // tslint:disable-next-line: component-selector
   selector: 'xotb-form-help',
   templateUrl: './xotb-help.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '[class.xotb__form-element__icon]': 'true'
-  },
-  styleUrls: ['./xotb-help.css']
+  }
 })
 export class XotbFormHelp {
   isOpen = false;
