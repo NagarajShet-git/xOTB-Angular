@@ -13,3 +13,4 @@ export { XotbSelectModule } from 'ng-xotb/select';
 export { XotbTabsModule } from 'ng-xotb/tabs';
 export { XotbRadioGroupModule } from 'ng-xotb/radio-group';
 export { XotbFileUploadModule } from 'ng-xotb/file-upload';
+export { XotbSliderModule } from 'ng-xotb/slider';
