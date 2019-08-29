@@ -732,44 +732,7 @@
               "projects/popovers/tsconfig.lib.json",
               "projects/popovers/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "popovers": {
-      "projectType": "library",
-      "root": "projects/popovers",
-      "sourceRoot": "projects/popovers/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/popovers/tsconfig.lib.json",
-            "project": "projects/popovers/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/popovers/src/test.ts",
-            "tsConfig": "projects/popovers/tsconfig.spec.json",
-            "karmaConfig": "projects/popovers/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/popovers/tsconfig.lib.json",
-              "projects/popovers/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
+            "exclude": ["**/node_modules/**"]
           }
         }
       }
