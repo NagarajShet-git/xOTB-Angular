@@ -11,6 +11,7 @@ import { DemoTextareaComponent } from './examples/textarea/textarea.component';
 import { DemoFileUploadComponent } from './examples/file-upload/file-upload.component';
 import { DemoSliderComponent } from './examples/slider/slider.component';
 import { DemoTabsComponent } from './examples/tabs/tabs.component';
+import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -23,11 +24,12 @@ const routes: Routes = [
   { path: 'textarea', component: DemoTextareaComponent },
   { path: 'file-upload', component: DemoFileUploadComponent },
   { path: 'slider', component: DemoSliderComponent },
-  { path: 'tabs', component: DemoTabsComponent }
+  { path: 'tabs', component: DemoTabsComponent },
+  { path: 'popover', component: DemoPopoverComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
