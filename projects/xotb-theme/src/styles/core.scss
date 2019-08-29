@@ -6,7 +6,12 @@ abbr[title] {
 select {
   margin: 0;
 }
-
+a {
+  background-color: transparent;
+  color: #006dcc;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
 a,
 button {
   cursor: pointer;
