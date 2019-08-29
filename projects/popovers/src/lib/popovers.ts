@@ -1,11 +1,27 @@
-import { Component, OnInit, ChangeDetectionStrategy, TemplateRef, OnDestroy, HostBinding, EventEmitter, Renderer2, ElementRef, ChangeDetectorRef } from '@angular/core';
-import { HostService } from '../../../common/src/lib/host.service';
-import { OnChange, Placement, POSITION_MAP, getPlacementStyles, ngClassCombine } from 'ng-xotb/utility';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  TemplateRef,
+  OnDestroy,
+  HostBinding,
+  EventEmitter,
+  Renderer2,
+  ElementRef,
+  ChangeDetectorRef
+} from '@angular/core';
+import { HostService } from 'ng-xotb/common';
+import {
+  OnChange,
+  Placement,
+  POSITION_MAP,
+  getPlacementStyles,
+  ngClassCombine
+} from 'ng-xotb/utility';
 import { uniqueId } from 'ng-xotb/utility';
 import { FocusTrap, FocusTrapFactory } from '@angular/cdk/a11y';
 import { Variant, Size } from './trigger';
-import { isTemplateRef } from '../../../utility/src/lib/check';
-
+import { isTemplateRef } from 'ng-xotb/utility';
 
 @Component({
   selector: 'section[xotb-popover]',
@@ -13,13 +29,12 @@ import { isTemplateRef } from '../../../utility/src/lib/check';
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [HostService],
   host: {
-    'role': 'dialog',
-    '[class.xotb-popover]': 'true',
+    role: 'dialog',
+    '[class.xotb-popover]': 'true'
   },
   styles: []
 })
 export class XotbPopovers implements OnInit, OnDestroy {
-
   template: string | TemplateRef<void>;
 
   header: string | TemplateRef<void>;
@@ -65,7 +80,8 @@ export class XotbPopovers implements OnInit, OnDestroy {
     public element: ElementRef,
     public renderer: Renderer2,
     private focusTrapFactory: FocusTrapFactory,
-    private cd: ChangeDetectorRef) { }
+    private cd: ChangeDetectorRef
+  ) {}
 
   ngOnInit() {
     this.focusTrap = this.focusTrapFactory.create(this.element.nativeElement);
@@ -86,7 +102,8 @@ export class XotbPopovers implements OnInit, OnDestroy {
       this.nubbin = POSITION_MAP[this.placement].nubbin;
       this.setHostClass();
     } else if (prop === 'variant') {
-      this.inverseCloseButton = ['walkthrough', 'feature', 'error'].indexOf(this.variant) > -1;
+      this.inverseCloseButton =
+        ['walkthrough', 'feature', 'error'].indexOf(this.variant) > -1;
       this.setHostClass();
     }
   }
@@ -100,14 +117,16 @@ export class XotbPopovers implements OnInit, OnDestroy {
   }
 
   private setHostClass() {
-    this.hostService.updateClass(this.element, ngClassCombine(this.popoverClass, {
-      [`xotb-nubbin_${this.nubbin}`]: true,
-      [`xotb-popover_${this.size}`]: !!this.size,
-      [`xotb-popover_walkthrough`]: this.variant === 'feature',
-      [`xotb-popover_${this.variant}`]: !!this.variant,
-    }));
+    this.hostService.updateClass(
+      this.element,
+      ngClassCombine(this.popoverClass, {
+        [`xotb-nubbin_${this.nubbin}`]: true,
+        [`xotb-popover_${this.size}`]: !!this.size,
+        [`xotb-popover_walkthrough`]: this.variant === 'feature',
+        [`xotb-popover_${this.variant}`]: !!this.variant
+      })
+    );
 
     this.hostService.updateStyle(this.element, getPlacementStyles(this.nubbin));
   }
-
 }
