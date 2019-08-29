@@ -1,33 +1,19 @@
-import {
-  Component,
-  Input,
-  ChangeDetectionStrategy,
-  OnInit,
-  OnChanges,
-  ElementRef
-} from '@angular/core';
-import { normalizeIconName } from './util';
-import { HostService } from 'ng-xotb/common';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { isRequired, ngClassCombine } from 'ng-xotb/utility';
 
 @Component({
-  selector: 'xotb-icon, [xotb-icon]',
+  // tslint:disable-next-line: component-selector
+  selector: 'xotb-icon',
   templateUrl: './icon.html',
-  changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [HostService]
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class XotbIcon implements OnInit, OnChanges {
+export class XotbIcon {
   @isRequired
   @Input()
-  set iconName(iconName: string) {
-    this._iconName = normalizeIconName(iconName);
-  }
-  get iconName() {
-    return this._iconName;
-  }
+  iconName: string;
 
   /**
-   * The appearance of a `utility` icon.
+   * The appearance of a icon.
    */
   @Input() variant:
     | 'default'
@@ -50,23 +36,7 @@ export class XotbIcon implements OnInit, OnChanges {
   /**
    * CSS classes that are applied to the SVG.
    */
-  @Input() svgClass:
-    | string
-    | string[]
-    | Set<string>
-    | { [styleClass: string]: any };
-
-  private _iconName: string;
-
-  constructor(private el: ElementRef, private hostService: HostService) {}
-
-  ngOnInit() {
-    this.setHostClass();
-  }
-
-  ngOnChanges() {
-    this.setHostClass();
-  }
+  @Input() svgClass: string | string[] | Set<string> | { [klass: string]: any };
 
   svgClasses() {
     const [category] = this.iconName.split(':');
@@ -86,17 +56,5 @@ export class XotbIcon implements OnInit, OnChanges {
     };
 
     return ngClassCombine(this.svgClass, classes);
-  }
-
-  private setHostClass() {
-    const [category, icon] = this.iconName.split(':');
-    const kebabCaseName = icon.replace(/_/g, '-');
-
-    this.hostService.updateClass(this.el, {
-      [`xotb-icon_container`]: category !== 'utility',
-      [`xotb-icon_container_circle`]: category === 'action',
-      [`xotb-icon-${category}-${kebabCaseName}`]:
-        category !== 'utility' && category !== 'doctype'
-    });
   }
 }

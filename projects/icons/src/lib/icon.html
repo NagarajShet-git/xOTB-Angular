@@ -1,5 +1,10 @@
-<svg class="xotb-icon" [xotbIconName]="iconName" [ngClass]="svgClasses()"></svg>
-<ng-content></ng-content
-><span class="xotb-assistive-text" *ngIf="alternativeText"
-  >{{ alternativeText }}</span
+<xotb-styled-component>
+  <i-feather
+    [name]="iconName"
+    class="xotb-icon"
+    [ngClass]="svgClasses()"
+  ></i-feather>
+  <span class="xotb-assistive-text" *ngIf="alternativeText"
+    >{{ alternativeText }}</span
+  ></xotb-styled-component
 >

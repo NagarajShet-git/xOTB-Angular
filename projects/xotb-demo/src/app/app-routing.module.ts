@@ -12,6 +12,7 @@ import { DemoFileUploadComponent } from './examples/file-upload/file-upload.comp
 import { DemoSliderComponent } from './examples/slider/slider.component';
 import { DemoTabsComponent } from './examples/tabs/tabs.component';
 import { DemoPopoverComponent } from './examples/popovers/popovers.component';
+import { DemoIconsComponent } from './examples/icons/icons.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -25,11 +26,12 @@ const routes: Routes = [
   { path: 'file-upload', component: DemoFileUploadComponent },
   { path: 'slider', component: DemoSliderComponent },
   { path: 'tabs', component: DemoTabsComponent },
-  { path: 'popover', component: DemoPopoverComponent }
+  { path: 'popover', component: DemoPopoverComponent },
+  { path: 'icons', component: DemoIconsComponent }
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
