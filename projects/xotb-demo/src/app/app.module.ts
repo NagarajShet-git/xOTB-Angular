@@ -19,6 +19,7 @@ import { XotbRadioGroupModule } from 'projects/radio-group/src/public-api';
 import { XotbTextareaModule } from 'projects/textarea/src/public-api';
 import { XotbFileUploadModule } from 'projects/file-upload/src/public-api';
 import { XotbSliderModule } from 'projects/slider/src/public-api';
+import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 
 /**
  * Examples Component
@@ -36,41 +37,44 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { XotbTabsModule } from 'projects/tabs/src/public-api';
 import { DemoTabsComponent } from './examples/tabs/tabs.component';
+import { XotbPopoversModule } from 'projects/popovers/src/public-api';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DemoInputComponent,
-    DemoTooltipsBasic,
-    DemoSelectComponent,
-    DemoCheckboxesComponent,
-    DemoAccordinComponent,
-    DemoButtonsComponent,
-    DemoRadioGroupComponent,
-    DemoTextareaComponent,
-    DemoFileUploadComponent,
-    DemoSliderComponent,
-    DemoTabsComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    ReactiveFormsModule,
-    FormsModule,
-    AppRoutingModule,
-    XotbInputModule,
-    XotbTooltipsModule,
-    XotbSelectModule,
-    XotbCheckboxModule,
-    XotbAccordionModule,
-    XotbButtonsModule,
-    XotbRadioGroupModule,
-    XotbTextareaModule,
-    XotbFileUploadModule,
-    XotbSliderModule,
-    XotbTabsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        DemoInputComponent,
+        DemoTooltipsBasic,
+        DemoSelectComponent,
+        DemoCheckboxesComponent,
+        DemoAccordinComponent,
+        DemoButtonsComponent,
+        DemoRadioGroupComponent,
+        DemoTextareaComponent,
+        DemoFileUploadComponent,
+        DemoSliderComponent,
+        DemoTabsComponent,
+        DemoPopoverComponent
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        ReactiveFormsModule,
+        FormsModule,
+        AppRoutingModule,
+        XotbInputModule,
+        XotbTooltipsModule,
+        XotbSelectModule,
+        XotbCheckboxModule,
+        XotbAccordionModule,
+        XotbButtonsModule,
+        XotbRadioGroupModule,
+        XotbTextareaModule,
+        XotbFileUploadModule,
+        XotbSliderModule,
+        XotbTabsModule,
+        XotbPopoversModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

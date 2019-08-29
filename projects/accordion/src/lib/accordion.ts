@@ -37,7 +37,7 @@ export class XotbAccordion {
 
   @ContentChildren(XotbAccordionSection) sections: QueryList<
     XotbAccordionSection
-  >;
+    >;
 
   constructor(element: ElementRef, renderer: Renderer2) {
     renderer.addClass(element.nativeElement, 'xotb-accordion');

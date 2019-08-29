@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { XotbFileUpload } from './file-upload';
-import { XotbIconsModule } from 'ng-xotb/icons';
+
 import { XotbInternalOutletModule } from 'ng-xotb/utility';
 import { XotbThemeModule } from 'ng-xotb/xotb-theme';
+import { XotbIconsModule } from 'ng-xotb/icons';
 
 @NgModule({
   declarations: [XotbFileUpload],
@@ -15,4 +16,4 @@ import { XotbThemeModule } from 'ng-xotb/xotb-theme';
   ],
   exports: [XotbFileUpload]
 })
-export class XotbFileUploadModule {}
+export class XotbFileUploadModule { }
