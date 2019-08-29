@@ -15,6 +15,8 @@ const LIBRARIES = [
   'radio-group',
   'file-upload',
   'tabs',
-  'slider'
+  'slider',
+  'accordion',
+  'popovers'
 ];
 module.exports = LIBRARIES;

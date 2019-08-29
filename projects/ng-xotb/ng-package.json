@@ -3,5 +3,6 @@
   "dest": "../../dist/ng-xotb",
   "lib": {
     "entryFile": "src/public-api.ts"
-  }
+  },
+  "whitelistedNonPeerDependencies": ["tslib", "angular-feather"]
 }

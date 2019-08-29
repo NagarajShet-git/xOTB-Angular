@@ -1,26 +1,32 @@
-.xotb-button_icon-small {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.xotb-button--icon,
-.xotb-button--icon-bare,
-.xotb-button--icon-border,
-.xotb-button--icon-border-filled,
-.xotb-button--icon-border-inverse,
-.xotb-button--icon-container,
-.xotb-button--icon-error,
-.xotb-button--icon-inverse,
-.xotb-button--icon-more,
-.xotb-button_icon,
-.xotb-button_icon-bare,
-.xotb-button_icon-border,
-.xotb-button_icon-border-filled,
-.xotb-button_icon-border-inverse,
-.xotb-button_icon-container,
-.xotb-button_icon-error,
-.xotb-button_icon-inverse,
-.xotb-button_icon-more {
+.xotb-icon_container {
+  display: inline-block;
+  border-radius: 0.25rem;
   line-height: 1;
-  vertical-align: middle;
-  color: #706e6b;
+}
+.xotb-icon {
+  width: 2rem !important;
+  height: 2rem !important;
+  line-height: 1 !important;
+  fill: #fff;
+}
+
+.xotb-icon_xx-small {
+  width: 0.875rem !important;
+  height: 0.875rem !important;
+  line-height: 1;
+}
+.xotb-icon_x-small {
+  width: 1rem !important;
+  height: 1rem !important;
+  line-height: 1;
+}
+.xotb-icon_small {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  line-height: 1;
+}
+.xotb-icon_large {
+  width: 3rem !important;
+  height: 3rem !important;
+  line-height: 1;
 }

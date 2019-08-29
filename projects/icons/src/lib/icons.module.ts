@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
+
+import { FeatherModule } from 'angular-feather';
+import * as icons from 'angular-feather/icons';
 import { XotbIcon } from './icon';
 import { CommonModule } from '@angular/common';
-import { XotbIconSvg } from './svg';
+import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 
 @NgModule({
-  declarations: [XotbIcon, XotbIconSvg],
-  imports: [CommonModule],
-  exports: [XotbIcon, XotbIconSvg]
+  declarations: [XotbIcon],
+  imports: [FeatherModule.pick({ ...icons }), CommonModule, XotbThemeModule],
+  exports: [FeatherModule, XotbIcon]
 })
 export class XotbIconsModule {}

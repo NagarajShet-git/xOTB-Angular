@@ -67,12 +67,25 @@ textarea {
   margin: 0;
 }
 
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+.cdk-global-overlay-wrapper,
 .cdk-overlay-container {
   pointer-events: none;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
+}
+.cdk-overlay-container {
+  position: fixed;
+  z-index: 1000;
 }
 .cdk-overlay-connected-position-bounding-box {
   position: absolute;

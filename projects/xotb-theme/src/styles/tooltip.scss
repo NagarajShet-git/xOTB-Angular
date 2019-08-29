@@ -9,6 +9,9 @@
   box-shadow: var(--xotb-popover__box-shadow);
   border: 1px solid;
   border-color: var(--xotb-popover__border-color);
+  :last-child {
+    margin-bottom: 0;
+  }
 }
 
 .xotb-popover_tooltip {
@@ -16,14 +19,15 @@
   max-width: 20rem;
   background: var(--xotb-popover_tooltip__background);
   border: 0;
+  .xotb-popover__body {
+    font-size: 0.75rem;
+    color: var(--xotb-popover__body__color);
+  }
 }
-
 .xotb-popover__body {
   position: relative;
   padding: 0.5rem 0.75rem;
   word-wrap: break-word;
-  font-size: 0.75rem;
-  color: var(--xotb-popover__body__color);
 }
 
 .xotb-nubbin_top:before,

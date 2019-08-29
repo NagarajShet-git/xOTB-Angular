@@ -4,5 +4,5 @@ import { Component } from '@angular/core';
   templateUrl: './popovers.component.html'
 })
 export class DemoPopoverComponent {
-  open = true;
+  open = false;
 }
