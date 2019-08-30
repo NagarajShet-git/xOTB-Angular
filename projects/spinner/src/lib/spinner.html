@@ -1,5 +1,6 @@
-<span class="xotb-assistive-text" *ngIf="alternativeText"
-  >{{ alternativeText }}</span
->
-<div class="xotb-spinner__dot-a"></div>
-<div class="xotb-spinner__dot-b"></div>
+<xotb-styled-component>
+  <span class="xotb-assistive-text" *ngIf="alternativeText"
+    >{{ alternativeText }}</span
+  >
+  <div class="xotb-spinner" [ngClass]="spinnerClass()"></div
+></xotb-styled-component>
