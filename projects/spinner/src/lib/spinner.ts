@@ -3,19 +3,16 @@ import {
   Input,
   ChangeDetectionStrategy,
   ElementRef,
-  Renderer2,
-  OnInit,
-  OnChanges
+  Renderer2
 } from '@angular/core';
-import { HostService } from 'ng-xotb/common';
 
 @Component({
   selector: 'xotb-spinner',
   templateUrl: './spinner.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  providers: [HostService]
+  styleUrls: ['./spinner.scss']
 })
-export class XotbSpinner implements OnInit, OnChanges {
+export class XotbSpinner {
   /**
    * The size of the spinner.
    */
@@ -31,27 +28,14 @@ export class XotbSpinner implements OnInit, OnChanges {
    */
   @Input() alternativeText: string;
 
-  constructor(
-    private element: ElementRef,
-    private renderer: Renderer2,
-    private hostService: HostService
-  ) {
-    this.renderer.addClass(this.element.nativeElement, 'xotb-spinner');
+  constructor(private element: ElementRef, private renderer: Renderer2) {
     this.renderer.setAttribute(this.element.nativeElement, 'role', 'status');
   }
 
-  ngOnInit() {
-    this.setHostClass();
-  }
-
-  ngOnChanges() {
-    this.setHostClass();
-  }
-
-  private setHostClass() {
-    this.hostService.updateClass(this.element, {
+  spinnerClass() {
+    return {
       [`xotb-spinner_${this.size || 'medium'}`]: true,
       [`xotb-spinner_${this.variant}`]: !!this.variant
-    });
+    };
   }
 }
