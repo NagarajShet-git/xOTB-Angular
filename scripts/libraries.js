@@ -21,6 +21,7 @@ const LIBRARIES = [
   'progressbar',
   'spinner',
   'button-icons',
-  'ratings'
+  'ratings',
+  'sections'
 ];
 module.exports = LIBRARIES;
