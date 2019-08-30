@@ -1,6 +1,25 @@
-<h1>Test Progressbar</h1>
-<xotb-progressbar
-  [value]="value"
-  [size]="size"
-  [variant]="variant"
-></xotb-progressbar>
+<div>
+  <div>
+    <span>Setup Assistant</span>
+    <br />
+    <span aria-hidden="true"
+      ><strong>{{ value }}% Complete</strong></span
+    >
+  </div>
+  <br />
+  <xotb-progress-bar
+    [value]="value"
+    [size]="size"
+    [variant]="variant"
+  ></xotb-progress-bar>
+</div>
+<br />
+<div style="height: 50px;">
+  <div class="slds-align-middle slds-col">
+    <button type="button" xotbButton (click)="random()">Randomize</button>
+    <button type="button" xotbButton (click)="changeVariant()">
+      Change Variant
+    </button>
+    <button type="button" xotbButton (click)="changeSize()">Change Size</button>
+  </div>
+</div>
