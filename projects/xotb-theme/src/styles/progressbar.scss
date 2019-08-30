@@ -9,30 +9,22 @@
   appearance: none;
   position: relative;
 }
-.xotb-progress-bar--medium,
 .xotb-progress-bar_medium {
   height: 0.5rem;
 }
-.xotb-progress-bar--large,
 .xotb-progress-bar_large {
   height: 0.75rem;
 }
-.xotb-progress-bar--x-small,
 .xotb-progress-bar_x-small {
   height: 0.125rem;
 }
-.xotb-progress-bar--small,
 .xotb-progress-bar_small {
   height: 0.25rem;
 }
-.xotb-progress-bar--circular,
-.xotb-progress-bar--circular .xotb-progress-bar__value,
 .xotb-progress-bar_circular,
 .xotb-progress-bar_circular .xotb-progress-bar__value {
   border-radius: 0.5rem;
 }
-.xotb-progress-bar--circular,
-.xotb-progress-bar--circular .xotb-progress-bar__value,
 .xotb-progress-bar_circular,
 .xotb-progress-bar_circular .xotb-progress-bar__value {
   border-radius: 0.5rem;
