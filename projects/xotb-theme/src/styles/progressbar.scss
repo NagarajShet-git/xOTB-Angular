@@ -2,7 +2,7 @@
   display: block;
   width: 100%;
   height: 0.5rem;
-  background: #dddbda;
+  background: var(--xotb-common_background-color);
   border: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -31,6 +31,6 @@
 }
 .xotb-progress-bar__value {
   display: block;
-  background: #5eb4ff;
+  background: var(--xotb-progress-bar__value__background-color);
   height: 100%;
 }
