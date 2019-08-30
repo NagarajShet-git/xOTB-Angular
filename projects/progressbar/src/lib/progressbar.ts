@@ -11,7 +11,7 @@ import {
 } from '@angular/core';
 
 @Component({
-  selector: 'xotb-progressbar',
+  selector: 'xotb-progress-bar',
   templateUrl: './progressbar.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [HostService],
@@ -47,7 +47,7 @@ export class XotbProgressbar implements OnInit, OnChanges {
     private renderer: Renderer2,
     private hostService: HostService
   ) {
-    this.renderer.addClass(this.element.nativeElement, 'xotb-progressbar');
+    this.renderer.addClass(this.element.nativeElement, 'xotb-progress-bar');
     this.renderer.setAttribute(
       this.element.nativeElement,
       'role',
@@ -75,8 +75,8 @@ export class XotbProgressbar implements OnInit, OnChanges {
 
   private setHostClass() {
     this.hostService.updateClass(this.element, {
-      [`xotb-progressbar_${this.size}`]: !!this.size,
-      [`xotb-progressbar_${this.variant}`]: !!this.variant
+      [`xotb-progress-bar_${this.size}`]: !!this.size,
+      [`xotb-progress-bar_${this.variant}`]: !!this.variant
     });
   }
 }
