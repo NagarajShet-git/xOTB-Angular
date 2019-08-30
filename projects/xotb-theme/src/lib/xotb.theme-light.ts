@@ -63,5 +63,8 @@ export const theme = {
   'xotb-checkbox__disabled__background-color': '#ecebea',
   'xotb-checkbox__disabled__border-color': '#c9c7c5',
   'xotb-checkbox__checked__border-bottom-color': '#0070d2',
-  'xotb-checkbox__checked__border-left-color': '#0070d2'
+  'xotb-checkbox__checked__border-left-color': '#0070d2',
+
+  // progress-bar
+  'xotb-progress-bar__value__background-color': '#5eb4ff'
 };
