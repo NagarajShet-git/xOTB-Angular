@@ -39,6 +39,8 @@ import { DemoSliderComponent } from './examples/slider/slider.component';
 import { DemoTabsComponent } from './examples/tabs/tabs.component';
 import { DemoIconsComponent } from './examples/icons/icons.component';
 import { DemoPopoverComponent } from './examples/popovers/popovers.component';
+import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
+import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { DemoPopoverComponent } from './examples/popovers/popovers.component';
     DemoSliderComponent,
     DemoTabsComponent,
     DemoPopoverComponent,
-    DemoIconsComponent
+    DemoIconsComponent,
+    DemoSpinnerComponent
   ],
   imports: [
     BrowserModule,
@@ -75,7 +78,8 @@ import { DemoPopoverComponent } from './examples/popovers/popovers.component';
     XotbSliderModule,
     XotbTabsModule,
     XotbPopoversModule,
-    XotbIconsModule
+    XotbIconsModule,
+    XotbSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,6 +17,7 @@ const LIBRARIES = [
   'tabs',
   'slider',
   'accordion',
-  'popovers'
+  'popovers',
+  'spinner'
 ];
 module.exports = LIBRARIES;

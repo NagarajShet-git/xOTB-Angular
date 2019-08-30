@@ -30,8 +30,9 @@
       "ng-xotb/textarea": ["dist/textarea"],
       "ng-xotb/file-upload": ["dist/file-upload"],
       "ng-xotb/slider": ["dist/slider"],
-      "ng-xotb/popovers": ["dist/popovers"],
-      "ng-xotb/tabs": ["dist/tabs"]
+      "ng-xotb/popovers": ["dist/popovers"],         
+      "ng-xotb/tabs": ["dist/tab"],
+      "ng-xotb/spinner": ["dist/spinner"]
     }
   },
   "angularCompilerOptions": {
