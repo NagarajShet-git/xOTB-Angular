@@ -671,105 +671,6 @@
         }
       }
     },
-    "tabs": {
-      "projectType": "library",
-      "root": "projects/tabs",
-      "sourceRoot": "projects/tabs/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/tabs/tsconfig.lib.json",
-            "project": "projects/tabs/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/tabs/src/test.ts",
-            "tsConfig": "projects/tabs/tsconfig.spec.json",
-            "karmaConfig": "projects/tabs/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/tabs/tsconfig.lib.json",
-              "projects/tabs/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    },
-    "popovers": {
-      "projectType": "library",
-      "root": "projects/popovers",
-      "sourceRoot": "projects/popovers/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/popovers/tsconfig.lib.json",
-            "project": "projects/popovers/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/popovers/src/test.ts",
-            "tsConfig": "projects/popovers/tsconfig.spec.json",
-            "karmaConfig": "projects/popovers/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/popovers/tsconfig.lib.json",
-              "projects/popovers/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    },
-    "progressbar": {
-      "projectType": "library",
-      "root": "projects/progressbar",
-      "sourceRoot": "projects/progressbar/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/progressbar/tsconfig.lib.json",
-            "project": "projects/progressbar/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/progressbar/src/test.ts",
-            "tsConfig": "projects/progressbar/tsconfig.spec.json",
-            "karmaConfig": "projects/progressbar/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/progressbar/tsconfig.lib.json",
-              "projects/progressbar/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    },
     "spinner": {
       "projectType": "library",
       "root": "projects/spinner",
@@ -836,6 +737,39 @@
         }
       }
     },
+    "ratings": {
+      "projectType": "library",
+      "root": "projects/ratings",
+      "sourceRoot": "projects/ratings/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ratings/tsconfig.lib.json",
+            "project": "projects/ratings/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ratings/src/test.ts",
+            "tsConfig": "projects/ratings/tsconfig.spec.json",
+            "karmaConfig": "projects/ratings/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ratings/tsconfig.lib.json",
+              "projects/ratings/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
     "button-icons": {
       "projectType": "library",
       "root": "projects/button-icons",
@@ -869,33 +803,33 @@
         }
       }
     },
-    "ratings": {
+    "tabs": {
       "projectType": "library",
-      "root": "projects/ratings",
-      "sourceRoot": "projects/ratings/src",
-      "prefix": "lib",
+      "root": "projects/tabs",
+      "sourceRoot": "projects/tabs/src",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/ratings/tsconfig.lib.json",
-            "project": "projects/ratings/ng-package.json"
+            "tsConfig": "projects/tabs/tsconfig.lib.json",
+            "project": "projects/tabs/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/ratings/src/test.ts",
-            "tsConfig": "projects/ratings/tsconfig.spec.json",
-            "karmaConfig": "projects/ratings/karma.conf.js"
+            "main": "projects/tabs/src/test.ts",
+            "tsConfig": "projects/tabs/tsconfig.spec.json",
+            "karmaConfig": "projects/tabs/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/ratings/tsconfig.lib.json",
-              "projects/ratings/tsconfig.spec.json"
+              "projects/tabs/tsconfig.lib.json",
+              "projects/tabs/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
