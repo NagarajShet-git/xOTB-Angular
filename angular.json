@@ -780,7 +780,7 @@
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
             "tsConfig": "projects/spinner/tsconfig.lib.json",
-            "project": "projects/popovers/ng-package.json"
+            "project": "projects/spinner/ng-package.json"
           }
         },
         "test": {

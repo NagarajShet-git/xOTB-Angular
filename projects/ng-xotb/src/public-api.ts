@@ -16,3 +16,4 @@ export { XotbFileUploadModule } from 'ng-xotb/file-upload';
 export { XotbSliderModule } from 'ng-xotb/slider';
 export { XotbProgressbarModule } from 'ng-xotb/progressbar';
 export { XotbSpinnerModule } from 'ng-xotb/spinner';
+export { XotbButtonIconsModule } from 'ng-xotb/button-icons';

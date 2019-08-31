@@ -19,6 +19,7 @@ const LIBRARIES = [
   'accordion',
   'popovers',
   'progressbar',
-  'spinner'
+  'spinner',
+  'button-icons'
 ];
 module.exports = LIBRARIES;
