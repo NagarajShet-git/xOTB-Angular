@@ -38,6 +38,11 @@ export class XotbIcon {
    */
   @Input() svgClass: string | string[] | Set<string> | { [klass: string]: any };
 
+  /**
+   * CSS Style to apply on svg
+   */
+  @Input() svgStyle: object;
+
   svgClasses() {
     const [category] = this.iconName.split(':');
     const isUtility = category === 'utility';

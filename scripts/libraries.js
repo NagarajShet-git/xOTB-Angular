@@ -20,6 +20,7 @@ const LIBRARIES = [
   'popovers',
   'progressbar',
   'spinner',
-  'button-icons'
+  'button-icons',
+  'ratings'
 ];
 module.exports = LIBRARIES;
