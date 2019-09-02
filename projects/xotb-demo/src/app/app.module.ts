@@ -25,6 +25,7 @@ import { XotbPopoversModule } from 'projects/popovers/src/public-api';
 import { XotbProgressbarModule } from 'projects/progressbar/src/public-api';
 import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
 import { XotbButtonIconsModule } from 'projects/button-icons/src/public-api';
+import { XotbRatingsModule } from 'projects/ratings/src/public-api';
 
 /**
  * Examples Component
@@ -45,6 +46,7 @@ import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 import { DemoProgressbarComponent } from './examples/progressbar/progressbar.component';
 import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
 import { DemoButtonIconsComponent } from './examples/button-icons/button-icons.component';
+import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +66,8 @@ import { DemoButtonIconsComponent } from './examples/button-icons/button-icons.c
     DemoIconsComponent,
     DemoProgressbarComponent,
     DemoSpinnerComponent,
-    DemoButtonIconsComponent
+    DemoButtonIconsComponent,
+    DemoRatingsComponent
   ],
   imports: [
     BrowserModule,
@@ -87,7 +90,8 @@ import { DemoButtonIconsComponent } from './examples/button-icons/button-icons.c
     XotbIconsModule,
     XotbProgressbarModule,
     XotbSpinnerModule,
-    XotbButtonIconsModule
+    XotbButtonIconsModule,
+    XotbRatingsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

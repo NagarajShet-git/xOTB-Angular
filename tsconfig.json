@@ -34,7 +34,8 @@
       "ng-xotb/tabs": ["dist/tabs"],
       "ng-xotb/progressbar": ["dist/progressbar"],
       "ng-xotb/spinner": ["dist/spinner"],
-      "ng-xotb/button-icons": ["dist/button-icons"]
+      "ng-xotb/button-icons": ["dist/button-icons"],
+      "ng-xotb/ratings": ["dist/ratings"]
     }
   },
   "angularCompilerOptions": {
