@@ -27,6 +27,7 @@ import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
 import { XotbButtonIconsModule } from 'projects/button-icons/src/public-api';
 import { XotbRatingsModule } from 'projects/ratings/src/public-api';
 import { XotbSectionsModule } from 'projects/sections/src/public-api';
+import { XotbBreadcrumbsModule } from 'projects/breadcrumbs/src/public-api';
 
 /**
  * Examples Component
@@ -49,6 +50,7 @@ import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
 import { DemoButtonIconsComponent } from './examples/button-icons/button-icons.component';
 import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoSectionsComponent } from './examples/sections/sections.component';
+import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +72,9 @@ import { DemoSectionsComponent } from './examples/sections/sections.component';
     DemoSpinnerComponent,
     DemoButtonIconsComponent,
     DemoRatingsComponent,
-    DemoSectionsComponent
+    DemoSectionsComponent,
+    DemoSpinnerComponent,
+    DemoBreadcrumbsComponent
   ],
   imports: [
     BrowserModule,
@@ -95,7 +99,9 @@ import { DemoSectionsComponent } from './examples/sections/sections.component';
     XotbSpinnerModule,
     XotbButtonIconsModule,
     XotbRatingsModule,
-    XotbSectionsModule
+    XotbSectionsModule,
+    XotbSpinnerModule,
+    XotbBreadcrumbsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,7 +2,7 @@
   <h3 class="xotb-section__title" [class.xotb-theme_shade]="!collapsable">
     <button
       class="xotb-button xotb-section__title-action"
-      *ngIf="collapsable; else simple_title"
+      *ngIf="collapsable; else title"
       [attr.aria-controls]="uid"
       [attr.aria-expanded]="expanded"
       type="button"

@@ -19,3 +19,4 @@ export { XotbSpinnerModule } from 'ng-xotb/spinner';
 export { XotbButtonIconsModule } from 'ng-xotb/button-icons';
 export { XotbRatingsModule } from 'ng-xotb/ratings';
 export { XotbSectionsModule } from 'ng-xotb/sections';
+export { XotbBreadcrumbsModule } from 'ng-xotb/breadcrumbs';

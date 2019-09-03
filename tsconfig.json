@@ -36,7 +36,8 @@
       "ng-xotb/spinner": ["dist/spinner"],
       "ng-xotb/button-icons": ["dist/button-icons"],
       "ng-xotb/ratings": ["dist/ratings"],
-      "ng-xotb/sections": ["dist/sections"]
+      "ng-xotb/sections": ["dist/sections"],
+      "ng-xotb/breadcrumbs": ["dist/breadcrumbs"]
     }
   },
   "angularCompilerOptions": {

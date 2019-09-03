@@ -22,6 +22,8 @@ const LIBRARIES = [
   'spinner',
   'button-icons',
   'ratings',
-  'sections'
+  'sections',
+  'spinner',
+  'breadcrumbs'
 ];
 module.exports = LIBRARIES;
