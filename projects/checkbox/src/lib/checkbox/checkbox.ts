@@ -13,7 +13,6 @@ import {
 import { XotbCheckboxInput } from '../input/input';
 import { toBoolean, isRequired, InputBoolean } from 'ng-xotb/utility';
 import { Subscription } from 'rxjs';
-import { XotbThemeService } from 'ng-xotb/xotb-theme';
 
 @Component({
   selector: 'xotb-checkbox,[xotb-checkbox]',

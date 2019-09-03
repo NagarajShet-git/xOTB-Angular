@@ -840,7 +840,7 @@
       "projectType": "library",
       "root": "projects/ratings",
       "sourceRoot": "projects/ratings/src",
-      "prefix": "lib",
+      "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
@@ -863,6 +863,39 @@
             "tsConfig": [
               "projects/ratings/tsconfig.lib.json",
               "projects/ratings/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "modals": {
+      "projectType": "library",
+      "root": "projects/modals",
+      "sourceRoot": "projects/modals/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/modals/tsconfig.lib.json",
+            "project": "projects/modals/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/modals/src/test.ts",
+            "tsConfig": "projects/modals/tsconfig.spec.json",
+            "karmaConfig": "projects/modals/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/modals/tsconfig.lib.json",
+              "projects/modals/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
