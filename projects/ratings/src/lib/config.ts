@@ -6,7 +6,7 @@ export const XOTB_RATING_CONFIG = new InjectionToken<XotbRatingConfig>(
 );
 
 /**
- * Configuration service for the NglRating component.
+ * Configuration service for the XotbRating component.
  */
 export class XotbRatingConfig<D = any> {
   /**
