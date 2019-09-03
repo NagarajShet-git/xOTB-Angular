@@ -39,7 +39,6 @@ const routes: Routes = [
   { path: 'button-icons', component: DemoButtonIconsComponent },
   { path: 'ratings', component: DemoRatingsComponent },
   { path: 'sections', component: DemoSectionsComponent },
-  { path: 'spinner', component: DemoSpinnerComponent },
   { path: 'breadcrumbs', component: DemoBreadcrumbsComponent }
 ];
 
