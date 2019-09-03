@@ -20,7 +20,6 @@ import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoSectionsComponent } from './examples/sections/sections.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 
-
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
   { path: 'tooltip', component: DemoTooltipsBasic },
@@ -39,7 +38,6 @@ const routes: Routes = [
   { path: 'spinner', component: DemoSpinnerComponent },
   { path: 'button-icons', component: DemoButtonIconsComponent },
   { path: 'ratings', component: DemoRatingsComponent },
-  { path: 'sections', component: DemoSectionsComponent }
   { path: 'sections', component: DemoSectionsComponent },
   { path: 'spinner', component: DemoSpinnerComponent },
   { path: 'breadcrumbs', component: DemoBreadcrumbsComponent }
