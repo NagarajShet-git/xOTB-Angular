@@ -1,0 +1,6 @@
+/*
+ * Public API Surface of breadcrumbs
+ */
+
+export * from './lib/breadcrumbs.';
+export * from './lib/breadcrumbs.module';
