@@ -3,4 +3,6 @@ import { Component } from '@angular/core';
 @Component({
   templateUrl: './sections.component.html'
 })
-export class DemoSectionsComponent {}
+export class DemoSectionsComponent {
+  open = true;
+}

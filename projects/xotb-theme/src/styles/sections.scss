@@ -1,0 +1,38 @@
+.xotb-section {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  &.xotb-is-open {
+    .xotb-section__content {
+      padding-top: 0.5rem;
+      overflow: visible;
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+    }
+  }
+}
+.xotb-section__title {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 1.875rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+.xotb-section__title-action {
+  display: flex;
+  align-items: center;
+  background: #f3f2f2;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  color: currentColor;
+  font-size: inherit;
+  padding: 0 0.5rem;
+}
+.xotb-section__content {
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+}

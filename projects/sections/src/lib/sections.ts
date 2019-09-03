@@ -13,7 +13,7 @@ import { uniqueId } from 'ng-xotb/utility';
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './section.html',
   host: {
-    '[class.xotb-sections]': 'true'
+    '[class.xotb-section]': 'true'
   },
   styles: []
 })
