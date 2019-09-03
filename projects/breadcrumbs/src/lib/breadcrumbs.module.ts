@@ -1,6 +1,6 @@
 import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 import { NgModule } from '@angular/core';
-import { XotbBreadcrumbs } from './breadcrumbs.';
+import { XotbBreadcrumbs } from './breadcrumbs';
 import { CommonModule } from '@angular/common';
 import { XotbBreadcrumb } from './breadcrumb';
 
