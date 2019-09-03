@@ -18,6 +18,8 @@ import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
 import { DemoButtonIconsComponent } from './examples/button-icons/button-icons.component';
 import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoModalsComponent } from './examples/modals/modals.component';
+import { DemoSectionsComponent } from './examples/sections/sections.component';
+import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -37,7 +39,9 @@ const routes: Routes = [
   { path: 'spinner', component: DemoSpinnerComponent },
   { path: 'button-icons', component: DemoButtonIconsComponent },
   { path: 'ratings', component: DemoRatingsComponent },
-  { path: 'modals', component: DemoModalsComponent }
+  { path: 'modals', component: DemoModalsComponent },
+  { path: 'sections', component: DemoSectionsComponent },
+  { path: 'breadcrumbs', component: DemoBreadcrumbsComponent }
 ];
 
 @NgModule({

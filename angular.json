@@ -671,6 +671,138 @@
         }
       }
     },
+    "spinner": {
+      "projectType": "library",
+      "root": "projects/spinner",
+      "sourceRoot": "projects/spinner/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/spinner/tsconfig.lib.json",
+            "project": "projects/spinner/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/spinner/src/test.ts",
+            "tsConfig": "projects/spinner/tsconfig.spec.json",
+            "karmaConfig": "projects/spinner/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/spinner/tsconfig.lib.json",
+              "projects/spinner/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "sections": {
+      "projectType": "library",
+      "root": "projects/sections",
+      "sourceRoot": "projects/sections/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/sections/tsconfig.lib.json",
+            "project": "projects/sections/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/sections/src/test.ts",
+            "tsConfig": "projects/sections/tsconfig.spec.json",
+            "karmaConfig": "projects/sections/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/sections/tsconfig.lib.json",
+              "projects/sections/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "ratings": {
+      "projectType": "library",
+      "root": "projects/ratings",
+      "sourceRoot": "projects/ratings/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ratings/tsconfig.lib.json",
+            "project": "projects/ratings/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ratings/src/test.ts",
+            "tsConfig": "projects/ratings/tsconfig.spec.json",
+            "karmaConfig": "projects/ratings/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ratings/tsconfig.lib.json",
+              "projects/ratings/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "button-icons": {
+      "projectType": "library",
+      "root": "projects/button-icons",
+      "sourceRoot": "projects/button-icons/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/button-icons/tsconfig.lib.json",
+            "project": "projects/button-icons/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/button-icons/src/test.ts",
+            "tsConfig": "projects/button-icons/tsconfig.spec.json",
+            "karmaConfig": "projects/button-icons/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/button-icons/tsconfig.lib.json",
+              "projects/button-icons/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
     "tabs": {
       "projectType": "library",
       "root": "projects/tabs",
@@ -698,6 +830,72 @@
             "tsConfig": [
               "projects/tabs/tsconfig.lib.json",
               "projects/tabs/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "breadcrumbs": {
+      "projectType": "library",
+      "root": "projects/breadcrumbs",
+      "sourceRoot": "projects/breadcrumbs/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/breadcrumbs/tsconfig.lib.json",
+            "project": "projects/breadcrumbs/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/breadcrumbs/src/test.ts",
+            "tsConfig": "projects/breadcrumbs/tsconfig.spec.json",
+            "karmaConfig": "projects/breadcrumbs/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/breadcrumbs/tsconfig.lib.json",
+              "projects/breadcrumbs/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
+    "modals": {
+      "projectType": "library",
+      "root": "projects/modals",
+      "sourceRoot": "projects/modals/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/modals/tsconfig.lib.json",
+            "project": "projects/modals/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/modals/src/test.ts",
+            "tsConfig": "projects/modals/tsconfig.spec.json",
+            "karmaConfig": "projects/modals/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/modals/tsconfig.lib.json",
+              "projects/modals/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -769,140 +967,7 @@
           }
         }
       }
-    },
-    "spinner": {
-      "projectType": "library",
-      "root": "projects/spinner",
-      "sourceRoot": "projects/spinner/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/spinner/tsconfig.lib.json",
-            "project": "projects/spinner/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/spinner/src/test.ts",
-            "tsConfig": "projects/spinner/tsconfig.spec.json",
-            "karmaConfig": "projects/spinner/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/spinner/tsconfig.lib.json",
-              "projects/spinner/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    },
-    "button-icons": {
-      "projectType": "library",
-      "root": "projects/button-icons",
-      "sourceRoot": "projects/button-icons/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/button-icons/tsconfig.lib.json",
-            "project": "projects/button-icons/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/button-icons/src/test.ts",
-            "tsConfig": "projects/button-icons/tsconfig.spec.json",
-            "karmaConfig": "projects/button-icons/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/button-icons/tsconfig.lib.json",
-              "projects/button-icons/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    },
-    "ratings": {
-      "projectType": "library",
-      "root": "projects/ratings",
-      "sourceRoot": "projects/ratings/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/ratings/tsconfig.lib.json",
-            "project": "projects/ratings/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/ratings/src/test.ts",
-            "tsConfig": "projects/ratings/tsconfig.spec.json",
-            "karmaConfig": "projects/ratings/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ratings/tsconfig.lib.json",
-              "projects/ratings/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
-    },
-    "modals": {
-      "projectType": "library",
-      "root": "projects/modals",
-      "sourceRoot": "projects/modals/src",
-      "prefix": "xotb",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
-          "options": {
-            "tsConfig": "projects/modals/tsconfig.lib.json",
-            "project": "projects/modals/ng-package.json"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "projects/modals/src/test.ts",
-            "tsConfig": "projects/modals/tsconfig.spec.json",
-            "karmaConfig": "projects/modals/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/modals/tsconfig.lib.json",
-              "projects/modals/tsconfig.spec.json"
-            ],
-            "exclude": ["**/node_modules/**"]
-          }
-        }
-      }
     }
   },
-
   "defaultProject": "xotb-demo"
 }
