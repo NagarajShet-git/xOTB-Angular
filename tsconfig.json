@@ -39,7 +39,8 @@
       "ng-xotb/modals": ["dist/modals"],
       "ng-xotb/sections": ["dist/sections"],
       "ng-xotb/breadcrumbs": ["dist/breadcrumbs"],
-      "ng-xotb/carousel": ["dist/carousel"]
+      "ng-xotb/carousel": ["dist/carousel"],
+      "ng-xotb/menus": ["dist/menus"]
     }
   },
   "angularCompilerOptions": {

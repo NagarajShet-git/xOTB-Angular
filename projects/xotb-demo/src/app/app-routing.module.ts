@@ -21,6 +21,7 @@ import { DemoModalsComponent } from './examples/modals/modals.component';
 import { DemoSectionsComponent } from './examples/sections/sections.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
+import { DemoMenusComponent } from './examples/menus/menus.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -43,7 +44,8 @@ const routes: Routes = [
   { path: 'modals', component: DemoModalsComponent },
   { path: 'sections', component: DemoSectionsComponent },
   { path: 'breadcrumbs', component: DemoBreadcrumbsComponent },
-  { path: 'carousel', component: DemoCarouselComponent }
+  { path: 'carousel', component: DemoCarouselComponent },
+  { path: 'menus', component: DemoMenusComponent }
 ];
 
 @NgModule({

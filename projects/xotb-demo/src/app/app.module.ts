@@ -30,6 +30,7 @@ import { XotbModalsModule } from 'projects/modals/src/public-api';
 import { XotbSectionsModule } from 'projects/sections/src/public-api';
 import { XotbBreadcrumbsModule } from 'projects/breadcrumbs/src/public-api';
 import { XotbCarouselModule } from 'projects/carousel/src/public-api';
+import { XotbMenusModule } from 'projects/menus/src/public-api';
 
 /**
  * Examples Component
@@ -55,6 +56,7 @@ import { DemoModalsComponent } from './examples/modals/modals.component';
 import { DemoSectionsComponent } from './examples/sections/sections.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
+import { DemoMenusComponent } from './examples/menus/menus.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +81,8 @@ import { DemoCarouselComponent } from './examples/carousel/carousel.component';
     DemoSectionsComponent,
     DemoSpinnerComponent,
     DemoBreadcrumbsComponent,
-    DemoCarouselComponent
+    DemoCarouselComponent,
+    DemoMenusComponent
   ],
   imports: [
     BrowserModule,
@@ -107,7 +110,8 @@ import { DemoCarouselComponent } from './examples/carousel/carousel.component';
     XotbSectionsModule,
     XotbSpinnerModule,
     XotbBreadcrumbsModule,
-    XotbCarouselModule
+    XotbCarouselModule,
+    XotbMenusModule
   ],
   providers: [],
   bootstrap: [AppComponent]
