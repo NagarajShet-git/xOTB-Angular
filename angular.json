@@ -869,6 +869,39 @@
         }
       }
     },
+    "carousel": {
+      "projectType": "library",
+      "root": "projects/carousel",
+      "sourceRoot": "projects/carousel/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/carousel/tsconfig.lib.json",
+            "project": "projects/carousel/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/carousel/src/test.ts",
+            "tsConfig": "projects/carousel/tsconfig.spec.json",
+            "karmaConfig": "projects/carousel/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/carousel/tsconfig.lib.json",
+              "projects/carousel/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
+    },
     "modals": {
       "projectType": "library",
       "root": "projects/modals",
