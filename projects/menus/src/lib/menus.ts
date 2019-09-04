@@ -1,4 +1,5 @@
 import {
+  Directive,
   Input,
   Output,
   EventEmitter,
@@ -8,23 +9,19 @@ import {
   OnDestroy,
   ContentChildren,
   QueryList,
-  Renderer2,
-  Component
+  Renderer2
 } from '@angular/core';
-
 import { toBoolean, InputBoolean } from 'ng-xotb/utility';
 import { XotbDropdownItem } from './dropdown-item';
 
 const openEventEmitter = new EventEmitter<any>();
 
-@Component({
-  selector: 'xotb-menus',
-  template: '',
+@Directive({
+  selector: '[xotbDropdown]',
   host: {
     '[class.xotb-dropdown-trigger]': 'true',
     '[class.xotb-dropdown-trigger_click]': 'true'
-  },
-  styles: []
+  }
 })
 export class XotbMenus implements OnInit, OnDestroy {
   @Input('open') set isOpen(isOpen: boolean) {

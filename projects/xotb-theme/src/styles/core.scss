@@ -119,3 +119,10 @@ video {
 .xotb-list_horizontal {
   display: flex;
 }
+
+.xotb-truncate {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

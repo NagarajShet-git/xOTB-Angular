@@ -1,10 +1,12 @@
-<span xotb-menus (open)="(open)">
-  <button class="xotb-button xotb-button_neutral">
+<span xotbDropdown [(open)]="open">
+  <button class="xotb-button xotb-button_neutral" xotbDropdownTrigger>
     <span class="xotb-truncate">Select an item</span>
-
-    <xotb-icon iconName="down" variant="default" size="x-small"></xotb-icon>
+    <xotb-icon
+      iconName="chevron-down"
+      variant="default"
+      size="x-small"
+    ></xotb-icon>
   </button>
-
   <div class="xotb-dropdown xotb-dropdown_left">
     <ul class="dropdown__list" role="menu">
       <li class="xotb-dropdown__item" *ngFor="let item of items">
@@ -14,7 +16,6 @@
           (click)="selected = item.value; open = false"
         >
           <p class="xotb-truncate">{{ item.value }}</p>
-
           <xotb-icon
             [iconName]="item.icon"
             variant="default"
@@ -24,9 +25,9 @@
       </li>
     </ul></div
 ></span>
-
+&nbsp;&nbsp;&nbsp;
 <button type="button" xotbButton (click)="onToggle($event)">Open</button>
-
+&nbsp;
 <button
   type="button"
   xotbButton
@@ -36,6 +37,7 @@
   Toggle
 </button>
 
-<div *ngIf="selected">
+<br />
+<div class="xotb-m-top_large" *ngIf="selected">
   You selected:<b>{{ selected }}</b>
 </div>

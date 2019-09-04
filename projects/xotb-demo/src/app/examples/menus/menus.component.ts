@@ -8,9 +8,9 @@ export class DemoMenusComponent {
   open: boolean;
 
   items = [
-    { value: 'Item 1', icon: 'kanban' },
-    { value: 'Item 2', icon: 'side_list' },
-    { value: 'Item 3', icon: 'table' }
+    { value: 'Item 1', icon: 'bar-chart' },
+    { value: 'Item 2', icon: 'award' },
+    { value: 'Item 3', icon: 'cast' }
   ];
 
   onToggle($event: Event) {
