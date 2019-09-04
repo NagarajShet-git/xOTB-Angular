@@ -24,6 +24,7 @@ const LIBRARIES = [
   'ratings',
   'sections',
   'breadcrumbs',
-  'modals'
+  'modals',
+  'carousel'
 ];
 module.exports = LIBRARIES;

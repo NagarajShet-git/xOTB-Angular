@@ -21,3 +21,4 @@ export { XotbRatingsModule } from 'ng-xotb/ratings';
 export { XotbSectionsModule } from 'ng-xotb/sections';
 export { XotbBreadcrumbsModule } from 'ng-xotb/breadcrumbs';
 export { XotbModalsModule } from 'ng-xotb/modals';
+export { XotbCarouselModule } from 'ng-xotb/carousel';
