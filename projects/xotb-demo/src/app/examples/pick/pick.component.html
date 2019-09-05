@@ -1,0 +1,18 @@
+<div class="xotb-text-title_caps xotb-m-bottom_small">Single selection</div>
+
+<div class="xotb-m-bottom_small">
+  Selected:<code>{{ selected }}</code>
+</div>
+
+<div
+  class="xotb-button-group"
+  [(xotbPick)]="selected"
+  xotbPickActiveClass="xotb-button_brand"
+  role="group"
+>
+  <button type="button" xotbButton xotbPickOption="left">Left</button>
+
+  <button type="button" xotbButton xotbPickOption="middle">Middle</button>
+
+  <button type="button" xotbButton [xotbPickOption]="'right'">Right</button>
+</div>

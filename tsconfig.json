@@ -38,7 +38,8 @@
       "ng-xotb/ratings": ["dist/ratings"],
       "ng-xotb/modals": ["dist/modals"],
       "ng-xotb/sections": ["dist/sections"],
-      "ng-xotb/breadcrumbs": ["dist/breadcrumbs"]
+      "ng-xotb/breadcrumbs": ["dist/breadcrumbs"],
+      "ng-xotb/pick": ["dist/pick"]
     }
   },
   "angularCompilerOptions": {

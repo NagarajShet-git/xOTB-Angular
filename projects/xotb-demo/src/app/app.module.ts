@@ -29,6 +29,7 @@ import { XotbRatingsModule } from 'projects/ratings/src/public-api';
 import { XotbModalsModule } from 'projects/modals/src/public-api';
 import { XotbSectionsModule } from 'projects/sections/src/public-api';
 import { XotbBreadcrumbsModule } from 'projects/breadcrumbs/src/public-api';
+import { XotbPickModule } from 'projects/pick/src/lib';
 
 /**
  * Examples Component
@@ -53,6 +54,7 @@ import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoModalsComponent } from './examples/modals/modals.component';
 import { DemoSectionsComponent } from './examples/sections/sections.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
+import { DemoPickComponent } from './examples/pick/pick.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +78,8 @@ import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.com
     DemoModalsComponent,
     DemoSectionsComponent,
     DemoSpinnerComponent,
-    DemoBreadcrumbsComponent
+    DemoBreadcrumbsComponent,
+    DemoPickComponent
   ],
   imports: [
     BrowserModule,
@@ -103,7 +106,8 @@ import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.com
     XotbModalsModule,
     XotbSectionsModule,
     XotbSpinnerModule,
-    XotbBreadcrumbsModule
+    XotbBreadcrumbsModule,
+    XotbPickModule
   ],
   providers: [],
   bootstrap: [AppComponent]
