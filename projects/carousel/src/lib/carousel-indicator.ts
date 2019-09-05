@@ -6,8 +6,7 @@ import {
   OnChanges,
   SimpleChanges
 } from '@angular/core';
-
-import { uniqueId, InputBoolean } from 'ng-xotb/utility';
+import { InputBoolean, uniqueId } from 'ng-xotb/utility';
 import { XotbCarouselImage } from './carousel-image';
 
 @Directive({
@@ -25,7 +24,7 @@ export class XotbCarouselIndicator implements OnChanges {
     return this.isActive ? 0 : -1;
   }
 
-  @Input() readonly images: XotbCarouselImage;
+  @Input() readonly image: XotbCarouselImage;
 
   @HostBinding('attr.id')
   uid = uniqueId('carousel-indicator');
@@ -33,10 +32,10 @@ export class XotbCarouselIndicator implements OnChanges {
   constructor(private el: ElementRef) {}
 
   ngOnChanges(changes: SimpleChanges) {
-    this.images.active = this.isActive;
+    this.image.active = this.isActive;
 
-    if (changes.images) {
-      this.images.labelledby = this.uid;
+    if (changes.image) {
+      this.image.labelledby = this.uid;
     }
   }
 

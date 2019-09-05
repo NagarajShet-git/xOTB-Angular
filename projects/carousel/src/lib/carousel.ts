@@ -1,33 +1,32 @@
-import { isRequired, InputNumber, InputBoolean } from 'ng-xotb/utility';
 import {
   Component,
-  ChangeDetectionStrategy,
-  OnChanges,
   Input,
-  Output,
-  EventEmitter,
+  ChangeDetectionStrategy,
   ContentChildren,
   QueryList,
+  Output,
+  EventEmitter,
+  OnChanges,
   ViewChildren,
+  SimpleChanges,
   ViewChild,
   ElementRef,
-  SimpleChanges,
-  Inject,
-  Optional
+  Optional,
+  Inject
 } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { LEFT_ARROW, RIGHT_ARROW } from '@angular/cdk/keycodes';
+import { InputBoolean, InputNumber, isRequired } from 'ng-xotb/utility';
 import { XotbCarouselImage } from './carousel-image';
 import { XotbCarouselIndicator } from './carousel-indicator';
-import { LEFT_ARROW, RIGHT_ARROW } from '@angular/cdk/keycodes';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'xotb-carousel',
-  template: './carousel.html',
+  templateUrl: './carousel.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     '[class.xotb-carousel]': 'true'
-  },
-  styles: []
+  }
 })
 export class XotbCarousel implements OnChanges {
   @isRequired
@@ -58,7 +57,7 @@ export class XotbCarousel implements OnChanges {
     XotbCarouselIndicator
   >;
 
-  @ViewChild('indicatorsEl', { static: false }) indicatorsEl: ElementRef<
+  @ViewChild('indicatorsEl', { static: true }) indicatorsEl: ElementRef<
     HTMLElement
   >;
 

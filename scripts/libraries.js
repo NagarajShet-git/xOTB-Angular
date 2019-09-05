@@ -28,6 +28,7 @@ const LIBRARIES = [
   'carousel',
   'menus',
   'pick',
-  'toast'
+  'toast',
+  'box'
 ];
 module.exports = LIBRARIES;
