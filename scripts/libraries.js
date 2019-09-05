@@ -26,6 +26,8 @@ const LIBRARIES = [
   'breadcrumbs',
   'modals',
   'carousel',
-  'menus'
+  'menus',
+  'pick',
+  'toast'
 ];
 module.exports = LIBRARIES;

@@ -22,4 +22,6 @@ export { XotbSectionsModule } from 'ng-xotb/sections';
 export { XotbBreadcrumbsModule } from 'ng-xotb/breadcrumbs';
 export { XotbModalsModule } from 'ng-xotb/modals';
 export { XotbCarouselModule } from 'ng-xotb/carousel';
-export { XotbMenuslModule } from 'ng-xotb/menus';
+import { XotbMenusModule } from 'ng-xotb/menus';
+import { XotbToastModule } from 'ng-xotb/toast';
+import { XotbPickModule } from 'ng-xotb/pick';
