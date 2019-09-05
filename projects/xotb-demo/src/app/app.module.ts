@@ -32,6 +32,7 @@ import { XotbBreadcrumbsModule } from 'projects/breadcrumbs/src/public-api';
 import { XotbCarouselModule } from 'projects/carousel/src/public-api';
 import { XotbMenusModule } from 'projects/menus/src/public-api';
 import { XotbPickModule } from 'projects/pick/src/lib';
+import { XotbToastModule } from 'projects/toast/src/public-api';
 
 /**
  * Examples Component
@@ -59,6 +60,7 @@ import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.com
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
 import { DemoMenusComponent } from './examples/menus/menus.component';
 import { DemoPickComponent } from './examples/pick/pick.component';
+import { DemoToastComponent } from './examples/toast/toast.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +87,8 @@ import { DemoPickComponent } from './examples/pick/pick.component';
     DemoBreadcrumbsComponent,
     DemoCarouselComponent,
     DemoMenusComponent,
-    DemoPickComponent
+    DemoPickComponent,
+    DemoToastComponent
   ],
   imports: [
     BrowserModule,
@@ -115,7 +118,8 @@ import { DemoPickComponent } from './examples/pick/pick.component';
     XotbBreadcrumbsModule,
     XotbCarouselModule,
     XotbMenusModule,
-    XotbPickModule
+    XotbPickModule,
+    XotbToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]

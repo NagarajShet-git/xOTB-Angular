@@ -23,6 +23,7 @@ import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.com
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
 import { DemoMenusComponent } from './examples/menus/menus.component';
 import { DemoPickComponent } from './examples/pick/pick.component';
+import { DemoToastComponent } from './examples/toast/toast.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -47,7 +48,8 @@ const routes: Routes = [
   { path: 'breadcrumbs', component: DemoBreadcrumbsComponent },
   { path: 'carousel', component: DemoCarouselComponent },
   { path: 'menus', component: DemoMenusComponent },
-  { path: 'pick', component: DemoPickComponent }
+  { path: 'pick', component: DemoPickComponent },
+  { path: 'toast', component: DemoToastComponent }
 ];
 
 @NgModule({

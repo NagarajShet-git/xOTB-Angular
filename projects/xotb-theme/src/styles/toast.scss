@@ -1,0 +1,47 @@
+.xotb-notify_toast {
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  background: #706e6b;
+  font-weight: 300;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+  padding: 0.75rem 3rem 0.75rem 1.5rem;
+  min-width: 30rem;
+  text-align: left;
+  justify-content: flex-start;
+  .xotb-notify__close {
+    float: right;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    margin-left: 0.25rem;
+    -webkit-transform: translateY(-0.125rem);
+    transform: translateY(-0.125rem);
+  }
+}
+.xotb-theme_info {
+  color: #fff;
+  background-color: #706e6b;
+}
+.xotb-theme_success {
+  color: #fff;
+  background-color: #04844b;
+}
+.xotb-theme_warning {
+  background-color: #ffb75d;
+  color: #080707;
+}
+.xotb-theme_error {
+  color: #fff;
+  background-color: #c23934;
+}
+.xotb-notify_container {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 10000;
+  text-align: center;
+}
