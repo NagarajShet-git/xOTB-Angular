@@ -24,4 +24,3 @@ export { XotbModalsModule } from 'ng-xotb/modals';
 export { XotbCarouselModule } from 'ng-xotb/carousel';
 import { XotbMenusModule } from 'ng-xotb/menus';
 import { XotbToastModule } from 'ng-xotb/toast';
-import { XotbPickModule } from 'ng-xotb/pick';
