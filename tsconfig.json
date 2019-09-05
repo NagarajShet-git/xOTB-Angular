@@ -40,7 +40,8 @@
       "ng-xotb/sections": ["dist/sections"],
       "ng-xotb/breadcrumbs": ["dist/breadcrumbs"],
       "ng-xotb/carousel": ["dist/carousel"],
-      "ng-xotb/menus": ["dist/menus"]
+      "ng-xotb/menus": ["dist/menus"],
+      "ng-xotb/pick": ["dist/pick"]
     }
   },
   "angularCompilerOptions": {
