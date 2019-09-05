@@ -61,6 +61,8 @@ import { DemoCarouselComponent } from './examples/carousel/carousel.component';
 import { DemoMenusComponent } from './examples/menus/menus.component';
 import { DemoPickComponent } from './examples/pick/pick.component';
 import { DemoToastComponent } from './examples/toast/toast.component';
+import { DemoBoxComponent } from './examples/box/box.component';
+import { XotbBoxModule } from 'projects/box/src/public-api';
 
 @NgModule({
   declarations: [
@@ -88,7 +90,8 @@ import { DemoToastComponent } from './examples/toast/toast.component';
     DemoCarouselComponent,
     DemoMenusComponent,
     DemoPickComponent,
-    DemoToastComponent
+    DemoToastComponent,
+    DemoBoxComponent
   ],
   imports: [
     BrowserModule,
@@ -119,7 +122,8 @@ import { DemoToastComponent } from './examples/toast/toast.component';
     XotbCarouselModule,
     XotbMenusModule,
     XotbPickModule,
-    XotbToastModule
+    XotbToastModule,
+    XotbBoxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
