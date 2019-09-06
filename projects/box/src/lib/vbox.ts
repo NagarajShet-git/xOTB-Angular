@@ -10,4 +10,4 @@ import { Component } from '@angular/core';
     </xotb-styled-component>
   `
 })
-export class VBox {}
+export class XotbVBox {}
