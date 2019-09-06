@@ -25,6 +25,8 @@ import { DemoMenusComponent } from './examples/menus/menus.component';
 import { DemoPickComponent } from './examples/pick/pick.component';
 import { DemoToastComponent } from './examples/toast/toast.component';
 import { DemoBoxComponent } from './examples/box/box.component';
+import { DemoComboboxesComponent } from './examples/comboboxes/combobox.component';
+import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -51,7 +53,9 @@ const routes: Routes = [
   { path: 'menus', component: DemoMenusComponent },
   { path: 'pick', component: DemoPickComponent },
   { path: 'toast', component: DemoToastComponent },
-  { path: 'box', component: DemoBoxComponent }
+  { path: 'box', component: DemoBoxComponent },
+  { path: 'comboboxes', component: DemoComboboxesComponent },
+  { path: 'autocomplete', component: DemoAutoCompleteComponent }
 ];
 
 @NgModule({

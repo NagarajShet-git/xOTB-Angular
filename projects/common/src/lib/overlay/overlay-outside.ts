@@ -13,7 +13,7 @@ import { CdkConnectedOverlay, ScrollDispatcher } from '@angular/cdk/overlay';
 @Directive({
   selector: '[xotbOverlayScrolledOutsideView]'
 })
-export class XotbOverlaynglOverlayScrolledOutsideViewDirective
+export class XotbOverlayxotbOverlayScrolledOutsideViewDirective
   implements OnInit, OnDestroy {
   @Output('xotbOverlayScrolledOutsideView') overlayOutside: EventEmitter<
     void
@@ -33,9 +33,7 @@ export class XotbOverlaynglOverlayScrolledOutsideViewDirective
       .getAncestorScrollContainers(elementRef)
       .map(container => container.getElementRef());
 
-    if (!scrollableAncestors || !scrollableAncestors.length) {
-      return;
-    }
+    if (!scrollableAncestors || !scrollableAncestors.length) return;
 
     this.subscription = this.cdkOverlay.positionChange.subscribe(() => {
       const bounds = elementRef.nativeElement.getBoundingClientRect();

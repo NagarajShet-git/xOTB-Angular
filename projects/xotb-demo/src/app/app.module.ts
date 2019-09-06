@@ -33,6 +33,8 @@ import { XotbCarouselModule } from 'projects/carousel/src/public-api';
 import { XotbMenusModule } from 'projects/menus/src/public-api';
 import { XotbPickModule } from 'projects/pick/src/lib';
 import { XotbToastModule } from 'projects/toast/src/public-api';
+import { XotbBoxModule } from 'projects/box/src/public-api';
+import { XotbComboboxesModule } from 'projects/comboboxes/src/public-api';
 
 /**
  * Examples Component
@@ -62,7 +64,8 @@ import { DemoMenusComponent } from './examples/menus/menus.component';
 import { DemoPickComponent } from './examples/pick/pick.component';
 import { DemoToastComponent } from './examples/toast/toast.component';
 import { DemoBoxComponent } from './examples/box/box.component';
-import { XotbBoxModule } from 'projects/box/src/public-api';
+import { DemoComboboxesComponent } from './examples/comboboxes/combobox.component';
+import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.component';
 
 @NgModule({
   declarations: [
@@ -91,7 +94,9 @@ import { XotbBoxModule } from 'projects/box/src/public-api';
     DemoMenusComponent,
     DemoPickComponent,
     DemoToastComponent,
-    DemoBoxComponent
+    DemoBoxComponent,
+    DemoComboboxesComponent,
+    DemoAutoCompleteComponent
   ],
   imports: [
     BrowserModule,
@@ -123,7 +128,8 @@ import { XotbBoxModule } from 'projects/box/src/public-api';
     XotbMenusModule,
     XotbPickModule,
     XotbToastModule,
-    XotbBoxModule
+    XotbBoxModule,
+    XotbComboboxesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
