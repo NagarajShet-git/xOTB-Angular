@@ -55,3 +55,13 @@
   white-space: nowrap;
   cursor: pointer;
 }
+.xotb-dropdown_fluid {
+  min-width: auto;
+  max-width: 100%;
+  width: 100%;
+}
+.xotb-dropdown_length-5 {
+  -webkit-overflow-scrolling: touch;
+  max-height: calc(((0.8125rem * 1.5) + 1rem) * 5);
+  overflow-y: auto;
+}

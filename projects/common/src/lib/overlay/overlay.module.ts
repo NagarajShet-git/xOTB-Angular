@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { XotbOverlaynglOverlayScrolledOutsideViewDirective } from './overlay-outside';
+import { XotbOverlayxotbOverlayScrolledOutsideViewDirective } from './overlay-outside';
 
 @NgModule({
-  declarations: [XotbOverlaynglOverlayScrolledOutsideViewDirective],
-  exports: [XotbOverlaynglOverlayScrolledOutsideViewDirective],
+  declarations: [XotbOverlayxotbOverlayScrolledOutsideViewDirective],
+  exports: [XotbOverlayxotbOverlayScrolledOutsideViewDirective],
   imports: [CommonModule]
 })
 export class XotbOverlayModule {}

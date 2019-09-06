@@ -10,3 +10,28 @@
   line-height: 1.875rem;
   min-height: calc(1.875rem + (1px * 2));
 }
+.xotb-icon__container,
+.xotb-icon_container {
+  display: inline-block;
+  border-radius: 0.25rem;
+  line-height: 1;
+}
+.xotb-input-has-icon .xotb-input__icon {
+  fill: #b0adab;
+  width: 0.875rem;
+  height: 0.875rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4375rem;
+  line-height: 1;
+  border: 0;
+  z-index: 2;
+  fill: #b0adab;
+}
+.xotb-input-has-icon--right .xotb-input__icon,
+.xotb-input-has-icon_right .xotb-input__icon {
+  right: 0.75rem;
+}
+.xotb-input-has-icon .xotb-input__icon:not(button) {
+  pointer-events: none;
+}

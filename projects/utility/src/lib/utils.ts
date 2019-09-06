@@ -118,3 +118,18 @@ export function isInt(value: any): boolean {
   // tslint:disable-next-line:no-bitwise
   return (x | 0) === x;
 }
+
+export function menuItemScroll(container, domItem, scrollPadding = 4) {
+  if (
+    domItem.offsetHeight - container.scrollTop + domItem.offsetTop >=
+    container.offsetHeight
+  ) {
+    container.scrollTop =
+      domItem.offsetHeight +
+      domItem.offsetTop -
+      container.offsetHeight +
+      scrollPadding;
+  } else if (domItem.offsetTop <= container.scrollTop) {
+    container.scrollTop = domItem.offsetTop - scrollPadding;
+  }
+}
