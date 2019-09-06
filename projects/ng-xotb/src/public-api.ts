@@ -26,3 +26,4 @@ import { XotbMenusModule } from 'ng-xotb/menus';
 import { XotbToastModule } from 'ng-xotb/toast';
 import { XotbPickModule } from 'ng-xotb/pick';
 import { XotbBoxModule } from 'ng-xotb/box';
+export { XotbColorpickerModule } from 'ng-xotb/colorpicker';

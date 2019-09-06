@@ -29,6 +29,7 @@ const LIBRARIES = [
   'menus',
   'pick',
   'toast',
-  'box'
+  'box',
+  'colorpicker'
 ];
 module.exports = LIBRARIES;
