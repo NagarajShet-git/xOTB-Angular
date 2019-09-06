@@ -7,3 +7,9 @@
   display: flex;
   flex-direction: row;
 }
+
+.xotb-card {
+  border: 1px solid var(--xotb_common__border-color);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
