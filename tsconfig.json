@@ -44,7 +44,8 @@
       "ng-xotb/pick": ["dist/pick"],
       "ng-xotb/toast": ["dist/toast"],
       "ng-xotb/box": ["dist/box"],
-      "ng-xotb/comboboxes": ["dist/comboboxes"]
+      "ng-xotb/comboboxes": ["dist/comboboxes"],
+      "ng-xotb/colorpicker": ["dist/colorpicker"]
     }
   },
   "angularCompilerOptions": {

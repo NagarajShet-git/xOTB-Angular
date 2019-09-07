@@ -35,6 +35,7 @@ import { XotbPickModule } from 'projects/pick/src/lib';
 import { XotbToastModule } from 'projects/toast/src/public-api';
 import { XotbBoxModule } from 'projects/box/src/public-api';
 import { XotbComboboxesModule } from 'projects/comboboxes/src/public-api';
+import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
 
 /**
  * Examples Component
@@ -66,6 +67,7 @@ import { DemoToastComponent } from './examples/toast/toast.component';
 import { DemoBoxComponent } from './examples/box/box.component';
 import { DemoComboboxesComponent } from './examples/comboboxes/combobox.component';
 import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.component';
+import { DemoColorpickerComponent } from './examples/colorpicker/colorpicker.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +98,8 @@ import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.
     DemoToastComponent,
     DemoBoxComponent,
     DemoComboboxesComponent,
-    DemoAutoCompleteComponent
+    DemoAutoCompleteComponent,
+    DemoColorpickerComponent
   ],
   imports: [
     BrowserModule,
@@ -129,7 +132,8 @@ import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.
     XotbPickModule,
     XotbToastModule,
     XotbBoxModule,
-    XotbComboboxesModule
+    XotbComboboxesModule,
+    XotbColorpickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

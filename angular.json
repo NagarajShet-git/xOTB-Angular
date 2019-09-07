@@ -1165,6 +1165,39 @@
           }
         }
       }
+    },
+    "colorpicker": {
+      "projectType": "library",
+      "root": "projects/colorpicker",
+      "sourceRoot": "projects/colorpicker/src",
+      "prefix": "xotb",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/colorpicker/tsconfig.lib.json",
+            "project": "projects/colorpicker/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/colorpicker/src/test.ts",
+            "tsConfig": "projects/colorpicker/tsconfig.spec.json",
+            "karmaConfig": "projects/colorpicker/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/colorpicker/tsconfig.lib.json",
+              "projects/colorpicker/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**"]
+          }
+        }
+      }
     }
   },
   "defaultProject": "xotb-demo"

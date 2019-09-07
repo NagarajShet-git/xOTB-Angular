@@ -27,3 +27,4 @@ export { XotbToastModule } from 'ng-xotb/toast';
 export { XotbPickModule } from 'ng-xotb/pick';
 export { XotbBoxModule } from 'ng-xotb/box';
 export { XotbComboboxesModule } from 'ng-xotb/comboboxes';
+export { XotbColorpickerModule } from 'ng-xotb/colorpicker';
