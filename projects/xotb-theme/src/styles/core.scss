@@ -80,6 +80,11 @@ svg,
 video {
   vertical-align: middle;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
 .cdk-global-overlay-wrapper,
 .cdk-overlay-container {
   pointer-events: none;
@@ -138,4 +143,24 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: 1em;
+}
+td,
+th {
+  padding: 0;
+}
+caption,
+td,
+th {
+  text-align: left;
+}
+.xotb-line-height_reset {
+  line-height: 1;
+}
+
+.xotb-text-link_reset,
+.xotb-text-link_reset:active,
+.xotb-text-link_reset:focus,
+.xotb-text-link_reset:hover {
+  color: inherit;
+  text-decoration: inherit;
 }

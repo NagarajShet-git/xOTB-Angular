@@ -28,6 +28,7 @@ import { DemoBoxComponent } from './examples/box/box.component';
 import { DemoComboboxesComponent } from './examples/comboboxes/combobox.component';
 import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.component';
 import { DemoColorpickerComponent } from './examples/colorpicker/colorpicker.component';
+import { DemoDatatableComponent } from './examples/datatable/datatable.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -57,7 +58,8 @@ const routes: Routes = [
   { path: 'box', component: DemoBoxComponent },
   { path: 'comboboxes', component: DemoComboboxesComponent },
   { path: 'autocomplete', component: DemoAutoCompleteComponent },
-  { path: 'colorpicker', component: DemoColorpickerComponent }
+  { path: 'colorpicker', component: DemoColorpickerComponent },
+  { path: 'datatable', component: DemoDatatableComponent }
 ];
 
 @NgModule({
