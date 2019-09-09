@@ -45,7 +45,8 @@
       "ng-xotb/toast": ["dist/toast"],
       "ng-xotb/box": ["dist/box"],
       "ng-xotb/comboboxes": ["dist/comboboxes"],
-      "ng-xotb/colorpicker": ["dist/colorpicker"]
+      "ng-xotb/colorpicker": ["dist/colorpicker"],
+      "ng-xotb/datatable": ["dist/datatable"]
     }
   },
   "angularCompilerOptions": {
