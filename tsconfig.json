@@ -46,7 +46,8 @@
       "ng-xotb/box": ["dist/box"],
       "ng-xotb/comboboxes": ["dist/comboboxes"],
       "ng-xotb/colorpicker": ["dist/colorpicker"],
-      "ng-xotb/datatable": ["dist/datatable"]
+      "ng-xotb/datatable": ["dist/datatable"],
+      "ng-xotb/tree": ["dist/tree"]
     }
   },
   "angularCompilerOptions": {
