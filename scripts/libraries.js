@@ -31,6 +31,7 @@ const LIBRARIES = [
   'toast',
   'box',
   'comboboxes',
-  'colorpicker'
+  'colorpicker',
+  'tree'
 ];
 module.exports = LIBRARIES;
