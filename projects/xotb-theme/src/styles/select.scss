@@ -7,9 +7,9 @@
 }
 
 .xotb-select {
-  background-color: var(--xotb-select__background-color);
+  background-color: var(--xotb_common__background-color);
   border: 1px solid;
-  border-color: var(--xotb-select__border-color);
+  border-color: var(--xotb_common__border-color);
   border-radius: 0.25rem;
   width: 100%;
   transition: border 0.1s linear, background-color 0.1s linear;

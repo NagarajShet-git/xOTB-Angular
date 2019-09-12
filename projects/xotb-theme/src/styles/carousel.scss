@@ -25,11 +25,11 @@
 }
 .xotb-carousel__panel-action {
   display: block;
-  border: 1px solid #dddbda;
+  border: 1px solid var(--xotb_common__border-color);
   border-radius: 0.25rem;
 }
 .xotb-carousel__content {
-  background: #fff;
+  background: var(--xotb_common__background-color);
   padding: 0.75rem;
   border-bottom-left-radius: 0.25rem;
   border-bottom-right-radius: 0.25rem;
@@ -54,16 +54,16 @@
 .xotb-carousel__indicator-action {
   width: 1rem;
   height: 1rem;
-  background: #fff;
-  border: 1px solid #dddbda;
+  background: var(--xotb_common__background-color);
+  border: 1px solid var(--xotb_common__border-color);
   border-radius: 50%;
   &.xotb-is-active {
-    background: #0070d2;
-    border-color: #0070d2;
+    background: var(--xotb_common__primary-color);
+    border-color: var(--xotb_common__primary-color);
   }
 }
 .xotb-carousel__indicator-action.xotb-is-active,
 .xotb-carousel__indicator-action.xotb-is-active:hover {
-  background: #0070d2;
-  border-color: #0070d2;
+  background: var(--xotb_common__primary-color);
+  border-color: var(--xotb_common__primary-color);
 }

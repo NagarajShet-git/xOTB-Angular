@@ -7,12 +7,12 @@
   max-width: 20rem;
   margin-top: 0.125rem;
   margin-bottom: 0.125rem;
-  border: 1px solid #dddbda;
+  border: 1px solid var(--xotb_common__border-color);
   border-radius: 0.25rem;
   padding: 0.25rem 0;
   font-size: 0.75rem;
-  background: #fff;
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  background: var(--xotb_common__background-color);
+  box-shadow: 0 2px 3px 0 var(--xotb-common__box-shadow);
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
 }

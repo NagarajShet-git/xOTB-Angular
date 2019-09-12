@@ -58,8 +58,8 @@
   left: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0) rotate(-45deg);
   transform: translate3d(-50%, -50%, 0) rotate(-45deg);
-  border-bottom: 2px solid var(--xotb-checkbox__checked__border-bottom-color);
-  border-left: 2px solid var(--xotb-checkbox__checked__border-left-color);
+  border-bottom: 2px solid var(--xotb_common__primary-color);
+  border-left: 2px solid var(--xotb_common__primary-color);
 }
 
 // prettier-ignore
@@ -109,6 +109,6 @@
 .xotb-checkbox [type=checkbox][disabled] + .xotb-checkbox_faux,
 .xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox--faux,
 .xotb-checkbox [type=checkbox][disabled] ~ .xotb-checkbox_faux {
-  background-color: var(--xotb-checkbox__disabled__border-color);
-  border-color: var(--xotb-checkbox__disabled__border-color);
+  background-color: var(--xotb_common__disabled__border-color);
+  border-color: var(--xotb_common__disabled__border-color);
 }

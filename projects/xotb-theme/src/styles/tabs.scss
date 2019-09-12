@@ -17,7 +17,7 @@
   display: flex;
   align-items: flex-start;
   background-color: #fafaf9;
-  border: 1px solid #dddbda;
+  border: 1px solid var(--xotb_common__border-color);
   border-radius: 0.25rem 0.25rem 0 0;
 }
 
@@ -92,8 +92,8 @@
 }
 
 .xotb-is-active .xotb-tabs_scoped__link {
-  background-color: #fff;
-  border-color: #dddbda;
+  background-color: var(--xotb_common__background-color);
+  border-color: var(--xotb_common__border-color);
   font-weight: 700;
   color: #080707;
 }

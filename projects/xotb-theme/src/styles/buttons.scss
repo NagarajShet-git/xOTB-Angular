@@ -20,7 +20,7 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid var(--xotb-button_inverse__border-color);
+  border: 1px solid var(--xotb_common__border-color);
   transition: border 0.15s linear;
   background-color: transparent;
 }
@@ -29,9 +29,9 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid var(--xotb-button_neutral__border-color);
+  border: 1px solid var(--xotb_common__border-color);
   transition: border 0.15s linear;
-  background-color: var(--xotb-button_neutral__background-color);
+  background-color: var(--xotb_common__background-color);
 }
 
 .xotb-button_brand {
@@ -39,9 +39,9 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid var(--xotb-button_brand__border-color);
+  border: 1px solid var(--xotb_common__primary-color);
   transition: border 0.15s linear;
-  background-color: var(--xotb-button_brand__background-color);
+  background-color: var(--xotb_common__primary-color);
   color: var(--xotb-button_brand__color);
 }
 
@@ -50,9 +50,9 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid var(--xotb-button_outline-brand__border-color);
+  border: 1px solid var(--xotb_common__border-color);
   transition: border 0.15s linear;
-  background-color: var(--xotb-button_outline-brand__background-color);
+  background-color: var(--xotb_common__background-color);
 }
 
 .xotb-button_destructive {
@@ -60,9 +60,9 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid var(--xotb-button_destructive__border-color);
+  border: 1px solid var(--xotb_common__rejection-color);
   transition: border 0.15s linear;
-  background-color: var(--xotb-button_destructive__background-color);
+  background-color: var(--xotb_common__rejection-color);
   color: var(--xotb-button_destructive__color);
 }
 
@@ -71,10 +71,10 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid var(--xotb-button_text-destructive__border-color);
+  border: 1px solid var(--xotb_common__border-color);
   transition: border 0.15s linear;
-  background-color: var(--xotb-button_text-destructive__background-color);
-  color: var(--xotb-button_text-destructive__color);
+  background-color: var(--xotb_common__background-color);
+  color: var(--xotb_common__rejection-color);
 }
 .xotb-button_success {
   padding-left: 1rem;

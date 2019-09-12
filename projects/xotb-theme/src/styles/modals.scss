@@ -20,7 +20,7 @@ xotb-modal {
 
     .xotb-modal-body {
       padding: 20px;
-      background: #fff;
+      background: var(--xotb_common__background-color);
 
       /* margin exposes part of the modal background */
       margin: 40px;
