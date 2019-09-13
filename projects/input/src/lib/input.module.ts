@@ -5,7 +5,6 @@ import { XotbInternalOutletModule } from 'ng-xotb/utility';
 import { XotbTooltipsModule } from 'ng-xotb/tooltips';
 import { XotbInputElement } from './element';
 import { XotbInput } from './input';
-import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 
 const DECLARATIONS = [XotbInput, XotbInputElement];
 
@@ -15,8 +14,7 @@ const DECLARATIONS = [XotbInput, XotbInputElement];
     CommonModule,
     XotbFormsModule,
     XotbTooltipsModule,
-    XotbInternalOutletModule,
-    XotbThemeModule
+    XotbInternalOutletModule
   ],
   exports: DECLARATIONS
 })

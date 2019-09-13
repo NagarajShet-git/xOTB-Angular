@@ -4,7 +4,7 @@
 
 .xotb-accordion__list-item {
   border-top: 1px solid;
-  border-top-color: var(--xotb_common__border-color);
+  border-top-color: $border-color;
   &:first-child {
     border-top: 0;
   }

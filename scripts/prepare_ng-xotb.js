@@ -23,7 +23,7 @@ function copy_libraries(lib) {
 }
 
 function* copy_lib_generator() {
-  for (let x of LIBRARIES) {
+  for (let x of [...LIBRARIES, 'xotb-theme']) {
     yield copy_libraries(x);
   }
 }

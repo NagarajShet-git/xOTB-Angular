@@ -1,4 +1,17 @@
-import { Component, OnInit, ChangeDetectionStrategy, forwardRef, TemplateRef, Input, HostBinding, Output, EventEmitter, ElementRef, Renderer2, ChangeDetectorRef } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  forwardRef,
+  TemplateRef,
+  Input,
+  HostBinding,
+  Output,
+  EventEmitter,
+  ElementRef,
+  Renderer2,
+  ChangeDetectorRef
+} from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 import { InputBoolean, InputNumber } from 'ng-xotb/utility';
 import { uniqueId } from 'ng-xotb/utility';
@@ -18,10 +31,9 @@ const XOTB_SLIDER_VALUE_ACCESSOR = {
   styles: []
 })
 export class XotbSlider implements ControlValueAccessor {
-
   /**
-  * Label that appears above the Slider.
-  */
+   * Label that appears above the Slider.
+   */
   @Input() label: string | TemplateRef<any>;
 
   /**
@@ -47,7 +59,14 @@ export class XotbSlider implements ControlValueAccessor {
   /**
    * The size of the slider.
    */
-  @Input() size: 'xx-small' | 'x-small' | 'small' | 'medium' | 'large' | 'x-large' | 'xx-large';
+  @Input() size:
+    | 'xx-small'
+    | 'x-small'
+    | 'small'
+    | 'medium'
+    | 'large'
+    | 'x-large'
+    | 'xx-large';
 
   /**
    * Whether the slider is disabled.
@@ -83,24 +102,34 @@ export class XotbSlider implements ControlValueAccessor {
 
   private _value: number | null = null;
 
-  constructor(private element: ElementRef, private renderer: Renderer2, private cd: ChangeDetectorRef) {
+  constructor(
+    private element: ElementRef,
+    private renderer: Renderer2,
+    private cd: ChangeDetectorRef
+  ) {
     this.renderer.addClass(this.element.nativeElement, 'xotb-form-element');
   }
 
   onChange: Function | null = null;
 
-  onTouched = () => { };
+  onTouched = () => {};
 
   writeValue(value: number) {
     this.value = value;
     this.cd.markForCheck();
   }
 
-  registerOnChange(fn: (value: any) => any): void { this.onChange = fn; }
+  registerOnChange(fn: (value: any) => any): void {
+    this.onChange = fn;
+  }
 
-  registerOnTouched(fn: () => any): void { this.onTouched = fn; }
+  registerOnTouched(fn: () => any): void {
+    this.onTouched = fn;
+  }
 
-  setDisabledState(isDisabled: boolean) { this.disabled = isDisabled; }
+  setDisabledState(isDisabled: boolean) {
+    this.disabled = isDisabled;
+  }
 
   onInput(value) {
     // Make sure we always emit number
@@ -115,12 +144,11 @@ export class XotbSlider implements ControlValueAccessor {
   sliderClass() {
     return {
       [`xotb-size_${this.size}`]: !!this.size,
-      [`xotb-slider_vertical`]: this.vertical,
+      [`xotb-slider_vertical`]: this.vertical
     };
   }
 
   private limit(value: number): number {
     return Math.min(Math.max(value, this.min), this.max);
   }
-
 }

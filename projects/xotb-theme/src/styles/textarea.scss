@@ -1,14 +1,14 @@
 .xotb-textarea {
-  background-color: var(--xotb_common__background-color);
-  border: 1px solid var(--xotb_common__border-color);
+  background-color: $background-color;
+  border: 1px solid $border-color;
   border-radius: 0.25rem;
   width: 100%;
   transition: border 0.1s linear, background-color 0.1s linear;
   resize: vertical;
   padding: 0.5rem 0.75rem;
   &[disabled] {
-    background-color: var(--xotb_common__disabled__background-color);
-    border-color: var(--xotb_common__disabled__border-color);
+    background-color: $disabled-background-color;
+    border-color: $disabled-border-color;
     cursor: not-allowed;
     -webkit-user-select: none;
     -moz-user-select: none;

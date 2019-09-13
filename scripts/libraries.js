@@ -1,7 +1,6 @@
 // Add library to build
 
 const LIBRARIES = [
-  'xotb-theme',
   'utility',
   'common',
   'tooltips',

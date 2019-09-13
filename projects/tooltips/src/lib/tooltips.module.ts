@@ -6,17 +6,10 @@ import { XotbInternalOutletModule } from 'ng-xotb/utility';
 
 import { XotbTooltipTrigger } from './tooltip-trigger';
 import { XotbTooltip } from './tooltip';
-import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 
 @NgModule({
   declarations: [XotbTooltip, XotbTooltipTrigger],
-  imports: [
-    CommonModule,
-    OverlayModule,
-    A11yModule,
-    XotbInternalOutletModule,
-    XotbThemeModule
-  ],
+  imports: [CommonModule, OverlayModule, A11yModule, XotbInternalOutletModule],
   exports: [XotbTooltipTrigger],
   entryComponents: [XotbTooltip]
 })

@@ -23,9 +23,9 @@
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    border: 1px solid var(--xotb-common__border-color);
+    border: 1px solid $border-color;
     border-radius: 50%;
-    background: var(--xotb-common__background-color);
+    background: $background-color;
     transition: border 0.1s linear, background-color 0.1s linear;
   }
 }
@@ -47,7 +47,7 @@
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     border-radius: 50%;
-    background: var(--xotb-common__primary-color);
+    background: $primary-color;
   }
 }
 
@@ -60,7 +60,7 @@
     [type=radio]:checked + .xotb-radio_faux:after,
     [type=radio]:checked ~ .xotb-radio--faux:after,
     [type=radio]:checked ~ .xotb-radio_faux:after {
-      background: var(--xotb-common__rejection-color);
+      background: $danger-color;
     }
   }
 }
@@ -80,6 +80,6 @@
 .xotb-has-error .xotb-radio [type=radio] + .xotb-radio_faux,
 .xotb-has-error .xotb-radio [type=radio] ~ .xotb-radio--faux,
 .xotb-has-error .xotb-radio [type=radio] ~ .xotb-radio_faux {
-  border-color: var(--xotb-common__rejection-color);
+  border-color: $danger-color;
   border-width: 2px;
 }

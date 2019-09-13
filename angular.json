@@ -23,7 +23,10 @@
               "projects/xotb-demo/src/favicon.ico",
               "projects/xotb-demo/src/assets"
             ],
-            "styles": ["projects/xotb-demo/src/styles.css"],
+            "styles": [
+              "projects/xotb-demo/src/styles.css",
+              "projects/xotb-theme/src/styles/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {

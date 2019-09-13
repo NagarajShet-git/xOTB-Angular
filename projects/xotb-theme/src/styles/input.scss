@@ -1,7 +1,7 @@
 .xotb-input {
-  border-color: var(--xotb_common__border-color);
+  border-color: $border-color;
   border-radius: 0.25rem;
-  background-color: var(--xotb_common__background-color);
+  background-color: $background-color;
   border: 1px solid;
   width: 100%;
   transition: border 0.1s linear, background-color 0.1s linear;
