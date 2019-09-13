@@ -8,7 +8,7 @@
   vertical-align: top;
   padding: 0.3rem 0.5rem;
   line-height: 1;
-  background: var(--xotb_common__background-color);
+  background: $background-color;
   margin-right: 0.25rem;
 }
 .xotb-swatch {
@@ -60,7 +60,7 @@
   position: relative;
   margin-bottom: 0.25rem;
   height: 5rem;
-  border: 1px solid var(--xotb_common__border-color);
+  border: 1px solid $border-color;
   border-radius: 0.25rem;
   overflow: hidden;
 }
@@ -73,8 +73,7 @@
   width: 0.75rem;
   border: 2px solid #fff;
   border-radius: 50%;
-  box-shadow: 0 2px 4px 4px var(--xotb-common__box-shadow),
-    inset 0 2px 4px 4px var(--xotb-common__box-shadow);
+  box-shadow: 0 2px 4px 4px $box-shadow, inset 0 2px 4px 4px $box-shadow;
 }
 .xotb-color-picker__hue-slider {
   -webkit-appearance: none;
@@ -84,7 +83,7 @@
   padding: 0;
   height: 1.5rem;
   width: 100%;
-  border: 1px solid var(--xotb_common__border-color);
+  border: 1px solid $border-color;
   border-radius: 0.25rem;
   background: linear-gradient(
     to right,

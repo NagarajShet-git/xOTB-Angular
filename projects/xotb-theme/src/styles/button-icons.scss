@@ -16,7 +16,7 @@
   line-height: 1;
   vertical-align: middle;
   color: #706e6b;
-  border: 1px solid var(--xotb_common__border-color);
+  border: 1px solid $border-color;
   transition: border 0.15s linear;
 }
 .xotb-button_icon-border,
@@ -35,18 +35,18 @@
   fill: currentColor;
 }
 .xotb-button_icon-brand {
-  background-color: var(--xotb_common__primary-color);
-  border-color: var(--xotb_common__primary-color);
-  color: var(--xotb-button_brand__color);
+  background-color: $primary-color;
+  border-color: $primary-color;
+  color: $button-brand-color;
 }
 
 .xotb-button_icon-border-inverse,
 .xotb-button_icon-inverse {
-  color: var(--xotb-button_brand__color);
+  color: $button-brand-color;
 }
 .xotb-button_icon-border-inverse {
   background-color: transparent;
-  border-color: var(--xotb_common__border-color);
+  border-color: $border-color;
 }
 .xotb-button_icon-xx-small {
   width: 1rem;
@@ -69,7 +69,7 @@
 .xotb-button_icon-border-inverse.xotb-is-selected,
 .xotb-button_icon-border.xotb-is-selected,
 .xotb-button_icon-container.xotb-is-selected {
-  background-color: var(--xotb_common__primary-color);
-  border-color: var(--xotb_common__primary-color);
+  background-color: $primary-color;
+  border-color: $primary-color;
   color: #fff;
 }

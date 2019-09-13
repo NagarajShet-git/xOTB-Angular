@@ -1,9 +1,7 @@
-<xotb-styled-component>
-  <li
-    *ngFor="let section of sections"
-    xotbAccordionItem
-    [isActive]="isActive(section)"
-    [section]="section"
-    (toggle)="toggle(section)"
-  ></li>
-</xotb-styled-component>
+<li
+  *ngFor="let section of sections"
+  xotbAccordionItem
+  [isActive]="isActive(section)"
+  [section]="section"
+  (toggle)="toggle(section)"
+></li>

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { XotbButton } from './button';
 import { CommonModule } from '@angular/common';
 import { XotbIconsModule } from 'ng-xotb/icons';
-import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 import {
   XotbButtonStateOn,
   XotbButtonStateHover,
@@ -18,7 +17,7 @@ import { XotbButtonStateful } from './button-stateful';
     XotbButtonStateOff,
     XotbButtonStateful
   ],
-  imports: [CommonModule, XotbIconsModule, XotbThemeModule],
+  imports: [CommonModule, XotbIconsModule],
   exports: [
     XotbButton,
     XotbButtonStateOn,

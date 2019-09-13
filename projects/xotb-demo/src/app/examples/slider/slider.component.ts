@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 
 @Component({
-    templateUrl: './slider.component.html'
+  templateUrl: './slider.component.html'
 })
-export class DemoSliderComponent {
-
-}
+export class DemoSliderComponent {}

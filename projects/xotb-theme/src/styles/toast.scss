@@ -1,9 +1,9 @@
 .xotb-notify_toast {
-  color: var(--xotb-notify_toast__color);
+  color: $toast-color;
   display: inline-flex;
   align-items: center;
   position: relative;
-  background: var(--xotb-notify_toast__background);
+  background: map-get($theme-colors, 'info');
   font-weight: 300;
   border-radius: 0.25rem;
   margin: 0.5rem;
@@ -22,20 +22,20 @@
   }
 }
 .xotb-theme_info {
-  color: var(--xotb-notify_toast__color);
-  background-color: var(--xotb-theme_info__background);
+  color: $toast-color;
+  background-color: map-get($theme-colors, 'info');
 }
 .xotb-theme_success {
-  color: var(--xotb-notify_toast__color);
-  background-color: var(--xotb-theme_success__background);
+  color: $toast-color;
+  background-color: map-get($theme-colors, 'success');
 }
 .xotb-theme_warning {
-  background-color: var(--xotb-theme_warning__background);
-  color: var(--xotb-theme_warning__color);
+  background-color: map-get($theme-colors, 'warning');
+  color: $toast-warning-color;
 }
 .xotb-theme_error {
-  color: var(--xotb-notify_toast__color);
-  background-color: var(--xotb_common__rejection-color);
+  color: $toast-color;
+  background-color: $danger-color;
 }
 .xotb-notify_container {
   position: fixed;

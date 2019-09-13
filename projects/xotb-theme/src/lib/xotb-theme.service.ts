@@ -22,6 +22,6 @@ export class XotbThemeService {
   }
 
   constructor() {
-    this.toggleLight(); // apply light theme if no theme is provided
+    // this.toggleLight(); // apply light theme if no theme is provided
   }
 }

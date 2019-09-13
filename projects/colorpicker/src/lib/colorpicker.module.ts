@@ -3,7 +3,6 @@ import { XotbColorpicker } from './colorpicker';
 import { CommonModule } from '@angular/common';
 
 import { XotbInternalOutletModule } from 'ng-xotb/utility';
-import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 import { XotbIconsModule } from 'ng-xotb/icons';
 import { XotbFormsModule } from 'ng-xotb/forms';
 import { XotbPopoversModule } from 'ng-xotb/popovers';
@@ -34,8 +33,7 @@ const DIRECTIVES = [XotbColorpicker];
     XotbTabsModule,
     XotbPopoversModule,
     XotbFormsModule,
-    XotbInternalOutletModule,
-    XotbThemeModule
+    XotbInternalOutletModule
   ],
   exports: DIRECTIVES
 })

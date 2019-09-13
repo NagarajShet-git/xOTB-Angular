@@ -1,11 +1,11 @@
 .xotb-table {
-  background-color: var(--xotb_common__background-color);
+  background-color: $background-color;
   font-size: inherit;
 }
 .xotb-table_bordered {
   border-collapse: separate;
-  border-top: 1px solid var(--xotb_common__border-color);
-  border-bottom: 1px solid var(--xotb_common__border-color);
+  border-top: 1px solid $border-color;
+  border-bottom: 1px solid $border-color;
 }
 .xotb-table_fixed-layout {
   table-layout: fixed;

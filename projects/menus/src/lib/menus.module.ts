@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { XotbThemeModule } from 'ng-xotb/xotb-theme';
 
 import { XotbMenus } from './menus';
 import { XotbDropdownTrigger } from './dropdown-trigger';
@@ -14,7 +13,7 @@ const XOTB_DROPDOWN_DIRECTIVES = [
 
 @NgModule({
   declarations: [XOTB_DROPDOWN_DIRECTIVES],
-  imports: [CommonModule, XotbThemeModule],
+  imports: [CommonModule],
   exports: [XOTB_DROPDOWN_DIRECTIVES]
 })
 export class XotbMenusModule {}

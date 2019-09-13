@@ -1,0 +1,39 @@
+// colors
+$white: #ffffff;
+$green: #4bca81;
+$blue: #0070d2;
+$red: hsl(2, 58%, 48%);
+$yellow: #ffc107;
+
+$primary-color: $blue;
+$secondary-color: $yellow;
+$danger-color: $red;
+
+$text-color: #3e3e3c;
+
+$border-color: #dddbda;
+$background-color: $white;
+
+$box-shadow: rgba(0, 0, 0, 0.16);
+
+$disabled-border-color: #c9c7c5;
+$disabled-background-color: #ecebea;
+
+$anchor-color: $blue;
+
+$theme-colors: (
+  'success': $green,
+  'info': #706e6b,
+  'warning': #ffc107
+);
+
+$select-container-border-color: #061c3f;
+$tooltip-background-color: #16325c;
+$button-brand-color: $white;
+$button-destructive-color: $white;
+$button-success-border-color: #4bca81;
+$button-success-color: #080707;
+$progressbar-value-background-color: #5eb4ff;
+$toast-color: $white;
+$toast-warning-color: #080707;
+$icon-fill: $white;

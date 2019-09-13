@@ -5,14 +5,12 @@ import { XotbModalService } from './modals.service';
 @Component({
   selector: 'xotb-modal',
   template: `
-    <xotb-styled-component>
-      <div class="xotb-modal">
-        <div class="xotb-modal-body">
-          <ng-content></ng-content>
-        </div>
+    <div class="xotb-modal">
+      <div class="xotb-modal-body">
+        <ng-content></ng-content>
       </div>
-      <div class="xotb-modal-background"></div>
-    </xotb-styled-component>
+    </div>
+    <div class="xotb-modal-background"></div>
   `
 })
 export class XotbModal implements OnInit, OnDestroy {

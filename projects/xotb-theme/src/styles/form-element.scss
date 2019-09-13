@@ -5,7 +5,7 @@
   -ms-hyphens: auto;
   hyphens: auto;
   display: inline-block;
-  color: var(--xotb-form-element__label__color);
+  color: $text-color;
   font-size: 0.75rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
@@ -31,20 +31,20 @@
 }
 
 .xotb-required {
-  color: var(--xotb_common__rejection-color);
+  color: $danger-color;
   margin: 0 0.125rem;
 }
 
 .xotb-has-error {
-  border-color: var(--xotb_common__rejection-color);
+  border-color: $danger-color;
   .xotb-form-element__help {
-    color: var(--xotb_common__rejection-color);
+    color: $danger-color;
   }
   .xotb-select,
   .xotb-input {
-    background-color: var(--xotb_common__background-color);
-    border-color: var(--xotb_common__rejection-color);
-    box-shadow: var(--xotb_common__rejection-color) 0 0 0 1px inset;
+    background-color: $background-color;
+    border-color: $danger-color;
+    box-shadow: $danger-color 0 0 0 1px inset;
     background-clip: padding-box;
   }
 }
