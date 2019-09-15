@@ -1,0 +1,378 @@
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  background: #fafaf9;
+  color: #080707;
+  -webkit-tap-highlight-color: transparent;
+  font-family: sans-serif;
+  font-size: '1em';
+  font-style: normal;
+}
+
+.xotb-datepicker__filter {
+  padding: 0.25rem;
+}
+
+.slds-datepicker__filter--month,
+.slds-datepicker__filter_month {
+  padding: 0 0.25rem 0 0;
+}
+
+.xotb-grid {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.xotb-grid--align-spread,
+.xotb-grid_align-spread {
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.xotb-grow {
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.xotb-align-middle {
+  vertical-align: middle;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.xotb-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: 0 0;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  line-height: 1.875rem;
+  text-decoration: none;
+  color: #0070d2;
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.xotb-button--icon,
+.xotb-button--icon-border,
+.xotb-button--icon-border-filled,
+.xotb-button--icon-border-inverse,
+.xotb-button--icon-container,
+.xotb-button--icon-error,
+.xotb-button--icon-inverse,
+.xotb-button--icon-more,
+.xotb-button_icon,
+.xotb-button_icon-border,
+.xotb-button_icon-border-filled,
+.xotb-button_icon-border-inverse,
+.xotb-button_icon-container,
+.xotb-button_icon-error,
+.xotb-button_icon-inverse,
+.xotb-button_icon-more {
+  line-height: 1;
+  vertical-align: middle;
+  color: #706e6b;
+}
+
+.xotb-button--icon-border,
+.xotb-button--icon-border-filled,
+.xotb-button--icon-border-inverse,
+.xotb-button--icon-container,
+.xotb-button--icon-container-more,
+.xotb-button--icon-more,
+.xotb-button_icon-border,
+.xotb-button_icon-border-filled,
+.xotb-button_icon-border-inverse,
+.xotb-button_icon-brand,
+.xotb-button_icon-container,
+.xotb-button_icon-container-more,
+.xotb-button_icon-more {
+  width: 2rem;
+  height: 2rem;
+}
+
+.xotb-button__icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  fill: black;
+}
+
+.xotb-shrink-none {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin: auto;
+}
+
+:host ::ng-deep table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+}
+
+[_nghost-atp-c5] {
+  display: block;
+}
+
+:host ::ng-deep thead {
+  display: table-header-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+:host ::ng-deep tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+.xotb-datepicker :host ::ng-deep th {
+  padding: 0.5rem;
+  font-weight: 400;
+  color: #3e3e3c;
+}
+
+:host ::ng-deep td,
+:host ::ng-deep th {
+  padding: 0;
+}
+
+:host ::ng-deep caption,
+:host ::ng-deep td,
+:host ::ng-deep th {
+  text-align: left;
+}
+
+.xotb-datepicker :host ::ng-deep td,
+.xotb-datepicker :host ::ng-deep th {
+  text-align: center;
+}
+
+:host ::ng-deep tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.xotb-datepicker :host ::ng-deep td,
+.xotb-datepicker :host ::ng-deep th {
+  text-align: center;
+}
+
+.xotb-datepicker :host ::ng-deep td {
+  padding: 0.25rem;
+  text-align: center;
+  font-size: 0.75rem;
+}
+
+.xotb-datepicker :host ::ng-deep td > .xotb-day {
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  position: relative;
+  min-width: 2rem;
+  line-height: 2rem;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.xotb-datepicker :host ::ng-deep td.xotb-is-today > .xotb-day,
+.xotb-datepicker :host ::ng-deep td:focus:not(.xotb-disabled-text) > .xotb-day,
+:host.xotb-datepicker
+  :host
+  ::ng-deep
+  td:hover:not(.xotb-disabled-text)
+  > .xotb-day {
+  cursor: pointer;
+}
+
+.xotb-datepicker :host ::ng-deep td.xotb-is-today > .xotb-day {
+  background-color: #ecebea;
+}
+
+.xotb-datepicker :host ::ng-deep td.xotb-is-selected > .xotb-day {
+  background: #0070d2;
+  color: #fff;
+}
+
+::selection {
+  background: #d8edff;
+  text-shadow: none;
+  color: #080707;
+}
+
+:host ::ng-deep button:active {
+  border-style: inset;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+:host ::ng-deep button,
+:host ::ng-deep input,
+:host ::ng-deep optgroup,
+:host ::ng-deep select,
+:host ::ng-deep textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+:host ::ng-deep button {
+  overflow: visible;
+}
+
+:host ::ng-deep button,
+:host ::ng-deep select {
+  text-transform: none;
+}
+
+:host ::ng-deep button,
+html :host ::ng-deep input[type='button'],
+:host ::ng-deep input[type='reset'],
+:host ::ng-deepinput[type='submit'] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+:host ::ng-deep a,
+:host ::ng-deep button {
+  cursor: pointer;
+}
+
+.xotb-assistive-text {
+  position: absolute !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  text-transform: none !important;
+  white-space: nowrap !important;
+}
+
+.xotb-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: 0 0;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  line-height: 1.875rem;
+  text-decoration: none;
+  color: #0070d2;
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.xotb-align--absolute-center,
+.xotb-align_absolute-center {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+:host ::ng-deep .xotb-select {
+  background-color: #fff;
+  border: 1px solid #dddbda;
+  border-radius: 0.25rem;
+  width: 100%;
+  transition: border 0.1s linear, background-color 0.1s linear;
+  height: calc(1.875rem + (1px * 2));
+}
+
+.xotb-select_container :host ::ng-deep .xotb-select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-left: 0.5rem;
+  padding-right: 1.5rem;
+}
+
+:host ::ng-deep .xotb-select_container {
+  position: relative;
+}
+
+:host ::ng-deep option {
+  font-weight: normal;
+  display: block;
+  white-space: pre;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+}
+
+.xotb-text-link {
+  color: #006dcc;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.xotb-button:active,
+.xotb-button:focus,
+.xotb-button:hover,
+.xotb-button:visited {
+  text-decoration: none;
+}
+
+.xotb-button:focus,
+.xotb-button:hover {
+  color: #005fb2;
+}
+
+.xotb-button:active {
+  color: #005fb2;
+}
+
+.xotb-text-link:focus,
+.xotb-text-link:hover {
+  text-decoration: underline;
+  color: #005fb2;
+}
+
+.xotb-text-link:active {
+  color: #005fb2;
+}
+
+:host ::ng-deep abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+:host ::ng-deep abbr[title] {
+  text-decoration: none;
+}
+
+:host ::ng-deep abbr[title],
+:host ::ng-deep fieldset,
+:host ::ng-deep hr {
+  border: 0;
+}
+
+abbr[title] {
+  cursor: help;
+}
