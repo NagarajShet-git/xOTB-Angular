@@ -1,24 +1,71 @@
 # RadioGroup
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Radio buttons allow the user to select one option from a set while being able to view all the available options.
 
-## Code scaffolding
 
-Run `ng generate component component-name --project radio-group` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project radio-group`.
-> Note: Don't forget to add `--project radio-group` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build radio-group` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
 
-## Publishing
+import { XotbCheckboxesModule } from 'ng-xotb/checkboxes';
 
-After building your library with `ng build radio-group`, go to the dist folder `cd dist/radio-group` and run `npm publish`.
+@NgModule({
+    imports:[XotbCheckboxesModule]
+    ...
+})
 
-## Running unit tests
+...
+```
 
-Run `ng test radio-group` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.html
+```html
+<fieldset
+    xotb-radio-group
+    label="Radio Group Label"
+    [error]="hasError ? error : null"
+    [required]="required"
+>
+    <xotb-radio-option label="Radio Label 1">
+        <input xotb type="radio" [disabled]="disabled" />
+    </xotb-radio-option>
+    <xotb-radio-option label="Radio Label 2">
+        <input xotb type="radio" [disabled]="disabled" />
+    </xotb-radio-option>
+</fieldset>
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    
+    required: boolean = false;
+
+    disabled: boolean = false;
+
+    hasError: boolean = false;
+
+    error:string = "This Input has some error"
+
+}
+
+...
+```
+
+## Properties <xotb-radio-group>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [label] | Radio option Label | `string|TemplateRef` | |
+| [error] | Error message | `string|TemplateRef`| |
+| [required] | Highlights as required field | `boolean` | false |
+| [disabled] | Disable control | `boolean` | false | 

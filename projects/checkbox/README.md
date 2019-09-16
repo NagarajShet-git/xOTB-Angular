@@ -1,24 +1,61 @@
 # Checkbox
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Check Boxes allow the user to select one or more items from a given set.
 
-## Code scaffolding
 
-Run `ng generate component component-name --project checkbox` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project checkbox`.
-> Note: Don't forget to add `--project checkbox` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build checkbox` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
 
-## Publishing
+import { XotbCheckboxesModule } from 'ng-xotb/checkboxes';
 
-After building your library with `ng build checkbox`, go to the dist folder `cd dist/checkbox` and run `npm publish`.
+@NgModule({
+    imports:[XotbCheckboxesModule]
+    ...
+})
 
-## Running unit tests
+...
+```
 
-Run `ng test checkbox` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.html
+```html
+<xotb-checkbox label="Checkbox Label" [error]="hasError ? error : null">
+    <input xotb type="checkbox" [required]="required" [disabled]="disabled" />
+</xotb-checkbox>
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    
+    required: boolean = false;
+
+    disabled: boolean = false;
+
+    hasError: boolean = false;
+
+    error:string = "This Input has some error"
+
+}
+
+...
+```
+
+## Properties <xotb-checkbox>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [label] | Checkbox Label | `string|TemplateRef` | |
+| [error] | Error message | `string|TemplateRef`| |
+| [required] | Highlights as required field | `boolean` | false |
+| [disabled] | Disable control | `boolean` | false | 

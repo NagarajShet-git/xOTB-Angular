@@ -1,24 +1,50 @@
 # Icons
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Icons are delightful, beautifully-crafted symbols that are universally accepted and easily identifiable for the purpose of displaying common actions and items. 
 
-## Code scaffolding
 
-Run `ng generate component component-name --project icons` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project icons`.
-> Note: Don't forget to add `--project icons` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
+...
 
-Run `ng build icons` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { XotbIconsModule } from 'ng-xotb/icons';
 
-## Publishing
+@NgModule({
+    imports:[XotbIconsModule]
+    ...
+})
 
-After building your library with `ng build icons`, go to the dist folder `cd dist/icons` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+    <xotb-icon iconName="activity" size="small"></xotb-icon>
+```
 
-Run `ng test icons` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
+### component.ts
+```javascript
+    
+...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
+
+...
+```
+
+
+## Properties <xotb-icon>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [iconName] | Name of the icon | `string` | |
+| [variant] | Appearance of the icon | `'default'|'warning'|'error'|'light'|'inverse'|null` | `'default'`|
+| [size] | Size of the icon | `'xx-small' | 'x-small' | 'small' | 'large'` | |
+| [alternativeText] | Text to describe what happens when clicked; not what the icon looks like | `string` | |  

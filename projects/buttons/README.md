@@ -1,24 +1,49 @@
 # Buttons
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Buttons allow the user to trigger an action or make a selection with a single tap or a click. They form an integral part of a UI and are often present in dialogs, modal windows, forms, cards and toolbars.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project buttons` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project buttons`.
-> Note: Don't forget to add `--project buttons` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
 
-Run `ng build buttons` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { XotbButtonsModule } from 'ng-xotb/buttons';
 
-## Publishing
+@NgModule({
+    imports:[XotbButtonsModule]
+    ...
+})
 
-After building your library with `ng build buttons`, go to the dist folder `cd dist/buttons` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+<button xotbButton variant="neutral">normal button</button>
+```
 
-Run `ng test buttons` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
+
+...
+```
+
+## Properties [xotbButton]
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [variant] | Appearance of the button | `'base'|'neutral'|'brand'|'outline-brand'|'destructive' |'text-destructive'|'inverse'|'success'` | ‘neutral’ |
+| [iconName] | Name of the Icon | `string'`|
+| [iconPosition] | Position of the icon | `‘left’ | ‘right’` | ‘left’ |
+| [disabled] | Disable control | `boolean` | false | 

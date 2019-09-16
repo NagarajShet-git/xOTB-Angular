@@ -1,67 +1,53 @@
-import { storiesOf, moduleMetadata } from '@storybook/angular';
-import { action } from '@storybook/addon-actions';
-import { linkTo } from '@storybook/addon-links';
+// import { storiesOf, addDecorator } from '@storybook/angular';
+// const styles = {
+//   textAlign: 'center'
+// };
 
-import { Welcome, Button } from '@storybook/angular/demo';
+// const CenterDecorator = storyFn =>
+//   `<div style="textAlign:'center'">{storyFn()}</div>`;
 
-storiesOf('Welcome', module).add('to Storybook', () => ({
-  component: Welcome,
-  props: {}
-}));
+// addDecorator(CenterDecorator);
 
-storiesOf('Button', module)
-  .add('with text', () => ({
-    component: Button,
-    props: {
-      text: 'Hello Button'
-    }
-  }))
-  .add(
-    'with some emoji',
-    () => ({
-      component: Button,
-      props: {
-        text: '😀 😎 👍 💯'
-      }
-    }),
-    { notes: 'My notes on a button with emojis' }
-  )
-  .add(
-    'with some emoji and action',
-    () => ({
-      component: Button,
-      props: {
-        text: '😀 😎 👍 💯',
-        onClick: action('This was clicked OMG')
-      }
-    }),
-    { notes: 'My notes on a button with emojis' }
-  );
+// import { Welcome } from '@storybook/angular/demo';
 
-storiesOf('Another Button', module).add(
-  'button with link to another story',
-  () => ({
-    component: Button,
-    props: {
-      text: 'Go to Welcome Story',
-      onClick: linkTo('Welcome')
-    }
-  })
-);
+// storiesOf('Welcome', module).add('to Storybook', () => ({
+//   component: Welcome,
+//   props: {}
+// }));
 
-const fields = [
-  {
-    type: 'text',
-    name: 'firstName',
-    label: 'First Name',
-    value: '',
-    required: true
-  },
-  {
-    type: 'text',
-    name: 'lastName',
-    label: 'Last Name',
-    value: '',
-    required: false
-  }
-];
+// storiesOf('Button', module)
+//   .add('with text', () => ({
+//     component: Button,
+//     props: {
+//       text: 'Hello Button',
+//     },
+//   }))
+//   .add(
+//     'with some emoji',
+//     () => ({
+//       component: Button,
+//       props: {
+//         text: '😀 😎 👍 💯',
+//       },
+//     }),
+//     { notes: 'My notes on a button with emojis' }
+//   )
+//   .add(
+//     'with some emoji and action',
+//     () => ({
+//       component: Button,
+//       props: {
+//         text: '😀 😎 👍 💯',
+//         onClick: action('This was clicked OMG'),
+//       },
+//     }),
+//     { notes: 'My notes on a button with emojis' }
+//   );
+
+// storiesOf('Another Button', module).add('button with link to another story', () => ({
+//   component: Button,
+//   props: {
+//     text: 'Go to Welcome Story',
+//     onClick: linkTo('Welcome'),
+//   },
+// }));

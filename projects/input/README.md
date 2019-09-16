@@ -1,24 +1,71 @@
 # Input
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+The Input field allows a user to enter or edit a text into a UI (value or description), typically in a single line. These fields generally appear in forms and dialogs.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project input` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project input`.
-> Note: Don't forget to add `--project input` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
 
-Run `ng build input` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { XotbInputModule } from 'ng-xotb/input';
 
-## Publishing
+@NgModule({
+    imports:[XotbInputModule]
+    ...
+})
 
-After building your library with `ng build input`, go to the dist folder `cd dist/input` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+<xotb-input
+    label="Input Label"
+    fieldLevelHelpTooltip="Some helpful information"
+    [error]="hasError ? error : null"
+    >
+    <input
+        xotb
+        type="input"
+        [required]="required"
+        [disabled]="disabled"
+        placeholder="Placeholder Text"
+    />
+</xotb-input>
+```
 
-Run `ng test input` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.ts
+```javascript
 
-## Further help
+...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    
+    required: boolean = false;
+
+    disabled: boolean = false;
+
+    hasError: boolean = false;
+
+    error:string = "This Input has some error"
+
+}
+
+...
+```
+
+## Properties <xotb-input>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [label] | Input Label | `string|TemplateRef` | |
+| [fieldLevelHelpTooltip] | A tooltip that is displayed next to the label | `string|TemplateRef'`|
+| [error] | Error Message | `string|TemplateRef` | |
+| [required] | Highlights as required field | `boolean` | false |
+| [disabled] | Disable control | `boolean` | false | 
