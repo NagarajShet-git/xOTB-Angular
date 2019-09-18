@@ -39,7 +39,9 @@ export class DemoComponent {}
 ...
 ```
 
-## Properties [xotbButton]
+## API 
+
+### [xotbButton]
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

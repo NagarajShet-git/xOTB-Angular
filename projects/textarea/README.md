@@ -1,24 +1,66 @@
 # Textarea
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Text fields allow the user to input, edit and select text.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project textarea` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project textarea`.
-> Note: Don't forget to add `--project textarea` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
 
-Run `ng build textarea` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { XotbTextareaModule } from 'ng-xotb/textarea';
 
-## Publishing
+@NgModule({
+    imports:[XotbTextareaModule]
+    ...
+})
 
-After building your library with `ng build textarea`, go to the dist folder `cd dist/textarea` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+<xotb-textarea label="Input Label" [error]="hasError ? error : null">
+    <textarea
+        xotb
+        [required]="required"
+        [disabled]="disabled"
+        placeholder="Placeholder Text"
+        ></textarea>
+</xotb-textarea>
+```
 
-Run `ng test textarea` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.ts
+```javascript
 
-## Further help
+...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    
+    required: boolean = false;
+
+    disabled: boolean = false;
+
+    hasError: boolean = false;
+
+    error:string = "This Input has some error"
+
+}
+
+...
+```
+
+## API <xotb-input>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [label] | Text Area Label | `string|TemplateRef` | |
+| [fieldLevelHelpTooltip] | A tooltip that is displayed next to the label | `string|TemplateRef'`|
+| [error] | Error Message | `string|TemplateRef` | |
+| [required] | Highlights as required field | `boolean` | false |
+| [disabled] | Disable field | `boolean` | false | 

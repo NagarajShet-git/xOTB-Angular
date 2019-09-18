@@ -3,7 +3,7 @@ import md from 'projects/radio-group/README.md';
 import { XotbRadioGroupModule } from 'projects/radio-group/src/public-api';
 import { XotbCheckboxModule } from 'projects/checkbox/src/public-api';
 
-export default storiesOf('RadioGroup', module)
+storiesOf('RadioGroup', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbRadioGroupModule, XotbCheckboxModule]

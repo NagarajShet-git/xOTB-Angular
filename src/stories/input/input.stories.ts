@@ -4,7 +4,7 @@ import md from 'projects/input/README.md';
 import { XotbInputModule } from 'projects/input/src/public-api';
 import { XotbCheckboxModule } from 'projects/checkbox/src/public-api';
 
-export default storiesOf('Input', module)
+storiesOf('Input', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbInputModule, XotbCheckboxModule]

@@ -1,24 +1,65 @@
 # Colorpicker
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+The Color Picker tool allows a user to create, share and apply color palettes to your UI, as well as measure the accessibility level of a given color combination.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project colorpicker` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project colorpicker`.
-> Note: Don't forget to add `--project colorpicker` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
 
-Run `ng build colorpicker` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { XotbColorpickerModule } from 'ng-xotb/colorpicker';
 
-## Publishing
+@NgModule({
+    imports:[XotbColorpickerModule]
+    ...
+})
 
-After building your library with `ng build colorpicker`, go to the dist folder `cd dist/colorpicker` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+<xotb-colorpicker
+    [(ngModel)]="color"
+    fieldLevelHelpTooltip="This is some useful info">
+</xotb-colorpicker>
+```
 
-Run `ng test colorpicker` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.ts
+```javascript
 
-## Further help
+...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    color:string = '#5679C0';
+}
+
+...
+```
+
+## API
+ 
+### <xotb-carousel>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [variant] | Configures which tabs are present for the colorpicker. `base` means both `swatches` and `custom` tabs are present | `'base' | 'swatches' | 'custom'` | `'base'` |
+| [required] | Highlights the field as a required field | `boolean` | `false` |
+| [label] | An input label as for a form | `string` | 'Choose Color' |
+| [placeholder] | Placeholder of input box | `string` |  |
+| [fieldLevelHelpTooltip] | A tooltip that is displayed next to the label | `string | TemplateRef` |  |
+| [readonlyInput] | Whether to make the hex color input readonly | `boolean` | `false` |
+| [defaultSelectedTab] | Determines which tab is initially visible when popover opens | `'swatches' | 'custom'` | `'swatches'` |
+| [swatchColors] | Hex color values which are used to set the options of the swatch tab of the colorpicker popover | `string` |  |
+| [submitButtonLabel] | Text for submit button of popover | `string` | 'Done' |
+| [cancelButtonLabel] | Text for cancel button on popover. | `string` | 'Cancel' |
+| [swatchTabLabel] | Text for swatch tab of popover | `string` | 'Default' |
+| [customTabLabel] | Text for custom tab of popover | `string` | 'Custom' |
+| [invalidColorLabel] | Error message when hex color input is invalid | `string | TemplateRef` | 'Default' |
+

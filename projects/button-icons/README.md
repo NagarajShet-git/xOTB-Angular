@@ -1,24 +1,55 @@
 # ButtonIcons
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+An Icon Button allows the user to take actions and make choices, with a single click/tap. It can be used to toggle between an on and off icon.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project button-icons` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project button-icons`.
-> Note: Don't forget to add `--project button-icons` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
+import { XotbButtonIconsModule } from 'ng-xotb/button-icons';
 
-Run `ng build button-icons` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+    imports:[XotbButtonIconsModule]
+    ...
+})
 
-## Publishing
+...
+```
 
-After building your library with `ng build button-icons`, go to the dist folder `cd dist/button-icons` and run `npm publish`.
+### component.html
+```html
+<button
+    type="button"
+    xotbButtonIcon
+    iconName="airplay"
+    title="Airplay">
+</button>
+```
 
-## Running unit tests
+### component.ts
+```javascript
 
-Run `ng test button-icons` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Further help
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+```
+
+## API
+ 
+### [xotbButtonIcon]
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[iconName]` | Label that appears above the upload area | `string | TemplateRef` |  |
+| `[alternativeText]` | Highlights the field as a required field | `boolean` | `false` |
+| `[variant]` | Appearance of the button | `'border' | 'border-filled' | 'border-inverse'` | `'border'` |
+| `[size]` | Can be displayed in three smaller sizes | `'small' | 'x-small' | 'xx-small'` | `false` |
+| `[svgClass]` | Extra class(es) you want to apply to SVG element | `ngClass` |  |

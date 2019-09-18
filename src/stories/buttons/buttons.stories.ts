@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import md from 'projects/buttons/README.md';
 import { XotbButtonsModule } from 'projects/buttons/src/public-api';
 
-export default storiesOf('Buttons', module)
+storiesOf('Buttons', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbButtonsModule]
@@ -11,9 +11,8 @@ export default storiesOf('Buttons', module)
   )
   .add(
     'default',
-    () => {
-      return {
-        template: `
+    () => ({
+      template: `
         <div>
             <button xotbButton variant="base" name="base" (click)="handlerClick($event)">base button</button>
             <button xotbButton variant="neutral" name="neutral" (click)="handlerClick($event)">normal button</button>
@@ -21,15 +20,14 @@ export default storiesOf('Buttons', module)
             <button xotbButton variant="outline-brand" name="outline-brand" (click)="handlerClick($event)">outline button</button>
             <button xotbButton variant="destructive" name="destructive" (click)="handlerClick($event)">danger button</button>
         </div>`,
-        props: {
-          handlerClick: e => {
-            console.log(e);
-            e.preventDefault();
-            action(e.target.name)(e.target);
-          }
+      props: {
+        handlerClick: e => {
+          console.log(e);
+          e.preventDefault();
+          action(e.target.name)(e.target);
         }
-      };
-    },
+      }
+    }),
     {
       notes: md
     }

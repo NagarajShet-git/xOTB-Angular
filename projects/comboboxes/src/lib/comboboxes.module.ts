@@ -4,7 +4,6 @@ import { OverlayModule } from '@angular/cdk/overlay';
 import { XotbInternalOutletModule } from 'ng-xotb/utility';
 import { XotbIconsModule } from 'ng-xotb/icons';
 import { XotbFormsModule } from 'ng-xotb/forms';
-import { XotbOverlayModule } from 'ng-xotb/common';
 
 import { XotbCombobox } from './combobox';
 import { XotbComboboxOption } from './combobox-option';

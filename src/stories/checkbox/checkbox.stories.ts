@@ -2,7 +2,7 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/checkbox/README.md';
 import { XotbCheckboxModule } from 'projects/checkbox/src/public-api';
 
-export default storiesOf('Checkbox', module)
+storiesOf('Checkbox', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbCheckboxModule]

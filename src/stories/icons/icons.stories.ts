@@ -2,7 +2,7 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 import { XotbIconsModule } from 'projects/icons/src/public-api';
 import md from 'projects/icons/README.md';
 
-export default storiesOf('Icons', module)
+storiesOf('Icons', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbIconsModule]

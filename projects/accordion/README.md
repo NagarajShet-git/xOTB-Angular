@@ -1,24 +1,72 @@
 # Accordion
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+An accordion menu is a vertically stacked list of headers (collapsible content) that can be clicked to reveal or hide content associated with them. Accordions are useful when you want to toggle between hiding and showing large amount of content.
 
-## Code scaffolding
 
-Run `ng generate component component-name --project accordion` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project accordion`.
-> Note: Don't forget to add `--project accordion` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build accordion` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
 
-## Publishing
+import { XotbAccordionModule } from 'ng-xotb/accordion';
 
-After building your library with `ng build accordion`, go to the dist folder `cd dist/accordion` and run `npm publish`.
+@NgModule({
+    imports:[XotbAccordionModule]
+    ...
+})
 
-## Running unit tests
+...
+```
 
-Run `ng test accordion` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.html
+```html
+<ul xotb-accordion [(activeName)]="active">
+    <ng-template xotbAccordionSection name="A" label="Accordion Title A"
+        >This is the content area for section A</ng-template
+    >
+    <ng-template xotbAccordionSection name="B" label="Accordion Title B"
+        >This is the content area for section B</ng-template
+    >
+    <ng-template xotbAccordionSection name="C" label="Accordion Title C"
+        >This is the content area for section C</ng-template
+    >
+</ul>
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    active = 'A';
+
+}
+
+...
+```
+
+## API
+ 
+### <xotb-accordion>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [activeName] | Defines expanded section | `string|string[]` | |
+| [multiple] | Whether we allow multiple section open at a time | `boolean` | false |
+| (activeNameChanged) | Emits when the open sections are going to change, it contains all open sections. | `EventEmitter<string|string[]>` | |
+
+
+### <ng-template xotbAccordionSection>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [name] | The unique name to use with the activeName of the accordion component. If not provided, it will be auto generated. | `string` | |
+| [label] | Displayed as the title of the section | `string | TemplateRef` |  |
+| [labelContext] | Context data available as local variable in label, if TemplateRef | `any` | |

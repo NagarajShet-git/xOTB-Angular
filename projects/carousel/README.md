@@ -1,24 +1,79 @@
 # Carousel
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+The Carousel is a slideshow for cycling through elements, often used as an image or item slider or to facilitate the onboarding experience of a user.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project carousel` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project carousel`.
-> Note: Don't forget to add `--project carousel` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
 
-Run `ng build carousel` to build the project. The build artifacts will be stored in the `dist/` directory.
+import { XotbCarouselModule } from 'ng-xotb/carousel';
 
-## Publishing
+@NgModule({
+    imports:[XotbCarouselModule]
+    ...
+})
 
-After building your library with `ng build carousel`, go to the dist folder `cd dist/carousel` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+<div style="width: 480px; max-width: 100%">
+    <xotb-carousel [(active)]="active">
+        <xotb-carousel-image
+        src="assets/images/carousel/carousel-01.jpg"
+        header="First Card"
+        description="First card description."
+        alternativeText="First card accessible description."
+        ></xotb-carousel-image>
+    <xotb-carousel-image
+        src="assets/images/carousel/carousel-02.jpg"
+        header="Second Card"
+        description="Second card description."
+        alternativeText="Second card accessible description."
+        ></xotb-carousel-image>
+    <xotb-carousel-image
+        src="assets/images/carousel/carousel-03.jpg"
+        header="Third Card"
+        ></xotb-carousel-image>
+    </xotb-carousel>
+</div>
+```
 
-Run `ng test carousel` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.ts
+```javascript
 
-## Further help
+...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
+
+...
+```
+
+## API
+ 
+### <xotb-carousel>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [active] | Index of active image | `number` | 0 |
+| [autoScroll] | Whether auto scroll is enabled | `boolean` | true |
+| [autoRefresh] | Whether the carousel should continue looping from the beginning after the last item is displayed | `boolean` | true |
+| [scrollDuration] | The auto scroll duration in seconds. After that the next image is displayed | `number` | 5 |
+| (activeChange) | Emits the index of the image to be activated | `EventEmitter<number>` |  |
+
+### <xotb-carousel-image>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| [src] | The path to the image | `string` | |
+| [header] | Text for the label that's displayed under the image | `string | TemplateRef` |  |
+| [description] | Text displayed under the header | `string` | |
+| [alternativeText] | Assistive text for the image | `string` | |

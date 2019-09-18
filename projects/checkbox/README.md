@@ -51,7 +51,9 @@ export class DemoComponent {
 ...
 ```
 
-## Properties <xotb-checkbox>
+## API
+
+### <xotb-checkbox>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

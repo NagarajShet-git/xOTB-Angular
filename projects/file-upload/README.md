@@ -1,24 +1,81 @@
 # FileUpload
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+This tool facilitates you to upload the content (placed offline) from your device to your web application (online).
 
-## Code scaffolding
 
-Run `ng generate component component-name --project file-upload` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project file-upload`.
-> Note: Don't forget to add `--project file-upload` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build file-upload` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
+import { ReactiveFormsModule } from '@angular/forms';
+import { XotbColorpickerModule } from 'ng-xotb/file-upload';
 
-## Publishing
+@NgModule({
+    imports:[XotbColorpickerModule, ReactiveFormsModule]
+    ...
+})
 
-After building your library with `ng build file-upload`, go to the dist folder `cd dist/file-upload` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+<xotb-file-upload
+    label="Attachment"
+    [formControl]="ctrl"
+    [accept]="['image/*', 'application/pdf', '.mp3']"
+    maxFiles="2"
+    maxFilesize="1048576"
+    [error]="ctrl.invalid ? errorTpl : null"
+></xotb-file-upload>
 
-Run `ng test file-upload` to execute the unit tests via [Karma](https://karma-runner.github.io).
+<div *ngIf="ctrl.valid">
+    <div *ngFor="let file of ctrl.value">{{ file.name }}</div>
+</div>
 
-## Further help
+<ng-template #errorTpl>
+    <ng-container *ngIf="ctrl.errors['required']">Please select a file.</ng-container>
+    <ng-container *ngIf="ctrl.errors.xotbFileUpload?.invalidType as file">
+        Oh no, invalid type<b> {{ file.type }}</b> for "{{file.name}}"!
+    </ng-container>
+    <ng-container *ngIf="ctrl.errors.xotbFileUpload?.maxFilesize as file">
+        "{{ file.name }}" is bigger than 1MB!
+    </ng-container>
+    <ng-container *ngIf="ctrl.errors.xotbFileUpload?.maxFiles">Too many files selected!<ng-container>
+</ng-template>
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### component.ts
+```javascript
+
+...
+
+import { FormControl, Validators } from '@angular/forms';
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    ctrl: new FormControl(null, [Validators.required])
+}
+
+...
+```
+
+## API
+ 
+### <xotb-file-upload>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[label]` | Label that appears above the upload area | `string | TemplateRef` |  |
+| `[required]` | Highlights the field as a required field | `boolean` | `false` |
+| `[accept]` | File extensions and types that can be accepted | `string | string[]` |  |
+| `[disabled]` | Whether file selection is disabled | `boolean` | `false` |
+| `[maxFiles]` | How many files can be selected simultaneously. 0 means unlimited | `number` | `1` |
+| `[maxFilesize]` | File size limit in bytes. 0 means unlimited | `number` | `0` |
+| `[error]` | Error message | `string | TemplateRef` |
+| `[uploadButtonLabel]` | Text for button to open file selector | `string` | `'Upload Files'` |
