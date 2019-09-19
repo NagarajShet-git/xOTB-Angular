@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NODES } from './mock-nodes';
+import { ITreeNode } from 'projects/tree/src/public-api';
 
 @Component({
   templateUrl: './tree.component.html'
@@ -7,7 +8,7 @@ import { NODES } from './mock-nodes';
 export class DemoTreeComponent {
   title = 'Angular tree like structure';
 
-  nodes = NODES; // pull here from the server.
+  nodes: ITreeNode[] = NODES; // pull here from the server.
 
   handleSelect(node) {
     console.log(node);

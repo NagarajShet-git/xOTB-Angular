@@ -2,11 +2,12 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 
 import md from 'projects/colorpicker/README.md';
 import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
+import { XotbButtonsModule } from 'projects/buttons/src/public-api';
 
 storiesOf('Colorpicker', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbColorpickerModule]
+      imports: [XotbColorpickerModule, XotbButtonsModule]
     })
   )
   .add(

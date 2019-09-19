@@ -1,5 +1,6 @@
 <ul *ngIf="treeData">
   <li
+    class="xotb-tree-node"
     *ngFor="let node of treeData"
     [ngClass]="node.active ? 'xotb-tree-node-active' : ''"
   >

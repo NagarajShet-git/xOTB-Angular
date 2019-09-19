@@ -1,24 +1,73 @@
 # Popovers
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project popovers` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project popovers`.
-> Note: Don't forget to add `--project popovers` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
+import { XotbPopoversModule } from 'ng-xotb/popovers';
 
-Run `ng build popovers` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+    imports:[XotbPopoversModule]
+    ...
+})
 
-## Publishing
+...
+```
 
-After building your library with `ng build popovers`, go to the dist folder `cd dist/popovers` and run `npm publish`.
+### component.html
+```html
+<button
+  type="button"
+  xotbButton
+  [xotbPopover]="tip"
+  xotbPopoverPlacement="right"
+  xotbPopoverHeader="Header"
+  xotbPopoverFooter="Footer"
+  [(xotbPopoverOpen)]="open"
+>
+  Click me
+</button>
+<ng-template #tip
+  >Popover lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+  ipsum lorem ipsum</ng-template
+>
+```
 
-## Running unit tests
+### component.ts
+```javascript
 
-Run `ng test popovers` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Further help
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    open: boolean = false;
+}
+
+...
+```
+
+## API
+ 
+### <xotb-modal>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[xotbPopover]` | The body as string or the connected template reference to show  | `string | TemplateRef` |  |
+| `[xotbPopoverHeader]` | The header as string or the connected template reference to show | `string | TemplateRef` |  |
+| `[xotbPopoverFooter]` | The footer as string or the connected template reference to show. | `string | TemplateRef` |  |
+| `[xotbPopoverOpen]` | Whether the floating popover is visible. Be sure to use two-way binding, for example: `[(xotbPopoverOpen)]="open"` | `boolean` |  |
+| `[xotbPopoverPlacement]` | Position relative to host element | `'top'` \| `'top-left'` \| `'top-left-corner'` \| `'top-right'` \| `'top-right-corner'` \| `'right'` \| `'right-top'` \| `'right-top-corner'` \| `'right-bottom'` \| `'right-bottom-corner'` \| `'bottom'` \| `'bottom-left'` \| `'bottom-left-corner'` \| `'bottom-right'` \| `'bottom-right-corner'` \| `'left'` \| `'left-top'` \| `'left-top-corner'` \| `'left-bottom'` \| `'left-bottom-corner'` | `'top'` |
+| `[xotbPopoverVariant]` | Determines the variant of the popover. | `'walkthrough' | 'feature' | 'warning' | 'error' | 'panel'` |  |
+| `[xotbPopoverSize]` | Determines the size of the popover | `'small' | 'medium' | 'large' | 'full-width'` |  |
+| `[xotbPopoverClass]` | Extra class(es) you want to apply to popover host element | `ngClass` |  |
+| `[xotbPopoverCloseVisible]` | Whether or not to override the close button's visibility, if (xotbPopoverOpenChange) is bound | `boolean` | `true` |
+| `[xotbPopoverCloseTitle]` | Close button title (and assistive text) | `string` | 	'Close dialog' |
+| `(xotbPopoverOpenChange)` | Emit an event when the popover should show or hide | `boolean | 'x' | 'backdrop' | 'escape'` |  |
+

@@ -1,24 +1,78 @@
 # Modals
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+## Usages
 
-## Code scaffolding
+### module.ts
+```javascript
 
-Run `ng generate component component-name --project modals` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project modals`.
-> Note: Don't forget to add `--project modals` or else it will be added to the default project in your `angular.json` file. 
+...
+import { XotbModalsModule } from 'ng-xotb/modals';
 
-## Build
+@NgModule({
+    imports:[XotbModalsModule]
+    ...
+})
 
-Run `ng build modals` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
+```
 
-## Publishing
+### component.html
+```html
+<div>
+  <h1>Home</h1>
+  <p>{{ bodyText }}</p>
+  <button xotbButton (click)="openModal('custom-modal-1')">Open Modal 1</button>
+</div>
 
-After building your library with `ng build modals`, go to the dist folder `cd dist/modals` and run `npm publish`.
+<xotb-modal id="custom-modal-1">
+  <h1>Modal heading!</h1>
+  <div>
+    Home page text:
+    <input xotb type="text" [(ngModel)]="bodyText" style="width: 200px" />
+  </div>
 
-## Running unit tests
+  <button xotbButton size="small" (click)="closeModal('custom-modal-1')">
+    Close
+  </button>
+</xotb-modal>
+```
 
-Run `ng test modals` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.ts
+```javascript
 
-## Further help
+...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+import { XotbModalService } from 'ng-xotb/modals'
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    bodyText: string;
+
+    constructor(private modalService: XotbModalService) {}
+
+    ngOnInit() {
+        this.bodyText = 'This text can be updated in modal 1';
+    }
+
+    openModal(id: string) {
+        this.modalService.open(id);
+    }
+
+    closeModal(id: string) {
+        this.modalService.close(id);
+    }
+}
+
+...
+```
+
+## API
+ 
+### <xotb-modal>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[id]` |  modal id | `string` |  |

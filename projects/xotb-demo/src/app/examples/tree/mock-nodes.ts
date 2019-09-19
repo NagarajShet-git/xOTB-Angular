@@ -43,6 +43,7 @@ export const NODES: ITreeNode[] = [
       {
         name: 'Afghanistan',
         showChildren: false,
+        hasChildren: true,
         children: [
           {
             name: 'Kabul',
@@ -66,10 +67,12 @@ export const NODES: ITreeNode[] = [
   {
     name: 'Europe',
     showChildren: false,
+    hasChildren: true,
     children: [
       {
         name: 'Romania',
         showChildren: false,
+        hasChildren: true,
         children: [
           {
             name: 'Bucuresti',

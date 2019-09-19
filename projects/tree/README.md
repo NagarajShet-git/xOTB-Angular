@@ -1,24 +1,54 @@
 # Tree
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+## Usages
 
-## Code scaffolding
+### module.ts
+```javascript
 
-Run `ng generate component component-name --project tree` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project tree`.
-> Note: Don't forget to add `--project tree` or else it will be added to the default project in your `angular.json` file. 
+...
+import { XotbTreeModule } from 'ng-xotb/tree';
 
-## Build
+@NgModule({
+    imports:[XotbTreeModule]
+    ...
+})
 
-Run `ng build tree` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
+```
 
-## Publishing
+### component.html
+```html
+<xotb-tree [treeData]="nodes" (onSelect)="handleSelect($event)"></xotb-tree>
+```
 
-After building your library with `ng build tree`, go to the dist folder `cd dist/tree` and run `npm publish`.
+### component.ts
+```javascript
 
-## Running unit tests
+...
 
-Run `ng test tree` to execute the unit tests via [Karma](https://karma-runner.github.io).
+import { ITreeNode } from 'ng-xotb/tree';
 
-## Further help
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    nodes: ITreeNode[] = NODES; // pull here from the server.
+
+    handleSelect(node) {
+        console.log(node);
+    }
+}
+
+...
+```
+
+## API
+ 
+### <xotb-modal>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[treeData]` | JSON array of `ITreeNode` object.  | `ITreeNode[]` |  |
+| `(onSelect)` | Emits when we click on tree node | `EventEmitter<ITreeNode>` |  |

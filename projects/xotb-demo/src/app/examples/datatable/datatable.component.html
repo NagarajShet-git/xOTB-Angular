@@ -2,14 +2,14 @@
   <button type="button" xotbButton (click)="hideName = !hideName">
     Toggle "Name" column
   </button>
-  <button type="button" xotbButton (click)="loading = !loading">
+  <button type="button" xotbButton (click)="toggleLoading()">
     Toggle Loading
   </button>
   <button type="button" xotbButton (click)="toggleData()">
     Clear/Set data
   </button>
 </div>
-
+<hr />
 <table
   class="xotb-table_bordered xotb-max-medium-table_stacked-horizontal xotb-table_fixed-layout"
   xotb-datatable

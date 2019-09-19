@@ -1,11 +1,15 @@
 .xotb-tree {
   ul {
     padding-left: 16px;
+    li.xotb-tree-node {
+      cursor: pointer;
+    }
     li.xotb-tree-node-active {
       > .xotb-node-label {
         background: #3498db;
         padding-right: 5px;
         margin-left: 5px;
+        color: #ffffff;
       }
     }
   }
