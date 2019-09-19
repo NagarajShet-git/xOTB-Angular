@@ -1,24 +1,54 @@
 # Slider
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+The Sliders have become the de facto standard UI control for selecting a value or a range of values. A Slider is helpful because it allows the users to explore and make selections quickly from a range of available options.
 
-## Code scaffolding
 
-Run `ng generate component component-name --project slider` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project slider`.
-> Note: Don't forget to add `--project slider` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build slider` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
 
-## Publishing
+import { XotbSliderModule } from 'ng-xotb/slider';
 
-After building your library with `ng build slider`, go to the dist folder `cd dist/slider` and run `npm publish`.
+@NgModule({
+    imports:[XotbSliderModule]
+    ...
+})
 
-## Running unit tests
+...
+```
 
-Run `ng test slider` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.html
+```html
+<xotb-slider [(value)]="value" label="Slider label"></xotb-slider>
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    value = 70;
+}
+
+...
+```
+
+## API
+ 
+### <xotb-section>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[title]` | Section's title | `string` |  |
+| `[open]` | Whether the section's body is collapsed or not | `boolean` | `false` |
+| `[collapsible]` | Whether the section's body is able to collapse or not | `boolean` | `true` |
+| `(openChange)` | Emits event when the body is going collapse or open | `EventEmitter<boolean>` |  |
+

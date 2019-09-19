@@ -1,24 +1,73 @@
 # Pick
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Make a group of elements behave like a set of radio buttons by using `xotbPick` and `xotbPickOption`. You can alternatively make them behave like a set of checkboxes, by attaching the `xotbPickMultiple` directive.
 
-## Code scaffolding
+If you need to specify a custom class when the element is currently selected you can define the `xotbPickActiveClass` property either on the host element of `xotbPick` or on each `xotbPickOption` if you want to override it
 
-Run `ng generate component component-name --project pick` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project pick`.
-> Note: Don't forget to add `--project pick` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build pick` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
 
-## Publishing
+import { XotbButtonsModule } from 'ng-xotb/buttons';
+import { XotbPickModule } from 'ng-xotb/pick'
 
-After building your library with `ng build pick`, go to the dist folder `cd dist/pick` and run `npm publish`.
+@NgModule({
+    imports:[XotbPickModule, XotbButtonsModule]
+    ...
+})
 
-## Running unit tests
+...
+```
 
-Run `ng test pick` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.html
+```html
+<div
+    class="xotb-button-group"
+    [(xotbPick)]="selected"
+    xotbPickActiveClass="xotb-button_brand"
+    role="group"
+    >
+    <button type="button" xotbButton xotbPickOption="left">Left</button>
+    <button type="button" xotbButton xotbPickOption="middle">Middle</button>
+    <button type="button" xotbButton [xotbPickOption]="'right'">Right</button>
+</div>
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    selected: 'middle'
+}
+
+...
+```
+
+## API
+ 
+### [xotbPick]
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[xotbPick]` | Currently selected option value | `any` |  |
+| `[xotbPickMultiple]` | Whether multiple options can be selected. In this case, the `xotbPick` value should be an `array` or `object` | `boolean` | `false` |
+| `[xotbPickActiveClass]` | Defines a custom class to be used when any of the options is selected | `string` |  |
+| `(xotbPickChange)` | The value that will be selected when an `xotbPickOption` is selected | `EventEmitter` |  |
+| `(xotbOptionDestroyed)` | Emits the value of any selected option that is destroyed  | `EventEmitter` |  |
+
+
+### [xotbPickOption]
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[xotbPickOption]` | Option's value | `any` |  |
+| `[xotbPickActiveClass]` | Defines a custom class to be used when the option is selected. Overrides the parent's xotbPick active class, if defined | `string` |  |

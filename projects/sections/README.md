@@ -1,24 +1,65 @@
 # Sections
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+An expander control Section can be useful to show and hide sections of your UI and therefore, declutter your app
 
-## Code scaffolding
 
-Run `ng generate component component-name --project sections` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project sections`.
-> Note: Don't forget to add `--project sections` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build sections` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
 
-## Publishing
+import { XotbMenusModule } from 'ng-xotb/menus';
+import { XotbIconsModule } from 'ng-xotb/icons'
 
-After building your library with `ng build sections`, go to the dist folder `cd dist/sections` and run `npm publish`.
+@NgModule({
+    imports:[XotbMenusModule, XotbIconsModule]
+    ...
+})
 
-## Running unit tests
+...
+```
 
-Run `ng test sections` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.html
+```html
+<xotb-section [(open)]="open" title="Section Title">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec
+  adipiscing tristique risus nec feugiat. Augue eget arcu dictum varius duis.
+  Sed tempus urna et pharetra pharetra massa massa ultricies mi. Semper quis
+  lectus nulla at volutpat diam. Vel orci porta non pulvinar neque laoreet. Amet
+  facilisis magna etiam tempor orci eu. Vitae tortor condimentum lacinia quis
+  vel eros. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Sit
+  amet luctus venenatis lectus magna fringilla urna. Id ornare arcu odio ut sem
+  nulla pharetra diam sit.
+</xotb-section>
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    open = false;
+}
+
+...
+```
+
+## API
+ 
+### <xotb-section>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[title]` | Section's title | `string` |  |
+| `[open]` | Whether the section's body is collapsed or not | `boolean` | `false` |
+| `[collapsible]` | Whether the section's body is able to collapse or not | `boolean` | `true` |
+| `(openChange)` | Emits event when the body is going collapse or open | `EventEmitter<boolean>` |  |
+

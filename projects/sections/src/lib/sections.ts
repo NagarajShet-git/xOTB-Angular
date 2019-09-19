@@ -9,7 +9,7 @@ import {
 import { uniqueId } from 'ng-xotb/utility';
 
 @Component({
-  selector: 'xotb-sections',
+  selector: 'xotb-section',
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './section.html',
   host: {

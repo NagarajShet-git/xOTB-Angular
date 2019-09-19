@@ -1,24 +1,103 @@
 # Toast
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+A Toast provides a simple feedback about an operation in a small popup.  It is a non-modal, unobtrusive window element used to display brief information to a user, and remains visible only for a short time period
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project toast` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project toast`.
-> Note: Don't forget to add `--project toast` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
+import { XotbTabsModule } from 'ng-xotb/tabs';
 
-Run `ng build toast` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+    imports:[XotbTabsModule]
+    ...
+})
 
-## Publishing
+...
+```
 
-After building your library with `ng build toast`, go to the dist folder `cd dist/toast` and run `npm publish`.
+### component.html
+```html
+<xotb-toast iconName="info">
+  <h2 class="xotb-text-heading_small">
+    This is a toast with an icon next to its
+    <a href="javascript:void(0);">message</a>.
+  </h2>
+  <p>Here's some detail of what happened...</p>
+</xotb-toast>
+<xotb-toast variant="success" iconName="check-circle">
+  <h2 class="xotb-text-heading_small">
+    Account <a href="javascript:void(0);">ACME - 100</a> widgets was created.
+  </h2>
+</xotb-toast>
+<xotb-toast
+  variant="warning"
+  iconName="alert-triangle"
+  (close)="onClose('click')"
+>
+  <h2 class="xotb-text-heading_small">
+    Can’t share file “report-q3.pdf” with the
+    <a href="javascript:void(0);">selected users</a>.
+  </h2>
+</xotb-toast>
+<button
+  class="xotb-m-top_medium"
+  type="button"
+  [disabled]="showTopToast"
+  xotbButton
+  (click)="showTopToast = true"
+>
+  Show toast in container
+</button>
 
-## Running unit tests
+<div class="xotb-notify_container">
+  <xotb-toast
+    *ngIf="showTopToast"
+    variant="error"
+    (close)="onClose($event); showTopToast = false"
+    duration="500000"
+  >
+    <h2 class="xotb-text-heading_small">
+      This error will automatically hide after 5 seconds if you don't click on
+      the close button
+    </h2>
+  </xotb-toast>
+</div>
 
-Run `ng test toast` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    showTopToast = false;
+
+    onClose(reason: string) {
+        console.log(`Closed by ${reason}`);
+    }
+}
+
+...
+```
+
+## API
+ 
+### <xotb-toast>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[variant]` | Severity of the displayed message for theming | `'error' | 'info' | 'success' | 'warning'` | `‘info’` |
+| `[iconName]` | Icon name | `string` |  |
+| `[duration]` | Number of milliseconds after which, the close event will be triggered with an emitted reason of 'timeout' | `number` |  |
+| `[assistiveText]` | Assistive text for accessibility | `string` |  |
+| `[closeButtonAssistiveText]` | AVisually hidden label for the close button | `string` | `'Close'` |
+| `[dismissible]` | It can suppress the appearance of close button, even if (close) is bound | `boolean` |  |
+| `(close)` | Emits the close event reason, like 'button' and 'timeout'. If not bound or if dismissible is false, the close button will not be shown | `EventEmitter<string>` |  |

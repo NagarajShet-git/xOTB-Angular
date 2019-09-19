@@ -3,7 +3,7 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/button-icons/README.md';
 import { XotbButtonIconsModule } from 'projects/button-icons/src/public-api';
 
-storiesOf('Button Icon', module)
+storiesOf('Button Icons', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbButtonIconsModule]

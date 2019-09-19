@@ -1,24 +1,88 @@
 # Menus
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+A Menu displays the list of choices available on a temporary surface. It appears when the user interacts with a button or other control.
 
-## Code scaffolding
 
-Run `ng generate component component-name --project menus` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project menus`.
-> Note: Don't forget to add `--project menus` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build menus` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
 
-## Publishing
+import { XotbMenusModule } from 'ng-xotb/menus';
+import { XotbIconsModule } from 'ng-xotb/icons'
 
-After building your library with `ng build menus`, go to the dist folder `cd dist/menus` and run `npm publish`.
+@NgModule({
+    imports:[XotbMenusModule, XotbIconsModule]
+    ...
+})
 
-## Running unit tests
+...
+```
 
-Run `ng test menus` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.html
+```html
+<span xotbDropdown [(open)]="open">
+    <button class="xotb-button xotb-button_neutral" xotbDropdownTrigger>
+        <span class="xotb-truncate">Select an item</span>
+        <xotb-icon
+            iconName="chevron-down"
+            variant="default"
+            size="x-small"
+            ></xotb-icon>
+    </button>
+    <div class="xotb-dropdown xotb-dropdown_left">
+        <ul class="dropdown__list" role="menu">
+        <li class="xotb-dropdown__item" *ngFor="let item of items">
+            <a
+                role="menuitem"
+                xotbDropdownItem
+                (click)="selected = item.value; open = false"
+                >
+                <p class="xotb-truncate">{{ item.value }}</p>
+                <xotb-icon
+                    [iconName]="item.icon"
+                    variant="default"
+                    size="x-small"
+                ></xotb-icon
+            ></a>
+        </li>
+        </ul>
+    </div>
+</span>
+```
 
-## Further help
+### component.ts
+```javascript
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    selected: string;
+    open: boolean;
+
+    items = [
+        { value: 'Item 1', icon: 'bar-chart' },
+        { value: 'Item 2', icon: 'award' },
+        { value: 'Item 3', icon: 'cast' }
+    ];
+}
+
+...
+```
+
+## API
+ 
+### <xotb-file-upload>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[open]` | Whether the dropdown should be open or not | `string | TemplateRef` |  |
+| `[handlePageEvents]` | Whether the dropdown should handle page events (e.g., clicking on the page closes the dropdown) | `boolean` | `false` |
+| `(openChange)` | Emits an event whether the dropdown is going to open or not | `EventEmitter<boolean>` |  |
+
