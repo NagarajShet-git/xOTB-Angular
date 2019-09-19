@@ -3,6 +3,7 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/colorpicker/README.md';
 import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
 import { XotbButtonsModule } from 'projects/buttons/src/public-api';
+import { DemoColorpickerComponent } from 'projects/xotb-demo/src/app/examples/colorpicker/colorpicker.component';
 
 storiesOf('Colorpicker', module)
   .addDecorator(
@@ -10,25 +11,6 @@ storiesOf('Colorpicker', module)
       imports: [XotbColorpickerModule, XotbButtonsModule]
     })
   )
-  .add(
-    'default',
-    () => {
-      return {
-        template: `
-            <xotb-colorpicker
-                [(ngModel)]="color"
-                fieldLevelHelpTooltip="This is some useful info"
-                ></xotb-colorpicker>
-            <pre>Selected: {{ color }}</pre>
-            <button type="button" xotbButton (click)="color = '#FF0000'">Select Red</button>
-            <button type="button" xotbButton (click)="color = null">Clear</button>
-      `,
-        props: {
-          color: '#5679C0'
-        }
-      };
-    },
-    {
-      notes: md
-    }
-  );
+  .add('default', () => ({ component: DemoColorpickerComponent }), {
+    notes: md
+  });

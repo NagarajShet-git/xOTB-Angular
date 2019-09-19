@@ -8,5 +8,5 @@ export class DemoComboboxesComponent {
 
   selection: string = null;
 
-  open = true;
+  open = false;
 }

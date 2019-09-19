@@ -1,6 +1,7 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/slider/README.md';
 import { XotbSliderModule } from 'projects/slider/src/public-api';
+import { DemoSliderComponent } from 'projects/xotb-demo/src/app/examples/slider/slider.component';
 
 storiesOf('Slider', module)
   .addDecorator(
@@ -10,16 +11,9 @@ storiesOf('Slider', module)
   )
   .add(
     'default',
-    () => {
-      return {
-        template: `
-            <xotb-slider [(value)]="value" label="Slider label"></xotb-slider>
-        `,
-        props: {
-          value: 80
-        }
-      };
-    },
+    () => ({
+      component: DemoSliderComponent
+    }),
     {
       notes: md
     }

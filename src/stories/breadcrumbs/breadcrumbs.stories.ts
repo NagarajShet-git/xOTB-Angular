@@ -2,6 +2,7 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 
 import md from 'projects/breadcrumbs/README.md';
 import { XotbBreadcrumbsModule } from 'projects/breadcrumbs/src/public-api';
+import { DemoBreadcrumbsComponent } from 'projects/xotb-demo/src/app/examples/breadcrumbs/breadcrumbs.component';
 
 storiesOf('Breadcrumb', module)
   .addDecorator(
@@ -11,17 +12,9 @@ storiesOf('Breadcrumb', module)
   )
   .add(
     'default',
-    () => {
-      return {
-        template: `
-            <xotb-breadcrumbs assistiveText="Breadcrumbs">
-                <a *xotbBreadcrumb href="javascript:void(0)">Home</a>
-                <a *xotbBreadcrumb routerLink="../support" href="javascript:void(0)">About</a>
-            </xotb-breadcrumbs>
-      `,
-        props: {}
-      };
-    },
+    () => ({
+      component: DemoBreadcrumbsComponent
+    }),
     {
       notes: md
     }
