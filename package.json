@@ -15,7 +15,7 @@
     "build": "npm run sass && node scripts/build",
     "publish_lib": "rimraf dist && npm run build && ng build ng-xotb && node scripts/prepare_ng-xotb && cd dist/ng-xotb && npm pack",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "build-storybook": "npm run sass && npm run build && build-storybook",
     "sass": "sass projects/xotb-theme/src/styles/styles.scss dist/xotb-theme/css/styles.min.css --style compressed"
   },
   "private": true,
