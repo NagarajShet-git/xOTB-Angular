@@ -10,7 +10,7 @@ This tool facilitates you to upload the content (placed offline) from your devic
 
 ...
 import { ReactiveFormsModule } from '@angular/forms';
-import { XotbColorpickerModule } from 'ng-xotb/file-upload';
+import { XotbColorpickerModule } from 'ng-xotb/controls/file-upload';
 
 @NgModule({
     imports:[XotbColorpickerModule, ReactiveFormsModule]

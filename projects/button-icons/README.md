@@ -8,7 +8,7 @@ An Icon Button allows the user to take actions and make choices, with a single c
 ```javascript
 
 ...
-import { XotbButtonIconsModule } from 'ng-xotb/button-icons';
+import { XotbButtonIconsModule } from 'ng-xotb/controls/button-icons';
 
 @NgModule({
     imports:[XotbButtonIconsModule]

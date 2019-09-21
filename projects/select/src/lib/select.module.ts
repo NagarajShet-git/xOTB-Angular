@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { XotbFormsModule } from 'ng-xotb/forms';
+import { XotbFormsModule } from 'ng-xotb/controls/forms';
 import { CommonModule } from '@angular/common';
 import { XotbInternalOutletModule } from 'ng-xotb/utility';
 import { XotbSelect } from './select';

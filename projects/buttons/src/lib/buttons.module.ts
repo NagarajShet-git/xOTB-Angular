@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { XotbButton } from './button';
 import { CommonModule } from '@angular/common';
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 import {
   XotbButtonStateOn,
   XotbButtonStateHover,

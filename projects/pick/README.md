@@ -11,8 +11,8 @@ If you need to specify a custom class when the element is currently selected you
 
 ...
 
-import { XotbButtonsModule } from 'ng-xotb/buttons';
-import { XotbPickModule } from 'ng-xotb/pick'
+import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
+import { XotbPickModule } from 'ng-xotb/controls/pick'
 
 @NgModule({
     imports:[XotbPickModule, XotbButtonsModule]

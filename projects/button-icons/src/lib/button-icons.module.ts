@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { XotbButtonIcon } from './button-icon';
 import { XotbButtonIconStateful } from './button-icon-stateful';
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 
 @NgModule({
   declarations: [XotbButtonIcon, XotbButtonIconStateful],

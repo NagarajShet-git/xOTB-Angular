@@ -3,10 +3,10 @@ import { XotbColorpicker } from './colorpicker';
 import { CommonModule } from '@angular/common';
 
 import { XotbInternalOutletModule } from 'ng-xotb/utility';
-import { XotbIconsModule } from 'ng-xotb/icons';
-import { XotbFormsModule } from 'ng-xotb/forms';
-import { XotbPopoversModule } from 'ng-xotb/popovers';
-import { XotbTabsModule } from 'ng-xotb/tabs';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
+import { XotbFormsModule } from 'ng-xotb/controls/forms';
+import { XotbPopoversModule } from 'ng-xotb/controls/popovers';
+import { XotbTabsModule } from 'ng-xotb/navigators/tabs';
 
 import { XotbColorpickerSwatch } from './swatch/colorpicker-swatch';
 import { XotbColorpickerCustom } from './custom/colorpicker-custom';

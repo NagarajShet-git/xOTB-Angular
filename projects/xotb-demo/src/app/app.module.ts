@@ -34,7 +34,7 @@ import { XotbMenusModule } from 'projects/menus/src/public-api';
 import { XotbPickModule } from 'projects/pick/src/lib';
 import { XotbToastModule } from 'projects/toast/src/public-api';
 import { XotbBoxModule } from 'projects/box/src/public-api';
-import { XotbComboboxesModule } from 'ng-xotb/comboboxes';
+import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
 import { XotbDatatableModule } from 'projects/datatable/src/public-api';
 import { XotbTreeModule } from 'projects/tree/src/public-api';

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { XotbInternalOutletModule } from 'ng-xotb/utility';
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 
 import { XotbCarousel } from './carousel';
 import { XotbCarouselImage } from './carousel-image';

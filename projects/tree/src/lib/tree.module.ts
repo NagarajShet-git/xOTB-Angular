@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Tree } from './tree';
 import { CommonModule } from '@angular/common';
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 
 @NgModule({
   declarations: [Tree],

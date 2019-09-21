@@ -10,8 +10,8 @@ An expander control Section can be useful to show and hide sections of your UI a
 
 ...
 
-import { XotbMenusModule } from 'ng-xotb/menus';
-import { XotbIconsModule } from 'ng-xotb/icons'
+import { XotbMenusModule } from 'ng-xotb/navigators/menus';
+import { XotbIconsModule } from 'ng-xotb/controls/icons'
 
 @NgModule({
     imports:[XotbMenusModule, XotbIconsModule]

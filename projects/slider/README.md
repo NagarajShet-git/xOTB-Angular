@@ -10,7 +10,7 @@ The Sliders have become the de facto standard UI control for selecting a value o
 
 ...
 
-import { XotbSliderModule } from 'ng-xotb/slider';
+import { XotbSliderModule } from 'ng-xotb/controls/slider';
 
 @NgModule({
     imports:[XotbSliderModule]

@@ -1,4 +1,4 @@
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 import { NgModule } from '@angular/core';
 import { XotbSections } from './sections';
 import { CommonModule } from '@angular/common';

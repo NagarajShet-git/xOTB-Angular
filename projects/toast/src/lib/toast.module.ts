@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { XotbToast } from './toast';
 import { XotbToastClose } from './toast-close';
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 
 const TOAST_DIRECTIVES = [XotbToast, XotbToastClose];
 

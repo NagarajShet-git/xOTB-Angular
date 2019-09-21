@@ -10,7 +10,7 @@ An accordion menu is a vertically stacked list of headers (collapsible content) 
 
 ...
 
-import { XotbAccordionModule } from 'ng-xotb/accordion';
+import { XotbAccordionModule } from 'ng-xotb/containers/accordion';
 
 @NgModule({
     imports:[XotbAccordionModule]

@@ -10,7 +10,7 @@ import {
   XotbDatatableLoadingOverlay,
   XotbDatatableNoRowsOverlay
 } from './overlays';
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 
 import { XotbInternalDatatableHeadCell } from './head';
 import { XotbInternalDatatableCell } from './cell-internal';

@@ -8,7 +8,7 @@ Tabs appear at the top or bottom of a UI and allow the users to quickly switch b
 ```javascript
 
 ...
-import { XotbTabsModule } from 'ng-xotb/tabs';
+import { XotbTabsModule } from 'ng-xotb/navigators/tabs';
 
 @NgModule({
     imports:[XotbTabsModule]

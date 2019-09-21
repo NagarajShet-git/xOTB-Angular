@@ -1,5 +1,5 @@
 {
-  "name": "ng-xotb/forms",
+  "name": "ng-xotb/controls/forms",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^8.1.3",

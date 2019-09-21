@@ -9,7 +9,7 @@ The Carousel is a slideshow for cycling through elements, often used as an image
 
 ...
 
-import { XotbCarouselModule } from 'ng-xotb/carousel';
+import { XotbCarouselModule } from 'ng-xotb/navigators/carousel';
 
 @NgModule({
     imports:[XotbCarouselModule]
