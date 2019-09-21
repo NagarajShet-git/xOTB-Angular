@@ -1,17 +1,17 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/toast/README.md';
-import { XotbToastModule } from 'projects/toast/src/public-api';
+import { XotbToastModule } from 'ng-xotb/controls/toast';
 import { DemoToastComponent } from 'projects/xotb-demo/src/app/examples/toast/toast.component';
-import { XotbButtonsModule } from 'projects/buttons/src/public-api';
+import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 
-storiesOf('Toast', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbToastModule, XotbButtonsModule]
     })
   )
   .add(
-    'default',
+    'Toast',
     () => ({
       component: DemoToastComponent
     }),

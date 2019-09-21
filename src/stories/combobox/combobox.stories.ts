@@ -4,14 +4,14 @@ import md from 'projects/comboboxes/README.md';
 import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 import { DemoComboboxesComponent } from 'projects/xotb-demo/src/app/examples/comboboxes/combobox.component';
 
-storiesOf('Combobox', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbComboboxesModule]
     })
   )
   .add(
-    'default',
+    'Combobox',
     () => ({
       component: DemoComboboxesComponent
     }),

@@ -1,18 +1,18 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 
 import md from 'projects/textarea/README.md';
-import { XotbCheckboxModule } from 'projects/checkbox/src/public-api';
-import { XotbTextareaModule } from 'projects/textarea/src/public-api';
+import { XotbCheckboxModule } from 'ng-xotb/controls/checkbox';
+import { XotbTextareaModule } from 'ng-xotb/controls/textarea';
 import { DemoTextareaComponent } from 'projects/xotb-demo/src/app/examples/textarea/textarea.component';
 
-storiesOf('TextArea', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbTextareaModule, XotbCheckboxModule]
     })
   )
   .add(
-    'default',
+    'TextArea',
     () => ({
       component: DemoTextareaComponent
     }),
