@@ -20,7 +20,7 @@ import { uniqueId } from 'ng-xotb/utility';
 export class XotbPanel {
   @Input() title: string;
   @Input() collapsable = true;
-  @Input() open = false;
+  @Input() open = true;
 
   @Output() openChange = new EventEmitter<boolean>();
 
