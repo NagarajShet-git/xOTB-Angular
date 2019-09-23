@@ -1,17 +1,16 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/progressbar/README.md';
 import { DemoSelectComponent } from 'projects/xotb-demo/src/app/examples/select/select.component';
-import { XotbSelectModule } from 'projects/select/src/public-api';
-import { XotbButtonsModule } from 'projects/buttons/src/public-api';
+import { XotbSelectModule } from 'ng-xotb/controls/select';
 
-storiesOf('Select', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbSelectModule]
     })
   )
   .add(
-    'default',
+    'Select',
     () => ({
       component: DemoSelectComponent
     }),

@@ -1,0 +1,68 @@
+<div class="xotb-text-title_caps xotb-m-bottom_small">Sixotbe selection</div>
+<div class="xotb-m-bottom_small">
+  Selected:<code>{{ selected }}</code>
+</div>
+<div
+  class="xotb-button-group"
+  [(xotbSegmentedButton)]="selected"
+  xotbSegmentedButtonActiveClass="xotb-button_brand"
+  role="group"
+>
+  <button type="button" xotbButton xotbSegmentedButtonOption="left">
+    Left
+  </button>
+  <button type="button" xotbButton xotbSegmentedButtonOption="middle">
+    Middle
+  </button>
+  <button type="button" xotbButton [xotbSegmentedButtonOption]="'right'">
+    Right
+  </button>
+</div>
+
+<div class="xotb-text-title_caps xotb-m-bottom_small xotb-m-top_x-large">
+  Multiple selection
+</div>
+<div class="xotb-m-bottom_small">
+  Selected:<code>{{ multiple }}</code>
+</div>
+<div
+  class="xotb-button-group"
+  [(xotbSegmentedButton)]="multiple"
+  xotbSegmentedButtonMultiple
+  xotbSegmentedButtonActiveClass="xotb-button_brand"
+  role="group"
+>
+  <button type="button" xotbButton xotbSegmentedButtonOption="left">
+    Left
+  </button>
+  <button type="button" xotbButton xotbSegmentedButtonOption="middle">
+    Middle
+  </button>
+  <button type="button" xotbButton [xotbSegmentedButtonOption]="'right'">
+    Right
+  </button>
+</div>
+
+<div class="xotb-text-title_caps xotb-m-bottom_small xotb-m-top_x-large">
+  Multiple selection with object
+</div>
+<div class="xotb-m-bottom_small">
+  Selected:<code>{{ multipleObject | json }}</code>
+</div>
+<div
+  class="xotb-button-group"
+  [(xotbSegmentedButton)]="multipleObject"
+  xotbSegmentedButtonMultiple
+  xotbSegmentedButtonActiveClass="xotb-button_brand"
+  role="group"
+>
+  <button type="button" xotbButton xotbSegmentedButtonOption="left">
+    Left
+  </button>
+  <button type="button" xotbButton xotbSegmentedButtonOption="middle">
+    Middle
+  </button>
+  <button type="button" xotbButton [xotbSegmentedButtonOption]="'right'">
+    Right
+  </button>
+</div>

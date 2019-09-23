@@ -9,7 +9,7 @@ The Input field allows a user to enter or edit a text into a UI (value or descri
 
 ...
 
-import { XotbInputModule } from 'ng-xotb/input';
+import { XotbInputModule } from 'ng-xotb/controls/input';
 
 @NgModule({
     imports:[XotbInputModule]

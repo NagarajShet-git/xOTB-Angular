@@ -1,22 +1,18 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 
 import md from 'projects/comboboxes/README.md';
-import { XotbComboboxesModule } from 'ng-xotb/comboboxes';
-import { FormControl, ReactiveFormsModule } from '@angular/forms';
-import { DemoAutoCompleteComponent } from '../../../projects/xotb-demo/src/app/examples/autocomplete/autocomplete.component';
-import { Observable } from 'rxjs';
-import { map, startWith } from 'rxjs/operators';
+import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
+import { ReactiveFormsModule } from '@angular/forms';
+import { DemoAutoCompleteComponent } from 'projects/xotb-demo/src/app/examples/autocomplete/autocomplete.component';
 
-let filteredHeroes$: Observable<any[]>;
-
-storiesOf('Autocomplete', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbComboboxesModule, ReactiveFormsModule]
     })
   )
   .add(
-    'default',
+    'autocomplete',
     () => ({
       component: DemoAutoCompleteComponent
     }),

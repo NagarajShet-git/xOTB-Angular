@@ -707,33 +707,33 @@
         }
       }
     },
-    "sections": {
+    "panel": {
       "projectType": "library",
-      "root": "projects/sections",
-      "sourceRoot": "projects/sections/src",
+      "root": "projects/panel",
+      "sourceRoot": "projects/panel/src",
       "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/sections/tsconfig.lib.json",
-            "project": "projects/sections/ng-package.json"
+            "tsConfig": "projects/panel/tsconfig.lib.json",
+            "project": "projects/panel/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/sections/src/test.ts",
-            "tsConfig": "projects/sections/tsconfig.spec.json",
-            "karmaConfig": "projects/sections/karma.conf.js"
+            "main": "projects/panel/src/test.ts",
+            "tsConfig": "projects/panel/tsconfig.spec.json",
+            "karmaConfig": "projects/panel/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/sections/tsconfig.lib.json",
-              "projects/sections/tsconfig.spec.json"
+              "projects/panel/tsconfig.lib.json",
+              "projects/panel/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -773,33 +773,33 @@
         }
       }
     },
-    "button-icons": {
+    "icon-button": {
       "projectType": "library",
-      "root": "projects/button-icons",
-      "sourceRoot": "projects/button-icons/src",
+      "root": "projects/icon-button",
+      "sourceRoot": "projects/icon-button/src",
       "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/button-icons/tsconfig.lib.json",
-            "project": "projects/button-icons/ng-package.json"
+            "tsConfig": "projects/icon-button/tsconfig.lib.json",
+            "project": "projects/icon-button/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/button-icons/src/test.ts",
-            "tsConfig": "projects/button-icons/tsconfig.spec.json",
-            "karmaConfig": "projects/button-icons/karma.conf.js"
+            "main": "projects/icon-button/src/test.ts",
+            "tsConfig": "projects/icon-button/tsconfig.spec.json",
+            "karmaConfig": "projects/icon-button/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/button-icons/tsconfig.lib.json",
-              "projects/button-icons/tsconfig.spec.json"
+              "projects/icon-button/tsconfig.lib.json",
+              "projects/icon-button/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -1037,33 +1037,33 @@
         }
       }
     },
-    "pick": {
+    "segmented-button": {
       "projectType": "library",
-      "root": "projects/pick",
-      "sourceRoot": "projects/pick/src",
+      "root": "projects/segmented-button",
+      "sourceRoot": "projects/segmented-button/src",
       "prefix": "xotb",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "tsConfig": "projects/pick/tsconfig.lib.json",
-            "project": "projects/pick/ng-package.json"
+            "tsConfig": "projects/segmented-button/tsconfig.lib.json",
+            "project": "projects/segmented-button/ng-package.json"
           }
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "projects/pick/src/test.ts",
-            "tsConfig": "projects/pick/tsconfig.spec.json",
-            "karmaConfig": "projects/pick/karma.conf.js"
+            "main": "projects/segmented-button/src/test.ts",
+            "tsConfig": "projects/segmented-button/tsconfig.spec.json",
+            "karmaConfig": "projects/segmented-button/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "projects/pick/tsconfig.lib.json",
-              "projects/pick/tsconfig.spec.json"
+              "projects/segmented-button/tsconfig.lib.json",
+              "projects/segmented-button/tsconfig.spec.json"
             ],
             "exclude": ["**/node_modules/**"]
           }

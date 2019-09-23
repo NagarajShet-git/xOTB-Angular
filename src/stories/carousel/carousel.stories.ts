@@ -1,17 +1,17 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 
 import md from 'projects/carousel/README.md';
-import { XotbCarouselModule } from 'projects/carousel/src/public-api';
+import { XotbCarouselModule } from 'ng-xotb/navigators/carousel';
 import { DemoCarouselComponent } from 'projects/xotb-demo/src/app/examples/carousel/carousel.component';
 
-storiesOf('Carousel', module)
+storiesOf('Navigators', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbCarouselModule]
     })
   )
   .add(
-    'default',
+    'Carousel',
     () => ({
       component: DemoCarouselComponent
     }),

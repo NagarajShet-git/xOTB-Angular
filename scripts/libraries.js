@@ -19,18 +19,19 @@ const LIBRARIES = [
   'popovers',
   'progressbar',
   'spinner',
-  'button-icons',
+  'icon-button',
   'ratings',
-  'sections',
+  'panel',
   'breadcrumbs',
   'modals',
   'carousel',
   'menus',
-  'pick',
+  'segmented-button',
   'toast',
   'box',
   'comboboxes',
   'colorpicker',
-  'tree'
+  'tree',
+  'datatable'
 ];
 module.exports = LIBRARIES;

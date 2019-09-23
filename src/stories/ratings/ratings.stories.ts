@@ -1,17 +1,17 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/ratings/README.md';
 import { DemoRatingsComponent } from 'projects/xotb-demo/src/app/examples/ratings/ratings.component';
-import { XotbRatingsModule } from 'projects/ratings/src/public-api';
-import { XotbButtonsModule } from 'projects/buttons/src/public-api';
+import { XotbRatingsModule } from 'ng-xotb/controls/ratings';
+import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 
-storiesOf('Ratings', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbRatingsModule, XotbButtonsModule]
     })
   )
   .add(
-    'default',
+    'Ratings',
     () => ({
       component: DemoRatingsComponent
     }),

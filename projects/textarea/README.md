@@ -9,7 +9,7 @@ Text fields allow the user to input, edit and select text.
 
 ...
 
-import { XotbTextareaModule } from 'ng-xotb/textarea';
+import { XotbTextareaModule } from 'ng-xotb/controls/textarea';
 
 @NgModule({
     imports:[XotbTextareaModule]

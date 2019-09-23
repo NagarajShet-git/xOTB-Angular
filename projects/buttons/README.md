@@ -9,7 +9,7 @@ Buttons allow the user to trigger an action or make a selection with a single ta
 
 ...
 
-import { XotbButtonsModule } from 'ng-xotb/buttons';
+import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 
 @NgModule({
     imports:[XotbButtonsModule]

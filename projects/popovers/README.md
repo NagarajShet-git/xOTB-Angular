@@ -7,7 +7,7 @@
 ```javascript
 
 ...
-import { XotbPopoversModule } from 'ng-xotb/popovers';
+import { XotbPopoversModule } from 'ng-xotb/controls/popovers';
 
 @NgModule({
     imports:[XotbPopoversModule]

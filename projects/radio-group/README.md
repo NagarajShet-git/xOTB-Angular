@@ -10,7 +10,7 @@ Radio buttons allow the user to select one option from a set while being able to
 
 ...
 
-import { XotbCheckboxesModule } from 'ng-xotb/checkboxes';
+import { XotbCheckboxesModule } from 'ng-xotb/controls/checkboxes';
 
 @NgModule({
     imports:[XotbCheckboxesModule]

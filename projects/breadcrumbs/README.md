@@ -9,7 +9,7 @@ A breadcrumb is a graphical control element frequently used as a navigational ai
 
 ...
 
-import { XotbBreadcrumbsModule } from 'ng-xotb/breadcrumbs';
+import { XotbBreadcrumbsModule } from 'ng-xotb/navigators/breadcrumbs';
 
 @NgModule({
     imports:[XotbBreadcrumbsModule]

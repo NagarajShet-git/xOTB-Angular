@@ -10,8 +10,8 @@ A Menu displays the list of choices available on a temporary surface. It appears
 
 ...
 
-import { XotbMenusModule } from 'ng-xotb/menus';
-import { XotbIconsModule } from 'ng-xotb/icons'
+import { XotbMenusModule } from 'ng-xotb/navigators/menus';
+import { XotbIconsModule } from 'ng-xotb/controls/icons'
 
 @NgModule({
     imports:[XotbMenusModule, XotbIconsModule]

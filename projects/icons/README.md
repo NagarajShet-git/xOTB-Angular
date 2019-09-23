@@ -9,7 +9,7 @@ Icons are delightful, beautifully-crafted symbols that are universally accepted 
 ```javascript
 ...
 
-import { XotbIconsModule } from 'ng-xotb/icons';
+import { XotbIconsModule } from 'ng-xotb/controls/icons';
 
 @NgModule({
     imports:[XotbIconsModule]

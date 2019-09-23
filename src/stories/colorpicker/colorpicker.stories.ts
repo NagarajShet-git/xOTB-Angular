@@ -1,16 +1,16 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 
 import md from 'projects/colorpicker/README.md';
-import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
-import { XotbButtonsModule } from 'projects/buttons/src/public-api';
+import { XotbColorpickerModule } from 'ng-xotb/controls/colorpicker';
+import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { DemoColorpickerComponent } from 'projects/xotb-demo/src/app/examples/colorpicker/colorpicker.component';
 
-storiesOf('Colorpicker', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbColorpickerModule, XotbButtonsModule]
     })
   )
-  .add('default', () => ({ component: DemoColorpickerComponent }), {
+  .add('Colorpicker', () => ({ component: DemoColorpickerComponent }), {
     notes: md
   });

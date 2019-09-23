@@ -6,7 +6,7 @@
 ```javascript
 
 ...
-import { XotbModalsModule } from 'ng-xotb/modals';
+import { XotbModalsModule } from 'ng-xotb/controls/modals';
 
 @NgModule({
     imports:[XotbModalsModule]
@@ -42,7 +42,7 @@ import { XotbModalsModule } from 'ng-xotb/modals';
 
 ...
 
-import { XotbModalService } from 'ng-xotb/modals'
+import { XotbModalService } from 'ng-xotb/controls/modals'
 
 @Component({
     templateUrl:'./component.html',

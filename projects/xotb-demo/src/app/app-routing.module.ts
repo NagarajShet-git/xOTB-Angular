@@ -15,21 +15,23 @@ import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 import { DemoIconsComponent } from './examples/icons/icons.component';
 import { DemoProgressbarComponent } from './examples/progressbar/progressbar.component';
 import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
-import { DemoButtonIconsComponent } from './examples/button-icons/button-icons.component';
+import { DemoIconButtonComponent } from './examples/icon-button/icon-button.component';
 import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoModalsComponent } from './examples/modals/modals.component';
-import { DemoSectionsComponent } from './examples/sections/sections.component';
+import { DemoPanelComponent } from './examples/panel/panel.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
 import { DemoMenusComponent } from './examples/menus/menus.component';
-import { DemoPickComponent } from './examples/pick/pick.component';
+import { DemoSegmentedButtonComponent } from './examples/segmented-button/segmented-button.component';
 import { DemoToastComponent } from './examples/toast/toast.component';
-import { DemoBoxComponent } from './examples/box/box.component';
+import { DemoHBoxComponent } from './examples/hbox/hbox.component';
 import { DemoComboboxesComponent } from './examples/comboboxes/combobox.component';
 import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.component';
 import { DemoColorpickerComponent } from './examples/colorpicker/colorpicker.component';
 import { DemoDatatableComponent } from './examples/datatable/datatable.component';
 import { DemoTreeComponent } from './examples/tree/tree.component';
+import { DemoVBoxComponent } from './examples/vbox/vbox.component';
+import { DemoCardComponent } from './examples/card/card.component';
 
 const routes: Routes = [
   { path: 'input', component: DemoInputComponent },
@@ -47,16 +49,18 @@ const routes: Routes = [
   { path: 'icons', component: DemoIconsComponent },
   { path: 'progressbar', component: DemoProgressbarComponent },
   { path: 'spinner', component: DemoSpinnerComponent },
-  { path: 'button-icons', component: DemoButtonIconsComponent },
+  { path: 'icon-button', component: DemoIconButtonComponent },
   { path: 'ratings', component: DemoRatingsComponent },
   { path: 'modals', component: DemoModalsComponent },
-  { path: 'sections', component: DemoSectionsComponent },
+  { path: 'panel', component: DemoPanelComponent },
   { path: 'breadcrumbs', component: DemoBreadcrumbsComponent },
   { path: 'carousel', component: DemoCarouselComponent },
   { path: 'menus', component: DemoMenusComponent },
-  { path: 'pick', component: DemoPickComponent },
+  { path: 'pick', component: DemoSegmentedButtonComponent },
   { path: 'toast', component: DemoToastComponent },
-  { path: 'box', component: DemoBoxComponent },
+  { path: 'vbox', component: DemoVBoxComponent },
+  { path: 'hbox', component: DemoHBoxComponent },
+  { path: 'card', component: DemoCardComponent },
   { path: 'comboboxes', component: DemoComboboxesComponent },
   { path: 'autocomplete', component: DemoAutoCompleteComponent },
   { path: 'colorpicker', component: DemoColorpickerComponent },

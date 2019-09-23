@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { XotbFormsModule } from 'ng-xotb/forms';
+import { XotbFormsModule } from 'ng-xotb/controls/forms';
 import { XotbTextarea } from './textarea/textarea';
 import { XotbTextareaInput } from './input/input';
 

@@ -10,7 +10,7 @@ Check Boxes allow the user to select one or more items from a given set.
 
 ...
 
-import { XotbCheckboxesModule } from 'ng-xotb/checkboxes';
+import { XotbCheckboxesModule } from 'ng-xotb/controls/checkboxes';
 
 @NgModule({
     imports:[XotbCheckboxesModule]

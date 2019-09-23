@@ -1,18 +1,18 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
-import md from 'projects/sections/README.md';
-import { XotbSectionsModule } from 'projects/sections/src/public-api';
-import { DemoSectionsComponent } from 'projects/xotb-demo/src/app/examples/sections/sections.component';
+import md from 'projects/panel/README.md';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
+import { DemoPanelComponent } from 'projects/xotb-demo/src/app/examples/panel/panel.component';
 
-storiesOf('Section', module)
+storiesOf('Containers', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbSectionsModule]
+      imports: [XotbPanelModule]
     })
   )
   .add(
-    'default',
+    'Panel',
     () => ({
-      component: DemoSectionsComponent
+      component: DemoPanelComponent
     }),
     {
       notes: md

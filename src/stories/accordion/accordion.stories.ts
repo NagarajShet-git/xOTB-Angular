@@ -1,16 +1,16 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/accordion/README.md';
-import { XotbAccordionModule } from 'projects/accordion/src/public-api';
+import { XotbAccordionModule } from 'ng-xotb/containers/accordion';
 import { DemoAccordinComponent } from 'projects/xotb-demo/src/app/examples/accordion/accordion.component';
 
-storiesOf('Accordion', module)
+storiesOf('Containers', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbAccordionModule]
     })
   )
   .add(
-    'default',
+    'Accordion',
     () => ({
       component: DemoAccordinComponent
     }),

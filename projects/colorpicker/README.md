@@ -9,7 +9,7 @@ The Color Picker tool allows a user to create, share and apply color palettes to
 
 ...
 
-import { XotbColorpickerModule } from 'ng-xotb/colorpicker';
+import { XotbColorpickerModule } from 'ng-xotb/controls/colorpicker';
 
 @NgModule({
     imports:[XotbColorpickerModule]

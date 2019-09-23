@@ -10,7 +10,7 @@ A Combobox is a commonly used GUI widget (or control). Traditionally, it is a co
 
 ...
 
-import { XotbComboboxesModule } from 'ng-xotb/comboboxes';
+import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 
 @NgModule({
     imports:[XotbComboboxesModule]

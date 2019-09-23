@@ -1,16 +1,16 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/spinner/README.md';
 import { DemoSpinnerComponent } from 'projects/xotb-demo/src/app/examples/spinner/spinner.component';
-import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
+import { XotbSpinnerModule } from 'ng-xotb/controls/spinner';
 
-storiesOf('Spinner', module)
+storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbSpinnerModule]
     })
   )
   .add(
-    'default',
+    'Spinner',
     () => ({
       component: DemoSpinnerComponent
     }),

@@ -24,17 +24,17 @@ import { XotbTabsModule } from 'projects/tabs/src/public-api';
 import { XotbPopoversModule } from 'projects/popovers/src/public-api';
 import { XotbProgressbarModule } from 'projects/progressbar/src/public-api';
 import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
-import { XotbButtonIconsModule } from 'projects/button-icons/src/public-api';
+import { XotbIconButtonModule } from 'projects/icon-button/src/public-api';
 import { XotbRatingsModule } from 'projects/ratings/src/public-api';
 import { XotbModalsModule } from 'projects/modals/src/public-api';
-import { XotbSectionsModule } from 'projects/sections/src/public-api';
+import { XotbPanelModule } from 'projects/panel/src/public-api';
 import { XotbBreadcrumbsModule } from 'projects/breadcrumbs/src/public-api';
 import { XotbCarouselModule } from 'projects/carousel/src/public-api';
 import { XotbMenusModule } from 'projects/menus/src/public-api';
-import { XotbPickModule } from 'projects/pick/src/lib';
+import { XotbSegmentedButtonModule } from 'projects/segmented-button/src/lib';
 import { XotbToastModule } from 'projects/toast/src/public-api';
 import { XotbBoxModule } from 'projects/box/src/public-api';
-import { XotbComboboxesModule } from 'ng-xotb/comboboxes';
+import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
 import { XotbDatatableModule } from 'projects/datatable/src/public-api';
 import { XotbTreeModule } from 'projects/tree/src/public-api';
@@ -57,21 +57,23 @@ import { DemoIconsComponent } from './examples/icons/icons.component';
 import { DemoPopoverComponent } from './examples/popovers/popovers.component';
 import { DemoProgressbarComponent } from './examples/progressbar/progressbar.component';
 import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
-import { DemoButtonIconsComponent } from './examples/button-icons/button-icons.component';
+import { DemoIconButtonComponent } from './examples/icon-button/icon-button.component';
 import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoModalsComponent } from './examples/modals/modals.component';
-import { DemoSectionsComponent } from './examples/sections/sections.component';
+import { DemoPanelComponent } from './examples/panel/panel.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
 import { DemoMenusComponent } from './examples/menus/menus.component';
-import { DemoPickComponent } from './examples/pick/pick.component';
+import { DemoSegmentedButtonComponent } from './examples/segmented-button/segmented-button.component';
 import { DemoToastComponent } from './examples/toast/toast.component';
-import { DemoBoxComponent } from './examples/box/box.component';
+import { DemoHBoxComponent } from './examples/hbox/hbox.component';
 import { DemoComboboxesComponent } from './examples/comboboxes/combobox.component';
 import { DemoAutoCompleteComponent } from './examples/autocomplete/autocomplete.component';
 import { DemoColorpickerComponent } from './examples/colorpicker/colorpicker.component';
 import { DemoDatatableComponent } from './examples/datatable/datatable.component';
 import { DemoTreeComponent } from './examples/tree/tree.component';
+import { DemoVBoxComponent } from './examples/vbox/vbox.component';
+import { DemoCardComponent } from './examples/card/card.component';
 
 @NgModule({
   declarations: [
@@ -90,17 +92,19 @@ import { DemoTreeComponent } from './examples/tree/tree.component';
     DemoPopoverComponent,
     DemoIconsComponent,
     DemoProgressbarComponent,
-    DemoButtonIconsComponent,
+    DemoIconButtonComponent,
     DemoRatingsComponent,
     DemoModalsComponent,
-    DemoSectionsComponent,
+    DemoPanelComponent,
     DemoSpinnerComponent,
     DemoBreadcrumbsComponent,
     DemoCarouselComponent,
     DemoMenusComponent,
-    DemoPickComponent,
+    DemoSegmentedButtonComponent,
     DemoToastComponent,
-    DemoBoxComponent,
+    DemoHBoxComponent,
+    DemoVBoxComponent,
+    DemoCardComponent,
     DemoComboboxesComponent,
     DemoAutoCompleteComponent,
     DemoColorpickerComponent,
@@ -127,15 +131,15 @@ import { DemoTreeComponent } from './examples/tree/tree.component';
     XotbPopoversModule,
     XotbIconsModule,
     XotbProgressbarModule,
-    XotbButtonIconsModule,
+    XotbIconButtonModule,
     XotbRatingsModule,
     XotbModalsModule,
-    XotbSectionsModule,
+    XotbPanelModule,
     XotbSpinnerModule,
     XotbBreadcrumbsModule,
     XotbCarouselModule,
     XotbMenusModule,
-    XotbPickModule,
+    XotbSegmentedButtonModule,
     XotbToastModule,
     XotbBoxModule,
     XotbComboboxesModule,
