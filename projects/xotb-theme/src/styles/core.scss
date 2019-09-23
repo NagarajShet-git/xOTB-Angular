@@ -1,5 +1,9 @@
 @import '@angular/cdk/overlay-prebuilt.css';
 
+body {
+  color: $text-color;
+}
+
 abbr[title] {
   border: 0;
   text-decoration: none;
@@ -10,7 +14,7 @@ select {
 }
 a {
   background-color: transparent;
-  color: #006dcc;
+  color: $primary-color;
   text-decoration: none;
   transition: color 0.1s linear;
 }
@@ -137,4 +141,8 @@ th {
 .xotb-text-link_reset:hover {
   color: inherit;
   text-decoration: inherit;
+}
+
+:focus {
+  outline: none !important;
 }

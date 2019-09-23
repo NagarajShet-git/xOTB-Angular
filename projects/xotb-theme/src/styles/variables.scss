@@ -5,13 +5,13 @@ $blue: #00bcd4;
 $red: hsl(2, 58%, 48%);
 $yellow: #ffc107;
 
-$primary-color: $blue;
+$primary-color: #00bcd4;
 $secondary-color: $yellow;
 $danger-color: $red;
 
 $text-color: #3e3e3c;
 
-$border-color: #dddbda;
+$border-color: #d2d2d2;
 $background-color: $white;
 
 $box-shadow: rgba(0, 0, 0, 0.16);
@@ -19,7 +19,7 @@ $box-shadow: rgba(0, 0, 0, 0.16);
 $disabled-border-color: #c9c7c5;
 $disabled-background-color: #ecebea;
 
-$anchor-color: $blue;
+$anchor-color: $primary-color;
 
 $theme-colors: (
   'success': $green,
