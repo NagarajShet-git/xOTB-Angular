@@ -15,5 +15,5 @@ export class AppComponent {
   libraries = [
     ...libraries.filter(lib => this.ignoreLibs.indexOf(lib) < 0),
     'autocomplete'
-  ];
+  ].sort();
 }

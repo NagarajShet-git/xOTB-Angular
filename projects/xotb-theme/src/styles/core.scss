@@ -10,7 +10,7 @@ select {
 }
 a {
   background-color: transparent;
-  color: #006dcc;
+  color: $primary-color;
   text-decoration: none;
   transition: color 0.1s linear;
 }
