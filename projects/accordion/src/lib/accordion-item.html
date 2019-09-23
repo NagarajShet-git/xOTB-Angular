@@ -6,15 +6,16 @@
         [attr.aria-controls]="uid"
         [attr.aria-expanded]="isActive"
       >
-        <!-- <svg
-          class="xotb-accordion__summary-action-icon xotb-button__icon xotb-button__icon_left"
-          xotbIconName="utility:switch"
-        ></svg> -->
         <span
           class="xotb-truncate"
           [xotbInternalOutlet]="section.label"
           [xotbInternalOutletContext]="{ $implicit: section.labelContext }"
         ></span>
+        <xotb-icon
+          svgClass="xotb-accordion__summary-action_icon"
+          [iconName]="isActive ? 'minus' : 'plus'"
+          size="xx-small"
+        ></xotb-icon>
       </button>
     </h3>
   </div>
