@@ -1,6 +1,6 @@
 # Sections
 
-An expander control Section can be useful to show and hide sections of your UI and therefore, declutter your app
+An expander control Section can be useful to show and hide panel of your UI and therefore, declutter your app
 
 
 ## Usages

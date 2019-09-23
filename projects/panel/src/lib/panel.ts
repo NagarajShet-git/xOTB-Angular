@@ -9,22 +9,22 @@ import {
 import { uniqueId } from 'ng-xotb/utility';
 
 @Component({
-  selector: 'xotb-section',
+  selector: 'xotb-panel',
   changeDetection: ChangeDetectionStrategy.OnPush,
-  templateUrl: './section.html',
+  templateUrl: './panel.html',
   host: {
-    '[class.xotb-section]': 'true'
+    '[class.xotb-panel]': 'true'
   },
   styles: []
 })
-export class XotbSections {
+export class XotbPanel {
   @Input() title: string;
   @Input() collapsable = true;
   @Input() open = false;
 
   @Output() openChange = new EventEmitter<boolean>();
 
-  private _uid = uniqueId('expandable-section');
+  private _uid = uniqueId('expandable-panel');
 
   @HostBinding('class.xotb-is-open')
   get expanded() {
@@ -37,6 +37,6 @@ export class XotbSections {
 
   toggle(event: Event) {
     event.preventDefault();
-    this.openChange.emit(!this.open);
+    // this.openChange.emit(!this.open);
   }
 }

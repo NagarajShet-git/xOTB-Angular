@@ -18,7 +18,7 @@ export { XotbProgressbarModule } from 'ng-xotb/controls/progressbar';
 export { XotbSpinnerModule } from 'ng-xotb/controls/spinner';
 export { XotbIconButtonModule } from 'ng-xotb/controls/icon-button';
 export { XotbRatingsModule } from 'ng-xotb/controls/ratings';
-export { XotbSectionsModule } from 'ng-xotb/containers/sections';
+export { XotbPanelModule } from 'ng-xotb/containers/panel';
 export { XotbBreadcrumbsModule } from 'ng-xotb/navigators/breadcrumbs';
 export { XotbModalsModule } from 'ng-xotb/controls/modals';
 export { XotbCarouselModule } from 'ng-xotb/navigators/carousel';

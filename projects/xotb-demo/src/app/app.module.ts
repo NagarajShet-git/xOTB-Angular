@@ -27,7 +27,7 @@ import { XotbSpinnerModule } from 'projects/spinner/src/public-api';
 import { XotbIconButtonModule } from 'projects/icon-button/src/public-api';
 import { XotbRatingsModule } from 'projects/ratings/src/public-api';
 import { XotbModalsModule } from 'projects/modals/src/public-api';
-import { XotbSectionsModule } from 'projects/sections/src/public-api';
+import { XotbPanelModule } from 'projects/panel/src/public-api';
 import { XotbBreadcrumbsModule } from 'projects/breadcrumbs/src/public-api';
 import { XotbCarouselModule } from 'projects/carousel/src/public-api';
 import { XotbMenusModule } from 'projects/menus/src/public-api';
@@ -60,7 +60,7 @@ import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
 import { DemoIconButtonComponent } from './examples/icon-button/icon-button.component';
 import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoModalsComponent } from './examples/modals/modals.component';
-import { DemoSectionsComponent } from './examples/sections/sections.component';
+import { DemoPanelComponent } from './examples/panel/panel.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
 import { DemoMenusComponent } from './examples/menus/menus.component';
@@ -95,7 +95,7 @@ import { DemoCardComponent } from './examples/card/card.component';
     DemoIconButtonComponent,
     DemoRatingsComponent,
     DemoModalsComponent,
-    DemoSectionsComponent,
+    DemoPanelComponent,
     DemoSpinnerComponent,
     DemoBreadcrumbsComponent,
     DemoCarouselComponent,
@@ -134,7 +134,7 @@ import { DemoCardComponent } from './examples/card/card.component';
     XotbIconButtonModule,
     XotbRatingsModule,
     XotbModalsModule,
-    XotbSectionsModule,
+    XotbPanelModule,
     XotbSpinnerModule,
     XotbBreadcrumbsModule,
     XotbCarouselModule,

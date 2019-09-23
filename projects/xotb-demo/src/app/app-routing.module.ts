@@ -18,7 +18,7 @@ import { DemoSpinnerComponent } from './examples/spinner/spinner.component';
 import { DemoIconButtonComponent } from './examples/icon-button/icon-button.component';
 import { DemoRatingsComponent } from './examples/ratings/ratings.component';
 import { DemoModalsComponent } from './examples/modals/modals.component';
-import { DemoSectionsComponent } from './examples/sections/sections.component';
+import { DemoPanelComponent } from './examples/panel/panel.component';
 import { DemoBreadcrumbsComponent } from './examples/breadcrumbs/breadcrumbs.component';
 import { DemoCarouselComponent } from './examples/carousel/carousel.component';
 import { DemoMenusComponent } from './examples/menus/menus.component';
@@ -52,7 +52,7 @@ const routes: Routes = [
   { path: 'icon-button', component: DemoIconButtonComponent },
   { path: 'ratings', component: DemoRatingsComponent },
   { path: 'modals', component: DemoModalsComponent },
-  { path: 'sections', component: DemoSectionsComponent },
+  { path: 'panel', component: DemoPanelComponent },
   { path: 'breadcrumbs', component: DemoBreadcrumbsComponent },
   { path: 'carousel', component: DemoCarouselComponent },
   { path: 'menus', component: DemoMenusComponent },

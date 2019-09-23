@@ -38,7 +38,7 @@
       "ng-xotb/controls/icon-button": ["dist/icon-button"],
       "ng-xotb/controls/ratings": ["dist/ratings"],
       "ng-xotb/controls/modals": ["dist/modals"],
-      "ng-xotb/containers/sections": ["dist/sections"],
+      "ng-xotb/containers/panel": ["dist/panel"],
       "ng-xotb/navigators/breadcrumbs": ["dist/breadcrumbs"],
       "ng-xotb/navigators/carousel": ["dist/carousel"],
       "ng-xotb/navigators/menus": ["dist/menus"],

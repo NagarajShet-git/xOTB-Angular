@@ -1,11 +1,11 @@
 import { XotbIconsModule } from 'ng-xotb/controls/icons';
 import { NgModule } from '@angular/core';
-import { XotbSections } from './sections';
+import { XotbPanel } from './panel';
 import { CommonModule } from '@angular/common';
 
 @NgModule({
-  declarations: [XotbSections],
+  declarations: [XotbPanel],
   imports: [CommonModule, XotbIconsModule],
-  exports: [XotbSections]
+  exports: [XotbPanel]
 })
-export class XotbSectionsModule {}
+export class XotbPanelModule {}

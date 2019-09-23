@@ -21,7 +21,7 @@ const LIBRARIES = [
   'spinner',
   'icon-button',
   'ratings',
-  'sections',
+  'panel',
   'breadcrumbs',
   'modals',
   'carousel',
