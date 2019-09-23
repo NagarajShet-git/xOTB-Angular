@@ -42,7 +42,7 @@
       "ng-xotb/navigators/breadcrumbs": ["dist/breadcrumbs"],
       "ng-xotb/navigators/carousel": ["dist/carousel"],
       "ng-xotb/navigators/menus": ["dist/menus"],
-      "ng-xotb/controls/segmented-button": ["dist/pick"],
+      "ng-xotb/controls/segmented-button": ["dist/segmented-button"],
       "ng-xotb/controls/toast": ["dist/toast"],
       "ng-xotb/containers/box": ["dist/box"],
       "ng-xotb/controls/comboboxes": ["dist/comboboxes"],
