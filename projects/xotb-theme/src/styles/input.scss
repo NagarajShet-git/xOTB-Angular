@@ -1,9 +1,10 @@
 .xotb-input {
-  border-color: $border-color;
-  border-radius: 0.25rem;
+  border: 1px solid $border-color;
   background-color: $background-color;
-  border: 1px solid;
   width: 100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
   transition: border 0.1s linear, background-color 0.1s linear;
   display: inline-block;
   padding: 0 1rem 0 0.75rem;
@@ -17,7 +18,7 @@
   line-height: 1;
 }
 .xotb-input-has-icon .xotb-input__icon {
-  fill: #b0adab;
+  fill: $primary-color;
   width: 0.875rem;
   height: 0.875rem;
   position: absolute;
@@ -26,7 +27,7 @@
   line-height: 1;
   border: 0;
   z-index: 2;
-  fill: #b0adab;
+  color: $primary-color;
 }
 .xotb-input-has-icon--right .xotb-input__icon,
 .xotb-input-has-icon_right .xotb-input__icon {
@@ -34,4 +35,17 @@
 }
 .xotb-input-has-icon .xotb-input__icon:not(button) {
   pointer-events: none;
+}
+
+.xotb-input-has-icon--right .xotb-input,
+.xotb-input-has-icon--right .xotb-input--bare,
+.xotb-input-has-icon--right .xotb-input_bare,
+.xotb-input-has-icon_right .xotb-input,
+.xotb-input-has-icon_right .xotb-input--bare,
+.xotb-input-has-icon_right .xotb-input_bare {
+  padding-right: 2rem;
+}
+
+.xotb-input-has-icon {
+  position: relative;
 }
