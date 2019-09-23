@@ -1,5 +1,9 @@
 @import '@angular/cdk/overlay-prebuilt.css';
 
+body {
+  color: $text-color;
+}
+
 abbr[title] {
   border: 0;
   text-decoration: none;

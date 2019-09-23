@@ -30,7 +30,11 @@
   vertical-align: middle;
   border: 1px solid $border-color;
   transition: border 0.15s linear;
-  background-color: $background-color;
+  background-color: $primary-color;
+  color: $button-brand-color;
+  &:hover {
+    background-color: darken($color: $primary-color, $amount: 10);
+  }
 }
 
 .xotb-button_brand {
@@ -40,8 +44,11 @@
   vertical-align: middle;
   border: 1px solid $primary-color;
   transition: border 0.15s linear;
-  background-color: $primary-color;
+  background-color: darken($color: $primary-color, $amount: 10);
   color: $button-brand-color;
+  &:hover {
+    background-color: darken($color: $primary-color, $amount: 20);
+  }
 }
 
 .xotb-button_outline-brand {
@@ -49,9 +56,13 @@
   padding-right: 1rem;
   text-align: center;
   vertical-align: middle;
-  border: 1px solid $border-color;
+  border: 1px solid $primary-color;
+  color: $primary-color;
   transition: border 0.15s linear;
   background-color: $background-color;
+  &:hover {
+    background-color: darken($color: $background-color, $amount: 10);
+  }
 }
 
 .xotb-button_destructive {
@@ -63,6 +74,9 @@
   transition: border 0.15s linear;
   background-color: $danger-color;
   color: $button-destructive-color;
+  &:hover {
+    background-color: darken($color: $danger-color, $amount: 10);
+  }
 }
 
 .xotb-button_text-destructive {
@@ -83,7 +97,9 @@
   border: 1px solid $button-success-border-color;
   transition: border 0.15s linear;
   background-color: $button-success-border-color;
-  color: $button-success-color;
+  &:hover {
+    background-color: darken($color: $button-success-border-color, $amount: 10);
+  }
 }
 .xotb-button + .xotb-button,
 .xotb-button + .xotb-button-group,

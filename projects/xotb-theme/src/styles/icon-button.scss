@@ -38,6 +38,9 @@
   background-color: $primary-color;
   border-color: $primary-color;
   color: $button-brand-color;
+  &:hover {
+    background-color: darken($color: $primary-color, $amount: 10);
+  }
 }
 
 .xotb-button_icon-border-inverse,
