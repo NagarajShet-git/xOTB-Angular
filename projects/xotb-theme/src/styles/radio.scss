@@ -38,8 +38,8 @@
   [type=radio]:checked + .xotb-radio_faux:after,
   [type=radio]:checked ~ .xotb-radio--faux:after,
   [type=radio]:checked ~ .xotb-radio_faux:after {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.4rem;
+    height: 0.4rem;
     content: '';
     position: absolute;
     top: 50%;
