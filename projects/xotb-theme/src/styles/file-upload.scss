@@ -3,14 +3,17 @@
 }
 .xotb-file-selector__dropzone {
   padding: 0.125rem;
-  border: 1px dashed $border-color;
-  border-radius: 0.25rem;
+  border: 1px dashed
+    darken($color: $primary-color, $amount: $border-darken-amount);
 }
 
 .xotb-file-selector_files {
   .xotb-file-selector__body {
     display: flex;
     align-items: center;
+    .xotb-button_outline-brand {
+      border: 0;
+    }
   }
   .xotb-file-selector__button {
     max-height: 1.625rem;
