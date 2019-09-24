@@ -1,4 +1,4 @@
-# Sections
+# Panel
 
 An expander control Section can be useful to show and hide panel of your UI and therefore, declutter your app
 
@@ -10,11 +10,10 @@ An expander control Section can be useful to show and hide panel of your UI and 
 
 ...
 
-import { XotbMenusModule } from 'ng-xotb/navigators/menus';
-import { XotbIconsModule } from 'ng-xotb/controls/icons'
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 @NgModule({
-    imports:[XotbMenusModule, XotbIconsModule]
+    imports:[XotbPanelModule]
     ...
 })
 
@@ -23,7 +22,7 @@ import { XotbIconsModule } from 'ng-xotb/controls/icons'
 
 ### component.html
 ```html
-<xotb-section [(open)]="open" title="Section Title">
+<xotb-panel title="Section Title">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua. Sed adipiscing diam donec
   adipiscing tristique risus nec feugiat. Augue eget arcu dictum varius duis.
@@ -33,7 +32,7 @@ import { XotbIconsModule } from 'ng-xotb/controls/icons'
   vel eros. Lorem donec massa sapien faucibus et molestie ac feugiat sed. Sit
   amet luctus venenatis lectus magna fringilla urna. Id ornare arcu odio ut sem
   nulla pharetra diam sit.
-</xotb-section>
+</xotb-panel>
 ```
 
 ### component.ts
@@ -45,21 +44,17 @@ import { XotbIconsModule } from 'ng-xotb/controls/icons'
     templateUrl:'./component.html',
     ...
 })
-export class DemoComponent {
-    open = false;
-}
+export class DemoComponent {}
 
 ...
 ```
 
 ## API
  
-### <xotb-section>
+### <xotb-panel>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
-| `[title]` | Section's title | `string` |  |
-| `[open]` | Whether the section's body is collapsed or not | `boolean` | `false` |
-| `[collapsible]` | Whether the section's body is able to collapse or not | `boolean` | `true` |
-| `(openChange)` | Emits event when the body is going collapse or open | `EventEmitter<boolean>` |  |
+| `[title]` | Panel's title | `string` |  |
+
 
