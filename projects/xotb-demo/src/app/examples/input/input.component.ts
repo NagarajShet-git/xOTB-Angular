@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './input.component.html'
+  templateUrl: './input.component.html',
+  styleUrls: ['./input.component.scss']
 })
 export class DemoInputComponent {
   hasError = false;

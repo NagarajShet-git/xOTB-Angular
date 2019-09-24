@@ -3,11 +3,12 @@ import md from 'projects/toast/README.md';
 import { XotbToastModule } from 'ng-xotb/controls/toast';
 import { DemoToastComponent } from 'projects/xotb-demo/src/app/examples/toast/toast.component';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbToastModule, XotbButtonsModule]
+      imports: [XotbToastModule, XotbButtonsModule, XotbPanelModule]
     })
   )
   .add(

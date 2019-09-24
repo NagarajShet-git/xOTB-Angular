@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './toast.component.html'
+  templateUrl: './toast.component.html',
+  styleUrls: ['./toast.component.scss']
 })
 export class DemoToastComponent {
   showTopToast = false;
