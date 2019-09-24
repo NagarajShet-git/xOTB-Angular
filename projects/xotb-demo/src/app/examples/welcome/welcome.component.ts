@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
       width="100%"
       data="./assets/README.html"
       type="text/html"
+      style="font-family: Helvetica, sans-serif;"
     ></object>
   `,
   styles: [
