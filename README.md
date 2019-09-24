@@ -9,4 +9,3 @@ Install through `npm`:
 ```bash
 npm install ng-xotb
 ```
-
