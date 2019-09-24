@@ -1,14 +1,15 @@
 <div class="xotb-carousel__stage">
   <span class="xotb-carousel__autoplay" *ngIf="autoScroll">
     <button
-      class="xotb-button xotb-button_icon xotb-button_icon-border-filled xotb-button_icon-x-small"
+      class="xotb-button xotb-button_icon xotb-button_icon-x-small"
       [attr.aria-pressed]="!playing"
       [title]="playLabel()"
       (click)="togglePlay()"
     >
       <xotb-icon
         size="x-small"
-        [iconName]="playing ? 'pause-circle' : 'play-circle'"
+        svgClass="xotb-carousel_icon"
+        [iconName]="playing ? 'pause' : 'play'"
       ></xotb-icon
       ><span class="xotb-assistive-text">{{ playLabel() }}</span>
     </button></span

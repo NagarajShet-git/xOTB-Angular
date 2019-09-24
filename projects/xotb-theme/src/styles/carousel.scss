@@ -14,7 +14,10 @@
 .xotb-carousel__autoplay {
   position: absolute;
   left: 0;
-  bottom: 0.25rem;
+  bottom: 0.85rem;
+  .xotb-carousel_icon {
+    color: $primary-color;
+  }
 }
 .xotb-carousel__panels {
   display: flex;
