@@ -1,24 +1,22 @@
-# NgXotb
+# ng-xotb
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+xOTB - EDGE's design system. Designed for Designers and Developed for Engineers.
+ 
+## Objective
+ 
+xOTB establishes a common design language for our teams, hosts design assets and patterns for a unified experience, provides basic building blocks to accelerate development, and drafts high level guidelines for content and accessibility.
+ 
+## The Clarity
+ 
+The Clarity consists of predefined variables for basic design elements such as colour, typography, and iconography. With clearly authenticated guidelines and governance for design and content creation, we spend less time talking the guidelines to bring clarity for ourselves and more time creating designs and content that clearly serves our users.
+ 
+## The Components
+ 
+The Components provides a robust suite of Angular components out of the box to bootstrap experiences and ensure consistent interaction and style as well as accessibility optimizations. With components, we spend more time on crafting experiences that serve our users and less time on “reinventing the wheel”.
 
-## Code scaffolding
+## Setup
 
-Run `ng generate component component-name --project ng-xotb` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ng-xotb`.
-> Note: Don't forget to add `--project ng-xotb` or else it will be added to the default project in your `angular.json` file. 
+Install `ng-xotb` using `npm` or `yarn`
 
-## Build
-
-Run `ng build ng-xotb` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ng-xotb`, go to the dist folder `cd dist/ng-xotb` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ng-xotb` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    npm install ng-xotb
+    yarn add ng-xotb
