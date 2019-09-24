@@ -4,7 +4,8 @@ import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
 @Component({
-  templateUrl: './autocomplete.component.html'
+  templateUrl: './autocomplete.component.html',
+  styleUrls: ['./autocomplete.component.scss']
 })
 export class DemoAutoCompleteComponent {
   superheroes = [

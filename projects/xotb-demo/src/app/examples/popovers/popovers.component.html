@@ -1,15 +1,17 @@
-<button
-  type="button"
-  xotbButton
-  [xotbPopover]="tip"
-  xotbPopoverPlacement="bottom"
-  xotbPopoverHeader="Header"
-  xotbPopoverFooter="Footer"
-  [(xotbPopoverOpen)]="open"
->
-  Click me
-</button>
-<ng-template #tip
-  >Popover lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-  ipsum lorem ipsum</ng-template
->
+<xotb-panel open="true" title="Popover">
+  <button
+    type="button"
+    xotbButton
+    [xotbPopover]="tip"
+    xotbPopoverPlacement="bottom"
+    xotbPopoverHeader="Header"
+    xotbPopoverFooter="Footer"
+    [(xotbPopoverOpen)]="open"
+  >
+    Click me
+  </button>
+  <ng-template #tip
+    >Popover lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
+    ipsum lorem ipsum</ng-template
+  >
+</xotb-panel>

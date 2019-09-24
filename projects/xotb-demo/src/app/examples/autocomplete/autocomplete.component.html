@@ -1,19 +1,37 @@
-<xotb-combobox
-  label="Who is your favorite superhero?"
-  [options]="filteredHeroes$ | async"
-  [(open)]="open"
-  [(selection)]="superhero"
-  variant="lookup"
->
-  <input
-    xotbCombobox
-    type="text"
-    placeholder="Hint: type `man` or `r`"
-    [formControl]="inputCtrl"
-  />
-</xotb-combobox>
+<div class="xotb-view-container">
+  <h1 class="heading">Autocomplete</h1>
+  <p class="description">
+    A Combobox is a commonly used GUI widget (or control). Traditionally, it is
+    a combination of a drop-down list or list box and a single-line editable
+    text box that allows a user to either type a value directly or select a
+    value from the list. The term "combo box" is sometimes used to mean a
+    "drop-down list".
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <div style="max-width:300px">
+          <xotb-combobox
+            label="Who is your favorite superhero?"
+            [options]="filteredHeroes$ | async"
+            [(open)]="open"
+            [(selection)]="superhero"
+            variant="lookup"
+          >
+            <input
+              xotbCombobox
+              type="text"
+              placeholder="Hint: type `man` or `r`"
+              [formControl]="inputCtrl"
+            />
+          </xotb-combobox>
 
-<div class="xotb-m-top_x-small" *ngIf="superhero">
-  My favorite superhero is
-  <strong>{{ superhero }}</strong>
+          <div class="xotb-m-top_x-small seleted-hero" *ngIf="superhero">
+            My favorite superhero is
+            <strong>{{ superhero }}</strong>
+          </div>
+        </div>
+      </div>
+    </xotb-panel>
+  </div>
 </div>

@@ -1,45 +1,58 @@
-<xotb-toast iconName="info">
-  <h2 class="xotb-text-heading_small">
-    This is a toast with an icon next to its
-    <a href="javascript:void(0);">message</a>.
-  </h2>
-  <p>Here's some detail of what happened...</p>
-</xotb-toast>
-<xotb-toast variant="success" iconName="check-circle">
-  <h2 class="xotb-text-heading_small">
-    Account <a href="javascript:void(0);">ACME - 100</a> widgets was created.
-  </h2>
-</xotb-toast>
-<xotb-toast
-  variant="warning"
-  iconName="alert-triangle"
-  (close)="onClose('click')"
->
-  <h2 class="xotb-text-heading_small">
-    Can’t share file “report-q3.pdf” with the
-    <a href="javascript:void(0);">selected users</a>.
-  </h2>
-</xotb-toast>
-<button
-  class="xotb-m-top_medium"
-  type="button"
-  [disabled]="showTopToast"
-  xotbButton
-  (click)="showTopToast = true"
->
-  Show toast in container
-</button>
+<xotb-panel open="true" title="Toast">
+  <div class="xotb-toast-block">
+    <xotb-toast iconName="info">
+      <h2 class="xotb-text-heading_small">
+        This is a toast with an icon next to its
+        <a href="javascript:void(0);">message</a>.
+      </h2>
+      <p>Here's some detail of what happened...</p>
+    </xotb-toast>
+  </div>
+  <div class="xotb-toast-block">
+    <xotb-toast variant="success" iconName="check-circle">
+      <h2 class="xotb-text-heading_small">
+        Account <a href="javascript:void(0);">ACME - 100</a> widgets was
+        created.
+      </h2>
+    </xotb-toast>
+  </div>
+  <div class="xotb-toast-block">
+    <xotb-toast
+      variant="warning"
+      iconName="alert-triangle"
+      (close)="onClose('click')"
+    >
+      <h2 class="xotb-text-heading_small">
+        Can’t share file “report-q3.pdf” with the
+        <a href="javascript:void(0);">selected users</a>.
+      </h2>
+    </xotb-toast>
+  </div>
+  <div class="xotb-toast-block">
+    <button
+      class="xotb-m-top_medium show-toast"
+      type="button"
+      [disabled]="showTopToast"
+      xotbButton
+      (click)="showTopToast = true"
+    >
+      Show toast in container
+    </button>
+  </div>
+  <div class="xotb-toast-block"></div>
+  <div class="xotb-toast-block"></div>
 
-<div class="xotb-notify_container">
-  <xotb-toast
-    *ngIf="showTopToast"
-    variant="error"
-    (close)="onClose($event); showTopToast = false"
-    duration="500000"
-  >
-    <h2 class="xotb-text-heading_small">
-      This error will automatically hide after 5 seconds if you don't click on
-      the close button
-    </h2>
-  </xotb-toast>
-</div>
+  <div class="xotb-notify_container">
+    <xotb-toast
+      *ngIf="showTopToast"
+      variant="error"
+      (close)="onClose($event); showTopToast = false"
+      duration="500000"
+    >
+      <h2 class="xotb-text-heading_small">
+        This error will automatically hide after 5 seconds if you don't click on
+        the close button
+      </h2>
+    </xotb-toast>
+  </div>
+</xotb-panel>

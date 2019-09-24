@@ -1,10 +1,12 @@
-<div style="width:200px">
-  <xotb-select label="Select Label" [error]="hasError ? error : null">
-    <select xotb [required]="required" [disabled]="disabled">
-      <option value="">Please select</option>
-      <option>Option One</option>
-      <option>Option Two</option>
-      <option>Option Three</option>
-    </select>
-  </xotb-select>
-</div>
+<xotb-panel open="true" title="Select">
+  <div style="width:200px">
+    <xotb-select label="Select Label" [error]="hasError ? error : null">
+      <select xotb [required]="required" [disabled]="disabled">
+        <option value="">Please select</option>
+        <option>Option One</option>
+        <option>Option Two</option>
+        <option>Option Three</option>
+      </select>
+    </xotb-select>
+  </div>
+</xotb-panel>

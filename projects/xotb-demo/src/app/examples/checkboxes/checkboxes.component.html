@@ -1,21 +1,21 @@
-<div>
-  <div>
-    <xotb-checkbox label="Required">
-      <input xotb type="checkbox" [(ngModel)]="required" />
-    </xotb-checkbox>
-  </div>
-  <div>
-    <xotb-checkbox label="Error">
-      <input xotb type="checkbox" [(ngModel)]="hasError" />
-    </xotb-checkbox>
-  </div>
-  <div>
-    <xotb-checkbox label="Disabled">
-      <input xotb type="checkbox" [(ngModel)]="disabled" />
-    </xotb-checkbox>
+<div style="padding: 20px">
+  <h1 style="font-size: 2em; margin-bottom:10px"><strong>Checkbox</strong></h1>
+  <p>
+    Check Boxes allow the user to select one or more items from a given set.
+  </p>
+
+  <div style="padding-top: 20px;">
+    <xotb-panel open="true" title="Example">
+      <div style="padding: 20px 0">
+        <xotb-checkbox label="Checkbox Label" [error]="hasError ? error : null">
+          <input
+            xotb
+            type="checkbox"
+            [required]="required"
+            [disabled]="disabled"
+          />
+        </xotb-checkbox>
+      </div>
+    </xotb-panel>
   </div>
 </div>
-<hr />
-<xotb-checkbox label="Checkbox Label" [error]="hasError ? error : null">
-  <input xotb type="checkbox" [required]="required" [disabled]="disabled" />
-</xotb-checkbox>

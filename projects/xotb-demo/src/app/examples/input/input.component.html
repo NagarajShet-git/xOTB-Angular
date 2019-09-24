@@ -1,15 +1,19 @@
-<div style="width: 200px;">
-  <xotb-input
-    label="Input Label"
-    fieldLevelHelpTooltip="Some helpful information"
-    [error]="hasError ? error : null"
-  >
-    <input
-      xotb
-      type="input"
-      [required]="required"
-      [disabled]="disabled"
-      placeholder="Placeholder Text"
-    />
-  </xotb-input>
-</div>
+<xotb-panel open="true" title="Input Form Control">
+  <div class="form-group">
+    <xotb-input
+      label="Input Label"
+      class="control-label"
+      fieldLevelHelpTooltip="Some helpful information"
+      [error]="hasError ? error : null"
+    >
+      <input
+        xotb
+        class="form-control"
+        type="input"
+        [required]="required"
+        [disabled]="disabled"
+        placeholder="Placeholder Text"
+      />
+    </xotb-input>
+  </div>
+</xotb-panel>
