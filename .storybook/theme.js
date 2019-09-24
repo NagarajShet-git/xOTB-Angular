@@ -3,5 +3,7 @@ import logo from './logo.png';
 
 export default create({
   brandTitle: 'ng-xotb',
-  brandImage: logo
+  brandImage: logo,
+
+  fontBase: 'Helvetica, sans-serif'
 });
