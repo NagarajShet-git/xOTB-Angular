@@ -1,5 +1,5 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
-import md from 'projects/accordion/README.md';
+import md from 'projects/box/README.md';
 import { XotbBoxModule } from 'ng-xotb/containers/box';
 import { DemoCardComponent } from 'projects/xotb-demo/src/app/examples/card/card.component';
 import { DemoHBoxComponent } from 'projects/xotb-demo/src/app/examples/hbox/hbox.component';
@@ -21,9 +21,21 @@ storiesOf('Containers', module)
       notes: md
     }
   )
-  .add('HBox', () => ({
-    component: DemoHBoxComponent
-  }))
-  .add('VBox', () => ({
-    component: DemoVBoxComponent
-  }));
+  .add(
+    'HBox',
+    () => ({
+      component: DemoHBoxComponent
+    }),
+    {
+      notes: md
+    }
+  )
+  .add(
+    'VBox',
+    () => ({
+      component: DemoVBoxComponent
+    }),
+    {
+      notes: md
+    }
+  );

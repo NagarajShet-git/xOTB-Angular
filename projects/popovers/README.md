@@ -1,5 +1,6 @@
 # Popovers
 
+A Popover can be used to display some content on top of another. It is a transient view that shows on a content screen when a user clicks on a control button or within a defined area
 
 ## Usages
 

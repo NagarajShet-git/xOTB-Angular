@@ -4,7 +4,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   templateUrl: './tooltips.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class DemoTooltipsBasic {
+export class DemoTooltipsComponent {
   placements = ['top', 'right', 'bottom', 'left'];
 
   placement = this.placements[0];

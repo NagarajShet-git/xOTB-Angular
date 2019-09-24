@@ -1,24 +1,47 @@
 # Spinner
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+This component can be used to generate dynamic animations of various sizes and colors, that should be shown when retrieving data or performing slow computations.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project spinner` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project spinner`.
-> Note: Don't forget to add `--project spinner` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
+import { XotbSpinnerModule } from 'ng-xotb/controls/spinner';
 
-Run `ng build spinner` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+    imports:[XotbSpinnerModule]
+    ...
+})
 
-## Publishing
+...
+```
 
-After building your library with `ng build spinner`, go to the dist folder `cd dist/spinner` and run `npm publish`.
+### component.html
+```html
+<xotb-spinner alternativeText="Loading" size="small"></xotb-spinner>
+```
 
-## Running unit tests
+### component.ts
+```javascript
 
-Run `ng test spinner` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Further help
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+```
+
+## API
+ 
+### <xotb-progress-bar>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[size]` | Size of the progress bar | `'x-small' | 'small' | 'medium' | 'large'` | `'medium'` |
+| `[alternativeText]` | Used to describe the reason for the wait and need for a spinner | `string` | |
