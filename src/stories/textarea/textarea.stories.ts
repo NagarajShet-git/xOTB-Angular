@@ -14,7 +14,7 @@ storiesOf('Controls', module)
   .add(
     'TextArea',
     () => ({
-      template: `<object data="README.html" type="text/html"></object>`
+      component: DemoTextareaComponent
     }),
     {
       notes: md
