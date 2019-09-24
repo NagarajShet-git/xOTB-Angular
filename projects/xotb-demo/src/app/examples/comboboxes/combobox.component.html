@@ -1,8 +1,12 @@
-<xotb-combobox
-  label="Make a choice"
-  [options]="options"
-  [(open)]="open"
-  [(selection)]="selection"
->
-  <input xotbCombobox placeholder="Select an Option" />
-</xotb-combobox>
+<xotb-panel open="true" title="Combobox">
+  <div style="max-width: 300px">
+    <xotb-combobox
+      label="Make a choice"
+      [options]="options"
+      [(open)]="open"
+      [(selection)]="selection"
+    >
+      <input xotbCombobox placeholder="Select an Option" />
+    </xotb-combobox>
+  </div>
+</xotb-panel>

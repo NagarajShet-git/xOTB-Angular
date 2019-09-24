@@ -1,16 +1,18 @@
-<div>
-  <ng-template #lbl><i>Radio Label 1</i></ng-template>
-  <fieldset
-    xotb-radio-group
-    label="Radio Group Label"
-    [error]="hasError ? error : null"
-    [required]="required"
-  >
-    <xotb-radio-option [label]="lbl">
-      <input xotb type="radio" [disabled]="disabled" />
-    </xotb-radio-option>
-    <xotb-radio-option label="Radio Label 2">
-      <input xotb type="radio" [disabled]="disabled" />
-    </xotb-radio-option>
-  </fieldset>
-</div>
+<xotb-panel open="true" title="Radio Group Label">
+  <div>
+    <ng-template #lbl><i>Radio Label 1</i></ng-template>
+    <fieldset
+      xotb-radio-group
+      label="Radio Group Label"
+      [error]="hasError ? error : null"
+      [required]="required"
+    >
+      <xotb-radio-option [label]="lbl">
+        <input xotb type="radio" [disabled]="disabled" />
+      </xotb-radio-option>
+      <xotb-radio-option label="Radio Label 2">
+        <input xotb type="radio" [disabled]="disabled" />
+      </xotb-radio-option>
+    </fieldset>
+  </div>
+</xotb-panel>

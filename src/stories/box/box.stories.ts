@@ -5,11 +5,11 @@ import { DemoCardComponent } from 'projects/xotb-demo/src/app/examples/card/card
 import { DemoHBoxComponent } from 'projects/xotb-demo/src/app/examples/hbox/hbox.component';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { DemoVBoxComponent } from 'projects/xotb-demo/src/app/examples/vbox/vbox.component';
-
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 storiesOf('Containers', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbBoxModule, XotbButtonsModule]
+      imports: [XotbBoxModule, XotbButtonsModule, XotbPanelModule]
     })
   )
   .add(

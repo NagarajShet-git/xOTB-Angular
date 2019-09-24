@@ -3,11 +3,12 @@ import md from 'projects/progressbar/README.md';
 import { DemoProgressbarComponent } from 'projects/xotb-demo/src/app/examples/progressbar/progressbar.component';
 import { XotbProgressbarModule } from 'ng-xotb/controls/progressbar';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbProgressbarModule, XotbButtonsModule]
+      imports: [XotbProgressbarModule, XotbButtonsModule, XotbPanelModule]
     })
   )
   .add(

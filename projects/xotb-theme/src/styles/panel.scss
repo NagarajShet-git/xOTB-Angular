@@ -22,6 +22,9 @@
   line-height: 1.875rem;
   border: 1px solid
     darken($color: $primary-color, $amount: $border-darken-amount);
+  border: 1px solid transparent;
+  border-top-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
 }
 .xotb-panel__title-action {
   display: flex;
