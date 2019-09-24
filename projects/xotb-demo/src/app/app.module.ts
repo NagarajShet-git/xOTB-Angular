@@ -43,7 +43,7 @@ import { XotbTreeModule } from 'projects/tree/src/public-api';
  * Examples Component
  */
 import { DemoInputComponent } from './examples/input/input.component';
-import { DemoTooltipsBasic } from './examples/tooltips/tooltips.component';
+import { DemoTooltipsComponent } from './examples/tooltips/tooltips.component';
 import { DemoSelectComponent } from './examples/select/select.component';
 import { DemoCheckboxesComponent } from './examples/checkboxes/checkboxes.component';
 import { DemoAccordinComponent } from './examples/accordion/accordion.component';
@@ -79,7 +79,7 @@ import { DemoCardComponent } from './examples/card/card.component';
   declarations: [
     AppComponent,
     DemoInputComponent,
-    DemoTooltipsBasic,
+    DemoTooltipsComponent,
     DemoSelectComponent,
     DemoCheckboxesComponent,
     DemoAccordinComponent,

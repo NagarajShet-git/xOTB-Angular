@@ -1,5 +1,7 @@
 # Datatable
 
+A Data Table displays sets of data in a grid-like format of rows and columns. It organizes information in a way that’s easy to scan, so that users can look for patterns and insights
+
 ## Usages
 
 ### module.ts

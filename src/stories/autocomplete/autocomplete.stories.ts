@@ -12,7 +12,7 @@ storiesOf('Controls', module)
     })
   )
   .add(
-    'autocomplete',
+    'Autocomplete',
     () => ({
       component: DemoAutoCompleteComponent
     }),

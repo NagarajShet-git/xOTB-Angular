@@ -1,24 +1,56 @@
 # Progressbar
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Progress Bars inform the users about the status of ongoing processes, such as the loading of an app, submitting a form, or saving the updates. They communicate an app’s state and indicate the available actions, such as whether the users can navigate away from the current screen.
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project progressbar` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project progressbar`.
-> Note: Don't forget to add `--project progressbar` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
+import { XotbProgressbarModule } from 'ng-xotb/controls/progressbar';
 
-Run `ng build progressbar` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+    imports:[XotbProgressbarModule]
+    ...
+})
 
-## Publishing
+...
+```
 
-After building your library with `ng build progressbar`, go to the dist folder `cd dist/progressbar` and run `npm publish`.
+### component.html
+```html
+<xotb-progress-bar
+      [value]="value"
+      [size]="size"
+      [variant]="variant"
+    ></xotb-progress-bar>
+```
 
-## Running unit tests
+### component.ts
+```javascript
 
-Run `ng test progressbar` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Further help
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    value = 40;
+    variant: string = null;
+    size = 'large';
+}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+```
+
+## API
+ 
+### <xotb-progress-bar>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[value]` | The percentage value.  | `number` |  |
+| `[size]` | Size of the progress bar | `'x-small' | 'small' | 'medium' | 'large'` | `'medium'` |
+| `[variant]` | Variant appearance of the progress bar | `'circular'` |  |

@@ -1,24 +1,64 @@
 # Ratings
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+Ratings provide an insight regarding users’ opinions and experiences with a particular product or an application
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project ratings` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ratings`.
-> Note: Don't forget to add `--project ratings` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
+import { XotbRatingsModule } from 'ng-xotb/controls/ratings';
 
-Run `ng build ratings` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+    imports:[XotbRatingsModule]
+    ...
+})
 
-## Publishing
+...
+```
 
-After building your library with `ng build ratings`, go to the dist folder `cd dist/ratings` and run `npm publish`.
+### component.html
+```html
+<xotb-rating
+    [(rate)]="value"
+    [isReadonly]="readonly"
+    [size]="size"
+    [colorOn]="color"
+  ></xotb-rating>
+```
 
-## Running unit tests
+### component.ts
+```javascript
 
-Run `ng test ratings` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Further help
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    value = 3;
+    readonly = false;
+    size = 'small';
+    color = '#FFB75D';
+}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+```
+
+## API
+ 
+### <xotb-rating>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[rate]` | Current rate value | `number` | `0` |
+| `[max]` | Maximum rate number | `number` | `5` |
+| `[isReadonly]` | Prevent user's interaction | `boolean` | `false` |
+| `[icon]` | Name of the icon | `string` | |
+| `[size]` | Icon sizes | `string` | |
+| `[colorOn]` | Color when active | `string` | |
+| `[colorOff]` | Color when not active | `string` | |
+| `(rateChange)` | The click rate | `EventEmitter<number>` | |
+| `(hover)` | The current hover rate | `EventEmitter<number>` | |

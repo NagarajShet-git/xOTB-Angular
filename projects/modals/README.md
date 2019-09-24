@@ -1,5 +1,7 @@
 # Modals
 
+Modal dialogs interrupt users and demand an action by temporarily blocking interactions with the main view of a site. They are appropriate when the user's attention needs to be directed towards important information
+
 ## Usages
 
 ### module.ts

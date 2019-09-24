@@ -1,24 +1,132 @@
-# Box
+# Card
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
 
-## Code scaffolding
 
-Run `ng generate component component-name --project box` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project box`.
-> Note: Don't forget to add `--project box` or else it will be added to the default project in your `angular.json` file. 
+## Usages
 
-## Build
+### module.ts
+```javascript
 
-Run `ng build box` to build the project. The build artifacts will be stored in the `dist/` directory.
+...
+import { XotbBoxModule } from 'ng-xotb/containers/box';
 
-## Publishing
+@NgModule({
+    imports:[XotbBoxModule]
+    ...
+})
 
-After building your library with `ng build box`, go to the dist folder `cd dist/box` and run `npm publish`.
+...
+```
 
-## Running unit tests
+### component.html
+```html
+<div xotbCard>
+  <div style="width: 100px; margin-bottom: 10px">container 1</div>
+  <div style="width: 100px; margin-bottom: 10px">container 2</div>
+  <div style="width: 100px; margin-bottom: 10px">container 3</div>
+  <div style="width: 100px; margin-bottom: 10px">container 4</div>
+</div>
+```
 
-Run `ng test box` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### component.ts
+```javascript
 
-## Further help
+...
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
+
+...
+```
+# HBox
+
+
+
+## Usages
+
+### module.ts
+```javascript
+
+...
+import { XotbBoxModule } from 'ng-xotb/containers/box';
+
+@NgModule({
+    imports:[XotbBoxModule]
+    ...
+})
+
+...
+```
+
+### component.html
+```html
+<div xotbHbox>
+  <div style="width: 100px; margin-bottom: 10px">container 1</div>
+  <div style="width: 100px; margin-bottom: 10px">container 2</div>
+  <div style="width: 100px; margin-bottom: 10px">container 3</div>
+  <div style="width: 100px; margin-bottom: 10px">container 4</div>
+</div>
+```
+
+### component.ts
+```javascript
+
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
+
+...
+```
+# VBox
+
+
+
+## Usages
+
+### module.ts
+```javascript
+
+...
+import { XotbBoxModule } from 'ng-xotb/containers/box';
+
+@NgModule({
+    imports:[XotbBoxModule]
+    ...
+})
+
+...
+```
+
+### component.html
+```html
+<div xotbVbox>
+  <div style="width: 100px; margin-bottom: 10px">container 1</div>
+  <div style="width: 100px; margin-bottom: 10px">container 2</div>
+  <div style="width: 100px; margin-bottom: 10px">container 3</div>
+  <div style="width: 100px; margin-bottom: 10px">container 4</div>
+</div>
+```
+
+### component.ts
+```javascript
+
+...
+
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {}
+
+...
+```
+
+## API
+ 

@@ -2,26 +2,44 @@
   ><strong> {{ placement }} placement. Initially open!</strong> Dolor sit
   amet,<i>consectetur adipisicing</i> elit. Cum, quaerat?</ng-template
 >
-<div>
-  Quisque scelerisque lectus vel sodales semper. Sed<a
-    [xotbTooltip]="tip"
-    [xotbTooltipPlacement]="placement"
-    [(xotbTooltipOpen)]="open"
-  >
-    hover</a
-  >
-  vehicula sapien, vitae tristique nisl viverra vitae. Aliquam erat volutpat. Ut
-  accumsan metus vel hendrerit sagittis.
-</div>
-<div class="xotb-button-group xotb-m-top_xx-large" role="group">
-  <button type="button" xotbButton (click)="change()">Change placement</button>
-  <button type="button" xotbButton (click)="open = !open">Toggle</button>
-</div>
-<div class="xotb-m-top_x-large">
-  <span
-    xotbTooltip="...which always keep showing!"
-    xotbTooltipOpen="true"
-    xotbTooltipPlacement="right"
-    >You can also make tooltips</span
-  >
+
+<div style="padding: 20px">
+  <h1 style="font-size: 2em; margin-bottom:10px"><strong>Checkbox</strong></h1>
+  <p>
+    Check Boxes allow the user to select one or more items from a given set.
+  </p>
+
+  <div style="padding-top: 20px;">
+    <xotb-panel open="true" title="Example">
+      <div style="padding: 20px 0">
+        <div>
+          Quisque scelerisque lectus vel sodales semper. Sed<a
+            [xotbTooltip]="tip"
+            [xotbTooltipPlacement]="placement"
+            [(xotbTooltipOpen)]="open"
+          >
+            hover</a
+          >
+          vehicula sapien, vitae tristique nisl viverra vitae. Aliquam erat
+          volutpat. Ut accumsan metus vel hendrerit sagittis.
+        </div>
+        <div class="xotb-button-group xotb-m-top_xx-large" role="group">
+          <button type="button" xotbButton (click)="change()">
+            Change placement
+          </button>
+          <button type="button" xotbButton (click)="open = !open">
+            Toggle
+          </button>
+        </div>
+        <div class="xotb-m-top_x-large">
+          <span
+            xotbTooltip="...which always keep showing!"
+            xotbTooltipOpen="true"
+            xotbTooltipPlacement="right"
+            >You can also make tooltips</span
+          >
+        </div>
+      </div>
+    </xotb-panel>
+  </div>
 </div>

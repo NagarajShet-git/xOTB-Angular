@@ -1,24 +1,64 @@
 # Tooltips
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.3.
+A Tooltip is a small piece of contextual information about an element on the screen, which is displayed when a user hovers or focuses on the element it is describing
 
-## Code scaffolding
+## Usages
 
-Run `ng generate component component-name --project tooltips` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project tooltips`.
-> Note: Don't forget to add `--project tooltips` or else it will be added to the default project in your `angular.json` file. 
+### module.ts
+```javascript
 
-## Build
+...
+import { XotbRatingsModule } from 'ng-xotb/controls/ratings';
 
-Run `ng build tooltips` to build the project. The build artifacts will be stored in the `dist/` directory.
+@NgModule({
+    imports:[XotbRatingsModule]
+    ...
+})
 
-## Publishing
+...
+```
 
-After building your library with `ng build tooltips`, go to the dist folder `cd dist/tooltips` and run `npm publish`.
+### component.html
+```html
+<xotb-rating
+    [(rate)]="value"
+    [isReadonly]="readonly"
+    [size]="size"
+    [colorOn]="color"
+  ></xotb-rating>
+```
 
-## Running unit tests
+### component.ts
+```javascript
 
-Run `ng test tooltips` to execute the unit tests via [Karma](https://karma-runner.github.io).
+...
 
-## Further help
+@Component({
+    templateUrl:'./component.html',
+    ...
+})
+export class DemoComponent {
+    value = 3;
+    readonly = false;
+    size = 'small';
+    color = '#FFB75D';
+}
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+...
+```
+
+## API
+ 
+### <xotb-rating>
+
+| Property | Description | Type | Default |
+| --- | --- | --- | --- |
+| `[xotbTooltip]` | The body as string or the connected template reference to show  | `string | TemplateRef` |  |
+| `[xotbTooltipOpen]` | Whether the floating tooltip is visible. Be sure to use two-way binding | `boolean` |  |
+| `[xotbTooltipOpenAuto]` | Gives the possibility to open/close without binding to `[xotbTooltipOpen]`| `boolean` | `false` |
+| `[xotbTooltipPlacement]` | Position relative to host element | `'top'` \| `'top-left'` \| `'top-left-corner'` \| `'top-right'` \| `'top-right-corner'` \| `'right'` \| `'right-top'` \| `'right-top-corner'` \| `'right-bottom'` \| `'right-bottom-corner'` \| `'bottom'` \| `'bottom-left'` \| `'bottom-left-corner'` \| `'bottom-right'` \| `'bottom-right-corner'` \| `'left'` \| `'left-top'` \| `'left-top-corner'` \| `'left-bottom'` \| `'left-bottom-corner'` | `'top'` |
+| `[xotbTooltipClass]` | Extra class(es) you want to apply to popover host element | `ngClass` |  |
+| `[xotbTooltipDelay]` | Delay in milliseconds until it opens/closes. If you wish to specify different delays for opening and closing, you may provide an array of two different values. | `number | number[]` |  |
+| `[xotbTooltipInteractive]` | Give the possibility to interact with the content of the tooltip. User has to move the cursor to the tooltip before it starts closing (this lapse of time has its duration set by the `xotbTooltipDelay` option) | `boolean` | `false` |
+| `(xotbTooltipOpenChange)` | Emit an event when the popover should show or hide | `boolean | 'x' | 'backdrop' | 'escape'` |  |
+
