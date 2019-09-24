@@ -1,10 +1,14 @@
-<xotb-colorpicker
-  [(ngModel)]="color"
-  fieldLevelHelpTooltip="This is some useful info"
-></xotb-colorpicker>
+<xotb-panel open="true" title="Color Picker">
+  <xotb-colorpicker
+    [(ngModel)]="color"
+    fieldLevelHelpTooltip="This is some useful info"
+  ></xotb-colorpicker>
 
-<pre>Selected: {{ color }}</pre>
+  <pre>Selected: {{ color }}</pre>
 
-<button type="button" xotbButton (click)="color = '#FF0000'">Select Red</button>
+  <button type="button" xotbButton (click)="color = '#FF0000'">
+    Select Red
+  </button>
 
-<button type="button" xotbButton (click)="color = null">Clear</button>
+  <button type="button" xotbButton (click)="color = null">Clear</button>
+</xotb-panel>

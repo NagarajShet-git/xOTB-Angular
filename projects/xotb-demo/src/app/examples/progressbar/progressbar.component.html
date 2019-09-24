@@ -1,25 +1,29 @@
-<div>
+<xotb-panel open="true" title="Progressbar">
   <div>
-    <span>Setup Assistant</span>
+    <div>
+      <span>Setup Assistant</span>
+      <br />
+      <span aria-hidden="true"
+        ><strong>{{ value }}% Complete</strong></span
+      >
+    </div>
     <br />
-    <span aria-hidden="true"
-      ><strong>{{ value }}% Complete</strong></span
-    >
+    <xotb-progress-bar
+      [value]="value"
+      [size]="size"
+      [variant]="variant"
+    ></xotb-progress-bar>
   </div>
   <br />
-  <xotb-progress-bar
-    [value]="value"
-    [size]="size"
-    [variant]="variant"
-  ></xotb-progress-bar>
-</div>
-<br />
-<div style="height: 50px;">
-  <div>
-    <button type="button" xotbButton (click)="random()">Randomize</button>
-    <button type="button" xotbButton (click)="changeVariant()">
-      Change Variant
-    </button>
-    <button type="button" xotbButton (click)="changeSize()">Change Size</button>
+  <div style="height: 50px;">
+    <div>
+      <button type="button" xotbButton (click)="random()">Randomize</button>
+      <button type="button" xotbButton (click)="changeVariant()">
+        Change Variant
+      </button>
+      <button type="button" xotbButton (click)="changeSize()">
+        Change Size
+      </button>
+    </div>
   </div>
-</div>
+</xotb-panel>
