@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: Roboto, sans-serif;
 }
 
 .xotb-view-container {
@@ -14,7 +14,6 @@ body {
 
 .xotb-view-container p.description {
   margin-bottom: 20px;
-  line-height: 1.5rem;
 }
 
 .xotb-view-container .xotb-panel-container {

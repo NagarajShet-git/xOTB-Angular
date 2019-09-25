@@ -19,14 +19,7 @@ import {
         style="border:0; font-family:Helvetica, sans-serif;"
       ></iframe>
     </xotb-panel>
-  `,
-  styles: [
-    `
-      body {
-        font-family: Helvetica, sans-serif;
-      }
-    `
-  ]
+  `
 })
 export class DemoWelcomeComponent implements OnInit, AfterContentInit {
   public innerHeight: any;
@@ -43,8 +36,10 @@ export class DemoWelcomeComponent implements OnInit, AfterContentInit {
       style.textContent = `
         body  {
           font-family: Roboto, sans-serif;
-          font-size: 12px;
+          font-size: 1rem;
+          line-height: 1.75rem;
           color: #3e3e3c;
+          font-weight: 100;
         }
         h2  {
           font-weight: 400;
