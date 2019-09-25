@@ -1,14 +1,24 @@
-import { Component } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  AfterViewInit,
+  ViewChild,
+  ElementRef,
+  AfterContentInit
+} from '@angular/core';
 
 @Component({
   template: `
-    <object
-      height="600px"
-      width="100%"
-      data="./assets/README.html"
-      type="text/html"
-      style="font-family: Helvetica, sans-serif;"
-    ></object>
+    <xotb-panel title="ng-xotb documentation">
+      <iframe
+        #readme
+        [height]="innerHeight"
+        width="100%"
+        src="./assets/docs/README.html"
+        type="text/html"
+        style="border:0; font-family:Helvetica, sans-serif;"
+      ></iframe>
+    </xotb-panel>
   `,
   styles: [
     `
@@ -18,4 +28,24 @@ import { Component } from '@angular/core';
     `
   ]
 })
-export class Welcome {}
+export class DemoWelcomeComponent implements OnInit, AfterContentInit {
+  public innerHeight: any;
+
+  @ViewChild('readme', { static: true }) readme: ElementRef;
+
+  ngOnInit() {
+    this.innerHeight = window.innerHeight - 120;
+  }
+  ngAfterContentInit() {
+    this.readme.nativeElement.onload = () => {
+      const iframe = this.readme.nativeElement.contentDocument.documentElement;
+      const style = document.createElement('style');
+      style.textContent =
+        'body {' +
+        '  font-family: Helvetica, sans-serif;' +
+        '  font-size: 12px;' +
+        '}';
+      iframe.getElementsByTagName('head')[0].appendChild(style);
+    };
+  }
+}

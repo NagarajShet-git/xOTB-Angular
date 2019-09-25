@@ -16,7 +16,24 @@ The Components provides a robust suite of Angular components out of the box to b
 
 ## Setup
 
-Install `ng-xotb` using `npm` or `yarn`
+### Step 1: Installing packages
 
+You can use either the `npm` or `yarn` tool to install packages.
+
+```javascript
     npm install ng-xotb
     yarn add ng-xotb
+```
+
+### Step 2: Adding styles
+
+Including CSS files is required for your application to work correctly.
+If you are using the Angular CLI, you need to add the following to the `styles` array of your `angular.json` file.
+
+```javascript
+    "styles": [
+        "node_modules/ng-xotb/xotb-theme/css/styles.min.css",
+        ... any other styles
+    ],
+```
+

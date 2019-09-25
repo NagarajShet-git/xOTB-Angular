@@ -1,16 +1,17 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
-import { Welcome } from 'projects/xotb-demo/src/app/examples/welcome/welcome.component';
+import { DemoWelcomeComponent } from 'projects/xotb-demo/src/app/examples/welcome/welcome.component';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 storiesOf('Welcome', module)
   .addDecorator(
     moduleMetadata({
-      imports: []
+      imports: [XotbPanelModule]
     })
   )
   .add(
     'ng-xotb',
     () => ({
-      component: Welcome
+      component: DemoWelcomeComponent
     }),
     {
       options: {

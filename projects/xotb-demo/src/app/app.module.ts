@@ -74,7 +74,7 @@ import { DemoDatatableComponent } from './examples/datatable/datatable.component
 import { DemoTreeComponent } from './examples/tree/tree.component';
 import { DemoVBoxComponent } from './examples/vbox/vbox.component';
 import { DemoCardComponent } from './examples/card/card.component';
-import { Welcome } from './examples/welcome/welcome.component';
+import { DemoWelcomeComponent } from './examples/welcome/welcome.component';
 
 @NgModule({
   declarations: [
@@ -111,7 +111,7 @@ import { Welcome } from './examples/welcome/welcome.component';
     DemoColorpickerComponent,
     DemoDatatableComponent,
     DemoTreeComponent,
-    Welcome
+    DemoWelcomeComponent
   ],
   imports: [
     BrowserModule,
