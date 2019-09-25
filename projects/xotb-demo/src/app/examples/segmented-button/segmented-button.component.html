@@ -10,13 +10,18 @@
   <div class="xotb-panel-container">
     <xotb-panel open="true" title="Example">
       <div class="panel-view">
-        <div class="xotb-text-title_caps xotb-m-bottom_small">
+        <div
+          class="xotb-text-title_caps xotb-m-bottom_small"
+          style="margin-bottom: 10px"
+        >
           Sixotbe selection
         </div>
         <div class="xotb-m-bottom_small">
           Selected:<code>{{ selected }}</code>
         </div>
+
         <div
+          style="margin-top: 10px"
           class="xotb-button-group"
           [(xotbSegmentedButton)]="selected"
           xotbSegmentedButtonActiveClass="xotb-button_brand"
@@ -36,16 +41,17 @@
             Right
           </button>
         </div>
-
         <div
+          style="margin-top: 20px"
           class="xotb-text-title_caps xotb-m-bottom_small xotb-m-top_x-large"
         >
           Multiple selection
         </div>
-        <div class="xotb-m-bottom_small">
+        <div style="margin-top: 10px" class="xotb-m-bottom_small">
           Selected:<code>{{ multiple }}</code>
         </div>
         <div
+          style="margin-top: 10px"
           class="xotb-button-group"
           [(xotbSegmentedButton)]="multiple"
           xotbSegmentedButtonMultiple
@@ -68,14 +74,16 @@
         </div>
 
         <div
+          style="margin-top: 20px"
           class="xotb-text-title_caps xotb-m-bottom_small xotb-m-top_x-large"
         >
           Multiple selection with object
         </div>
-        <div class="xotb-m-bottom_small">
+        <div style="margin-top: 10px" class="xotb-m-bottom_small">
           Selected:<code>{{ multipleObject | json }}</code>
         </div>
         <div
+          style="margin-top: 10px"
           class="xotb-button-group"
           [(xotbSegmentedButton)]="multipleObject"
           xotbSegmentedButtonMultiple
