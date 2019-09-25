@@ -32,6 +32,7 @@ const LIBRARIES = [
   'comboboxes',
   'colorpicker',
   'tree',
-  'datatable'
+  'datatable',
+  'datepicker'
 ];
 module.exports = LIBRARIES;

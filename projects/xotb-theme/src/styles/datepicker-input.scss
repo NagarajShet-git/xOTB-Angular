@@ -1,0 +1,373 @@
+html {
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
+  background: #fafaf9;
+  color: #080707;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.xotb-form-element__label {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  display: inline-block;
+  color: #3e3e3c;
+  font-size: 0.75rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  margin-bottom: 0.125rem;
+}
+
+.xotb-form-element__control {
+  clear: left;
+  position: relative;
+}
+
+.xotb-input-has-icon {
+  position: relative;
+  width: fit-content;
+}
+
+.xotb-input-has-icon--right .xotb-input,
+.xotb-input-has-icon--right .xotb-input--bare,
+.xotb-input-has-icon--right .xotb-input_bare,
+.xotb-input-has-icon_right .xotb-input,
+.xotb-input-has-icon_right .xotb-input--bare,
+.xotb-input-has-icon_right .xotb-input_bare {
+  padding-right: 2rem;
+}
+
+.xotb-input-has-icon .xotb-input__icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.4375rem;
+  line-height: 1;
+  border: 0;
+  z-index: 2;
+  fill: #b0adab;
+}
+
+.xotb-input-has-icon--right .xotb-input__icon,
+.xotb-input-has-icon_right .xotb-input__icon {
+  right: 0.75rem;
+}
+
+.xotb-input {
+  background-color: #fff;
+  border: 1px solid #dddbda;
+  border-radius: 0.25rem;
+  transition: border 0.1s linear, background-color 0.1s linear;
+  display: inline-block;
+  padding: 0 1rem 0 0.75rem;
+  line-height: 1.875rem;
+  min-height: calc(1.875rem + (1px * 2));
+}
+
+.xotb-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: 0 0;
+  background-clip: border-box;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  line-height: 1.875rem;
+  text-decoration: none;
+  color: #0070d2;
+  -webkit-appearance: none;
+  white-space: normal;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.xotb-button--icon,
+.xotb-button--icon-border,
+.xotb-button--icon-border-filled,
+.xotb-button--icon-border-inverse,
+.xotb-button--icon-container,
+.xotb-button--icon-error,
+.xotb-button--icon-inverse,
+.xotb-button--icon-more,
+.xotb-button_icon,
+.xotb-button_icon-border,
+.xotb-button_icon-border-filled,
+.xotb-button_icon-border-inverse,
+.xotb-button_icon-container,
+.xotb-button_icon-error,
+.xotb-button_icon-inverse,
+.xotb-button_icon-more {
+  line-height: 1;
+  vertical-align: middle;
+  color: #706e6b;
+}
+
+.xotb-button--icon-border,
+.xotb-button--icon-border-filled,
+.xotb-button--icon-border-inverse,
+.xotb-button--icon-container,
+.xotb-button--icon-container-more,
+.xotb-button--icon-more,
+.xotb-button_icon-border,
+.xotb-button_icon-border-filled,
+.xotb-button_icon-border-inverse,
+.xotb-button_icon-brand,
+.xotb-button_icon-container,
+.xotb-button_icon-container-more,
+.xotb-button_icon-more {
+  width: 2rem;
+  height: 2rem;
+}
+
+.xotb-button__icon {
+  width: 0.875rem;
+  height: 0.875rem;
+  fill: black;
+}
+
+::ng-deep svg:not(:root) {
+  overflow: hidden;
+}
+
+::ng-deep .cdk-global-overlay-wrapper,
+::ng-deep .cdk-overlay-container {
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+::ng-deep .cdk-overlay-container {
+  position: fixed;
+  z-index: 1000;
+}
+
+::ng-deep .cdk-overlay-connected-position-bounding-box {
+  position: absolute;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  min-width: 1px;
+  min-height: 1px;
+}
+
+::ng-deep .cdk-overlay-pane {
+  position: absolute;
+  pointer-events: auto;
+  box-sizing: border-box;
+  z-index: 1000;
+  display: flex;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+[_nghost-atp-c5] {
+  display: block;
+}
+
+.xotb-datepicker {
+  padding: 0;
+  font-size: 0.75rem;
+}
+
+.xotb-dropdown {
+  position: absolute;
+  z-index: 7000;
+  left: 50%;
+  float: left;
+  min-width: 6rem;
+  max-width: 20rem;
+  margin-top: 0.125rem;
+  margin-bottom: 0.125rem;
+  border: 1px solid #dddbda;
+  border-radius: 0.25rem;
+  padding: 0.25rem 0;
+  font-size: 0.75rem;
+  background: #fff;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.16);
+  transform: translateX(-50%);
+  width: fit-content;
+}
+
+.xotb-dropdown-trigger {
+  position: relative;
+  display: inline-block;
+}
+
+.xotb-form-element {
+  position: relative;
+  min-width: 0;
+}
+
+// .xotb-assistive-text {
+//     position: absolute!important;
+//     margin: -1px!important;
+//     border: 0!important;
+//     padding: 0!important;
+//     width: 1px!important;
+//     height: 1px!important;
+//     overflow: hidden!important;
+//     clip: rect(0 0 0 0)!important;
+//     text-transform: none!important;
+//     white-space: nowrap!important;
+// }
+// .xotb-grid {
+//     display: -ms-flexbox;
+//     display: flex;
+// }
+// .xotb-datepicker__filter {
+//     padding: .25rem;
+// }
+// .xotb-grow {
+//     -ms-flex-positive: 1;
+//     flex-grow: 1;
+// }
+// .xotb-grid--align-spread,
+// .xotb-grid_align-spread {
+//     -ms-flex-pack: justify;
+//     justify-content: space-between;
+// }
+// .xotb-align-middle {
+//     vertical-align: middle;
+//     -ms-flex-item-align: center;
+//     -ms-grid-row-align: center;
+//     align-self: center;
+// }
+// .xotb-align-middle {
+//     vertical-align: middle;
+//     -ms-flex-item-align: center;
+//     -ms-grid-row-align: center;
+//     align-self: center;
+// }
+// .xotb-shrink-none {
+//     -ms-flex-negative: 0;
+//     flex-shrink: 0;
+//     margin: auto;
+// }
+// .xotb-select_container {
+//     position: relative;
+// }
+// .xotb-select {
+//     background-color: #fff;
+//     border: 1px solid #dddbda;
+//     border-radius: .25rem;
+//     width: 100%;
+//     transition: border .1s linear, background-color .1s linear;
+//     height: calc(1.875rem + (1px * 2));
+// }
+// .xotb-select_container .xotb-select {
+//     -moz-appearance: none;
+//     -webkit-appearance: none;
+//     padding-left: .5rem;
+//     padding-right: 1.5rem;
+// }
+// option {
+//     font-weight: normal;
+//     display: block;
+//     white-space: pre;
+//     min-height: 1.2em;
+//     padding: 0px 2px 1px;
+// }
+// ::selection {
+//     background: #d8edff;
+//     text-shadow: none;
+//     color: #080707;
+// }
+// table {
+//     display: table;
+//     border-collapse: separate;
+//     border-spacing: 2px;
+//     border-color: grey;
+// }
+// table {
+//     border-collapse: collapse;
+//     border-spacing: 0;
+// }
+// table {
+//     width: 100%;
+// }
+// thead {
+//     display: table-header-group;
+//     vertical-align: middle;
+//     border-color: inherit;
+// }
+// tr {
+//     display: table-row;
+//     vertical-align: inherit;
+//     border-color: inherit;
+// }
+// .xotb-datepicker th {
+//     padding: .5rem;
+//     font-weight: 400;
+//     color: #3e3e3c;
+// }
+// td,
+// th {
+//     padding: 0;
+// }
+// caption,
+// td,
+// th {
+//     text-align: left;
+// }
+// .xotb-datepicker td,
+// .xotb-datepicker th {
+//     text-align: center;
+// }
+// abbr[title] {
+//     border-bottom: 1px dotted;
+// }
+// abbr[title] {
+//     text-decoration: none;
+// }
+// abbr[title],
+// fieldset,
+// hr {
+//     border: 0;
+// }
+// abbr[title] {
+//     cursor: help;
+// }
+// tbody {
+//     display: table-row-group;
+//     vertical-align: middle;
+//     border-color: inherit;
+// }
+// .xotb-datepicker td,
+// .xotb-datepicker th {
+//     text-align: center;
+// }
+// .xotb-datepicker td {
+//     padding: .25rem;
+//     text-align: center;
+//     font-size: .75rem;
+// }
+// .xotb-datepicker td>.xotb-day {
+//     width: 2rem;
+//     height: 2rem;
+//     display: block;
+//     position: relative;
+//     min-width: 2rem;
+//     line-height: 2rem;
+//     border-radius: 50%;
+//     margin: auto;
+// }
+// .xotb-datepicker td.xotb-is-today>.xotb-day,
+// .xotb-datepicker td:focus:not(.xotb-disabled-text)>.xotb-day,
+// :host.xotb-datepicker td:hover:not(.xotb-disabled-text)>.xotb-day {
+//     cursor: pointer;
+// }
+// .xotb-datepicker td.xotb-is-today>.xotb-day {
+//     background-color: #ecebea;
+// }
+// .xotb-datepicker td.xotb-is-selected>.xotb-day {
+//     background: #0070d2;
+//     color: #fff;
+// }

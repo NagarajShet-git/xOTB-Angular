@@ -38,6 +38,7 @@ import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
 import { XotbDatatableModule } from 'projects/datatable/src/public-api';
 import { XotbTreeModule } from 'projects/tree/src/public-api';
+import { XotbDatepickersModule } from 'projects/datepicker/src/public-api';
 
 /**
  * Examples Component
@@ -75,6 +76,7 @@ import { DemoTreeComponent } from './examples/tree/tree.component';
 import { DemoVBoxComponent } from './examples/vbox/vbox.component';
 import { DemoCardComponent } from './examples/card/card.component';
 import { DemoWelcomeComponent } from './examples/welcome/welcome.component';
+import { DemoDatePickerComponent } from './examples/datepicker/datepicker.component';
 
 @NgModule({
   declarations: [
@@ -111,7 +113,8 @@ import { DemoWelcomeComponent } from './examples/welcome/welcome.component';
     DemoColorpickerComponent,
     DemoDatatableComponent,
     DemoTreeComponent,
-    DemoWelcomeComponent
+    DemoWelcomeComponent,
+    DemoDatePickerComponent
   ],
   imports: [
     BrowserModule,
@@ -147,7 +150,8 @@ import { DemoWelcomeComponent } from './examples/welcome/welcome.component';
     XotbComboboxesModule,
     XotbColorpickerModule,
     XotbDatatableModule,
-    XotbTreeModule
+    XotbTreeModule,
+    XotbDatepickersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
