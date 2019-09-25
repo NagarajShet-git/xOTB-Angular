@@ -4,7 +4,7 @@ This component can be used to generate dynamic animations of various sizes and c
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

@@ -4,7 +4,7 @@ Tabs appear at the top or bottom of a UI and allow the users to quickly switch b
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

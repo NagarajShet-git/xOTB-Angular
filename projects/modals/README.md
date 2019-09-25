@@ -4,7 +4,7 @@ Modal dialogs interrupt users and demand an action by temporarily blocking inter
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

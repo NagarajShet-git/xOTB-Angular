@@ -4,7 +4,7 @@ Progress Bars inform the users about the status of ongoing processes, such as th
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...
