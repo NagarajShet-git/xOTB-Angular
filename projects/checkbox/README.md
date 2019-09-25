@@ -5,7 +5,7 @@ Check Boxes allow the user to select one or more items from a given set.
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

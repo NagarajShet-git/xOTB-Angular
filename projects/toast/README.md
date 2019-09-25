@@ -4,7 +4,7 @@ A Toast provides a simple feedback about an operation in a small popup.  It is a
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

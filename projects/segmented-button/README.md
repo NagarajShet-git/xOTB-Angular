@@ -6,7 +6,7 @@ If you need to specify a custom class when the element is currently selected you
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

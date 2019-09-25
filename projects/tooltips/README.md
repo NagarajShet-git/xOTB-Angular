@@ -4,7 +4,7 @@ A Tooltip is a small piece of contextual information about an element on the scr
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

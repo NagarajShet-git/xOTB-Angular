@@ -5,7 +5,7 @@ The Sliders have become the de facto standard UI control for selecting a value o
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...
