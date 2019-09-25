@@ -96,6 +96,7 @@
   vertical-align: middle;
   border: 1px solid $button-success-border-color;
   transition: border 0.15s linear;
+  color: $text-inverse-color;
   background-color: $button-success-border-color;
   &:hover {
     background-color: darken($color: $button-success-border-color, $amount: 10);
