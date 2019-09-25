@@ -34,17 +34,31 @@ export class DemoWelcomeComponent implements OnInit, AfterContentInit {
   @ViewChild('readme', { static: true }) readme: ElementRef;
 
   ngOnInit() {
-    this.innerHeight = window.innerHeight - 120;
+    this.innerHeight = window.innerHeight - 100;
   }
   ngAfterContentInit() {
     this.readme.nativeElement.onload = () => {
       const iframe = this.readme.nativeElement.contentDocument.documentElement;
       const style = document.createElement('style');
-      style.textContent =
-        'body {' +
-        '  font-family: Helvetica, sans-serif;' +
-        '  font-size: 12px;' +
-        '}';
+      style.textContent = `
+        body  {
+          font-family: Roboto, sans-serif;
+          font-size: 12px;
+          color: #3e3e3c;
+        }
+        h2  {
+          font-weight: 400;
+          font-size: 1.5rem;
+        }
+        h3  {
+          font-weight: 400;
+          font-size: 1rem;
+        }
+        h4  {
+            font-size: .85rem;
+            font-weight: 400;
+        }
+      `;
       iframe.getElementsByTagName('head')[0].appendChild(style);
     };
   }

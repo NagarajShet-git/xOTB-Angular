@@ -31,7 +31,7 @@
   border: 1px solid $border-color;
   transition: border 0.15s linear;
   background-color: $primary-color;
-  color: $button-brand-color;
+  color: $text-inverse-color;
   &:hover {
     background-color: darken($color: $primary-color, $amount: 10);
   }
@@ -45,7 +45,7 @@
   border: 1px solid $primary-color;
   transition: border 0.15s linear;
   background-color: darken($color: $primary-color, $amount: 10);
-  color: $button-brand-color;
+  color: $text-inverse-color;
   &:hover {
     background-color: darken($color: $primary-color, $amount: 20);
   }

@@ -37,7 +37,7 @@
 .xotb-button_icon-brand {
   background-color: $primary-color;
   border-color: $primary-color;
-  color: $button-brand-color;
+  color: $text-inverse-color;
   &:hover {
     background-color: darken($color: $primary-color, $amount: 10);
   }
@@ -45,7 +45,7 @@
 
 .xotb-button_icon-border-inverse,
 .xotb-button_icon-inverse {
-  color: $button-brand-color;
+  color: $text-inverse-color;
 }
 .xotb-button_icon-border-inverse {
   background-color: transparent;
