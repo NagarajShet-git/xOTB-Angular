@@ -14,7 +14,7 @@ body {
 
 .xotb-view-container p.description {
   margin-bottom: 20px;
-  line-height: 150%;
+  line-height: 1.5rem;
 }
 
 .xotb-view-container .xotb-panel-container {
