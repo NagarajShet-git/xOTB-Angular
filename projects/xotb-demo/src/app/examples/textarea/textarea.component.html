@@ -5,16 +5,16 @@
   </p>
   <div class="xotb-panel-container">
     <xotb-panel open="true" title="Example">
-      <xotb-textarea label="Input Label" [error]="hasError ? error : null">
-        <div class="panel-view">
+      <div class="panel-view">
+        <xotb-textarea label="Input Label" [error]="hasError ? error : null">
           <textarea
             xotb
             [required]="required"
             [disabled]="disabled"
             placeholder="Placeholder Text"
           ></textarea>
-        </div>
-      </xotb-textarea>
+        </xotb-textarea>
+      </div>
     </xotb-panel>
   </div>
 </div>

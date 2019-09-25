@@ -8,10 +8,10 @@ A Tooltip is a small piece of contextual information about an element on the scr
 ```javascript
 
 ...
-import { XotbRatingsModule } from 'ng-xotb/controls/ratings';
+import { XotbTooltipsModule } from 'ng-xotb/controls/tooltips';
 
 @NgModule({
-    imports:[XotbRatingsModule]
+    imports:[XotbTooltipsModule]
     ...
 })
 
