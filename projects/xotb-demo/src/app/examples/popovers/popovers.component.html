@@ -1,17 +1,30 @@
-<xotb-panel open="true" title="Popover">
-  <button
-    type="button"
-    xotbButton
-    [xotbPopover]="tip"
-    xotbPopoverPlacement="bottom"
-    xotbPopoverHeader="Header"
-    xotbPopoverFooter="Footer"
-    [(xotbPopoverOpen)]="open"
-  >
-    Click me
-  </button>
-  <ng-template #tip
-    >Popover lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem
-    ipsum lorem ipsum</ng-template
-  >
-</xotb-panel>
+<div class="xotb-view-container">
+  <h1 class="heading">Popovers</h1>
+  <p class="description">
+    The Popover component is similar to tooltips; it is a pop-up box that
+    appears when the user clicks on an element. The difference is that the
+    popover can contain much more content.
+  </p>
+
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <button
+          type="button"
+          xotbButton
+          [xotbPopover]="tip"
+          xotbPopoverPlacement="bottom"
+          xotbPopoverHeader="Header"
+          xotbPopoverFooter="Footer"
+          [(xotbPopoverOpen)]="open"
+        >
+          Click me
+        </button>
+        <ng-template #tip
+          >Popover lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+          lorem ipsum lorem ipsum</ng-template
+        >
+      </div>
+    </xotb-panel>
+  </div>
+</div>

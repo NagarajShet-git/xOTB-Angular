@@ -2,11 +2,12 @@ import { storiesOf, moduleMetadata } from '@storybook/angular';
 import md from 'projects/tree/README.md';
 import { XotbTreeModule } from 'ng-xotb/tree';
 import { DemoTreeComponent } from 'projects/xotb-demo/src/app/examples/tree/tree.component';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 storiesOf('Tree', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbTreeModule]
+      imports: [XotbTreeModule, XotbPanelModule]
     })
   )
   .add(

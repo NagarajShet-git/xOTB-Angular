@@ -4,11 +4,17 @@ import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { XotbModalsModule } from 'ng-xotb/controls/modals';
 import { DemoModalsComponent } from 'projects/xotb-demo/src/app/examples/modals/modals.component';
 import { XotbInputModule } from 'ng-xotb/controls/input';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 storiesOf('Controls', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbModalsModule, XotbButtonsModule, XotbInputModule]
+      imports: [
+        XotbModalsModule,
+        XotbButtonsModule,
+        XotbInputModule,
+        XotbPanelModule
+      ]
     })
   )
   .add(

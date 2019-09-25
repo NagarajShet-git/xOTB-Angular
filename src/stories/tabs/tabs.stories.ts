@@ -3,11 +3,12 @@ import md from 'projects/tabs/README.md';
 import { DemoTabsComponent } from 'projects/xotb-demo/src/app/examples/tabs/tabs.component';
 import { XotbTabsModule } from 'ng-xotb/navigators/tabs';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 storiesOf('Navigators', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbTabsModule, XotbButtonsModule]
+      imports: [XotbTabsModule, XotbButtonsModule, XotbPanelModule]
     })
   )
   .add(
