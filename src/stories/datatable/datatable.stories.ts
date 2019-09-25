@@ -3,11 +3,12 @@ import md from 'projects/datatable/README.md';
 import { DemoDatatableComponent } from 'projects/xotb-demo/src/app/examples/datatable/datatable.component';
 import { XotbDatatableModule } from 'ng-xotb/datatable';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
+import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
 storiesOf('Datatable', module)
   .addDecorator(
     moduleMetadata({
-      imports: [XotbDatatableModule, XotbButtonsModule]
+      imports: [XotbDatatableModule, XotbButtonsModule, XotbPanelModule]
     })
   )
   .add(

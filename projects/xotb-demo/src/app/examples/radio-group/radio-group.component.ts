@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-  templateUrl: './radio-group.component.html'
+  templateUrl: './radio-group.component.html',
+  styleUrls: ['./radio-group.component.scss']
 })
 export class DemoRadioGroupComponent {
   hasError = false;
