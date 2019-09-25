@@ -4,7 +4,7 @@ Buttons allow the user to trigger an action or make a selection with a single ta
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

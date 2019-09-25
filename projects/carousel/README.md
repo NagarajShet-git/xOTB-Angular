@@ -4,7 +4,7 @@ The Carousel is a slideshow for cycling through elements, often used as an image
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

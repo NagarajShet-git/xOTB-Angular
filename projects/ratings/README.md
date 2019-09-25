@@ -4,7 +4,7 @@ Ratings provide an insight regarding users’ opinions and experiences with a pa
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

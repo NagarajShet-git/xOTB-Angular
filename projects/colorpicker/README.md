@@ -4,7 +4,7 @@ The Color Picker tool allows a user to create, share and apply color palettes to
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

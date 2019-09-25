@@ -4,7 +4,7 @@ A Data Table displays sets of data in a grid-like format of rows and columns. It
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

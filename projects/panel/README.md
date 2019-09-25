@@ -5,7 +5,7 @@ An expander control Section can be useful to show and hide panel of your UI and 
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...

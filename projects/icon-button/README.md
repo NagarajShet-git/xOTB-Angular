@@ -4,7 +4,7 @@ An Icon Button allows the user to take actions and make choices, with a single c
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...
