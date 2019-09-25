@@ -11,19 +11,34 @@
       <div class="panel-view">
         <xotb-tabset [(selected)]="selectedTab" [variant]="variant">
           <ng-template xotb-tab label="Overview"
-            >You have {{ details.length }} details.</ng-template
-          >
+            ><div style="padding: 10px">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum
+            </div>
+          </ng-template>
           <xotb-tab
             *ngFor="let detail of details"
             (activate)="tabChange(detail, 'active')"
             (deactivate)="tabChange(detail, 'inactive')"
           >
             <ng-template xotb-tab-label
-              >Detail <i>{{ detail }}</i></ng-template
-            >
+              >Detail <i>{{ detail }}</i>
+            </ng-template>
             <ng-template xotb-tab-content>
               <p>
-                Some detail text for <b>{{ detail }}</b
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <b>{{ detail }}</b
                 >.
               </p>
               <button
@@ -38,7 +53,23 @@
           </xotb-tab>
           <ng-template #heading>Summary</ng-template>
           <ng-template id="sum" xotb-tab #summaryTab="xotbTab" [label]="heading"
-            >Next last ID is {{ id }}.</ng-template
+            ><div style="padding: 10px">
+              Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum
+            </div></ng-template
           >
         </xotb-tabset>
 
@@ -51,17 +82,6 @@
             (click)="addDetail()"
           >
             Add Detail
-          </button>
-          <button type="button" xotbButton (click)="change()">
-            Toggle scope
-          </button>
-          <button
-            type="button"
-            xotbButton
-            (click)="selectedTab = summaryTab"
-            [disabled]="isDisabled()"
-          >
-            Show Summary
           </button>
         </div>
       </div>

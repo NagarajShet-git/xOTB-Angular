@@ -1,8 +1,10 @@
 @import '@angular/cdk/overlay-prebuilt.css';
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
   color: $text-color;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
 }
 
 abbr[title] {
@@ -146,4 +148,12 @@ th {
 
 :focus {
   outline: none !important;
+}
+
+.xotb-hide {
+  display: none !important;
+}
+
+.xotb-show {
+  display: block;
 }

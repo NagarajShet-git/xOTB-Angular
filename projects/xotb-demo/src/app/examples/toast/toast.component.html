@@ -18,8 +18,7 @@
 
         <xotb-toast variant="success" iconName="check-circle">
           <h2 class="xotb-text-heading_small">
-            Account <a href="javascript:void(0);">ACME - 100</a> widgets was
-            created.
+            Last operation was successful
           </h2>
         </xotb-toast>
 
@@ -29,13 +28,13 @@
           (close)="onClose('click')"
         >
           <h2 class="xotb-text-heading_small">
-            Can’t share file “report-q3.pdf” with the
-            <a href="javascript:void(0);">selected users</a>.
+            Can’t send “report.pdf” to the
+            <a href="javascript:void(0);">selected user</a>.
           </h2>
         </xotb-toast>
 
         <button
-          class="xotb-m-top_medium show-toast"
+          class="show-toast"
           type="button"
           [disabled]="showTopToast"
           xotbButton

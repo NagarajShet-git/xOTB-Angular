@@ -23,6 +23,9 @@
 .xotb-dropdown__item {
   line-height: 1.5;
   font-weight: 400;
+  .xotb-icon {
+    color: $primary-color;
+  }
 }
 
 .xotb-dropdown_left {

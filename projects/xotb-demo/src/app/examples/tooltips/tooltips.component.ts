@@ -7,7 +7,7 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
 export class DemoTooltipsComponent {
   placements = ['top', 'right', 'bottom', 'left'];
 
-  placement = this.placements[0];
+  placement = this.placements[2];
 
   open = true;
 
