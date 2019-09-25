@@ -1,29 +1,42 @@
-<xotb-panel open="true" title="Progressbar">
-  <div>
-    <div>
-      <span>Setup Assistant</span>
-      <br />
-      <span aria-hidden="true"
-        ><strong>{{ value }}% Complete</strong></span
-      >
-    </div>
-    <br />
-    <xotb-progress-bar
-      [value]="value"
-      [size]="size"
-      [variant]="variant"
-    ></xotb-progress-bar>
+<div class="xotb-view-container">
+  <h1 class="heading"><strong>Progress Bar</strong></h1>
+  <p class="description">
+    A progress bar can be used to show a user how far along he/she is in a
+    process.
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <div>
+          <div>
+            <span>Setup Assistant</span>
+            <br />
+            <span aria-hidden="true"
+              ><strong>{{ value }}% Complete</strong></span
+            >
+          </div>
+          <br />
+          <xotb-progress-bar
+            [value]="value"
+            [size]="size"
+            [variant]="variant"
+          ></xotb-progress-bar>
+        </div>
+        <br />
+        <div style="height: 50px;">
+          <div>
+            <button type="button" xotbButton (click)="random()">
+              Randomize
+            </button>
+            <button type="button" xotbButton (click)="changeVariant()">
+              Change Variant
+            </button>
+            <button type="button" xotbButton (click)="changeSize()">
+              Change Size
+            </button>
+          </div>
+        </div>
+      </div>
+    </xotb-panel>
   </div>
-  <br />
-  <div style="height: 50px;">
-    <div>
-      <button type="button" xotbButton (click)="random()">Randomize</button>
-      <button type="button" xotbButton (click)="changeVariant()">
-        Change Variant
-      </button>
-      <button type="button" xotbButton (click)="changeSize()">
-        Change Size
-      </button>
-    </div>
-  </div>
-</xotb-panel>
+</div>

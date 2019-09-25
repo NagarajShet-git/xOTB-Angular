@@ -1,17 +1,45 @@
-<div>
-  <h1>Home</h1>
-  <p>{{ bodyText }}</p>
-  <button xotbButton (click)="openModal('custom-modal-1')">Open Modal 1</button>
-</div>
+<div class="xotb-view-container">
+  <h1 class="heading">Modal</h1>
+  <p class="description">
+    Modals offer a lightweight, multi-purpose JavaScript popup that’s
+    customizable and responsive. They can be used to display alert popups,
+    videos, and images in a website. Bootstrap-based websites can use Bootstrap
+    modals to showcase, for example, terms and conditions (as part of a signup
+    process), videos (similar to a standard light box), or even social media
+    widgets.
+  </p>
+  <div class="xotb-panel-container">
+    <xotb-panel open="true" title="Example">
+      <div class="panel-view">
+        <div>
+          <h1 style="font-size: 1.3em; margin-bottom:10px">Home</h1>
+          <p style="margin-bottom: 10px">{{ bodyText }}</p>
+          <button xotbButton (click)="openModal('custom-modal-1')">
+            Open Modal 1
+          </button>
+        </div>
 
-<xotb-modal id="custom-modal-1">
-  <h1>Modal heading!</h1>
-  <div>
-    Home page text:
-    <input xotb type="text" [(ngModel)]="bodyText" style="width: 200px" />
+        <xotb-modal id="custom-modal-1">
+          <h1>Modal heading!</h1>
+          <div>
+            Home page text:
+            <input
+              xotb
+              type="text"
+              [(ngModel)]="bodyText"
+              style="width: 200px"
+            />
+          </div>
+
+          <button
+            xotbButton
+            size="small"
+            (click)="closeModal('custom-modal-1')"
+          >
+            Close
+          </button>
+        </xotb-modal>
+      </div>
+    </xotb-panel>
   </div>
-
-  <button xotbButton size="small" (click)="closeModal('custom-modal-1')">
-    Close
-  </button>
-</xotb-modal>
+</div>

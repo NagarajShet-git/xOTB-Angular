@@ -1,0 +1,26 @@
+.spinner-wrapper {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.spinner-wrapper .spinner {
+  min-width: 50%;
+  height: 100%;
+  border: 1px solid #e0e0e0;
+  display: table;
+}
+
+.spinner-role {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  margin-left: auto;
+  margin-right: auto;
+}
