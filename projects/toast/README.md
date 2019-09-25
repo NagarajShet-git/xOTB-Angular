@@ -8,10 +8,10 @@ A Toast provides a simple feedback about an operation in a small popup.  It is a
 ```javascript
 
 ...
-import { XotbTabsModule } from 'ng-xotb/navigators/tabs';
+import { XotbToastModule } from 'ng-xotb/controls/toast';
 
 @NgModule({
-    imports:[XotbTabsModule]
+    imports:[XotbToastModule]
     ...
 })
 
