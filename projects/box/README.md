@@ -18,7 +18,7 @@ import { XotbBoxModule } from 'ng-xotb/containers/box';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <div xotbCard>
   <div style="width: 100px; margin-bottom: 10px">container 1</div>
@@ -28,7 +28,7 @@ import { XotbBoxModule } from 'ng-xotb/containers/box';
 </div>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -47,7 +47,7 @@ export class DemoComponent {}
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...
@@ -61,7 +61,7 @@ import { XotbBoxModule } from 'ng-xotb/containers/box';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <div xotbHbox>
   <div style="width: 100px; margin-bottom: 10px">container 1</div>
@@ -71,7 +71,7 @@ import { XotbBoxModule } from 'ng-xotb/containers/box';
 </div>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -90,7 +90,7 @@ export class DemoComponent {}
 
 ## Usages
 
-### module.ts
+#### module.ts
 ```javascript
 
 ...
@@ -104,7 +104,7 @@ import { XotbBoxModule } from 'ng-xotb/containers/box';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <div xotbVbox>
   <div style="width: 100px; margin-bottom: 10px">container 1</div>
@@ -114,7 +114,7 @@ import { XotbBoxModule } from 'ng-xotb/containers/box';
 </div>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...

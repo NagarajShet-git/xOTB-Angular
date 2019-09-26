@@ -25,18 +25,30 @@
         >
           Clear
         </button>
-        <button type="button" xotbButton (click)="readonly = !readonly">
+        <button
+          type="button"
+          xotbButton
+          variant="outline-brand"
+          (click)="readonly = !readonly"
+        >
           Toggle readonly
         </button>
-        <button type="button" xotbButton (click)="changeSize()">
+        <button
+          type="button"
+          xotbButton
+          variant="outline-brand"
+          (click)="changeSize()"
+        >
           Change Size
         </button>
-        <button type="button" xotbButton (click)="changeColor()">
+        <button
+          type="button"
+          xotbButton
+          variant="outline-brand"
+          (click)="changeColor()"
+        >
           Change Color
         </button>
-        <div class="xotb-grid xotb-m-top_large"><br /></div>
-        <button type="button" xotbButton (click)="value = 1.8">1.80</button>
-        <button type="button" xotbButton (click)="value = 4.25">4.25</button>
       </div>
     </xotb-panel>
   </div>

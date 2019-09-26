@@ -5,7 +5,7 @@ import { XotbDatatableModule } from 'ng-xotb/datatable';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Datatable', module)
+storiesOf('Components.Datatable', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbDatatableModule, XotbButtonsModule, XotbPanelModule]

@@ -19,7 +19,7 @@ import { XotbTextareaModule } from 'ng-xotb/controls/textarea';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-textarea label="Input Label" [error]="hasError ? error : null">
     <textarea
@@ -31,7 +31,7 @@ import { XotbTextareaModule } from 'ng-xotb/controls/textarea';
 </xotb-textarea>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...

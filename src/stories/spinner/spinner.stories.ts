@@ -4,7 +4,7 @@ import { DemoSpinnerComponent } from 'projects/xotb-demo/src/app/examples/spinne
 import { XotbSpinnerModule } from 'ng-xotb/controls/spinner';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbSpinnerModule, XotbPanelModule]

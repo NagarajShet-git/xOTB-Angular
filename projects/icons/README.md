@@ -19,13 +19,13 @@ import { XotbIconsModule } from 'ng-xotb/controls/icons';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
     <xotb-icon iconName="activity" size="small"></xotb-icon>
 ```
 
 
-### component.ts
+#### component.ts
 ```javascript
     
 ...

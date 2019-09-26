@@ -4,7 +4,7 @@ import { XotbBreadcrumbsModule } from 'ng-xotb/navigators/breadcrumbs';
 import md from 'projects/breadcrumbs/README.md';
 import { DemoBreadcrumbsComponent } from 'projects/xotb-demo/src/app/examples/breadcrumbs/breadcrumbs.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
-storiesOf('Navigators', module)
+storiesOf('Components.Navigators', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbBreadcrumbsModule, XotbPanelModule]

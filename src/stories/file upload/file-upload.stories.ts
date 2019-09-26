@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DemoFileUploadComponent } from 'projects/xotb-demo/src/app/examples/file-upload/file-upload.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbFileUploadModule, ReactiveFormsModule, XotbPanelModule]

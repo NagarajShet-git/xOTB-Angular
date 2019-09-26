@@ -6,7 +6,7 @@ import { XotbTextareaModule } from 'ng-xotb/controls/textarea';
 import { DemoTextareaComponent } from 'projects/xotb-demo/src/app/examples/textarea/textarea.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbTextareaModule, XotbCheckboxModule, XotbPanelModule]

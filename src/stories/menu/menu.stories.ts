@@ -6,7 +6,7 @@ import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { DemoMenusComponent } from 'projects/xotb-demo/src/app/examples/menus/menus.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Navigators', module)
+storiesOf('Components.Navigators', module)
   .addDecorator(
     moduleMetadata({
       imports: [

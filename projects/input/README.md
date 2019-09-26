@@ -19,7 +19,7 @@ import { XotbInputModule } from 'ng-xotb/controls/input';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-input
     label="Input Label"
@@ -36,7 +36,7 @@ import { XotbInputModule } from 'ng-xotb/controls/input';
 </xotb-input>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...

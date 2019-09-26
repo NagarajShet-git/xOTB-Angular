@@ -18,7 +18,7 @@ import { XotbTabsModule } from 'ng-xotb/navigators/tabs';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-tabset [(selected)]="selectedTab" [variant]="variant">
     <ng-template xotb-tab label="Overview">
@@ -60,7 +60,7 @@ import { XotbTabsModule } from 'ng-xotb/navigators/tabs';
 </div>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -102,7 +102,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-tabset>
+#### <xotb-tabset>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -112,7 +112,7 @@ export class DemoComponent {
 | `(selectedChange)` | Emits when a Tab is selected | `EventEmitter<XotbTab>` |  |
 
 
-### <xotb-tab>
+#### <xotb-tab>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

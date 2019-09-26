@@ -18,12 +18,12 @@ import { XotbSpinnerModule } from 'ng-xotb/controls/spinner';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-spinner alternativeText="Loading" size="small"></xotb-spinner>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -39,7 +39,7 @@ export class DemoComponent {}
 
 ## API
  
-### <xotb-progress-bar>
+#### <xotb-progress-bar>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

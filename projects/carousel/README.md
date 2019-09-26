@@ -19,7 +19,7 @@ import { XotbCarouselModule } from 'ng-xotb/navigators/carousel';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <div style="width: 480px; max-width: 100%">
     <xotb-carousel [(active)]="active">
@@ -43,7 +43,7 @@ import { XotbCarouselModule } from 'ng-xotb/navigators/carousel';
 </div>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -59,7 +59,7 @@ export class DemoComponent {}
 
 ## API
  
-### <xotb-carousel>
+#### <xotb-carousel>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -69,7 +69,7 @@ export class DemoComponent {}
 | [scrollDuration] | The auto scroll duration in seconds. After that the next image is displayed | `number` | 5 |
 | (activeChange) | Emits the index of the image to be activated | `EventEmitter<number>` |  |
 
-### <xotb-carousel-image>
+#### <xotb-carousel-image>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

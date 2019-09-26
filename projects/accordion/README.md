@@ -20,7 +20,7 @@ import { XotbAccordionModule } from 'ng-xotb/containers/accordion';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <ul xotb-accordion [(activeName)]="active">
     <ng-template xotbAccordionSection name="A" label="Accordion Title A"
@@ -35,7 +35,7 @@ import { XotbAccordionModule } from 'ng-xotb/containers/accordion';
 </ul>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -54,7 +54,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-accordion>
+#### <xotb-accordion>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -63,7 +63,7 @@ export class DemoComponent {
 | (activeNameChanged) | Emits when the open sections are going to change, it contains all open sections. | `EventEmitter<string|string[]>` | |
 
 
-### <ng-template xotbAccordionSection>
+#### <ng-template xotbAccordionSection>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

@@ -4,7 +4,7 @@ import { XotbTreeModule } from 'ng-xotb/tree';
 import { DemoTreeComponent } from 'projects/xotb-demo/src/app/examples/tree/tree.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Tree', module)
+storiesOf('Components.Tree', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbTreeModule, XotbPanelModule]

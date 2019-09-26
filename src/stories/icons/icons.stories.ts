@@ -4,7 +4,7 @@ import md from 'projects/icons/README.md';
 import { DemoIconsComponent } from 'projects/xotb-demo/src/app/examples/icons/icons.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbIconsModule, XotbPanelModule]

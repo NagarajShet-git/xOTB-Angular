@@ -19,13 +19,13 @@ import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <button xotbButton variant="neutral">normal button</button>
 ```
 
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -41,7 +41,7 @@ export class DemoComponent {}
 
 ## API 
 
-### [xotbButton]
+#### [xotbButton]
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

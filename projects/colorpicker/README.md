@@ -19,7 +19,7 @@ import { XotbColorpickerModule } from 'ng-xotb/controls/colorpicker';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-colorpicker
     [(ngModel)]="color"
@@ -27,7 +27,7 @@ import { XotbColorpickerModule } from 'ng-xotb/controls/colorpicker';
 </xotb-colorpicker>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -45,7 +45,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-carousel>
+#### <xotb-carousel>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

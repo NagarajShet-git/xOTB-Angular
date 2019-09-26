@@ -20,7 +20,7 @@ import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-combobox
     label="Make a choice"
@@ -33,7 +33,7 @@ import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 </xotb-combobox>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -63,7 +63,7 @@ export class DemoComponent {
 
 An Auto Completion is a mechanism frequently used in the websites to provide the user with a list of suggested options for the beginning of the word, which he/she has typed in a text box. The user can then select an item from the list to be displayed in the input field.
 
-### autocomplete.component.html
+#### autocomplete.component.html
 ```html
 <xotb-combobox
   label="Who is your favorite superhero?"
@@ -81,7 +81,7 @@ An Auto Completion is a mechanism frequently used in the websites to provide the
 </xotb-combobox>
 ```
 
-### autocomplete.component.ts
+#### autocomplete.component.ts
 ```javascript
 
 ...
@@ -131,7 +131,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-file-upload>
+#### <xotb-file-upload>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

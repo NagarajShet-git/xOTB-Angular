@@ -6,7 +6,7 @@ import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { DemoColorpickerComponent } from 'projects/xotb-demo/src/app/examples/colorpicker/colorpicker.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbColorpickerModule, XotbButtonsModule, XotbPanelModule]

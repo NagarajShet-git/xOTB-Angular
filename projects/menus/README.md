@@ -21,7 +21,7 @@ import { XotbIconsModule } from 'ng-xotb/controls/icons'
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <span xotbDropdown [(open)]="open">
     <button class="xotb-button xotb-button_neutral" xotbDropdownTrigger>
@@ -53,7 +53,7 @@ import { XotbIconsModule } from 'ng-xotb/controls/icons'
 </span>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -78,7 +78,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-file-upload>
+#### <xotb-file-upload>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
