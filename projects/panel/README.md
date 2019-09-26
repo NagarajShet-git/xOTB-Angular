@@ -1,6 +1,6 @@
 # Panel
 
-An expander control Section can be useful to show and hide panel of your UI and therefore, declutter your app
+An expandable container, Panel, can be useful to show and hide section of your UI and therefore, declutter your app
 
 
 ## Usages
@@ -20,7 +20,7 @@ import { XotbPanelModule } from 'ng-xotb/containers/panel';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-panel title="Section Title">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -35,7 +35,7 @@ import { XotbPanelModule } from 'ng-xotb/containers/panel';
 </xotb-panel>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -51,7 +51,7 @@ export class DemoComponent {}
 
 ## API
  
-### <xotb-panel>
+#### <xotb-panel>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

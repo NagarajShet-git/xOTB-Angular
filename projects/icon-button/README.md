@@ -18,7 +18,7 @@ import { XotbIconButtonModule } from 'ng-xotb/controls/icon-button';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <button
     type="button"
@@ -28,7 +28,7 @@ import { XotbIconButtonModule } from 'ng-xotb/controls/icon-button';
 </button>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -44,7 +44,7 @@ export class DemoComponent {}
 
 ## API
  
-### [ xotbIconButton]
+#### [ xotbIconButton]
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

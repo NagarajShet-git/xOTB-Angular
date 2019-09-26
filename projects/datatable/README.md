@@ -18,7 +18,7 @@ import { XotbDatatableModule } from 'ng-xotb/datatable';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <table
   class="xotb-table_bordered xotb-max-medium-table_stacked-horizontal xotb-table_fixed-layout"
@@ -73,7 +73,7 @@ import { XotbDatatableModule } from 'ng-xotb/datatable';
 
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -132,7 +132,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-datatable>
+#### <xotb-datatable>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -143,7 +143,7 @@ export class DemoComponent {
 | `(sortChange)` | Requested sort event | `EventEmitter` |  |
 | `(rowClick)` | Invoked when a row is clicked passing original Event and row's data, as {event: Event, data: any}. | `EventEmitter` |  |
 
-### <xotb-datatable-column>
+#### <xotb-datatable-column>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

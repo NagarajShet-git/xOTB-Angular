@@ -20,14 +20,14 @@ import { XotbCheckboxesModule } from 'ng-xotb/controls/checkboxes';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-checkbox label="Checkbox Label" [error]="hasError ? error : null">
     <input xotb type="checkbox" [required]="required" [disabled]="disabled" />
 </xotb-checkbox>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -53,7 +53,7 @@ export class DemoComponent {
 
 ## API
 
-### <xotb-checkbox>
+#### <xotb-checkbox>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

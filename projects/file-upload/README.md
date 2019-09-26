@@ -21,7 +21,7 @@ import { XotbFileUploadModule } from 'ng-xotb/controls/file-upload';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-file-upload
     label="Attachment"
@@ -48,7 +48,7 @@ import { XotbFileUploadModule } from 'ng-xotb/controls/file-upload';
 </ng-template>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -68,7 +68,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-file-upload>
+#### <xotb-file-upload>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

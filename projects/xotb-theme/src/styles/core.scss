@@ -140,6 +140,22 @@ th {
   line-height: 1;
 }
 
+.xotb-text-link {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.xotb-text-link:focus,
+.xotb-text-link:hover {
+  text-decoration: underline;
+  color: $primary-color;
+}
+
+.xotb-text-link:active {
+  color: $primary-color;
+}
+
 .xotb-text-link_reset,
 .xotb-text-link_reset:active,
 .xotb-text-link_reset:focus,

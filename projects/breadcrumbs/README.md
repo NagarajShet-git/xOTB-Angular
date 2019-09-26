@@ -19,7 +19,7 @@ import { XotbBreadcrumbsModule } from 'ng-xotb/navigators/breadcrumbs';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-breadcrumbs assistiveText="Breadcrumbs">
     <a *xotbBreadcrumb href="javascript:void(0)">Home</a>
@@ -27,7 +27,7 @@ import { XotbBreadcrumbsModule } from 'ng-xotb/navigators/breadcrumbs';
 </xotb-breadcrumbs>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -43,7 +43,7 @@ export class DemoComponent {}
 
 ## API
  
-### <xotb-breadcrumbs>
+#### <xotb-breadcrumbs>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

@@ -18,7 +18,7 @@ import { XotbPopoversModule } from 'ng-xotb/controls/popovers';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <button
   type="button"
@@ -37,7 +37,7 @@ import { XotbPopoversModule } from 'ng-xotb/controls/popovers';
 >
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -56,7 +56,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-modal>
+#### <xotb-modal>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

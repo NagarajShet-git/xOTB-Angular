@@ -5,7 +5,7 @@ import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 import { DemoComboboxesComponent } from 'projects/xotb-demo/src/app/examples/comboboxes/combobox.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbComboboxesModule, XotbPanelModule]

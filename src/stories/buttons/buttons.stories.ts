@@ -3,7 +3,7 @@ import md from 'projects/buttons/README.md';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { DemoButtonsComponent } from 'projects/xotb-demo/src/app/examples/buttons/buttons.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbButtonsModule, XotbPanelModule]

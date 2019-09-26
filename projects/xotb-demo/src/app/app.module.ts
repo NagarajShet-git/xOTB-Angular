@@ -38,7 +38,7 @@ import { XotbComboboxesModule } from 'ng-xotb/controls/comboboxes';
 import { XotbColorpickerModule } from 'projects/colorpicker/src/public-api';
 import { XotbDatatableModule } from 'projects/datatable/src/public-api';
 import { XotbTreeModule } from 'projects/tree/src/public-api';
-import { XotbDatepickersModule } from 'projects/datepicker/src/public-api';
+import { XotbDatepickerModule } from 'projects/datepicker/src/public-api';
 
 /**
  * Examples Component
@@ -151,7 +151,7 @@ import { DemoDatePickerComponent } from './examples/datepicker/datepicker.compon
     XotbColorpickerModule,
     XotbDatatableModule,
     XotbTreeModule,
-    XotbDatepickersModule
+    XotbDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

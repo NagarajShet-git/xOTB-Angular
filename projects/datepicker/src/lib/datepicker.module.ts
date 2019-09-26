@@ -39,4 +39,4 @@ const EXPORTS = [XotbDatepickerInput, XotbDatepicker];
   ],
   providers: [XotbDateAdapter]
 })
-export class XotbDatepickersModule {}
+export class XotbDatepickerModule {}

@@ -18,7 +18,7 @@ import { XotbModalsModule } from 'ng-xotb/controls/modals';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <div>
   <h1>Home</h1>
@@ -39,7 +39,7 @@ import { XotbModalsModule } from 'ng-xotb/controls/modals';
 </xotb-modal>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -73,7 +73,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-modal>
+#### <xotb-modal>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

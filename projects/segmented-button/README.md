@@ -22,7 +22,7 @@ import { XotbSegmentedButtonModule } from 'ng-xotb/controls/segmented-button'
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <div
     class="xotb-button-group"
@@ -36,7 +36,7 @@ import { XotbSegmentedButtonModule } from 'ng-xotb/controls/segmented-button'
 </div>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -54,7 +54,7 @@ export class DemoComponent {
 
 ## API
  
-### [xotbSegmentedButton]
+#### [xotbSegmentedButton]
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |
@@ -65,7 +65,7 @@ export class DemoComponent {
 | `(xotbOptionDestroyed)` | Emits the value of any selected option that is destroyed  | `EventEmitter` |  |
 
 
-### [xotbSegmentedButtonOption]
+#### [xotbSegmentedButtonOption]
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

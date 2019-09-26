@@ -17,8 +17,8 @@ import { XotbRatingsModule } from 'ng-xotb/controls/ratings';
 
 ...
 ```
+#### component.html
 
-### component.html
 ```html
 <xotb-rating
     [(rate)]="value"
@@ -28,7 +28,7 @@ import { XotbRatingsModule } from 'ng-xotb/controls/ratings';
   ></xotb-rating>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -49,7 +49,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-rating>
+#### <xotb-rating>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

@@ -68,7 +68,7 @@ import { XotbToastModule } from 'ng-xotb/controls/toast';
 
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -90,7 +90,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-toast>
+#### <xotb-toast>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

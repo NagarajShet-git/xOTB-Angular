@@ -5,7 +5,7 @@ import { XotbInputModule } from 'ng-xotb/controls/input';
 import { XotbCheckboxModule } from 'ng-xotb/controls/checkbox';
 import { DemoInputComponent } from 'projects/xotb-demo/src/app/examples/input/input.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
-storiesOf('Controls', module)
+storiesOf('Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbInputModule, XotbCheckboxModule, XotbPanelModule]

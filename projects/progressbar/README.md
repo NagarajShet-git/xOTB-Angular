@@ -18,7 +18,7 @@ import { XotbProgressbarModule } from 'ng-xotb/controls/progressbar';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-progress-bar
       [value]="value"
@@ -27,7 +27,7 @@ import { XotbProgressbarModule } from 'ng-xotb/controls/progressbar';
     ></xotb-progress-bar>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -47,7 +47,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-progress-bar>
+#### <xotb-progress-bar>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

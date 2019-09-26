@@ -16,11 +16,23 @@
 
         <pre>Selected: {{ color }}</pre>
 
-        <button type="button" xotbButton (click)="color = '#FF0000'">
+        <button
+          type="button"
+          variant="outline-brand"
+          xotbButton
+          (click)="color = '#FF0000'"
+        >
           Select Red
         </button>
 
-        <button type="button" xotbButton (click)="color = null">Clear</button>
+        <button
+          type="button"
+          variant="outline-brand"
+          xotbButton
+          (click)="color = null"
+        >
+          Clear
+        </button>
       </div>
     </xotb-panel>
   </div>

@@ -1,4 +1,5 @@
 # Tree
+Tree is a graphical control element that presents a hierarchical view of information. Each item (often called a branch or a node) can have a number of subitems
 
 ## Usages
 
@@ -16,12 +17,12 @@ import { XotbTreeModule } from 'ng-xotb/tree';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-tree [treeData]="nodes" (onSelect)="handleSelect($event)"></xotb-tree>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -46,7 +47,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-modal>
+#### <xotb-tree>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

@@ -20,12 +20,12 @@ import { XotbSliderModule } from 'ng-xotb/controls/slider';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <xotb-slider [(value)]="value" label="Slider label"></xotb-slider>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
@@ -43,7 +43,7 @@ export class DemoComponent {
 
 ## API
  
-### <xotb-section>
+#### <xotb-section>
 
 | Property | Description | Type | Default |
 | --- | --- | --- | --- |

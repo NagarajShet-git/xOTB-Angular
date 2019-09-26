@@ -21,7 +21,7 @@ import { XotbRadioGroupModule } from 'ng-xotb/controls/radio-group';
 ...
 ```
 
-### component.html
+#### component.html
 ```html
 <fieldset
     xotb-radio-group
@@ -38,7 +38,7 @@ import { XotbRadioGroupModule } from 'ng-xotb/controls/radio-group';
 </fieldset>
 ```
 
-### component.ts
+#### component.ts
 ```javascript
 
 ...
