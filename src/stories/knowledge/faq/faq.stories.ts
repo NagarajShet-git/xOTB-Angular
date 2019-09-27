@@ -1,17 +1,18 @@
 import { storiesOf, moduleMetadata } from '@storybook/angular';
-import { DemoWelcomeComponent } from 'projects/xotb-demo/src/app/examples/welcome/welcome.component';
+import { centered } from '@storybook/addon-centered/angular';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Getting Started.Welcome', module)
+storiesOf('The KNOWLEDGE|Faq', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbPanelModule]
     })
   )
+  .addDecorator(centered)
   .add(
-    'ng-xotb',
+    'defaults',
     () => ({
-      component: DemoWelcomeComponent
+      template: '<p>...to be constructed</p>'
     }),
     {
       options: {

@@ -6,7 +6,7 @@ import { DemoModalsComponent } from 'projects/xotb-demo/src/app/examples/modals/
 import { XotbInputModule } from 'ng-xotb/controls/input';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [

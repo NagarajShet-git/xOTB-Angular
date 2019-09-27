@@ -5,7 +5,7 @@ import { XotbTabsModule } from 'ng-xotb/navigators/tabs';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Navigators', module)
+storiesOf('The Components|Components.Navigators', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbTabsModule, XotbButtonsModule, XotbPanelModule]

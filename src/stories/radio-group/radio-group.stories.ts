@@ -5,7 +5,7 @@ import { XotbCheckboxModule } from 'ng-xotb/controls/checkbox';
 import { DemoRadioGroupComponent } from 'projects/xotb-demo/src/app/examples/radio-group/radio-group.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbRadioGroupModule, XotbCheckboxModule, XotbPanelModule]

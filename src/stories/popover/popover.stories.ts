@@ -5,7 +5,7 @@ import { XotbPopoversModule } from 'ng-xotb/controls/popovers';
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbPopoversModule, XotbButtonsModule, XotbPanelModule]

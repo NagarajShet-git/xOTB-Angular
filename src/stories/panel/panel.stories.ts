@@ -3,7 +3,7 @@ import md from 'projects/panel/README.md';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 import { DemoPanelComponent } from 'projects/xotb-demo/src/app/examples/panel/panel.component';
 
-storiesOf('Components.Containers', module)
+storiesOf('The Components|Components.Containers', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbPanelModule]

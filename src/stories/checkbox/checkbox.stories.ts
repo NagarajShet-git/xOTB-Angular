@@ -4,7 +4,7 @@ import { XotbCheckboxModule } from 'ng-xotb/controls/checkbox';
 import { DemoCheckboxesComponent } from 'projects/xotb-demo/src/app/examples/checkboxes/checkboxes.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbCheckboxModule, XotbPanelModule]

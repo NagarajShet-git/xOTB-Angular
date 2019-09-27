@@ -4,7 +4,7 @@ import { XotbSliderModule } from 'ng-xotb/controls/slider';
 import { DemoSliderComponent } from 'projects/xotb-demo/src/app/examples/slider/slider.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbSliderModule, XotbPanelModule]
