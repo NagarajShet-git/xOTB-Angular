@@ -62,24 +62,6 @@ storiesOf('The GUIDE|Brand', module)
         isToolshown: false
       }
     }
-  );
-
-storiesOf('The GUIDE|Brand', module)
-  .addDecorator(
-    moduleMetadata({
-      imports: [XotbPanelModule]
-    })
-  )
-  .add(
-    'Iconography',
-    () => ({
-      component: IconographyComponent
-    }),
-    {
-      options: {
-        isToolshown: false
-      }
-    }
   )
   .add(
     'Themes',
