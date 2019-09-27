@@ -21,6 +21,7 @@ storiesOf('The GUIDE|Brand', module)
       }
     }
   )
+
   .add(
     'Typography',
     () => ({
@@ -60,11 +61,18 @@ storiesOf('The GUIDE|Brand', module)
         isToolshown: false
       }
     }
+  );
+
+storiesOf('The GUIDE|Brand', module)
+  .addDecorator(
+    moduleMetadata({
+      imports: [XotbPanelModule]
+    })
   )
   .add(
-    'Themes',
+    'Iconography',
     () => ({
-      template: '<p>...to be constructed</p>'
+      component: IconographyComponent
     }),
     {
       options: {
