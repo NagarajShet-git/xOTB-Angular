@@ -5,7 +5,7 @@ import { XotbCarouselModule } from 'ng-xotb/navigators/carousel';
 import { DemoCarouselComponent } from 'projects/xotb-demo/src/app/examples/carousel/carousel.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Navigators', module)
+storiesOf('The Components|Components.Navigators', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbCarouselModule, XotbPanelModule]

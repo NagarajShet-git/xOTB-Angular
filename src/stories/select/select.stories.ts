@@ -4,7 +4,7 @@ import { DemoSelectComponent } from 'projects/xotb-demo/src/app/examples/select/
 import { XotbSelectModule } from 'ng-xotb/controls/select';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbSelectModule, XotbPanelModule]

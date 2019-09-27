@@ -5,7 +5,7 @@ import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { DemoSegmentedButtonComponent } from 'projects/xotb-demo/src/app/examples/segmented-button/segmented-button.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbSegmentedButtonModule, XotbButtonsModule, XotbPanelModule]

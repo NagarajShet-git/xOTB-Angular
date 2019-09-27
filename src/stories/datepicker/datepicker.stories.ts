@@ -4,7 +4,7 @@ import { XotbPanelModule } from 'ng-xotb/containers/panel';
 import { XotbDatepickerModule } from 'ng-xotb/controls/datepicker';
 import { DemoDatePickerComponent } from 'projects/xotb-demo/src/app/examples/datepicker/datepicker.component';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbDatepickerModule, XotbPanelModule]

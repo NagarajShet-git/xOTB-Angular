@@ -6,7 +6,7 @@ import { DemoHBoxComponent } from 'projects/xotb-demo/src/app/examples/hbox/hbox
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { DemoVBoxComponent } from 'projects/xotb-demo/src/app/examples/vbox/vbox.component';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
-storiesOf('Components.Containers', module)
+storiesOf('The Components|Components.Containers', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbBoxModule, XotbButtonsModule, XotbPanelModule]

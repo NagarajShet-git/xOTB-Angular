@@ -5,7 +5,7 @@ import { DemoToastComponent } from 'projects/xotb-demo/src/app/examples/toast/to
 import { XotbButtonsModule } from 'ng-xotb/controls/buttons';
 import { XotbPanelModule } from 'ng-xotb/containers/panel';
 
-storiesOf('Components.Controls', module)
+storiesOf('The Components|Components.Controls', module)
   .addDecorator(
     moduleMetadata({
       imports: [XotbToastModule, XotbButtonsModule, XotbPanelModule]
