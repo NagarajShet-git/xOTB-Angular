@@ -77,6 +77,7 @@ import { DemoVBoxComponent } from './examples/vbox/vbox.component';
 import { DemoCardComponent } from './examples/card/card.component';
 import { DemoWelcomeComponent } from './examples/welcome/welcome.component';
 import { DemoDatePickerComponent } from './examples/datepicker/datepicker.component';
+import { IconographyComponent } from './components/iconography/iconography.component';
 
 @NgModule({
   declarations: [
@@ -114,7 +115,8 @@ import { DemoDatePickerComponent } from './examples/datepicker/datepicker.compon
     DemoDatatableComponent,
     DemoTreeComponent,
     DemoWelcomeComponent,
-    DemoDatePickerComponent
+    DemoDatePickerComponent,
+    IconographyComponent
   ],
   imports: [
     BrowserModule,
