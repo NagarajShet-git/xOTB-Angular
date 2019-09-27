@@ -16,8 +16,6 @@ storiesOf('The Components|Welcome', module)
           <p>xOTB - EDGE's design system. Designed for Designers and Developed for Engineers.</p>
           <h2 class="heading" id="objective">Objective</h2>
           <p>xOTB establishes a common design language for our teams, hosts design assets and patterns for a unified experience, provides basic building blocks to accelerate development, and drafts high level guidelines for content and accessibility.</p>
-          <h2 class="heading" id="the-clarity">The Clarity</h2>
-          <p>The Clarity consists of predefined variables for basic design elements such as colour, typography, and iconography. With clearly authenticated guidelines and governance for design and content creation, we spend less time talking the guidelines to bring clarity for ourselves and more time creating designs and content that clearly serves our users.</p>
           <h2 class="heading" id="the-components">The Components</h2>
           <p>The Components provides a robust suite of Angular components out of the box to bootstrap experiences and ensure consistent interaction and style as well as accessibility optimizations. With components, we spend more time on crafting experiences that serve our users and less time on “reinventing the wheel”.</p>
       </div>
@@ -34,7 +32,7 @@ storiesOf('The Components|Welcome', module)
     () => ({
       template: `
       <div class="xotb-view-container">
-          <h1 class="heading" id="setup">Setup</h1>
+          <h1 class="heading" id="setup">Getting Started</h1>
           <br/>
           <h2 class="heading" id="step-1-installing-packages">Step 1: Installing package</h2>
           <p>You can use either the <code>npm</code> or <code>yarn</code> tool to install packages.</p>
