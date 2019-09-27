@@ -36,9 +36,12 @@ storiesOf('The Components|Welcome', module)
           <br/>
           <h2 class="heading" id="step-1-installing-packages">Step 1: Installing package</h2>
           <p>You can use either the <code>npm</code> or <code>yarn</code> tool to install packages.</p>
-          <pre><code class="language-javascript">    
-            npm install ng-xotb
-            yarn add ng-xotb</code></pre>
+          <pre>
+            <code class="language-javascript">    
+              npm install ng-xotb
+              yarn add ng-xotb
+            </code>
+          </pre>
           <h2 class="heading" id="step-2-adding-styles">Step 2: Adding styles</h2>
           <p>Including CSS files is required for your application to work correctly.
           If you are using the Angular CLI, you need to add the following to the <code>styles</code> array of your <code>angular.json</code> file.</p>
